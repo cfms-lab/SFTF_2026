@@ -1,0 +1,370 @@
+% Shared bibliography for the SFTF papers.
+% Managed via Zotero + Better BibTeX (File -> Import to seed a Zotero library,
+% or export your Zotero collection here with "Keep updated").
+% Entries below were converted from the manual \thebibliography lists; details
+% beyond the original one-liners are filled from the canonical sources and can
+% be enriched/overwritten by re-exporting from Zotero.
+
+@misc{sftf,
+  author = {Sul, InHwan},
+  title  = {{적층제조 출력 방향을 위한 빌드플레이트 기반 고속 후보 생성과 슬라이서 Warm-Start: Support Flow Tensor Field 접근}},
+  year   = {2026},
+  note   = {Manuscript}
+}
+
+@book{jolliffe,
+  author    = {Jolliffe, I. T.},
+  title     = {Principal Component Analysis},
+  edition   = {2},
+  series    = {Springer Series in Statistics},
+  publisher = {Springer},
+  address   = {New York},
+  year      = {2002}
+}
+
+@book{mardia,
+  author    = {Mardia, K. V. and Jupp, P. E.},
+  title     = {Directional Statistics},
+  series    = {Wiley Series in Probability and Statistics},
+  publisher = {Wiley},
+  address   = {Chichester},
+  year      = {2000}
+}
+
+@book{chung,
+  author    = {Chung, Fan R. K.},
+  title     = {Spectral Graph Theory},
+  series    = {CBMS Regional Conference Series in Mathematics},
+  number    = {92},
+  publisher = {American Mathematical Society},
+  year      = {1997}
+}
+
+@book{gibson,
+  author    = {Gibson, Ian and Rosen, David and Stucker, Brent},
+  title     = {Additive Manufacturing Technologies},
+  edition   = {2},
+  publisher = {Springer},
+  address   = {New York},
+  year      = {2015}
+}
+
+@inproceedings{dbscan,
+  author    = {Ester, Martin and Kriegel, Hans-Peter and Sander, J{\"o}rg and Xu, Xiaowei},
+  title     = {A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise},
+  booktitle = {Proc. 2nd Int. Conf. Knowledge Discovery and Data Mining (KDD-96)},
+  pages     = {226--231},
+  year      = {1996}
+}
+
+@book{kmedoids,
+  author    = {Kaufman, Leonard and Rousseeuw, Peter J.},
+  title     = {Finding Groups in Data: An Introduction to Cluster Analysis},
+  publisher = {Wiley},
+  address   = {New York},
+  year      = {1990}
+}
+
+% ---------------------------------------------------------------------------
+% Prior work on build-orientation optimization and support-structure
+% reduction in additive manufacturing (added for the introduction's
+% related-work discussion). gpumsst/msst are the authors' own MSST lineage
+% (the paper's TOMO_INT3 verifier); ezair is the implicit shadow-volume idea.
+% ---------------------------------------------------------------------------
+
+@article{gpumsst,
+  author  = {Kim, Jae Ryoung and Sul, In Hwan},
+  title   = {Fast Prediction of {3D} Printing Optimal Orientation Using General-Purpose Graphic Processor Unit Calculation},
+  journal = {3D Printing and Additive Manufacturing},
+  volume  = {13},
+  number  = {1},
+  pages   = {50--62},
+  year    = {2026},
+  doi     = {10.1089/3dp.2024.0165}
+}
+
+@article{msst,
+  author  = {Jung, Jae Yeol and Chee, Seokjae and Sul, In Hwan},
+  title   = {Support Structure Tomography Using Per-Pixel Signed Shadow Casting in Human Manikin {3D} Printing},
+  journal = {Fashion and Textiles},
+  volume  = {9},
+  number  = {1},
+  pages   = {1--18},
+  year    = {2022},
+  doi     = {10.1186/s40691-022-00290-z}
+}
+
+@article{ezair,
+  author  = {Ezair, Ben and Massarwi, Fady and Elber, Gershon},
+  title   = {Orientation Analysis of {3D} Objects Toward Minimal Support Volume in {3D}-Printing},
+  journal = {Computers \& Graphics},
+  volume  = {51},
+  pages   = {117--124},
+  year    = {2015},
+  doi     = {10.1016/j.cag.2015.05.009}
+}
+
+@article{wang2010,
+  author  = {Wang, Charlie C. L. and Leung, Yong-Shun and Chen, Yong},
+  title   = {Solid Modeling of Polyhedral Objects by Layered Depth-Normal Images on the {GPU}},
+  journal = {Computer-Aided Design},
+  volume  = {42},
+  number  = {6},
+  pages   = {535--544},
+  year    = {2010},
+  doi     = {10.1016/j.cad.2010.02.001}
+}
+
+@article{das2017,
+  author  = {Das, Paramita and Mhapsekar, Kunal and Chowdhury, Souran and Samant, Rutuja and Anand, Sam},
+  title   = {Selection of Build Orientation for Optimal Support Structures and Minimum Part Errors in Additive Manufacturing},
+  journal = {Computer-Aided Design and Applications},
+  volume  = {14},
+  number  = {sup1},
+  pages   = {1--13},
+  year    = {2017},
+  doi     = {10.1080/16864360.2017.1308074}
+}
+
+@article{langelaar2018,
+  author  = {Langelaar, Matthijs},
+  title   = {Combined Optimization of Part Topology, Support Structure Layout and Build Orientation for Additive Manufacturing},
+  journal = {Structural and Multidisciplinary Optimization},
+  volume  = {57},
+  number  = {5},
+  pages   = {1985--2004},
+  year    = {2018},
+  doi     = {10.1007/s00158-017-1877-z}
+}
+
+@article{jiang2018,
+  author  = {Jiang, Jingchao and Stringer, Jonathan and Xu, Xun and Zhong, Ray Y.},
+  title   = {Investigation of Printable Threshold Overhang Angle in Extrusion-Based Additive Manufacturing for Reducing Support Waste},
+  journal = {International Journal of Computer Integrated Manufacturing},
+  volume  = {31},
+  number  = {10},
+  pages   = {961--969},
+  year    = {2018},
+  doi     = {10.1080/0951192X.2018.1466398}
+}
+
+@article{vaissier2019,
+  author  = {Vaissier, Benjamin and Pernot, Jean-Philippe and Chougrani, Laurent and V{\'e}ron, Philippe},
+  title   = {Genetic-Algorithm Based Framework for Lattice Support Structure Optimization in Additive Manufacturing},
+  journal = {Computer-Aided Design},
+  volume  = {110},
+  pages   = {11--23},
+  year    = {2019},
+  doi     = {10.1016/j.cad.2018.12.007}
+}
+
+@article{mirzendehdel2016,
+  author  = {Mirzendehdel, Amir M. and Suresh, Krishnan},
+  title   = {Support Structure Constrained Topology Optimization for Additive Manufacturing},
+  journal = {Computer-Aided Design},
+  volume  = {81},
+  pages   = {1--13},
+  year    = {2016},
+  doi     = {10.1016/j.cad.2016.07.006}
+}
+
+@article{dai2018,
+  author  = {Dai, Chengkai and Wang, Charlie C. L. and Wu, Chenming and Lefebvre, Sylvain and Fang, Guoxin and Liu, Yong-Jin},
+  title   = {Support-Free Volume Printing by Multi-Axis Motion},
+  journal = {ACM Transactions on Graphics},
+  volume  = {37},
+  number  = {4},
+  pages   = {1--14},
+  year    = {2018},
+  doi     = {10.1145/3197517.3201342}
+}
+
+% ---------------------------------------------------------------------------
+% Anisotropy / tensor-based overhang handling in topology optimization, and
+% an industrial build-orientation patent. Added for the related-work
+% discussion contrasting SFTF (a geometric per-direction flow tensor on a
+% fixed part) with anisotropic-energy/stiffness tensors used to *redesign*
+% the part inside PDE-constrained topology optimization.
+% ---------------------------------------------------------------------------
+
+@inproceedings{gaynor2014,
+  author    = {Gaynor, Andrew T. and Meisel, Nicholas A. and Williams, Christopher B. and Guest, James K.},
+  title     = {Topology Optimization for Additive Manufacturing: Considering Maximum Overhang Constraint},
+  booktitle = {15th AIAA/ISSMO Multidisciplinary Analysis and Optimization Conference},
+  pages     = {2036},
+  year      = {2014},
+  doi       = {10.2514/6.2014-2036}
+}
+
+@article{shin2025,
+  author  = {Shin, Seungheon and Park, Yujin and Yoon, Gil Ho},
+  title   = {Topology Optimization for Multi-Axis Additive Manufacturing Considering Overhang and Anisotropy},
+  journal = {International Journal of Mechanical Sciences},
+  volume  = {301},
+  pages   = {110443},
+  year    = {2025},
+  doi     = {10.1016/j.ijmecsci.2025.110443}
+}
+
+@article{garcke2023,
+  author  = {Garcke, Harald and Lam, Kei Fong and N{\"u}rnberg, Robert and Signori, Andrea},
+  title   = {Overhang Penalization in Additive Manufacturing via Phase Field Structural Topology Optimization with Anisotropic Energies},
+  journal = {Applied Mathematics \& Optimization},
+  volume  = {87},
+  number  = {3},
+  pages   = {44},
+  year    = {2023},
+  doi     = {10.1007/s00245-022-09939-z}
+}
+
+@misc{smith2025patent,
+  author       = {Smith, Robert and Hollenbeck, Michael C.},
+  title        = {Build Orientation for Additive Manufacturing of Complex Structures},
+  howpublished = {U.S. Patent No.\ 12,343,928},
+  year         = {2025},
+  note         = {Assignee: Optisys, Inc.}
+}
+
+% ---------------------------------------------------------------------------
+% Established numerical/geometric techniques reused by the method:
+% spherical sampling (Sec. 구면 샘플링과 국소 재탐색) and ray-triangle
+% intersection (Sec. 계산 가속과 최종 후보 재점수화).
+% ---------------------------------------------------------------------------
+
+@article{saff1997,
+  author  = {Saff, E. B. and Kuijlaars, A. B. J.},
+  title   = {Distributing Many Points on a Sphere},
+  journal = {The Mathematical Intelligencer},
+  volume  = {19},
+  number  = {1},
+  pages   = {5--11},
+  year    = {1997},
+  doi     = {10.1007/BF03024331}
+}
+
+@article{gonzalez2010,
+  author  = {Gonz{\'a}lez, {\'A}lvaro},
+  title   = {Measurement of Areas on a Sphere Using {Fibonacci} and Latitude--Longitude Lattices},
+  journal = {Mathematical Geosciences},
+  volume  = {42},
+  number  = {1},
+  pages   = {49--64},
+  year    = {2010},
+  doi     = {10.1007/s11004-009-9257-x}
+}
+
+@article{Thingi10K,
+  author  = {Zhou, Qingnan and Jacobson, Alec},
+  title   = {Thingi10K: A Dataset of 10,000 {3D}-Printing Models},
+  journal = {arXiv preprint arXiv:1605.04797},
+  year    = {2016}
+}
+
+@article{moller1997,
+  author  = {M{\"o}ller, Tomas and Trumbore, Ben},
+  title   = {Fast, Minimum Storage Ray-Triangle Intersection},
+  journal = {Journal of Graphics Tools},
+  volume  = {2},
+  number  = {1},
+  pages   = {21--28},
+  year    = {1997},
+  doi     = {10.1080/10867651.1997.10487468}
+}
+
+% ---------------------------------------------------------------------------
+% Canonical references for the standard linear-algebra, geometry, sampling,
+% and statistics concepts used by the method (replacing the explanatory
+% encyclopedia footnotes with peer-reviewed / textbook sources).
+% ---------------------------------------------------------------------------
+
+@article{kanatani1984,
+  author  = {Kanatani, Ken-Ichi},
+  title   = {Distribution of Directional Data and Fabric Tensors},
+  journal = {International Journal of Engineering Science},
+  volume  = {22},
+  number  = {2},
+  pages   = {149--164},
+  year    = {1984},
+  doi     = {10.1016/0020-7225(84)90090-9}
+}
+
+@book{hornjohnson,
+  author    = {Horn, Roger A. and Johnson, Charles R.},
+  title     = {Matrix Analysis},
+  edition   = {2},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {2013}
+}
+
+@book{golubvanloan,
+  author    = {Golub, Gene H. and Van Loan, Charles F.},
+  title     = {Matrix Computations},
+  edition   = {4},
+  publisher = {Johns Hopkins University Press},
+  address   = {Baltimore},
+  year      = {2013}
+}
+
+@article{roth1982,
+  author  = {Roth, Scott D.},
+  title   = {Ray Casting for Modeling Solids},
+  journal = {Computer Graphics and Image Processing},
+  volume  = {18},
+  number  = {2},
+  pages   = {109--144},
+  year    = {1982},
+  doi     = {10.1016/0146-664X(82)90169-1}
+}
+
+@book{cochran1977,
+  author    = {Cochran, William G.},
+  title     = {Sampling Techniques},
+  edition   = {3},
+  series    = {Wiley Series in Probability and Statistics},
+  publisher = {Wiley},
+  address   = {New York},
+  year      = {1977}
+}
+
+@article{spearman1904,
+  author  = {Spearman, Charles},
+  title   = {The Proof and Measurement of Association Between Two Things},
+  journal = {The American Journal of Psychology},
+  volume  = {15},
+  number  = {1},
+  pages   = {72--101},
+  year    = {1904},
+  doi     = {10.2307/1412159}
+}
+
+@article{stone1974,
+  author  = {Stone, Mervyn},
+  title   = {Cross-Validatory Choice and Assessment of Statistical Predictions},
+  journal = {Journal of the Royal Statistical Society: Series B (Methodological)},
+  volume  = {36},
+  number  = {2},
+  pages   = {111--133},
+  year    = {1974},
+  doi     = {10.1111/j.2517-6161.1974.tb00994.x}
+}
+
+@article{hoerl1970,
+  author  = {Hoerl, Arthur E. and Kennard, Robert W.},
+  title   = {Ridge Regression: Biased Estimation for Nonorthogonal Problems},
+  journal = {Technometrics},
+  volume  = {12},
+  number  = {1},
+  pages   = {55--67},
+  year    = {1970},
+  doi     = {10.1080/00401706.1970.10488634}
+}
+
+@book{hanmining,
+  author    = {Han, Jiawei and Kamber, Micheline and Pei, Jian},
+  title     = {Data Mining: Concepts and Techniques},
+  edition   = {3},
+  publisher = {Morgan Kaufmann},
+  address   = {Waltham, MA},
+  year      = {2011}
+}

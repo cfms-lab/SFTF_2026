@@ -1,0 +1,417 @@
+[
+  {
+    "mesh": "(1)Bunny_69k.ply",
+    "npz": "Experimental\\etc\\(1)Bunny_69k_tomo_int3_vss_grid_1deg_60deg.npz",
+    "face_count": 69662,
+    "tomo_best_yaw": 299.000000351879,
+    "tomo_best_pitch": 36.99999875288908,
+    "tomo_best_vss": 4440.337173209703,
+    "sftf_score1_yaw": 67.00000300280972,
+    "sftf_score1_pitch": 308.99999835342464,
+    "sftf_score1_vss": 6562.985171956464,
+    "sftf_score1_ratio": 1.4780375714604579,
+    "sftf_score1_signed_yaw": 67.00000300280972,
+    "sftf_score1_signed_pitch": 128.9999933444683,
+    "sftf_score1_signed_vss": 5217.859567689501,
+    "sftf_score1_signed_ratio": 1.1751043590047385,
+    "sftf_best3_rank": 2,
+    "sftf_best3_yaw": 41.00000000256408,
+    "sftf_best3_pitch": 120.99999767530745,
+    "sftf_best3_vss": 5358.588597006049,
+    "sftf_best3_ratio": 1.20679767954031,
+    "sftf_best3_signed_rank": 1,
+    "sftf_best3_signed_yaw": 67.00000300280972,
+    "sftf_best3_signed_pitch": 128.9999933444683,
+    "sftf_best3_signed_vss": 5217.859567689501,
+    "sftf_best3_signed_ratio": 1.1751043590047385,
+    "elapsed_sec": 1.6854709000035655,
+    "sftf_rows": [
+      {
+        "rank": 1,
+        "tuned_score": -1.473886367157242,
+        "hit_count": 81,
+        "direction": [
+          0.7802530989264194,
+          0.5774881355353362,
+          0.240234375
+        ],
+        "yaw": 67.00000300280972,
+        "pitch": 308.99999835342464,
+        "alignment": 0.999977523605847,
+        "vss": 6562.985171956464,
+        "signed_yaw": 67.00000300280972,
+        "signed_pitch": 128.9999933444683,
+        "signed_alignment": 0.9999775240398989,
+        "signed_vss": 5217.859567689501
+      },
+      {
+        "rank": 2,
+        "tuned_score": -1.3390734314484893,
+        "hit_count": 80,
+        "direction": [
+          -0.8596384328804486,
+          -0.3370703630356138,
+          -0.3839340243816456
+        ],
+        "yaw": 41.00000000256408,
+        "pitch": 120.99999767530745,
+        "alignment": 0.9999852294813312,
+        "vss": 5358.588597006049,
+        "signed_yaw": 41.00000000256408,
+        "signed_pitch": 120.99999767530745,
+        "signed_alignment": 0.9999852294813312,
+        "signed_vss": 5358.588597006049
+      },
+      {
+        "rank": 3,
+        "tuned_score": -1.1121269558481792,
+        "hit_count": 87,
+        "direction": [
+          0.7082513549189627,
+          0.688005660947414,
+          0.15820312500000003
+        ],
+        "yaw": 77.00000100435535,
+        "pitch": 314.99999169020066,
+        "alignment": 0.9999984960462452,
+        "vss": 7463.339931708722,
+        "signed_yaw": 77.00000100435535,
+        "signed_pitch": 135.00000034162267,
+        "signed_alignment": 0.999998495801616,
+        "signed_vss": 5753.892512360881
+      }
+    ]
+  },
+  {
+    "mesh": "(2)manikin.ply",
+    "npz": "Experimental\\etc\\(2)manikin_tomo_int3_vss_grid_1deg_60deg.npz",
+    "face_count": 13672,
+    "tomo_best_yaw": 190.00000301050196,
+    "tomo_best_pitch": 9.000000250447817,
+    "tomo_best_vss": 2956.1209284569604,
+    "sftf_score1_yaw": 181.99999368096277,
+    "sftf_score1_pitch": 353.99998936037997,
+    "sftf_score1_vss": 5565.561046285077,
+    "sftf_score1_ratio": 1.8827244151984661,
+    "sftf_score1_signed_yaw": 181.99999368096277,
+    "sftf_score1_signed_pitch": 353.99998936037997,
+    "sftf_score1_signed_vss": 5565.561046285077,
+    "sftf_score1_signed_ratio": 1.8827244151984661,
+    "sftf_best3_rank": 1,
+    "sftf_best3_yaw": 181.99999368096277,
+    "sftf_best3_pitch": 353.99998936037997,
+    "sftf_best3_vss": 5565.561046285077,
+    "sftf_best3_ratio": 1.8827244151984661,
+    "sftf_best3_signed_rank": 1,
+    "sftf_best3_signed_yaw": 181.99999368096277,
+    "sftf_best3_signed_pitch": 353.99998936037997,
+    "sftf_best3_signed_vss": 5565.561046285077,
+    "sftf_best3_signed_ratio": 1.8827244151984661,
+    "elapsed_sec": 1.0095296000072267,
+    "sftf_rows": [
+      {
+        "rank": 1,
+        "tuned_score": -0.02847962819519667,
+        "hit_count": 134,
+        "direction": [
+          0.10879496012099496,
+          -0.027879469372241217,
+          -0.9936731816043912
+        ],
+        "yaw": 181.99999368096277,
+        "pitch": 353.99998936037997,
+        "alignment": 0.9999675539955412,
+        "vss": 5565.561046285077,
+        "signed_yaw": 181.99999368096277,
+        "signed_pitch": 353.99998936037997,
+        "signed_alignment": 0.9999675539955412,
+        "signed_vss": 5565.561046285077
+      },
+      {
+        "rank": 2,
+        "tuned_score": 0.12013694810224673,
+        "hit_count": 141,
+        "direction": [
+          0.09461622128660088,
+          0.05703489404553099,
+          -0.9938786603658719
+        ],
+        "yaw": 356.9999996891463,
+        "pitch": 185.00000400972914,
+        "alignment": 0.9999597235303745,
+        "vss": 8709.761722028748,
+        "signed_yaw": 356.9999996891463,
+        "signed_pitch": 185.00000400972914,
+        "signed_alignment": 0.9999597235303745,
+        "signed_vss": 8709.761722028748
+      },
+      {
+        "rank": 3,
+        "tuned_score": 0.1257776917118516,
+        "hit_count": 127,
+        "direction": [
+          -0.0318234656032803,
+          0.10022348614143704,
+          -0.9944558913610266
+        ],
+        "yaw": 173.99999801180195,
+        "pitch": 1.9999999845072665,
+        "alignment": 0.9999861288417341,
+        "vss": 9825.76165317504,
+        "signed_yaw": 173.99999801180195,
+        "signed_pitch": 1.9999999845072665,
+        "signed_alignment": 0.9999861288417341,
+        "signed_vss": 9825.76165317504
+      }
+    ]
+  },
+  {
+    "mesh": "(3)dragon_100k_1.5x.ply",
+    "npz": "Experimental\\etc\\(3)dragon_100k_1.5x_tomo_int3_vss_grid_1deg_60deg.npz",
+    "face_count": 99999,
+    "tomo_best_yaw": 130.99999567685308,
+    "tomo_best_pitch": 257.9999866889366,
+    "tomo_best_vss": 28106.973190938144,
+    "sftf_score1_yaw": 210.99999334959645,
+    "sftf_score1_pitch": 259.0000083456965,
+    "sftf_score1_vss": 37640.00017780903,
+    "sftf_score1_ratio": 1.3391694624003267,
+    "sftf_score1_signed_yaw": 210.99999334959645,
+    "sftf_score1_signed_pitch": 259.0000083456965,
+    "sftf_score1_signed_vss": 37640.00017780903,
+    "sftf_score1_signed_ratio": 1.3391694624003267,
+    "sftf_best3_rank": 3,
+    "sftf_best3_yaw": 12.999999792575526,
+    "sftf_best3_pitch": 276.9999883560246,
+    "sftf_best3_vss": 36067.24936114855,
+    "sftf_best3_ratio": 1.2832135682534769,
+    "sftf_best3_signed_rank": 3,
+    "sftf_best3_signed_yaw": 12.999999792575526,
+    "sftf_best3_signed_pitch": 276.9999883560246,
+    "sftf_best3_signed_vss": 36067.24936114855,
+    "sftf_best3_signed_ratio": 1.2832135682534769,
+    "elapsed_sec": 3.464382400008617,
+    "sftf_rows": [
+      {
+        "rank": 1,
+        "tuned_score": -0.06508079008520484,
+        "hit_count": 970,
+        "direction": [
+          0.983007624520949,
+          0.09526506983047107,
+          0.15690945351978114
+        ],
+        "yaw": 210.99999334959645,
+        "pitch": 259.0000083456965,
+        "alignment": 0.9999724385419516,
+        "vss": 37640.00017780903,
+        "signed_yaw": 210.99999334959645,
+        "signed_pitch": 259.0000083456965,
+        "signed_alignment": 0.9999724385419516,
+        "signed_vss": 37640.00017780903
+      },
+      {
+        "rank": 2,
+        "tuned_score": -0.0418177381874516,
+        "hit_count": 1045,
+        "direction": [
+          0.9967489165669692,
+          0.05245833966865469,
+          0.06115324947851393
+        ],
+        "yaw": 221.00000501152041,
+        "pitch": 265.00000168247254,
+        "alignment": 0.999978012019841,
+        "vss": 44055.3948898946,
+        "signed_yaw": 41.00000000256408,
+        "signed_pitch": 95.00000150525098,
+        "signed_alignment": 0.9999780116561037,
+        "signed_vss": 40943.67776035277
+      },
+      {
+        "rank": 3,
+        "tuned_score": -0.026708830364058578,
+        "hit_count": 983,
+        "direction": [
+          0.9916299023865688,
+          0.028517851550364494,
+          0.12592405979698795
+        ],
+        "yaw": 12.999999792575526,
+        "pitch": 276.9999883560246,
+        "alignment": 0.9999732067999334,
+        "vss": 36067.24936114855,
+        "signed_yaw": 12.999999792575526,
+        "signed_pitch": 276.9999883560246,
+        "signed_alignment": 0.9999732067999334,
+        "signed_vss": 36067.24936114855
+      }
+    ]
+  },
+  {
+    "mesh": "(4)happy_50k_0.75x.ply",
+    "npz": "Experimental\\etc\\(4)happy_50k_0.75x_tomo_int3_vss_grid_1deg_60deg.npz",
+    "face_count": 49944,
+    "tomo_best_yaw": 346.00000735159745,
+    "tomo_best_pitch": 31.999999752116263,
+    "tomo_best_vss": 8512.6398023495,
+    "sftf_score1_yaw": 113.00000200614662,
+    "sftf_score1_pitch": 294.00000135110616,
+    "sftf_score1_vss": 19894.229479072506,
+    "sftf_score1_ratio": 2.3370223504090553,
+    "sftf_score1_signed_yaw": 113.00000200614662,
+    "sftf_score1_signed_pitch": 294.00000135110616,
+    "sftf_score1_signed_vss": 19894.229479072506,
+    "sftf_score1_signed_ratio": 2.3370223504090553,
+    "sftf_best3_rank": 3,
+    "sftf_best3_yaw": 252.99998768816374,
+    "sftf_best3_pitch": 289.0000023503334,
+    "sftf_best3_vss": 18592.73201177928,
+    "sftf_best3_ratio": 2.184132354178508,
+    "sftf_best3_signed_rank": 3,
+    "sftf_best3_signed_yaw": 252.99998768816374,
+    "sftf_best3_signed_pitch": 289.0000023503334,
+    "sftf_best3_signed_vss": 18592.73201177928,
+    "sftf_best3_signed_ratio": 2.184132354178508,
+    "elapsed_sec": 1.6703200000047218,
+    "sftf_rows": [
+      {
+        "rank": 1,
+        "tuned_score": -0.507567467079783,
+        "hit_count": 240,
+        "direction": [
+          0.913570211502454,
+          0.3746481548007355,
+          -0.158203125
+        ],
+        "yaw": 113.00000200614662,
+        "pitch": 294.00000135110616,
+        "alignment": 0.9999997093323317,
+        "vss": 19894.229479072506,
+        "signed_yaw": 113.00000200614662,
+        "signed_pitch": 294.00000135110616,
+        "signed_alignment": 0.9999997093323317,
+        "signed_vss": 19894.229479072506
+      },
+      {
+        "rank": 2,
+        "tuned_score": -0.42693524399690097,
+        "hit_count": 274,
+        "direction": [
+          0.9560557105971375,
+          0.24196538964208186,
+          -0.1655603468526146
+        ],
+        "yaw": 303.9999993526518,
+        "pitch": 252.99998768816374,
+        "alignment": 0.9999977415794278,
+        "vss": 20708.27129458593,
+        "signed_yaw": 303.9999993526518,
+        "signed_pitch": 252.99998768816374,
+        "signed_alignment": 0.9999977415794278,
+        "signed_vss": 20708.27129458593
+      },
+      {
+        "rank": 3,
+        "tuned_score": -0.375486909372579,
+        "hit_count": 259,
+        "direction": [
+          0.9476205121796292,
+          -0.304723278995307,
+          -0.095703125
+        ],
+        "yaw": 252.99998768816374,
+        "pitch": 289.0000023503334,
+        "alignment": 0.9999757513851625,
+        "vss": 18592.73201177928,
+        "signed_yaw": 252.99998768816374,
+        "signed_pitch": 289.0000023503334,
+        "signed_alignment": 0.9999757513851625,
+        "signed_vss": 18592.73201177928
+      }
+    ]
+  },
+  {
+    "mesh": "(5)lucy_50k.ply",
+    "npz": "Experimental\\etc\\(5)lucy_50k_tomo_int3_vss_grid_1deg_60deg.npz",
+    "face_count": 49999,
+    "tomo_best_yaw": 178.00000267657154,
+    "tomo_best_pitch": 358.99998836115276,
+    "tomo_best_vss": 7605.40144502624,
+    "sftf_score1_yaw": 357.99999402514953,
+    "sftf_score1_pitch": 176.99999468018999,
+    "sftf_score1_vss": 9132.080826877562,
+    "sftf_score1_ratio": 1.2007361995137988,
+    "sftf_score1_signed_yaw": 357.99999402514953,
+    "sftf_score1_signed_pitch": 176.99999468018999,
+    "sftf_score1_signed_vss": 9132.080826877562,
+    "sftf_score1_signed_ratio": 1.2007361995137988,
+    "sftf_best3_rank": 1,
+    "sftf_best3_yaw": 357.99999402514953,
+    "sftf_best3_pitch": 176.99999468018999,
+    "sftf_best3_vss": 9132.080826877562,
+    "sftf_best3_ratio": 1.2007361995137988,
+    "sftf_best3_signed_rank": 1,
+    "sftf_best3_signed_yaw": 357.99999402514953,
+    "sftf_best3_signed_pitch": 176.99999468018999,
+    "sftf_best3_signed_vss": 9132.080826877562,
+    "sftf_best3_signed_ratio": 1.2007361995137988,
+    "elapsed_sec": 2.037060200003907,
+    "sftf_rows": [
+      {
+        "rank": 1,
+        "tuned_score": -0.7001813323005417,
+        "hit_count": 542,
+        "direction": [
+          -0.05820251023089405,
+          0.040357872118255256,
+          -0.9974887016708055
+        ],
+        "yaw": 357.99999402514953,
+        "pitch": 176.99999468018999,
+        "alignment": 0.9999674919762596,
+        "vss": 9132.080826877562,
+        "signed_yaw": 357.99999402514953,
+        "signed_pitch": 176.99999468018999,
+        "signed_alignment": 0.9999674919762596,
+        "signed_vss": 9132.080826877562
+      },
+      {
+        "rank": 2,
+        "tuned_score": -0.6652532145623546,
+        "hit_count": 530,
+        "direction": [
+          -0.0732099973897904,
+          0.11608200053038899,
+          -0.9905378667345583
+        ],
+        "yaw": 173.00000367579872,
+        "pitch": 3.999999969014533,
+        "alignment": 0.999978880429649,
+        "vss": 9995.201402459263,
+        "signed_yaw": 173.00000367579872,
+        "signed_pitch": 3.999999969014533,
+        "signed_alignment": 0.999978880429649,
+        "signed_vss": 9995.201402459263
+      },
+      {
+        "rank": 3,
+        "tuned_score": -0.5514936483346242,
+        "hit_count": 522,
+        "direction": [
+          -0.1300471968440649,
+          0.1047052313450718,
+          -0.9859637625805403
+        ],
+        "yaw": 173.99999801180195,
+        "pitch": 7.000000052497138,
+        "alignment": 0.9999654488745943,
+        "vss": 10355.521824734271,
+        "signed_yaw": 173.99999801180195,
+        "signed_pitch": 7.000000052497138,
+        "signed_alignment": 0.9999654488745943,
+        "signed_vss": 10355.521824734271
+      }
+    ]
+  }
+]

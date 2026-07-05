@@ -1,0 +1,10 @@
+{
+  "done": [
+    "CA0deg_step3",
+    "CA30deg_step3",
+    "CA45deg_step3",
+    "CA60deg_step3",
+    "CA90deg_step3"
+  ],
+  "phase0": true
+}

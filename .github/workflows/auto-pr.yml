@@ -1,0 +1,38 @@
+name: Auto PR on push
+
+# Open a pull request to main automatically whenever a non-main branch is
+# pushed. If an open PR already exists for the branch, this does nothing.
+#
+# One-time repo setting required (otherwise the token cannot open PRs):
+#   Settings -> Actions -> General -> Workflow permissions ->
+#   "Allow GitHub Actions to create and approve pull requests"
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  open-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Open PR to main if none exists
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          branch="${GITHUB_REF_NAME}"
+          count=$(gh pr list --head "$branch" --state open --json number --jq 'length')
+          if [ "$count" != "0" ]; then
+            echo "An open PR already exists for '$branch'; nothing to do."
+            exit 0
+          fi
+          gh pr create --base main --head "$branch" \
+            --title "$branch" \
+            --body "Auto-opened PR for \`$branch\` by @${GITHUB_ACTOR}." \
+          || echo "Skipped: no commits between main and '$branch' (or PR could not be created)."

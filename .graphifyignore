@@ -1,0 +1,5 @@
+# Directories graphify should never index as source.
+# .uv-cache holds ~6.7k unpacked dependency .py files — not project code.
+.uv-cache/
+.venv/
+graphify-out/

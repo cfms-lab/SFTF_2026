@@ -1,0 +1,356 @@
+
+\documentclass[journal,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,bm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=25mm}
+
+\title{Support Tensor Theory for Additive Manufacturing Orientation Optimization}
+\author{InHwan Sul et al.}
+\date{}
+
+\newtheorem{definition}{Definition}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper proposes a novel tensor-based framework for rapid build orientation estimation in additive manufacturing.
+The proposed Support Tensor converts the nonlinear support-generation problem into an eigenvalue problem on a symmetric positive semidefinite matrix.
+The method enables rapid identification of candidate build directions directly from STL geometry without exhaustive directional search.
+\end{abstract}
+
+\textbf{Keywords:}
+Additive Manufacturing, Build Orientation, Support Structure, Eigenvalue Analysis, PCA, Tensor Methods
+
+\section{Introduction}
+
+Build orientation strongly influences support volume, build time, material consumption, surface quality, and post-processing cost in additive manufacturing.
+
+Current approaches typically rely on:
+
+\begin{enumerate}
+\item exhaustive directional sampling,
+\item genetic algorithms,
+\item topology-aware search,
+\item commercial slicer simulation.
+\end{enumerate}
+
+These approaches are computationally expensive.
+
+This study proposes a new mathematical descriptor called the \emph{Support Tensor}.
+The key idea is to represent support tendency through a second-order tensor derived from surface-normal distributions.
+
+\section{Related Work}
+
+PCA has long been used for geometric analysis.
+
+For a point cloud,
+
+\begin{equation}
+C=\sum_i (\mathbf{x}_i-\bar{\mathbf{x}})(\mathbf{x}_i-\bar{\mathbf{x}})^T
+\end{equation}
+
+and eigenvectors of $C$ define principal directions.
+
+However, support generation depends primarily on surface orientation rather than point distribution.
+
+\section{Support Functional}
+
+Let
+
+\begin{itemize}
+\item $A_i$ : triangle area
+\item $\mathbf m_i$ : unit outward normal
+\item $\mathbf n$ : build direction
+\end{itemize}
+
+The support tendency is approximated by
+
+\begin{equation}
+S(\mathbf n)
+=
+\sum_i
+A_i
+H(-\mathbf m_i\cdot \mathbf n)
+(-\mathbf m_i\cdot \mathbf n).
+\end{equation}
+
+This function is nonlinear and difficult to optimize directly.
+
+\section{Quadratic Approximation}
+
+Consider
+
+\begin{equation}
+\widetilde S(\mathbf n)
+=
+\sum_i
+A_i
+(\mathbf m_i\cdot\mathbf n)^2.
+\end{equation}
+
+Since
+
+\begin{equation}
+(\mathbf m_i\cdot\mathbf n)^2
+=
+\mathbf n^T
+(\mathbf m_i\mathbf m_i^T)
+\mathbf n,
+\end{equation}
+
+we obtain
+
+\begin{equation}
+\widetilde S(\mathbf n)
+=
+\mathbf n^T M \mathbf n.
+\end{equation}
+
+\begin{definition}[Support Tensor]
+\begin{equation}
+M
+=
+\sum_i
+A_i
+\mathbf m_i\mathbf m_i^T.
+\end{equation}
+\end{definition}
+
+\section{Theoretical Properties}
+
+\begin{proposition}
+The Support Tensor is symmetric.
+\end{proposition}
+
+\textbf{Proof}
+
+Each term $\mathbf m_i\mathbf m_i^T$ is symmetric.
+
+Therefore
+
+\begin{equation}
+M^T=M.
+\end{equation}
+
+\hfill $\square$
+
+\begin{proposition}
+The Support Tensor is positive semidefinite.
+\end{proposition}
+
+\textbf{Proof}
+
+For any vector $\mathbf x$,
+
+\begin{equation}
+\mathbf x^T M \mathbf x
+=
+\sum_i
+A_i(\mathbf x^T\mathbf m_i)^2
+\ge 0.
+\end{equation}
+
+\hfill $\square$
+
+\begin{theorem}
+The minimum of
+
+\begin{equation}
+\mathbf n^T M \mathbf n
+\end{equation}
+
+under
+
+\begin{equation}
+||\mathbf n||=1
+\end{equation}
+
+is the smallest eigenvalue of $M$.
+\end{theorem}
+
+\textbf{Proof}
+
+Directly follows from the Rayleigh Quotient theorem.
+
+\hfill $\square$
+
+\section{Weighted Support Tensor}
+
+A generalized model is
+
+\begin{equation}
+M_w
+=
+\sum_i
+w_iA_i
+\mathbf m_i\mathbf m_i^T.
+\end{equation}
+
+where
+
+\begin{equation}
+w_i
+=
+f(q_i,d_i,r_i).
+\end{equation}
+
+Possible weighting factors:
+
+\begin{itemize}
+\item cavity influence
+\item overhang sensitivity
+\item support accessibility
+\item local manufacturing penalty
+\end{itemize}
+
+\section{Cavity-Aware Extension}
+
+Let
+
+\begin{equation}
+q_i\in[0,1]
+\end{equation}
+
+be a cavity score.
+
+Then
+
+\begin{equation}
+w_i=1+\alpha q_i.
+\end{equation}
+
+This gives
+
+\begin{equation}
+M_{cavity}
+=
+\sum_i
+(1+\alpha q_i)
+A_i
+\mathbf m_i\mathbf m_i^T.
+\end{equation}
+
+The eigenvectors become sensitive to internal voids and trapped regions.
+
+\section{Algorithm}
+
+\begin{algorithm}
+\caption{Support Tensor Orientation Estimation}
+\begin{algorithmic}
+\For{each triangle}
+\State Compute area
+\State Compute unit normal
+\State Update tensor
+\EndFor
+\State Eigen decomposition
+\State Select minimum-eigenvalue eigenvector
+\State Validate with support simulation
+\end{algorithmic}
+\end{algorithm}
+
+\section{Experimental Design}
+
+Benchmark models:
+
+\begin{enumerate}
+\item Stanford Bunny
+\item Mechanical Bracket
+\item Turbine Blade
+\item Thermal Manikin Components
+\item Apparel-related 3D Models
+\end{enumerate}
+
+Metrics:
+
+\begin{equation}
+E_{angle}
+=
+\cos^{-1}
+(|\mathbf n_{pred}\cdot\mathbf n_{best}|)
+\end{equation}
+
+and
+
+\begin{equation}
+E_{support}
+=
+\frac{
+S(\mathbf n_{pred})
+-
+S(\mathbf n_{best})
+}
+{
+S(\mathbf n_{best})
+}.
+\end{equation}
+
+\section{Discussion}
+
+The proposed approach has several advantages:
+
+\begin{enumerate}
+\item Extremely low computational cost.
+\item Closed-form eigenvalue solution.
+\item Easy STL implementation.
+\item Extendable to cavity-aware optimization.
+\end{enumerate}
+
+Potential limitations include:
+
+\begin{enumerate}
+\item inability to fully model support visibility,
+\item slicer-specific rules,
+\item self-shadowing effects.
+\end{enumerate}
+
+\section{Future Research}
+
+Future work includes:
+
+\begin{itemize}
+\item support visibility tensors,
+\item graph-based cavity descriptors,
+\item thermal distortion weighting,
+\item multi-objective optimization,
+\item topology-aware support tensors.
+\end{itemize}
+
+\section{Conclusion}
+
+Support Tensor Theory transforms orientation optimization into a tractable eigenvalue problem.
+The framework provides a new connection between tensor analysis, PCA, and additive manufacturing orientation selection.
+
+\bibliographystyle{plain}
+
+\begin{thebibliography}{99}
+
+\bibitem{jolliffe}
+Jolliffe, I. T.
+Principal Component Analysis.
+Springer.
+
+\bibitem{gibson}
+Gibson, I.
+Additive Manufacturing Technologies.
+Springer.
+
+\bibitem{mardia}
+Mardia, K.
+Directional Statistics.
+Wiley.
+
+\end{thebibliography}
+
+\end{document}

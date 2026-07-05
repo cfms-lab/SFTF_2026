@@ -1,0 +1,320 @@
+{
+  "config": {
+    "dataset": "stanford",
+    "outer_mode": "mesh",
+    "inner_mode": "mesh",
+    "alpha_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "include_happy": false,
+    "include_nonpositive_best": false,
+    "g5_grid_suffix": "_tomo_cpu_3deg_60deg.npz",
+    "feature_labels": [
+      "J",
+      "R",
+      "P",
+      "B",
+      "H",
+      "S",
+      "s1"
+    ],
+    "model_specs": {
+      "B": [
+        "B"
+      ],
+      "R+B": [
+        "R",
+        "B"
+      ],
+      "R+P+B": [
+        "R",
+        "P",
+        "B"
+      ],
+      "full7": [
+        "J",
+        "R",
+        "P",
+        "B",
+        "H",
+        "S",
+        "s1"
+      ]
+    }
+  },
+  "records": [
+    {
+      "name": "(1)Bunny_69k",
+      "group": "C1",
+      "source": "stanford_1deg",
+      "grid_path": "Experimental\\etc\\(1)Bunny_69k_tomo_int3_vss_grid_1deg_60deg.npz",
+      "candidate_path": "Experimental\\G5Test\\SFTF_result\\Group_C1_Bunny_69k_candidates.csv",
+      "tomo_best_vss": 4440.337173209703,
+      "oracle_ratio": 1.0197404592550583,
+      "untuned_J_ratio": 1.3813697599177108
+    },
+    {
+      "name": "(2)manikin",
+      "group": "C2",
+      "source": "stanford_1deg",
+      "grid_path": "Experimental\\etc\\(2)manikin_tomo_int3_vss_grid_1deg_60deg.npz",
+      "candidate_path": "Experimental\\G5Test\\SFTF_result\\Group_C2_manikin_candidates.csv",
+      "tomo_best_vss": 2956.1209284569604,
+      "oracle_ratio": 1.1710214857292547,
+      "untuned_J_ratio": 5.01784703451211
+    },
+    {
+      "name": "(3)dragon_100k_1.5x",
+      "group": "C3",
+      "source": "stanford_1deg",
+      "grid_path": "Experimental\\etc\\(3)dragon_100k_1.5x_tomo_int3_vss_grid_1deg_60deg.npz",
+      "candidate_path": "Experimental\\G5Test\\SFTF_result\\Group_C3_dragon_100k_1.5x_candidates.csv",
+      "tomo_best_vss": 28106.973190938144,
+      "oracle_ratio": 1.0341979637412693,
+      "untuned_J_ratio": 1.3972256619747694
+    },
+    {
+      "name": "(5)lucy_50k",
+      "group": "C5",
+      "source": "stanford_1deg",
+      "grid_path": "Experimental\\etc\\(5)lucy_50k_tomo_int3_vss_grid_1deg_60deg.npz",
+      "candidate_path": "Experimental\\G5Test\\SFTF_result\\Group_C5_lucy_50k_candidates.csv",
+      "tomo_best_vss": 7605.40144502624,
+      "oracle_ratio": 1.0105555999228721,
+      "untuned_J_ratio": 1.2007361995137988
+    }
+  ],
+  "skipped": [
+    "(4)happy_50k_0.75x: excluded happy"
+  ],
+  "cv": {
+    "outer_mode": "mesh",
+    "inner_mode": "mesh",
+    "alpha_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "means": {
+      "oracle": 1.0588788771621136,
+      "untuned_J": 2.249294663979597,
+      "raw_R+B": 1.7222848922876794,
+      "raw_R+P+B": 2.249294663979597,
+      "B_nested": 1.6699101451985872,
+      "R+B_nested": 1.724819315958571,
+      "R+P+B_nested": 1.681184724541092,
+      "full7_nested": 1.7071957221471457,
+      "selected": 1.7376087022473041
+    },
+    "per_fold": [
+      {
+        "outer_key": "(1)Bunny_69k",
+        "test_count": 1,
+        "selected_model": "B",
+        "selected_alpha": 0.01,
+        "selected_inner_score": 1.7490377585739012,
+        "model_selection": {
+          "B": {
+            "alpha": 0.01,
+            "inner_score": 1.7490377585739012
+          },
+          "R+B": {
+            "alpha": 100.0,
+            "inner_score": 1.8055920850992049
+          },
+          "R+P+B": {
+            "alpha": 100.0,
+            "inner_score": 1.8055920850992049
+          },
+          "full7": {
+            "alpha": 0.1,
+            "inner_score": 1.8039392533674097
+          }
+        }
+      },
+      {
+        "outer_key": "(2)manikin",
+        "test_count": 1,
+        "selected_model": "full7",
+        "selected_alpha": 10.0,
+        "selected_inner_score": 1.2348481471875046,
+        "model_selection": {
+          "B": {
+            "alpha": 0.01,
+            "inner_score": 1.3435246639935616
+          },
+          "R+B": {
+            "alpha": 0.01,
+            "inner_score": 1.2608347534477686
+          },
+          "R+P+B": {
+            "alpha": 0.1,
+            "inner_score": 1.2535454691368912
+          },
+          "full7": {
+            "alpha": 10.0,
+            "inner_score": 1.2348481471875046
+          }
+        }
+      },
+      {
+        "outer_key": "(3)dragon_100k_1.5x",
+        "test_count": 1,
+        "selected_model": "R+B",
+        "selected_alpha": 0.01,
+        "selected_inner_score": 1.622885667685562,
+        "model_selection": {
+          "B": {
+            "alpha": 0.01,
+            "inner_score": 1.7607766978000357
+          },
+          "R+B": {
+            "alpha": 0.01,
+            "inner_score": 1.622885667685562
+          },
+          "R+P+B": {
+            "alpha": 100.0,
+            "inner_score": 1.622885667685562
+          },
+          "full7": {
+            "alpha": 0.01,
+            "inner_score": 1.6517143849876461
+          }
+        }
+      },
+      {
+        "outer_key": "(5)lucy_50k",
+        "test_count": 1,
+        "selected_model": "B",
+        "selected_alpha": 0.01,
+        "selected_inner_score": 1.8263014604268497,
+        "model_selection": {
+          "B": {
+            "alpha": 0.01,
+            "inner_score": 1.8263014604268497
+          },
+          "R+B": {
+            "alpha": 10.0,
+            "inner_score": 1.8658032719005095
+          },
+          "R+P+B": {
+            "alpha": 100.0,
+            "inner_score": 1.8658032719005095
+          },
+          "full7": {
+            "alpha": 0.01,
+            "inner_score": 1.8654511228464044
+          }
+        }
+      }
+    ],
+    "per_record": [
+      {
+        "source": "stanford_1deg",
+        "outer_key": "(1)Bunny_69k",
+        "name": "(1)Bunny_69k",
+        "group": "C1",
+        "oracle": 1.0197404592550583,
+        "untuned_J": 1.3813697599177108,
+        "raw_R+B": 1.4325273050726441,
+        "raw_R+P+B": 1.3813697599177108,
+        "selected_model": "B",
+        "selected_alpha": 0.01,
+        "selected": 1.4325273050726441,
+        "B_nested": 1.4325273050726441,
+        "B_alpha": 0.01,
+        "B_inner_score": 1.7490377585739012,
+        "R+B_nested": 1.3813697599177108,
+        "R+B_alpha": 100.0,
+        "R+B_inner_score": 1.8055920850992049,
+        "R+P+B_nested": 1.3813697599177108,
+        "R+P+B_alpha": 100.0,
+        "R+P+B_inner_score": 1.8055920850992049,
+        "full7_nested": 1.20679767954031,
+        "full7_alpha": 0.1,
+        "full7_inner_score": 1.8039392533674097
+      },
+      {
+        "source": "stanford_1deg",
+        "outer_key": "(2)manikin",
+        "name": "(2)manikin",
+        "group": "C2",
+        "oracle": 1.1710214857292547,
+        "untuned_J": 5.01784703451211,
+        "raw_R+B": 3.0554777636524793,
+        "raw_R+P+B": 5.01784703451211,
+        "selected_model": "full7",
+        "selected_alpha": 10.0,
+        "selected": 3.0156417548720205,
+        "B_nested": 2.6490665888136635,
+        "B_alpha": 0.01,
+        "B_inner_score": 1.3435246639935616,
+        "R+B_nested": 3.0156417548720205,
+        "R+B_alpha": 0.01,
+        "R+B_inner_score": 1.2608347534477686,
+        "R+P+B_nested": 2.9422346378210626,
+        "R+P+B_alpha": 0.1,
+        "R+P+B_inner_score": 1.2535454691368912,
+        "full7_nested": 3.0156417548720205,
+        "full7_alpha": 10.0,
+        "full7_inner_score": 1.2348481471875046
+      },
+      {
+        "source": "stanford_1deg",
+        "outer_key": "(3)dragon_100k_1.5x",
+        "name": "(3)dragon_100k_1.5x",
+        "group": "C3",
+        "oracle": 1.0341979637412693,
+        "untuned_J": 1.3972256619747694,
+        "raw_R+B": 1.2003983009117962,
+        "raw_R+P+B": 1.3972256619747694,
+        "selected_model": "R+B",
+        "selected_alpha": 0.01,
+        "selected": 1.3015295495307542,
+        "B_nested": 1.3973104873942415,
+        "B_alpha": 0.01,
+        "B_inner_score": 1.7607766978000357,
+        "R+B_nested": 1.3015295495307542,
+        "R+B_alpha": 0.01,
+        "R+B_inner_score": 1.622885667685562,
+        "R+P+B_nested": 1.2003983009117962,
+        "R+P+B_alpha": 100.0,
+        "R+P+B_inner_score": 1.622885667685562,
+        "full7_nested": 1.4056072546624538,
+        "full7_alpha": 0.01,
+        "full7_inner_score": 1.6517143849876461
+      },
+      {
+        "source": "stanford_1deg",
+        "outer_key": "(5)lucy_50k",
+        "name": "(5)lucy_50k",
+        "group": "C5",
+        "oracle": 1.0105555999228721,
+        "untuned_J": 1.2007361995137988,
+        "raw_R+B": 1.2007361995137988,
+        "raw_R+P+B": 1.2007361995137988,
+        "selected_model": "B",
+        "selected_alpha": 0.01,
+        "selected": 1.2007361995137988,
+        "B_nested": 1.2007361995137988,
+        "B_alpha": 0.01,
+        "B_inner_score": 1.8263014604268497,
+        "R+B_nested": 1.2007361995137988,
+        "R+B_alpha": 10.0,
+        "R+B_inner_score": 1.8658032719005095,
+        "R+P+B_nested": 1.2007361995137988,
+        "R+P+B_alpha": 100.0,
+        "R+P+B_inner_score": 1.8658032719005095,
+        "full7_nested": 1.2007361995137988,
+        "full7_alpha": 0.01,
+        "full7_inner_score": 1.8654511228464044
+      }
+    ]
+  }
+}

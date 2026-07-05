@@ -1,0 +1,131 @@
+mesh,metric,key,value
+Group_C1_Bunny_69k.ply,pearson,J_raw,0.4206411379825993
+Group_C1_Bunny_69k.ply,spearman,J_raw,0.36944540491424416
+Group_C1_Bunny_69k.ply,pearson,R_rayleigh,0.4660947664091255
+Group_C1_Bunny_69k.ply,spearman,R_rayleigh,0.36233235762458027
+Group_C1_Bunny_69k.ply,pearson,P_pair,-0.009401878732582959
+Group_C1_Bunny_69k.ply,spearman,P_pair,-0.0893565648998104
+Group_C1_Bunny_69k.ply,pearson,B_bed,0.41857458101771594
+Group_C1_Bunny_69k.ply,spearman,B_bed,0.4186933630427451
+Group_C1_Bunny_69k.ply,pearson,H_hit,0.2640459751719402
+Group_C1_Bunny_69k.ply,spearman,H_hit,0.24246689923482528
+Group_C1_Bunny_69k.ply,pearson,S_nuclear,-0.03608601435064029
+Group_C1_Bunny_69k.ply,spearman,S_nuclear,-0.07396461949662851
+Group_C1_Bunny_69k.ply,pearson,sigma1,-0.06315403101484945
+Group_C1_Bunny_69k.ply,spearman,sigma1,-0.08941511289262837
+Group_C1_Bunny_69k.ply,ablation_best3_ratio,J = R+P+B,1.3813697599177108
+Group_C1_Bunny_69k.ply,ablation_spearman,J = R+P+B,0.36944540491424416
+Group_C1_Bunny_69k.ply,ablation_best3_ratio,old J (+0.05S+0.05s1),1.3813697599177108
+Group_C1_Bunny_69k.ply,ablation_spearman,old J (+0.05S+0.05s1),0.3655245561597855
+Group_C1_Bunny_69k.ply,ablation_best3_ratio,T_rank_tuned,1.1751043590047385
+Group_C1_Bunny_69k.ply,ablation_spearman,T_rank_tuned,0.619909143227706
+Group_C1_Bunny_69k.ply,ablation_best3_ratio,bed_only (B),1.4325273050726441
+Group_C1_Bunny_69k.ply,ablation_spearman,bed_only (B),0.4186933630427451
+Group_C1_Bunny_69k.ply,ablation_best3_ratio,tensor_only (0.05S+0.05s1),3.1617084213623228
+Group_C1_Bunny_69k.ply,ablation_spearman,tensor_only (0.05S+0.05s1),-0.08088236399775606
+Group_C1_Bunny_69k.ply,ablation_best3_ratio,pair_only (P),3.1617084213623228
+Group_C1_Bunny_69k.ply,ablation_spearman,pair_only (P),-0.0893565648998104
+Group_C2_manikin.ply,pearson,J_raw,0.6075287473004485
+Group_C2_manikin.ply,spearman,J_raw,0.35317421931322324
+Group_C2_manikin.ply,pearson,R_rayleigh,0.46235546992514265
+Group_C2_manikin.ply,spearman,R_rayleigh,-0.34969180660313265
+Group_C2_manikin.ply,pearson,P_pair,0.3436780426542898
+Group_C2_manikin.ply,spearman,P_pair,-0.40899195525596205
+Group_C2_manikin.ply,pearson,B_bed,0.6815743096126775
+Group_C2_manikin.ply,spearman,B_bed,0.7385211357121859
+Group_C2_manikin.ply,pearson,H_hit,-0.3024736495918693
+Group_C2_manikin.ply,spearman,H_hit,-0.5833052292997825
+Group_C2_manikin.ply,pearson,S_nuclear,0.38783529734165495
+Group_C2_manikin.ply,spearman,S_nuclear,-0.3907473399376512
+Group_C2_manikin.ply,pearson,sigma1,0.4349751379977136
+Group_C2_manikin.ply,spearman,sigma1,-0.35732381908340527
+Group_C2_manikin.ply,ablation_best3_ratio,J = R+P+B,5.01784703451211
+Group_C2_manikin.ply,ablation_spearman,J = R+P+B,0.35317421931322324
+Group_C2_manikin.ply,ablation_best3_ratio,old J (+0.05S+0.05s1),5.01784703451211
+Group_C2_manikin.ply,ablation_spearman,old J (+0.05S+0.05s1),0.32735529667561714
+Group_C2_manikin.ply,ablation_best3_ratio,T_rank_tuned,1.8827244151984661
+Group_C2_manikin.ply,ablation_spearman,T_rank_tuned,0.7215150966882317
+Group_C2_manikin.ply,ablation_best3_ratio,bed_only (B),2.6490665888136635
+Group_C2_manikin.ply,ablation_spearman,bed_only (B),0.7385211357121859
+Group_C2_manikin.ply,ablation_best3_ratio,tensor_only (0.05S+0.05s1),7.556084573823961
+Group_C2_manikin.ply,ablation_spearman,tensor_only (0.05S+0.05s1),-0.3760631235926899
+Group_C2_manikin.ply,ablation_best3_ratio,pair_only (P),6.868305945639874
+Group_C2_manikin.ply,ablation_spearman,pair_only (P),-0.40899195525596205
+Group_C3_dragon_100k_1.5x.ply,pearson,J_raw,0.8423454069526718
+Group_C3_dragon_100k_1.5x.ply,spearman,J_raw,0.7960532293431993
+Group_C3_dragon_100k_1.5x.ply,pearson,R_rayleigh,-0.4375233573883988
+Group_C3_dragon_100k_1.5x.ply,spearman,R_rayleigh,-0.5637909858738949
+Group_C3_dragon_100k_1.5x.ply,pearson,P_pair,-0.6314442383195503
+Group_C3_dragon_100k_1.5x.ply,spearman,P_pair,-0.7083985953910501
+Group_C3_dragon_100k_1.5x.ply,pearson,B_bed,0.8223524190398694
+Group_C3_dragon_100k_1.5x.ply,spearman,B_bed,0.8407324221045868
+Group_C3_dragon_100k_1.5x.ply,pearson,H_hit,-0.7030490372782534
+Group_C3_dragon_100k_1.5x.ply,spearman,H_hit,-0.7193226268919519
+Group_C3_dragon_100k_1.5x.ply,pearson,S_nuclear,-0.5741936229727614
+Group_C3_dragon_100k_1.5x.ply,spearman,S_nuclear,-0.6907150918482997
+Group_C3_dragon_100k_1.5x.ply,pearson,sigma1,-0.5471236223536673
+Group_C3_dragon_100k_1.5x.ply,spearman,sigma1,-0.6521139001811709
+Group_C3_dragon_100k_1.5x.ply,ablation_best3_ratio,J = R+P+B,1.3972256619747694
+Group_C3_dragon_100k_1.5x.ply,ablation_spearman,J = R+P+B,0.7960532293431993
+Group_C3_dragon_100k_1.5x.ply,ablation_best3_ratio,old J (+0.05S+0.05s1),1.4592924915062415
+Group_C3_dragon_100k_1.5x.ply,ablation_spearman,old J (+0.05S+0.05s1),0.7688258848841466
+Group_C3_dragon_100k_1.5x.ply,ablation_best3_ratio,T_rank_tuned,1.2832135682534769
+Group_C3_dragon_100k_1.5x.ply,ablation_spearman,T_rank_tuned,0.8646803982820325
+Group_C3_dragon_100k_1.5x.ply,ablation_best3_ratio,bed_only (B),1.3973104873942415
+Group_C3_dragon_100k_1.5x.ply,ablation_spearman,bed_only (B),0.8407324221045868
+Group_C3_dragon_100k_1.5x.ply,ablation_best3_ratio,tensor_only (0.05S+0.05s1),5.155114145571075
+Group_C3_dragon_100k_1.5x.ply,ablation_spearman,tensor_only (0.05S+0.05s1),-0.6742413211935896
+Group_C3_dragon_100k_1.5x.ply,ablation_best3_ratio,pair_only (P),4.907690875420762
+Group_C3_dragon_100k_1.5x.ply,ablation_spearman,pair_only (P),-0.7083985953910501
+Group_C4_happy_50k_0.75x.ply,pearson,J_raw,0.2267090914440684
+Group_C4_happy_50k_0.75x.ply,spearman,J_raw,0.3262843579692916
+Group_C4_happy_50k_0.75x.ply,pearson,R_rayleigh,0.13598411920943315
+Group_C4_happy_50k_0.75x.ply,spearman,R_rayleigh,0.12641842967974296
+Group_C4_happy_50k_0.75x.ply,pearson,P_pair,0.13984615334724187
+Group_C4_happy_50k_0.75x.ply,spearman,P_pair,0.10270363519875414
+Group_C4_happy_50k_0.75x.ply,pearson,B_bed,0.1757397005017596
+Group_C4_happy_50k_0.75x.ply,spearman,B_bed,0.23210900369079612
+Group_C4_happy_50k_0.75x.ply,pearson,H_hit,0.12543326024908627
+Group_C4_happy_50k_0.75x.ply,spearman,H_hit,0.12646238996203885
+Group_C4_happy_50k_0.75x.ply,pearson,S_nuclear,0.13102488601904425
+Group_C4_happy_50k_0.75x.ply,spearman,S_nuclear,0.08015802811433013
+Group_C4_happy_50k_0.75x.ply,pearson,sigma1,0.13399961086469792
+Group_C4_happy_50k_0.75x.ply,spearman,sigma1,0.04984353519968302
+Group_C4_happy_50k_0.75x.ply,ablation_best3_ratio,J = R+P+B,2.082422189515831
+Group_C4_happy_50k_0.75x.ply,ablation_spearman,J = R+P+B,0.3262843579692916
+Group_C4_happy_50k_0.75x.ply,ablation_best3_ratio,old J (+0.05S+0.05s1),2.082422189515831
+Group_C4_happy_50k_0.75x.ply,ablation_spearman,old J (+0.05S+0.05s1),0.3216525940353217
+Group_C4_happy_50k_0.75x.ply,ablation_best3_ratio,T_rank_tuned,2.184132354178508
+Group_C4_happy_50k_0.75x.ply,ablation_spearman,T_rank_tuned,0.21372877232612952
+Group_C4_happy_50k_0.75x.ply,ablation_best3_ratio,bed_only (B),2.5609275745548907
+Group_C4_happy_50k_0.75x.ply,ablation_spearman,bed_only (B),0.23210900369079612
+Group_C4_happy_50k_0.75x.ply,ablation_best3_ratio,tensor_only (0.05S+0.05s1),2.154794512779507
+Group_C4_happy_50k_0.75x.ply,ablation_spearman,tensor_only (0.05S+0.05s1),0.067597360740466
+Group_C4_happy_50k_0.75x.ply,ablation_best3_ratio,pair_only (P),2.3373420073553506
+Group_C4_happy_50k_0.75x.ply,ablation_spearman,pair_only (P),0.10270363519875414
+Group_C5_lucy_50k.ply,pearson,J_raw,0.37659206281234553
+Group_C5_lucy_50k.ply,spearman,J_raw,0.6804178833386114
+Group_C5_lucy_50k.ply,pearson,R_rayleigh,0.33572793445292853
+Group_C5_lucy_50k.ply,spearman,R_rayleigh,0.15520056935089757
+Group_C5_lucy_50k.ply,pearson,P_pair,-0.5125711072347897
+Group_C5_lucy_50k.ply,spearman,P_pair,-0.6749947167243039
+Group_C5_lucy_50k.ply,pearson,B_bed,0.421016603819707
+Group_C5_lucy_50k.ply,spearman,B_bed,0.717748208466164
+Group_C5_lucy_50k.ply,pearson,H_hit,-0.7241690553933009
+Group_C5_lucy_50k.ply,spearman,H_hit,-0.8159759287392119
+Group_C5_lucy_50k.ply,pearson,S_nuclear,-0.029986432074442137
+Group_C5_lucy_50k.ply,spearman,S_nuclear,-0.28793278269771155
+Group_C5_lucy_50k.ply,pearson,sigma1,0.25670587997322
+Group_C5_lucy_50k.ply,spearman,sigma1,0.07391739656086921
+Group_C5_lucy_50k.ply,ablation_best3_ratio,J = R+P+B,1.2007361995137988
+Group_C5_lucy_50k.ply,ablation_spearman,J = R+P+B,0.6804178833386114
+Group_C5_lucy_50k.ply,ablation_best3_ratio,old J (+0.05S+0.05s1),1.2007361995137988
+Group_C5_lucy_50k.ply,ablation_spearman,old J (+0.05S+0.05s1),0.6784761027729131
+Group_C5_lucy_50k.ply,ablation_best3_ratio,T_rank_tuned,1.2007361995137988
+Group_C5_lucy_50k.ply,ablation_spearman,T_rank_tuned,0.6869407248936125
+Group_C5_lucy_50k.ply,ablation_best3_ratio,bed_only (B),1.2007361995137988
+Group_C5_lucy_50k.ply,ablation_spearman,bed_only (B),0.717748208466164
+Group_C5_lucy_50k.ply,ablation_best3_ratio,tensor_only (0.05S+0.05s1),2.6633377577587267
+Group_C5_lucy_50k.ply,ablation_spearman,tensor_only (0.05S+0.05s1),-0.15790367576955955
+Group_C5_lucy_50k.ply,ablation_best3_ratio,pair_only (P),3.6786707785129797
+Group_C5_lucy_50k.ply,ablation_spearman,pair_only (P),-0.6749947167243039

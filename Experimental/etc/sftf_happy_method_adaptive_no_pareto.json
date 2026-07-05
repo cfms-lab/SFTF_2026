@@ -1,0 +1,1822 @@
+{
+  "config": {
+    "base_top_k": 10,
+    "escalate_top_k": 30,
+    "pareto_top_k": 0,
+    "window_degrees": 10.0,
+    "min_angle_degrees": 3.0,
+    "high_support_fraction": 0.03,
+    "edge_margin_degrees": 1.0,
+    "low_gain": 1.5,
+    "grid_suffix": "_tomo_int3_vss_grid_1deg_60deg.npz"
+  },
+  "summary": [
+    {
+      "stage": "adaptive_final",
+      "mesh_count": 5,
+      "triggered_count": 1,
+      "mean_local_ratio": 1.0118304158575318,
+      "median_local_ratio": 1.0,
+      "max_local_ratio": 1.0591520792876592,
+      "mean_local_cell_count": 3902.0,
+      "mean_local_budget_fraction": 0.029941452260188312,
+      "count_ratio_le_1_25": 5,
+      "count_ratio_le_1_50": 5,
+      "count_ratio_le_2_00": 5
+    },
+    {
+      "stage": "base_top_k",
+      "mesh_count": 5,
+      "triggered_count": 1,
+      "mean_local_ratio": 2.5151454051309208,
+      "median_local_ratio": 1.0,
+      "max_local_ratio": 8.516574946366944,
+      "mean_local_cell_count": 2763.6,
+      "mean_local_budget_fraction": 0.021206098786841723,
+      "count_ratio_le_1_25": 4,
+      "count_ratio_le_1_50": 4,
+      "count_ratio_le_2_00": 4
+    },
+    {
+      "stage": "happy_method",
+      "mesh_count": 1,
+      "triggered_count": 1,
+      "mean_local_ratio": 1.0,
+      "median_local_ratio": 1.0,
+      "max_local_ratio": 1.0,
+      "mean_local_cell_count": 8564.0,
+      "mean_local_budget_fraction": 0.06571465842036203,
+      "count_ratio_le_1_25": 1,
+      "count_ratio_le_1_50": 1,
+      "count_ratio_le_2_00": 1
+    }
+  ],
+  "rows": [
+    {
+      "mesh": "Group_C1_Bunny_69k.ply",
+      "stage": "base_top_k",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2707,
+      "local_budget_fraction": 0.020771786588500703,
+      "bbox_volume": 329847.7240470774,
+      "tomo_best_yaw": 265.00000168247254,
+      "tomo_best_pitch": 48.9999990868195,
+      "tomo_best_vss": 3201.394288007878,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 1,
+      "seed_best_yaw": 67.00000300280972,
+      "seed_best_pitch": 128.9999933444683,
+      "seed_best_vss": 4665.845681813137,
+      "seed_best_ratio": 1.457441746332514,
+      "local_best_yaw": 67.99999733881295,
+      "local_best_pitch": 128.9999933444683,
+      "local_best_vss": 3390.7634167631795,
+      "local_best_ratio": 1.0591520792876592,
+      "normalized_local_vss": 0.010279784183926138,
+      "seed_to_local_gain": 1.3760457774040604
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k.ply",
+      "stage": "adaptive_final",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2707,
+      "local_budget_fraction": 0.020771786588500703,
+      "bbox_volume": 329847.7240470774,
+      "tomo_best_yaw": 265.00000168247254,
+      "tomo_best_pitch": 48.9999990868195,
+      "tomo_best_vss": 3201.394288007878,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 1,
+      "seed_best_yaw": 67.00000300280972,
+      "seed_best_pitch": 128.9999933444683,
+      "seed_best_vss": 4665.845681813137,
+      "seed_best_ratio": 1.457441746332514,
+      "local_best_yaw": 67.99999733881295,
+      "local_best_pitch": 128.9999933444683,
+      "local_best_vss": 3390.7634167631795,
+      "local_best_ratio": 1.0591520792876592,
+      "normalized_local_vss": 0.010279784183926138,
+      "seed_to_local_gain": 1.3760457774040604
+    },
+    {
+      "mesh": "Group_C2_manikin.ply",
+      "stage": "base_top_k",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2050,
+      "local_budget_fraction": 0.0157303888091712,
+      "bbox_volume": 781290.2312873882,
+      "tomo_best_yaw": 192.99999967889,
+      "tomo_best_pitch": 7.000000052497138,
+      "tomo_best_vss": 4657.721223909993,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 10,
+      "seed_best_yaw": 3.999999969014533,
+      "seed_best_pitch": 183.99999601334758,
+      "seed_best_vss": 7410.920848531171,
+      "seed_best_ratio": 1.5911044247319646,
+      "local_best_yaw": 192.99999967889,
+      "local_best_pitch": 7.000000052497138,
+      "local_best_vss": 4657.721223909993,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.005961576168993089,
+      "seed_to_local_gain": 1.5911044247319646
+    },
+    {
+      "mesh": "Group_C2_manikin.ply",
+      "stage": "adaptive_final",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2050,
+      "local_budget_fraction": 0.0157303888091712,
+      "bbox_volume": 781290.2312873882,
+      "tomo_best_yaw": 192.99999967889,
+      "tomo_best_pitch": 7.000000052497138,
+      "tomo_best_vss": 4657.721223909993,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 10,
+      "seed_best_yaw": 3.999999969014533,
+      "seed_best_pitch": 183.99999601334758,
+      "seed_best_vss": 7410.920848531171,
+      "seed_best_ratio": 1.5911044247319646,
+      "local_best_yaw": 192.99999967889,
+      "local_best_pitch": 7.000000052497138,
+      "local_best_vss": 4657.721223909993,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.005961576168993089,
+      "seed_to_local_gain": 1.5911044247319646
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x.ply",
+      "stage": "base_top_k",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 3634,
+      "local_budget_fraction": 0.02788499167440397,
+      "bbox_volume": 1487645.696065514,
+      "tomo_best_yaw": 161.99999767787153,
+      "tomo_best_pitch": 257.9999866889366,
+      "tomo_best_vss": 24446.98002712786,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 6,
+      "seed_best_yaw": 171.00000134341394,
+      "seed_best_pitch": 259.0000083456965,
+      "seed_best_vss": 31505.09605722979,
+      "seed_best_ratio": 1.288711162780426,
+      "local_best_yaw": 161.99999767787153,
+      "local_best_pitch": 257.9999866889366,
+      "local_best_vss": 24446.98002712786,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.016433334961264354,
+      "seed_to_local_gain": 1.288711162780426
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x.ply",
+      "stage": "adaptive_final",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 3634,
+      "local_budget_fraction": 0.02788499167440397,
+      "bbox_volume": 1487645.696065514,
+      "tomo_best_yaw": 161.99999767787153,
+      "tomo_best_pitch": 257.9999866889366,
+      "tomo_best_vss": 24446.98002712786,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 6,
+      "seed_best_yaw": 171.00000134341394,
+      "seed_best_pitch": 259.0000083456965,
+      "seed_best_vss": 31505.09605722979,
+      "seed_best_ratio": 1.288711162780426,
+      "local_best_yaw": 161.99999767787153,
+      "local_best_pitch": 257.9999866889366,
+      "local_best_vss": 24446.98002712786,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.016433334961264354,
+      "seed_to_local_gain": 1.288711162780426
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x.ply",
+      "stage": "base_top_k",
+      "triggered": true,
+      "trigger_reasons": "high_normalized_support;boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2872,
+      "local_budget_fraction": 0.022037891053629115,
+      "bbox_volume": 349764.91179481667,
+      "tomo_best_yaw": 90.99999684048139,
+      "tomo_best_pitch": 110.99999967376182,
+      "tomo_best_vss": 2112.4674268990507,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 3,
+      "seed_best_yaw": 252.99998768816374,
+      "seed_best_pitch": 289.0000023503334,
+      "seed_best_vss": 23727.487926640788,
+      "seed_best_ratio": 11.232120138046826,
+      "local_best_yaw": 261.99999135370615,
+      "local_best_pitch": 279.00000434878774,
+      "local_best_vss": 17990.9871629447,
+      "local_best_ratio": 8.516574946366944,
+      "normalized_local_vss": 0.05143736994835774,
+      "seed_to_local_gain": 1.3188541413397994
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x.ply",
+      "stage": "happy_method",
+      "triggered": true,
+      "trigger_reasons": "high_normalized_support;boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 30,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 8564,
+      "local_budget_fraction": 0.06571465842036203,
+      "bbox_volume": 349764.91179481667,
+      "tomo_best_yaw": 90.99999684048139,
+      "tomo_best_pitch": 110.99999967376182,
+      "tomo_best_vss": 2112.4674268990507,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 30,
+      "seed_best_yaw": 86.99999900590097,
+      "seed_best_pitch": 96.99999700744661,
+      "seed_best_vss": 10705.223753432598,
+      "seed_best_ratio": 5.06763967913441,
+      "local_best_yaw": 90.99999684048139,
+      "local_best_pitch": 110.99999967376182,
+      "local_best_vss": 2112.4674268990507,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.0060396779541404995,
+      "seed_to_local_gain": 5.06763967913441
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x.ply",
+      "stage": "adaptive_final",
+      "triggered": true,
+      "trigger_reasons": "high_normalized_support;boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 30,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 8564,
+      "local_budget_fraction": 0.06571465842036203,
+      "bbox_volume": 349764.91179481667,
+      "tomo_best_yaw": 90.99999684048139,
+      "tomo_best_pitch": 110.99999967376182,
+      "tomo_best_vss": 2112.4674268990507,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 30,
+      "seed_best_yaw": 86.99999900590097,
+      "seed_best_pitch": 96.99999700744661,
+      "seed_best_vss": 10705.223753432598,
+      "seed_best_ratio": 5.06763967913441,
+      "local_best_yaw": 90.99999684048139,
+      "local_best_pitch": 110.99999967376182,
+      "local_best_vss": 2112.4674268990507,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.0060396779541404995,
+      "seed_to_local_gain": 5.06763967913441
+    },
+    {
+      "mesh": "Group_C5_lucy_50k.ply",
+      "stage": "base_top_k",
+      "triggered": false,
+      "trigger_reasons": "",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2555,
+      "local_budget_fraction": 0.01960543580850362,
+      "bbox_volume": 1133888.2427607272,
+      "tomo_best_yaw": 181.99999368096277,
+      "tomo_best_pitch": 358.99998836115276,
+      "tomo_best_vss": 5036.138305979327,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 6,
+      "seed_best_yaw": 357.99999402514953,
+      "seed_best_pitch": 181.99999368096277,
+      "seed_best_vss": 13939.90083174272,
+      "seed_best_ratio": 2.7679741867279732,
+      "local_best_yaw": 181.99999368096277,
+      "local_best_pitch": 358.99998836115276,
+      "local_best_vss": 5036.138305979327,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.0044414767840943664,
+      "seed_to_local_gain": 2.7679741867279732
+    },
+    {
+      "mesh": "Group_C5_lucy_50k.ply",
+      "stage": "adaptive_final",
+      "triggered": false,
+      "trigger_reasons": "",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2555,
+      "local_budget_fraction": 0.01960543580850362,
+      "bbox_volume": 1133888.2427607272,
+      "tomo_best_yaw": 181.99999368096277,
+      "tomo_best_pitch": 358.99998836115276,
+      "tomo_best_vss": 5036.138305979327,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 6,
+      "seed_best_yaw": 357.99999402514953,
+      "seed_best_pitch": 181.99999368096277,
+      "seed_best_vss": 13939.90083174272,
+      "seed_best_ratio": 2.7679741867279732,
+      "local_best_yaw": 181.99999368096277,
+      "local_best_pitch": 358.99998836115276,
+      "local_best_vss": 5036.138305979327,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.0044414767840943664,
+      "seed_to_local_gain": 2.7679741867279732
+    }
+  ],
+  "details": [
+    {
+      "mesh": "Group_C1_Bunny_69k.ply",
+      "npz": "Experimental\\etc\\(1)Bunny_69k_tomo_int3_vss_grid_1deg_60deg.npz",
+      "face_count": 69662,
+      "candidate_pool_size": 1292,
+      "elapsed_sec": 1.650850999983959,
+      "bbox_volume": 329847.7240470774,
+      "tomo_best": {
+        "yaw": 265.00000168247254,
+        "pitch": 48.9999990868195,
+        "vss": 3201.394288007878
+      },
+      "triggered": false,
+      "trigger_reasons": [
+        "boundary_local_minimum",
+        "low_seed_to_local_gain"
+      ],
+      "base_top_k": 10,
+      "escalate_top_k": 30,
+      "pareto_top_k": 0,
+      "baseline_centers": [
+        {
+          "source": "sftf",
+          "rank": 1.0,
+          "score": -1.473886367157242,
+          "yaw": 67.00000300280972,
+          "pitch": 128.9999933444683,
+          "vss": 4665.845681813137,
+          "alignment": 0.9999775240398989
+        },
+        {
+          "source": "sftf",
+          "rank": 2.0,
+          "score": -1.3390734314484893,
+          "yaw": 41.00000000256408,
+          "pitch": 120.99999767530745,
+          "vss": 7125.088006011711,
+          "alignment": 0.9999852294813312
+        },
+        {
+          "source": "sftf",
+          "rank": 3.0,
+          "score": -1.1121269558481792,
+          "yaw": 77.00000100435535,
+          "pitch": 135.00000034162267,
+          "vss": 7373.472875800015,
+          "alignment": 0.999998495801616
+        },
+        {
+          "source": "sftf",
+          "rank": 4.0,
+          "score": -1.0120847405112317,
+          "yaw": 39.00000108527387,
+          "pitch": 294.9999956871094,
+          "vss": 8735.985795328439,
+          "alignment": 0.9999879904968854
+        },
+        {
+          "source": "sftf",
+          "rank": 5.0,
+          "score": -0.9986444616576298,
+          "yaw": 56.000000419977106,
+          "pitch": 127.99999900846505,
+          "vss": 5928.169104678572,
+          "alignment": 0.9999597733665593
+        },
+        {
+          "source": "sftf",
+          "rank": 6.0,
+          "score": -0.9607494965143296,
+          "yaw": 241.9999953506149,
+          "pitch": 45.999999003336896,
+          "vss": 8250.196118000125,
+          "alignment": 0.9999917864172199
+        },
+        {
+          "source": "sftf",
+          "rank": 7.0,
+          "score": -0.9278864446165763,
+          "yaw": 48.9999990868195,
+          "pitch": 127.00000467246183,
+          "vss": 5039.617049792581,
+          "alignment": 0.9999776968199087
+        },
+        {
+          "source": "sftf",
+          "rank": 8.0,
+          "score": -0.9024714175058093,
+          "yaw": 224.00000167990842,
+          "pitch": 50.0000002530119,
+          "vss": 8527.373479417533,
+          "alignment": 0.9999984113684153
+        },
+        {
+          "source": "sftf",
+          "rank": 9.0,
+          "score": -0.8849629744384195,
+          "yaw": 48.9999990868195,
+          "pitch": 122.00000567168901,
+          "vss": 6073.529070073908,
+          "alignment": 0.9999890667390978
+        },
+        {
+          "source": "sftf",
+          "rank": 10.0,
+          "score": -0.8827554608830365,
+          "yaw": 241.9999953506149,
+          "pitch": 53.0000003364945,
+          "vss": 6594.56233347743,
+          "alignment": 0.999996180412495
+        },
+        {
+          "source": "sftf",
+          "rank": 11.0,
+          "score": -0.8276498063516651,
+          "yaw": 60.000001669652114,
+          "pitch": 130.00000134084985,
+          "vss": 6577.884855349202,
+          "alignment": 0.9999996573409513
+        },
+        {
+          "source": "sftf",
+          "rank": 12.0,
+          "score": -0.7971252517428351,
+          "yaw": 53.0000003364945,
+          "pitch": 294.9999956871094,
+          "vss": 8959.313069493317,
+          "alignment": 0.9999996673787175
+        },
+        {
+          "source": "sftf",
+          "rank": 13.0,
+          "score": -0.7422573973663824,
+          "yaw": 221.99999934752364,
+          "pitch": 56.000000419977106,
+          "vss": 6626.411903003031,
+          "alignment": 0.9999947720981511
+        },
+        {
+          "source": "sftf",
+          "rank": 14.0,
+          "score": -0.6866945003872961,
+          "yaw": 237.99999068584532,
+          "pitch": 56.000000419977106,
+          "vss": 5745.285798695461,
+          "alignment": 0.9999952125415175
+        },
+        {
+          "source": "sftf",
+          "rank": 15.0,
+          "score": -0.6783435321456234,
+          "yaw": 34.99999983559887,
+          "pitch": 123.00000000769225,
+          "vss": 6798.412189010746,
+          "alignment": 0.999973593744397
+        },
+        {
+          "source": "sftf",
+          "rank": 16.0,
+          "score": -0.6658048799380328,
+          "yaw": 231.00000301306605,
+          "pitch": 61.99999717184774,
+          "vss": 7863.922552628951,
+          "alignment": 0.9999941264688508
+        },
+        {
+          "source": "sftf",
+          "rank": 17.0,
+          "score": -0.642339349341595,
+          "yaw": 54.999999253784715,
+          "pitch": 120.00000333930423,
+          "vss": 7111.568096255468,
+          "alignment": 0.9999634086483361
+        },
+        {
+          "source": "sftf",
+          "rank": 18.0,
+          "score": -0.638968396591789,
+          "yaw": 54.999999253784715,
+          "pitch": 130.00000134084985,
+          "vss": 7055.6500726494905,
+          "alignment": 0.9999625967761514
+        },
+        {
+          "source": "sftf",
+          "rank": 19.0,
+          "score": -0.6202043377226953,
+          "yaw": 66.00000183661733,
+          "pitch": 123.00000000769225,
+          "vss": 6972.408984318253,
+          "alignment": 0.9999969617387678
+        },
+        {
+          "source": "sftf",
+          "rank": 20.0,
+          "score": -0.5674614252517425,
+          "yaw": 247.99998868739095,
+          "pitch": 48.00000133572169,
+          "vss": 6323.355288544963,
+          "alignment": 0.9999829336887984
+        },
+        {
+          "source": "sftf",
+          "rank": 21.0,
+          "score": -0.5142172734314485,
+          "yaw": 95.00000150525098,
+          "pitch": 156.99999867709872,
+          "vss": 12276.612037469533,
+          "alignment": 0.9999619277279713
+        },
+        {
+          "source": "sftf",
+          "rank": 22.0,
+          "score": -0.49293810999225407,
+          "yaw": 47.000000169529294,
+          "pitch": 289.0000023503334,
+          "vss": 9847.944433038885,
+          "alignment": 0.999986158315515
+        },
+        {
+          "source": "sftf",
+          "rank": 23.0,
+          "score": -0.4906053446940352,
+          "yaw": 25.999999585151052,
+          "pitch": 293.00000701510294,
+          "vss": 9631.781538655936,
+          "alignment": 0.9999964903268599
+        },
+        {
+          "source": "sftf",
+          "rank": 24.0,
+          "score": -0.4831895429899301,
+          "yaw": 98.9999993398314,
+          "pitch": 16.999999334703237,
+          "vss": 20443.668050214277,
+          "alignment": 0.9999986499259622
+        },
+        {
+          "source": "sftf",
+          "rank": 25.0,
+          "score": -0.45693106119287336,
+          "yaw": 75.99999983816295,
+          "pitch": 327.0000056845094,
+          "vss": 9574.941367157235,
+          "alignment": 0.9999614841369806
+        },
+        {
+          "source": "sftf",
+          "rank": 26.0,
+          "score": -0.392010457010069,
+          "yaw": 240.00000667860846,
+          "pitch": 242.99998968661814,
+          "vss": 8199.238087520127,
+          "alignment": 0.9999982255319195
+        },
+        {
+          "source": "sftf",
+          "rank": 27.0,
+          "score": -0.36293950426026306,
+          "yaw": 269.0000063472421,
+          "pitch": 178.00000267657154,
+          "vss": 13038.950518143078,
+          "alignment": 0.9999926010195354
+        },
+        {
+          "source": "sftf",
+          "rank": 28.0,
+          "score": -0.3601072811773819,
+          "yaw": 264.0000073464693,
+          "pitch": 37.999999919081475,
+          "vss": 8998.764447929445,
+          "alignment": 0.9999806400101717
+        },
+        {
+          "source": "sftf",
+          "rank": 29.0,
+          "score": -0.3315567002323782,
+          "yaw": 276.9999883560246,
+          "pitch": 183.00000167734436,
+          "vss": 15302.58517619992,
+          "alignment": 0.9999878072912992
+        },
+        {
+          "source": "sftf",
+          "rank": 30.0,
+          "score": -0.28964113090627386,
+          "yaw": 45.00000125223908,
+          "pitch": 297.00001167987256,
+          "vss": 8653.073271444022,
+          "alignment": 0.9999969924346365
+        }
+      ],
+      "pareto_centers": []
+    },
+    {
+      "mesh": "Group_C2_manikin.ply",
+      "npz": "Experimental\\etc\\(2)manikin_tomo_int3_vss_grid_1deg_60deg.npz",
+      "face_count": 13672,
+      "candidate_pool_size": 1292,
+      "elapsed_sec": 1.0786232000100426,
+      "bbox_volume": 781290.2312873882,
+      "tomo_best": {
+        "yaw": 192.99999967889,
+        "pitch": 7.000000052497138,
+        "vss": 4657.721223909993
+      },
+      "triggered": false,
+      "trigger_reasons": [
+        "boundary_local_minimum"
+      ],
+      "base_top_k": 10,
+      "escalate_top_k": 30,
+      "pareto_top_k": 0,
+      "baseline_centers": [
+        {
+          "source": "sftf",
+          "rank": 1.0,
+          "score": -0.02847962819519667,
+          "yaw": 181.99999368096277,
+          "pitch": 353.99998936037997,
+          "vss": 8675.961455037772,
+          "alignment": 0.9999675539955412
+        },
+        {
+          "source": "sftf",
+          "rank": 2.0,
+          "score": 0.12013694810224673,
+          "yaw": 356.9999996891463,
+          "pitch": 185.00000400972914,
+          "vss": 13221.681610611844,
+          "alignment": 0.9999597235303745
+        },
+        {
+          "source": "sftf",
+          "rank": 3.0,
+          "score": 0.1257776917118516,
+          "yaw": 173.99999801180195,
+          "pitch": 1.9999999845072665,
+          "vss": 14577.801562537832,
+          "alignment": 0.9999861288417341
+        },
+        {
+          "source": "sftf",
+          "rank": 4.0,
+          "score": 0.14707296669248682,
+          "yaw": 356.0000053531431,
+          "pitch": 173.00000367579872,
+          "vss": 13852.00220691271,
+          "alignment": 0.999996408200494
+        },
+        {
+          "source": "sftf",
+          "rank": 5.0,
+          "score": 0.16945197521301347,
+          "yaw": 176.99999468018999,
+          "pitch": 351.0000063523703,
+          "vss": 13116.48187558513,
+          "alignment": 0.9999599367075892
+        },
+        {
+          "source": "sftf",
+          "rank": 6.0,
+          "score": 0.17528923315259481,
+          "yaw": 355.00001101713985,
+          "pitch": 166.00000234264112,
+          "vss": 16445.803248192653,
+          "alignment": 0.9999899055838244
+        },
+        {
+          "source": "sftf",
+          "rank": 7.0,
+          "score": 0.17827575522850547,
+          "yaw": 0.0,
+          "pitch": 188.9999950141204,
+          "vss": 10575.521090799126,
+          "alignment": 0.9999891222185227
+        },
+        {
+          "source": "sftf",
+          "rank": 8.0,
+          "score": 0.1788180480247874,
+          "yaw": 183.00000167734436,
+          "pitch": 4.99999985454646,
+          "vss": 8673.800909814756,
+          "alignment": 0.9999725090728002
+        },
+        {
+          "source": "sftf",
+          "rank": 9.0,
+          "score": 0.1828021688613486,
+          "yaw": 360.00001001791264,
+          "pitch": 183.00000167734436,
+          "vss": 11813.201194952342,
+          "alignment": 0.9999734662118638
+        },
+        {
+          "source": "sftf",
+          "rank": 10.0,
+          "score": 0.196866150271108,
+          "yaw": 3.999999969014533,
+          "pitch": 183.99999601334758,
+          "vss": 7410.920848531171,
+          "alignment": 0.9999639166407855
+        },
+        {
+          "source": "sftf",
+          "rank": 11.0,
+          "score": 0.19907838884585694,
+          "yaw": 0.0,
+          "pitch": 173.99999801180195,
+          "vss": 12137.48100375341,
+          "alignment": 0.9999928091241241
+        },
+        {
+          "source": "sftf",
+          "rank": 12.0,
+          "score": 0.2033637490317588,
+          "yaw": 181.99999368096277,
+          "pitch": 1.9999999845072665,
+          "vss": 10355.880437803662,
+          "alignment": 0.999970923145204
+        },
+        {
+          "source": "sftf",
+          "rank": 13.0,
+          "score": 0.2110061967467085,
+          "yaw": 173.00000367579872,
+          "pitch": 350.00001201636707,
+          "vss": 16851.442904511758,
+          "alignment": 0.9999900902691485
+        },
+        {
+          "source": "sftf",
+          "rank": 14.0,
+          "score": 0.21439651432997708,
+          "yaw": 353.99998936037997,
+          "pitch": 183.99999601334758,
+          "vss": 13697.081360935179,
+          "alignment": 0.9999937743625421
+        },
+        {
+          "source": "sftf",
+          "rank": 15.0,
+          "score": 0.22005577072037186,
+          "yaw": 173.00000367579872,
+          "pitch": 4.99999985454646,
+          "vss": 15456.841996878631,
+          "alignment": 0.9999942102926479
+        },
+        {
+          "source": "sftf",
+          "rank": 16.0,
+          "score": 0.2353099922540669,
+          "yaw": 176.99999468018999,
+          "pitch": 360.00001001791264,
+          "vss": 12335.28074154184,
+          "alignment": 0.9999380938695994
+        },
+        {
+          "source": "sftf",
+          "rank": 17.0,
+          "score": 0.2502333849728895,
+          "yaw": 353.99998936037997,
+          "pitch": 193.99999401489322,
+          "vss": 16734.00303549018,
+          "alignment": 0.9999498482102142
+        },
+        {
+          "source": "sftf",
+          "rank": 18.0,
+          "score": 0.25031564678543794,
+          "yaw": 171.99999567941717,
+          "pitch": 15.000000417413029,
+          "vss": 17556.32053722035,
+          "alignment": 0.9999981214669621
+        },
+        {
+          "source": "sftf",
+          "rank": 19.0,
+          "score": 0.2618594113090633,
+          "yaw": 346.00000735159745,
+          "pitch": 178.99999701257477,
+          "vss": 19806.04219042565,
+          "alignment": 0.9999756755479174
+        },
+        {
+          "source": "sftf",
+          "rank": 20.0,
+          "score": 0.26952215336948093,
+          "yaw": 176.00000034418676,
+          "pitch": 11.000000021511672,
+          "vss": 15072.842274815583,
+          "alignment": 0.999966764570701
+        },
+        {
+          "source": "sftf",
+          "rank": 21.0,
+          "score": 0.2746008520526728,
+          "yaw": 351.0000063523703,
+          "pitch": 180.99999934495955,
+          "vss": 14917.602223798263,
+          "alignment": 0.9999992579957439
+        },
+        {
+          "source": "sftf",
+          "rank": 22.0,
+          "score": 0.28131185127807923,
+          "yaw": 171.00000134341394,
+          "pitch": 18.000000500895634,
+          "vss": 18985.71282378898,
+          "alignment": 0.9999838587982035
+        },
+        {
+          "source": "sftf",
+          "rank": 23.0,
+          "score": 0.3169022463206821,
+          "yaw": 169.99999334703236,
+          "pitch": 6.000000166965211,
+          "vss": 17581.921963652305,
+          "alignment": 0.9999587101859397
+        },
+        {
+          "source": "sftf",
+          "rank": 24.0,
+          "score": 0.3181772269558485,
+          "yaw": 181.99999368096277,
+          "pitch": 342.9999970228311,
+          "vss": 11281.642046841707,
+          "alignment": 0.9999955577696105
+        },
+        {
+          "source": "sftf",
+          "rank": 25.0,
+          "score": 0.3204157242447718,
+          "yaw": 185.99999834573237,
+          "pitch": 6.000000166965211,
+          "vss": 7040.201139844154,
+          "alignment": 0.9999974780090676
+        },
+        {
+          "source": "sftf",
+          "rank": 26.0,
+          "score": 0.32450728117738215,
+          "yaw": 7.999999938029066,
+          "pitch": 176.00000034418676,
+          "vss": 7489.52114877622,
+          "alignment": 0.9999621775153402
+        },
+        {
+          "source": "sftf",
+          "rank": 27.0,
+          "score": 0.32655096824167384,
+          "yaw": 173.99999801180195,
+          "pitch": 18.999999959540737,
+          "vss": 17371.92051469787,
+          "alignment": 0.9999869679089315
+        },
+        {
+          "source": "sftf",
+          "rank": 28.0,
+          "score": 0.33278714175058166,
+          "yaw": 176.99999468018999,
+          "pitch": 347.0000016876007,
+          "vss": 15277.521669372054,
+          "alignment": 0.9999888743557459
+        },
+        {
+          "source": "sftf",
+          "rank": 29.0,
+          "score": 0.33405205267234694,
+          "yaw": 352.99999502437674,
+          "pitch": 171.99999567941717,
+          "vss": 16373.723006445514,
+          "alignment": 0.9999664625463779
+        },
+        {
+          "source": "sftf",
+          "rank": 30.0,
+          "score": 0.35162238574748306,
+          "yaw": 168.99999901102913,
+          "pitch": 356.0000053531431,
+          "vss": 16794.28155757179,
+          "alignment": 0.999992588107481
+        }
+      ],
+      "pareto_centers": []
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x.ply",
+      "npz": "Experimental\\etc\\(3)dragon_100k_1.5x_tomo_int3_vss_grid_1deg_60deg.npz",
+      "face_count": 99999,
+      "candidate_pool_size": 1292,
+      "elapsed_sec": 3.8180893999815453,
+      "bbox_volume": 1487645.696065514,
+      "tomo_best": {
+        "yaw": 161.99999767787153,
+        "pitch": 257.9999866889366,
+        "vss": 24446.98002712786
+      },
+      "triggered": false,
+      "trigger_reasons": [
+        "boundary_local_minimum",
+        "low_seed_to_local_gain"
+      ],
+      "base_top_k": 10,
+      "escalate_top_k": 30,
+      "pareto_top_k": 0,
+      "baseline_centers": [
+        {
+          "source": "sftf",
+          "rank": 1.0,
+          "score": -0.06508079008520484,
+          "yaw": 210.99999334959645,
+          "pitch": 259.0000083456965,
+          "vss": 45804.406000562936,
+          "alignment": 0.9999724385419516
+        },
+        {
+          "source": "sftf",
+          "rank": 2.0,
+          "score": -0.0418177381874516,
+          "yaw": 41.00000000256408,
+          "pitch": 95.00000150525098,
+          "vss": 51231.620725521374,
+          "alignment": 0.9999780116561037
+        },
+        {
+          "source": "sftf",
+          "rank": 3.0,
+          "score": -0.026708830364058578,
+          "yaw": 12.999999792575526,
+          "pitch": 276.9999883560246,
+          "vss": 39547.57343639027,
+          "alignment": 0.9999732067999334
+        },
+        {
+          "source": "sftf",
+          "rank": 4.0,
+          "score": -0.0031845081332293468,
+          "yaw": 96.99999700744661,
+          "pitch": 95.00000150525098,
+          "vss": 45510.288112419694,
+          "alignment": 0.9999999639349522
+        },
+        {
+          "source": "sftf",
+          "rank": 5.0,
+          "score": 0.000215104570101321,
+          "yaw": 329.9999886925191,
+          "pitch": 274.0000053480149,
+          "vss": 42350.146396101016,
+          "alignment": 0.9999943753950407
+        },
+        {
+          "source": "sftf",
+          "rank": 6.0,
+          "score": 0.010565530596437389,
+          "yaw": 171.00000134341394,
+          "pitch": 259.0000083456965,
+          "vss": 31505.09605722979,
+          "alignment": 0.9999761496527108
+        },
+        {
+          "source": "sftf",
+          "rank": 7.0,
+          "score": 0.01149914794732787,
+          "yaw": 31.999999752116263,
+          "pitch": 91.99999800667379,
+          "vss": 50268.378139527376,
+          "alignment": 0.9999742755026059
+        },
+        {
+          "source": "sftf",
+          "rank": 8.0,
+          "score": 0.0253979860573208,
+          "yaw": 12.999999792575526,
+          "pitch": 281.9999873567974,
+          "vss": 41404.645305034544,
+          "alignment": 0.99997944362199
+        },
+        {
+          "source": "sftf",
+          "rank": 9.0,
+          "score": 0.029816189000775317,
+          "yaw": 73.99999750577815,
+          "pitch": 96.99999700744661,
+          "vss": 47526.11522832193,
+          "alignment": 0.9999997483435049
+        },
+        {
+          "source": "sftf",
+          "rank": 10.0,
+          "score": 0.043447017815647415,
+          "yaw": 347.9999960236039,
+          "pitch": 276.9999883560246,
+          "vss": 34760.08501919833,
+          "alignment": 0.9999997255911213
+        },
+        {
+          "source": "sftf",
+          "rank": 11.0,
+          "score": 0.04709132455460918,
+          "yaw": 56.000000419977106,
+          "pitch": 98.9999993398314,
+          "vss": 47096.03569724343,
+          "alignment": 0.9999969630611797
+        },
+        {
+          "source": "sftf",
+          "rank": 12.0,
+          "score": 0.052061657629744795,
+          "yaw": 214.99999801436604,
+          "pitch": 255.9999980169301,
+          "vss": 42079.172843743945,
+          "alignment": 0.9999687202914602
+        },
+        {
+          "source": "sftf",
+          "rank": 13.0,
+          "score": 0.05541487219209973,
+          "yaw": 12.999999792575526,
+          "pitch": 86.99999900590097,
+          "vss": 51350.81031105735,
+          "alignment": 0.9999998091740486
+        },
+        {
+          "source": "sftf",
+          "rank": 14.0,
+          "score": 0.06520131680867602,
+          "yaw": 264.0000073464693,
+          "pitch": 275.99999402002135,
+          "vss": 44732.51941775488,
+          "alignment": 0.9999796313429243
+        },
+        {
+          "source": "sftf",
+          "rank": 15.0,
+          "score": 0.07155352439969076,
+          "yaw": 314.99999169020066,
+          "pitch": 86.99999900590097,
+          "vss": 43093.90990202092,
+          "alignment": 0.9999825436578256
+        },
+        {
+          "source": "sftf",
+          "rank": 16.0,
+          "score": 0.08372649109217689,
+          "yaw": 21.00000058437824,
+          "pitch": 284.00000334956053,
+          "vss": 39589.093736380586,
+          "alignment": 0.9999729828410925
+        },
+        {
+          "source": "sftf",
+          "rank": 17.0,
+          "score": 0.09416134779240903,
+          "yaw": 212.99999568198123,
+          "pitch": 251.99999335216052,
+          "vss": 44298.12076663183,
+          "alignment": 0.9999907679386365
+        },
+        {
+          "source": "sftf",
+          "rank": 18.0,
+          "score": 0.10281285824941944,
+          "yaw": 139.99999934239548,
+          "pitch": 260.0000026816997,
+          "vss": 34568.82602912335,
+          "alignment": 0.9999773240378675
+        },
+        {
+          "source": "sftf",
+          "rank": 19.0,
+          "score": 0.1065561580170411,
+          "yaw": 163.0000056742531,
+          "pitch": 97.999998173639,
+          "vss": 53514.73280220977,
+          "alignment": 0.9999787869306276
+        },
+        {
+          "source": "sftf",
+          "rank": 20.0,
+          "score": 0.12730433772269611,
+          "yaw": 237.99999068584532,
+          "pitch": 274.0000053480149,
+          "vss": 44120.102874503646,
+          "alignment": 0.9999733321777244
+        },
+        {
+          "source": "sftf",
+          "rank": 21.0,
+          "score": 0.13817722695584878,
+          "yaw": 114.000003172339,
+          "pitch": 263.0000130104661,
+          "vss": 41472.28918784906,
+          "alignment": 0.9999937124341921
+        },
+        {
+          "source": "sftf",
+          "rank": 22.0,
+          "score": 0.15476816421378836,
+          "yaw": 202.9999976804356,
+          "pitch": 104.99999950679661,
+          "vss": 62555.73871707128,
+          "alignment": 0.9999980428265194
+        },
+        {
+          "source": "sftf",
+          "rank": 23.0,
+          "score": 0.16028822618125527,
+          "yaw": 353.99998936037997,
+          "pitch": 284.99999768556376,
+          "vss": 39807.217180236315,
+          "alignment": 0.9999960613357644
+        },
+        {
+          "source": "sftf",
+          "rank": 24.0,
+          "score": 0.16116855151045772,
+          "yaw": 231.99999734906928,
+          "pitch": 252.99998768816374,
+          "vss": 56520.61572744827,
+          "alignment": 0.9999975875822886
+        },
+        {
+          "source": "sftf",
+          "rank": 25.0,
+          "score": 0.16298628969790907,
+          "yaw": 54.0000015026869,
+          "pitch": 281.9999873567974,
+          "vss": 53671.50582557867,
+          "alignment": 0.9999974675924174
+        },
+        {
+          "source": "sftf",
+          "rank": 26.0,
+          "score": 0.17260193648334665,
+          "yaw": 192.99999967889,
+          "pitch": 252.99998768816374,
+          "vss": 40549.294022489186,
+          "alignment": 0.9999896883971062
+        },
+        {
+          "source": "sftf",
+          "rank": 27.0,
+          "score": 0.18224221533694807,
+          "yaw": 149.0000030079379,
+          "pitch": 257.9999866889366,
+          "vss": 33484.74266115299,
+          "alignment": 0.9999707789363678
+        },
+        {
+          "source": "sftf",
+          "rank": 28.0,
+          "score": 0.19480983733539903,
+          "yaw": 294.00000135110616,
+          "pitch": 79.99999767274336,
+          "vss": 43465.96110950817,
+          "alignment": 0.9999932225623089
+        },
+        {
+          "source": "sftf",
+          "rank": 29.0,
+          "score": 0.2018652982184359,
+          "yaw": 9.000000250447817,
+          "pitch": 74.99999867197056,
+          "vss": 55433.13144652311,
+          "alignment": 0.999989436771227
+        },
+        {
+          "source": "sftf",
+          "rank": 30.0,
+          "score": 0.2041595662277309,
+          "yaw": 207.99999668120842,
+          "pitch": 249.00001034415084,
+          "vss": 41783.435285584,
+          "alignment": 0.9999912720287388
+        }
+      ],
+      "pareto_centers": []
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x.ply",
+      "npz": "Experimental\\etc\\(4)happy_50k_0.75x_tomo_int3_vss_grid_1deg_60deg.npz",
+      "face_count": 49944,
+      "candidate_pool_size": 1292,
+      "elapsed_sec": 1.8024419999856036,
+      "bbox_volume": 349764.91179481667,
+      "tomo_best": {
+        "yaw": 90.99999684048139,
+        "pitch": 110.99999967376182,
+        "vss": 2112.4674268990507
+      },
+      "triggered": true,
+      "trigger_reasons": [
+        "high_normalized_support",
+        "boundary_local_minimum",
+        "low_seed_to_local_gain"
+      ],
+      "base_top_k": 10,
+      "escalate_top_k": 30,
+      "pareto_top_k": 0,
+      "baseline_centers": [
+        {
+          "source": "sftf",
+          "rank": 1.0,
+          "score": -0.507567467079783,
+          "yaw": 113.00000200614662,
+          "pitch": 294.00000135110616,
+          "vss": 25467.93961327923,
+          "alignment": 0.9999997093323317
+        },
+        {
+          "source": "sftf",
+          "rank": 2.0,
+          "score": -0.42693524399690097,
+          "yaw": 303.9999993526518,
+          "pitch": 252.99998768816374,
+          "vss": 26544.86254227063,
+          "alignment": 0.9999977415794278
+        },
+        {
+          "source": "sftf",
+          "rank": 3.0,
+          "score": -0.375486909372579,
+          "yaw": 252.99998768816374,
+          "pitch": 289.0000023503334,
+          "vss": 23727.487926640788,
+          "alignment": 0.9999757513851625
+        },
+        {
+          "source": "sftf",
+          "rank": 4.0,
+          "score": -0.3722995352439967,
+          "yaw": 106.000000672989,
+          "pitch": 297.00001167987256,
+          "vss": 25424.12970676895,
+          "alignment": 0.999992592715292
+        },
+        {
+          "source": "sftf",
+          "rank": 5.0,
+          "score": -0.36112896979085973,
+          "yaw": 302.00001068064535,
+          "pitch": 255.9999980169301,
+          "vss": 23883.464907811693,
+          "alignment": 0.999996441260191
+        },
+        {
+          "source": "sftf",
+          "rank": 6.0,
+          "score": -0.3541095274980628,
+          "yaw": 112.00000083995421,
+          "pitch": 286.9999863575702,
+          "vss": 23764.58270490662,
+          "alignment": 0.9999765563578368
+        },
+        {
+          "source": "sftf",
+          "rank": 7.0,
+          "score": -0.34761572424477116,
+          "yaw": 108.0000030053738,
+          "pitch": 290.9999910223398,
+          "vss": 24126.21837016965,
+          "alignment": 0.9999893660125236
+        },
+        {
+          "source": "sftf",
+          "rank": 8.0,
+          "score": -0.29825817195972093,
+          "yaw": 73.99999750577815,
+          "pitch": 239.00001234260523,
+          "vss": 27302.371568916256,
+          "alignment": 0.9999826649437479
+        },
+        {
+          "source": "sftf",
+          "rank": 9.0,
+          "score": -0.29342021688613473,
+          "yaw": 108.0000030053738,
+          "pitch": 312.000008682191,
+          "vss": 25335.246866399593,
+          "alignment": 0.9999981922224428
+        },
+        {
+          "source": "sftf",
+          "rank": 10.0,
+          "score": -0.272790782339271,
+          "yaw": 224.00000167990842,
+          "pitch": 284.00000334956053,
+          "vss": 29048.125605937865,
+          "alignment": 0.9999761353561892
+        },
+        {
+          "source": "sftf",
+          "rank": 11.0,
+          "score": -0.2584994577846629,
+          "yaw": 285.999992021567,
+          "pitch": 77.00000100435535,
+          "vss": 22002.129515340504,
+          "alignment": 0.9999889907817034
+        },
+        {
+          "source": "sftf",
+          "rank": 12.0,
+          "score": -0.25302873741285814,
+          "yaw": 123.99999434369548,
+          "pitch": 97.999998173639,
+          "vss": 23233.293501798773,
+          "alignment": 0.9999997598598654
+        },
+        {
+          "source": "sftf",
+          "rank": 13.0,
+          "score": -0.24315956622773016,
+          "yaw": 318.9999963549702,
+          "pitch": 255.9999980169301,
+          "vss": 27210.676965634684,
+          "alignment": 0.9999627701656655
+        },
+        {
+          "source": "sftf",
+          "rank": 14.0,
+          "score": -0.23578218435321407,
+          "yaw": 123.00000000769225,
+          "pitch": 114.000003172339,
+          "vss": 30804.013417772025,
+          "alignment": 0.9999623412580272
+        },
+        {
+          "source": "sftf",
+          "rank": 15.0,
+          "score": -0.23142920216886065,
+          "yaw": 135.9999946776259,
+          "pitch": 279.99999868479097,
+          "vss": 22647.286249586374,
+          "alignment": 0.9999703370740455
+        },
+        {
+          "source": "sftf",
+          "rank": 16.0,
+          "score": -0.2034512780790086,
+          "yaw": 106.000000672989,
+          "pitch": 318.9999963549702,
+          "vss": 23746.839239577617,
+          "alignment": 0.999963965576368
+        },
+        {
+          "source": "sftf",
+          "rank": 17.0,
+          "score": -0.1924364058869092,
+          "yaw": 281.9999873567974,
+          "pitch": 219.00000267913563,
+          "vss": 23247.082371357057,
+          "alignment": 0.999999418710574
+        },
+        {
+          "source": "sftf",
+          "rank": 18.0,
+          "score": -0.1588532920216883,
+          "yaw": 278.0000100127845,
+          "pitch": 67.99999733881295,
+          "vss": 21283.861034172627,
+          "alignment": 0.9999959250310475
+        },
+        {
+          "source": "sftf",
+          "rank": 19.0,
+          "score": -0.15446839659178901,
+          "yaw": 283.0000090135573,
+          "pitch": 226.99999834829646,
+          "vss": 23776.052411922738,
+          "alignment": 0.9999860249549121
+        },
+        {
+          "source": "sftf",
+          "rank": 20.0,
+          "score": -0.14054384198295855,
+          "yaw": 279.99999868479097,
+          "pitch": 73.99999750577815,
+          "vss": 20891.50089862918,
+          "alignment": 0.9999851973958449
+        },
+        {
+          "source": "sftf",
+          "rank": 21.0,
+          "score": -0.1186209140201393,
+          "yaw": 65.00000067042492,
+          "pitch": 264.0000073464693,
+          "vss": 23316.058245572178,
+          "alignment": 0.9999996895020965
+        },
+        {
+          "source": "sftf",
+          "rank": 22.0,
+          "score": -0.11310271107668424,
+          "yaw": 342.9999970228311,
+          "pitch": 261.99999135370615,
+          "vss": 23737.406927692,
+          "alignment": 0.9999787857379564
+        },
+        {
+          "source": "sftf",
+          "rank": 23.0,
+          "score": -0.11027893106119258,
+          "yaw": 109.99999850756943,
+          "pitch": 328.00000002051263,
+          "vss": 26530.880573367285,
+          "alignment": 0.9999894177809326
+        },
+        {
+          "source": "sftf",
+          "rank": 24.0,
+          "score": -0.08481766072811758,
+          "yaw": 283.0000090135573,
+          "pitch": 232.9999916850725,
+          "vss": 24953.493402023945,
+          "alignment": 0.9999762055596828
+        },
+        {
+          "source": "sftf",
+          "rank": 25.0,
+          "score": -0.08279728892331506,
+          "yaw": 115.99999867453464,
+          "pitch": 329.9999886925191,
+          "vss": 30641.29766353891,
+          "alignment": 0.9999814997664684
+        },
+        {
+          "source": "sftf",
+          "rank": 26.0,
+          "score": -0.08132618125484026,
+          "yaw": 84.99999667351618,
+          "pitch": 102.00000283840859,
+          "vss": 15148.296829097528,
+          "alignment": 0.9999870488238968
+        },
+        {
+          "source": "sftf",
+          "rank": 27.0,
+          "score": -0.07883903950426013,
+          "yaw": 278.0000100127845,
+          "pitch": 229.00000068068124,
+          "vss": 27468.657690631455,
+          "alignment": 0.9999529949683648
+        },
+        {
+          "source": "sftf",
+          "rank": 28.0,
+          "score": -0.07700898528272626,
+          "yaw": 125.99999667608026,
+          "pitch": 289.9999966863366,
+          "vss": 29134.823271065703,
+          "alignment": 0.9999753525917772
+        },
+        {
+          "source": "sftf",
+          "rank": 29.0,
+          "score": -0.0643750580945,
+          "yaw": 284.00000334956053,
+          "pitch": 192.99999967889,
+          "vss": 25853.196451486634,
+          "alignment": 0.999975929590617
+        },
+        {
+          "source": "sftf",
+          "rank": 30.0,
+          "score": -0.05876669248644406,
+          "yaw": 86.99999900590097,
+          "pitch": 96.99999700744661,
+          "vss": 10705.223753432598,
+          "alignment": 0.9999998137001329
+        }
+      ],
+      "pareto_centers": []
+    },
+    {
+      "mesh": "Group_C5_lucy_50k.ply",
+      "npz": "Experimental\\etc\\(5)lucy_50k_tomo_int3_vss_grid_1deg_60deg.npz",
+      "face_count": 49999,
+      "candidate_pool_size": 1292,
+      "elapsed_sec": 2.126595699985046,
+      "bbox_volume": 1133888.2427607272,
+      "tomo_best": {
+        "yaw": 181.99999368096277,
+        "pitch": 358.99998836115276,
+        "vss": 5036.138305979327
+      },
+      "triggered": false,
+      "trigger_reasons": [],
+      "base_top_k": 10,
+      "escalate_top_k": 30,
+      "pareto_top_k": 0,
+      "baseline_centers": [
+        {
+          "source": "sftf",
+          "rank": 1.0,
+          "score": -0.7001813323005417,
+          "yaw": 357.99999402514953,
+          "pitch": 176.99999468018999,
+          "vss": 14192.6816672333,
+          "alignment": 0.9999674919762596
+        },
+        {
+          "source": "sftf",
+          "rank": 2.0,
+          "score": -0.6652532145623546,
+          "yaw": 173.00000367579872,
+          "pitch": 3.999999969014533,
+          "vss": 27814.36068952576,
+          "alignment": 0.999978880429649
+        },
+        {
+          "source": "sftf",
+          "rank": 3.0,
+          "score": -0.5514936483346242,
+          "yaw": 173.99999801180195,
+          "pitch": 7.000000052497138,
+          "vss": 25350.659346777546,
+          "alignment": 0.9999654488745943
+        },
+        {
+          "source": "sftf",
+          "rank": 4.0,
+          "score": -0.508071959721146,
+          "yaw": 357.99999402514953,
+          "pitch": 173.99999801180195,
+          "vss": 22066.439478850563,
+          "alignment": 0.9999657210671277
+        },
+        {
+          "source": "sftf",
+          "rank": 5.0,
+          "score": -0.48107807900851995,
+          "yaw": 168.99999901102913,
+          "pitch": 98.9999993398314,
+          "vss": 54996.730867496204,
+          "alignment": 0.9999992887989919
+        },
+        {
+          "source": "sftf",
+          "rank": 6.0,
+          "score": -0.4617395817195966,
+          "yaw": 357.99999402514953,
+          "pitch": 181.99999368096277,
+          "vss": 13939.90083174272,
+          "alignment": 0.9999972762005411
+        },
+        {
+          "source": "sftf",
+          "rank": 7.0,
+          "score": -0.43669000774593325,
+          "yaw": 0.9999999922536332,
+          "pitch": 350.00001201636707,
+          "vss": 31072.75450525205,
+          "alignment": 0.9999972779153266
+        },
+        {
+          "source": "sftf",
+          "rank": 8.0,
+          "score": -0.43154353214562313,
+          "yaw": 352.0000006883735,
+          "pitch": 1.9999999845072665,
+          "vss": 30706.267711544824,
+          "alignment": 0.9999386875308066
+        },
+        {
+          "source": "sftf",
+          "rank": 9.0,
+          "score": -0.4302924089852824,
+          "yaw": 176.99999468018999,
+          "pitch": 9.99999970909292,
+          "vss": 26188.49178976264,
+          "alignment": 0.9999585664216112
+        },
+        {
+          "source": "sftf",
+          "rank": 10.0,
+          "score": -0.42005073586367114,
+          "yaw": 180.99999934495955,
+          "pitch": 3.0000000834826057,
+          "vss": 18312.86209673921,
+          "alignment": 0.9999944502640695
+        },
+        {
+          "source": "sftf",
+          "rank": 11.0,
+          "score": -0.342616266460108,
+          "yaw": 188.9999950141204,
+          "pitch": 6.000000166965211,
+          "vss": 16404.87308344565,
+          "alignment": 0.9999991137265984
+        },
+        {
+          "source": "sftf",
+          "rank": 12.0,
+          "score": -0.32670580945003835,
+          "yaw": 183.99999601334758,
+          "pitch": 357.99999402514953,
+          "vss": 14571.166235553332,
+          "alignment": 0.9999974096255577
+        },
+        {
+          "source": "sftf",
+          "rank": 13.0,
+          "score": -0.32668799380325286,
+          "yaw": 180.00000500895632,
+          "pitch": 192.99999967889,
+          "vss": 32409.53398144935,
+          "alignment": 0.9999655594392001
+        },
+        {
+          "source": "sftf",
+          "rank": 14.0,
+          "score": -0.3124854376452353,
+          "yaw": 185.00000400972914,
+          "pitch": 6.000000166965211,
+          "vss": 20305.546847256748,
+          "alignment": 0.9999986581494023
+        },
+        {
+          "source": "sftf",
+          "rank": 15.0,
+          "score": -0.30424779240898503,
+          "yaw": 180.99999934495955,
+          "pitch": 6.000000166965211,
+          "vss": 16514.934784124704,
+          "alignment": 0.9999969535708874
+        },
+        {
+          "source": "sftf",
+          "rank": 16.0,
+          "score": -0.3010960495739734,
+          "yaw": 4.99999985454646,
+          "pitch": 178.00000267657154,
+          "vss": 14765.056696805086,
+          "alignment": 0.9999742782383522
+        },
+        {
+          "source": "sftf",
+          "rank": 17.0,
+          "score": -0.2511957397366378,
+          "yaw": 176.00000034418676,
+          "pitch": 360.00001001791264,
+          "vss": 14243.931809732736,
+          "alignment": 0.9999729376568909
+        },
+        {
+          "source": "sftf",
+          "rank": 18.0,
+          "score": -0.2344848179705653,
+          "yaw": 7.000000052497138,
+          "pitch": 168.0000046750259,
+          "vss": 21429.75350056798,
+          "alignment": 0.9999430631489957
+        },
+        {
+          "source": "sftf",
+          "rank": 19.0,
+          "score": -0.23121603408210623,
+          "yaw": 173.00000367579872,
+          "pitch": 353.99998936037997,
+          "vss": 13973.090274274842,
+          "alignment": 0.9999707991590016
+        },
+        {
+          "source": "sftf",
+          "rank": 20.0,
+          "score": -0.23025453137102958,
+          "yaw": 190.00000301050196,
+          "pitch": 360.00001001791264,
+          "vss": 16348.002370724009,
+          "alignment": 0.9999685370364348
+        },
+        {
+          "source": "sftf",
+          "rank": 21.0,
+          "score": -0.21462207591014726,
+          "yaw": 235.00000767783564,
+          "pitch": 255.9999980169301,
+          "vss": 58814.8684541056,
+          "alignment": 0.9999959344852671
+        },
+        {
+          "source": "sftf",
+          "rank": 22.0,
+          "score": -0.2144581719597209,
+          "yaw": 339.9999866940647,
+          "pitch": 72.00000200358254,
+          "vss": 52369.02315754536,
+          "alignment": 0.9999934410642907
+        },
+        {
+          "source": "sftf",
+          "rank": 23.0,
+          "score": -0.20516212238574738,
+          "yaw": 360.00001001791264,
+          "pitch": 183.99999601334758,
+          "vss": 5613.8004153228,
+          "alignment": 0.9999717620479305
+        },
+        {
+          "source": "sftf",
+          "rank": 24.0,
+          "score": -0.18727792408985233,
+          "yaw": 294.00000135110616,
+          "pitch": 79.99999767274336,
+          "vss": 73878.31979546665,
+          "alignment": 0.9999932225623089
+        },
+        {
+          "source": "sftf",
+          "rank": 25.0,
+          "score": -0.15112896979085955,
+          "yaw": 176.99999468018999,
+          "pitch": 352.99999502437674,
+          "vss": 13338.649568478922,
+          "alignment": 0.9999598166090982
+        },
+        {
+          "source": "sftf",
+          "rank": 26.0,
+          "score": -0.14018435321456235,
+          "yaw": 188.9999950141204,
+          "pitch": 355.00001101713985,
+          "vss": 21211.198538788092,
+          "alignment": 0.9999831421920191
+        },
+        {
+          "source": "sftf",
+          "rank": 27.0,
+          "score": -0.12245290472501918,
+          "yaw": 16.999999334703237,
+          "pitch": 283.0000090135573,
+          "vss": 55546.437413239284,
+          "alignment": 0.9999787649255205
+        },
+        {
+          "source": "sftf",
+          "rank": 28.0,
+          "score": -0.11394810224632046,
+          "yaw": 353.99998936037997,
+          "pitch": 168.99999901102913,
+          "vss": 41133.61264063307,
+          "alignment": 0.9999668616921982
+        },
+        {
+          "source": "sftf",
+          "rank": 29.0,
+          "score": -0.09030023237800089,
+          "yaw": 352.0000006883735,
+          "pitch": 274.9999996840181,
+          "vss": 59608.57769674506,
+          "alignment": 0.9999987307110295
+        },
+        {
+          "source": "sftf",
+          "rank": 30.0,
+          "score": -0.08213268783888461,
+          "yaw": 356.0000053531431,
+          "pitch": 166.99999667864435,
+          "vss": 29615.922407670456,
+          "alignment": 0.9999965323534908
+        }
+      ],
+      "pareto_centers": []
+    }
+  ]
+}

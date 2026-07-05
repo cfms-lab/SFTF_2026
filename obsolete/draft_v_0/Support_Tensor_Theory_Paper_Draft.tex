@@ -1,0 +1,486 @@
+
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{kotex}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{hyperref}
+
+\geometry{margin=25mm}
+
+\title{
+Support Tensor Theory for Additive Manufacturing Orientation Optimization\\
+\large 고유벡터 기반 3D 프린팅 지지구조량 예측 이론
+}
+
+\author{
+Research Draft
+}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+In additive manufacturing, the amount of support structure strongly depends on the build orientation of a three-dimensional object.
+Conventional orientation optimization often requires repeated support-volume simulations over many sampled directions.
+This paper proposes a compact tensor-based approximation, called the \emph{Support Tensor}, that estimates favorable build directions directly from the surface normal distribution of a triangular mesh.
+For a mesh composed of triangular faces with area $A_i$ and unit outward normal $\bm m_i$, the Support Tensor is defined as
+\[
+M = \sum_{i=1}^{N} A_i \bm m_i \bm m_i^T.
+\]
+The directional support tendency is approximated by the quadratic form
+\[
+\widetilde S(\bm n)=\bm n^T M \bm n,
+\]
+where $\bm n$ is the unit build direction.
+By the Rayleigh quotient theorem, the eigenvector associated with the smallest eigenvalue of $M$ gives a candidate direction that minimizes the approximate support tendency.
+The framework is further extended to cavity-aware or overhang-aware weighting by introducing face weights $w_i$.
+The proposed method provides a fast, interpretable, and mathematically tractable preprocessing tool for build-orientation selection in 3D printing.
+\end{abstract}
+
+\section{Introduction}
+
+In material extrusion, vat photopolymerization, powder bed fusion, and other additive manufacturing processes, the build orientation of a part significantly affects support volume, surface quality, build time, material consumption, and post-processing cost.
+A common engineering problem is therefore to find a build direction that minimizes the amount of support structure while satisfying other manufacturing constraints.
+
+Let $\bm n \in \mathbb R^3$ be a unit vector representing the build direction.
+The ideal support volume may be described as a direction-dependent functional
+\[
+S(\bm n),
+\qquad
+\|\bm n\|=1.
+\]
+The orientation optimization problem is
+\begin{equation}
+\min_{\|\bm n\|=1} S(\bm n).
+\label{eq:main_problem}
+\end{equation}
+
+Direct evaluation of $S(\bm n)$ is often computationally expensive because it may require slicing, ray casting, visibility checks, overhang detection, and support generation.
+This motivates a fast approximation that can identify promising candidate directions before detailed simulation.
+
+The main idea of this paper is to construct a $3\times 3$ symmetric matrix from the surface normal distribution of the object.
+The eigenvectors of this matrix then provide physically interpretable candidate build directions.
+This approach is analogous to principal component analysis, but instead of using point coordinates, it uses surface normals weighted by triangle areas.
+
+\section{Triangular Mesh Model}
+
+Assume that a solid object is represented by a closed triangular surface mesh
+\[
+\mathcal M = \{T_i\}_{i=1}^{N}.
+\]
+For each triangle $T_i$, define
+
+\begin{itemize}
+\item $A_i > 0$: area of the triangle,
+\item $\bm m_i \in \mathbb R^3$: unit outward normal vector,
+\item $\bm c_i \in \mathbb R^3$: centroid of the triangle.
+\end{itemize}
+
+The build direction is denoted by a unit vector
+\[
+\bm n \in \mathbb S^2
+=
+\{\bm n\in\mathbb R^3:\|\bm n\|=1\}.
+\]
+
+\section{Support Functional Based on Overhang}
+
+A face tends to require support when its outward normal points downward relative to the build direction.
+A simple overhang indicator can be written as
+\[
+\bm m_i\cdot \bm n < 0.
+\]
+The negative part of a scalar $x$ is defined as
+\[
+x_-=\max(0,-x).
+\]
+Using this notation, a first-order support tendency functional can be written as
+\begin{equation}
+S_1(\bm n)
+=
+\sum_{i=1}^{N} A_i (\bm m_i\cdot \bm n)_-.
+\label{eq:first_order_support}
+\end{equation}
+
+Equivalently, using the Heaviside function $H$,
+\begin{equation}
+S_1(\bm n)
+=
+\sum_{i=1}^{N}
+A_i
+H(-\bm m_i\cdot \bm n)
+(-\bm m_i\cdot \bm n).
+\label{eq:heaviside_support}
+\end{equation}
+
+This expression captures the intuitive fact that large downward-facing surface areas tend to require more support.
+However, because of the Heaviside function and the negative-part operator, $S_1(\bm n)$ is not a simple quadratic function of $\bm n$.
+
+\section{Quadratic Approximation}
+
+To obtain an eigenvalue-based formulation, we approximate the directional dependence by a quadratic form.
+Consider
+\begin{equation}
+\widetilde S(\bm n)
+=
+\sum_{i=1}^{N}
+A_i
+(\bm m_i\cdot \bm n)^2.
+\label{eq:quadratic_support}
+\end{equation}
+
+Since
+\[
+(\bm m_i\cdot \bm n)^2
+=
+\bm n^T
+(\bm m_i\bm m_i^T)
+\bm n,
+\]
+we have
+\begin{align}
+\widetilde S(\bm n)
+&=
+\sum_{i=1}^{N}
+A_i
+\bm n^T
+(\bm m_i\bm m_i^T)
+\bm n\\
+&=
+\bm n^T
+\left(
+\sum_{i=1}^{N}
+A_i
+\bm m_i\bm m_i^T
+\right)
+\bm n.
+\end{align}
+
+This motivates the following definition.
+
+\section{Definition of the Support Tensor}
+
+\textbf{Definition 1.}
+For a triangular mesh $\mathcal M$, the area-weighted Support Tensor is defined as
+\begin{equation}
+M
+=
+\sum_{i=1}^{N}
+A_i
+\bm m_i\bm m_i^T.
+\label{eq:support_tensor}
+\end{equation}
+
+The corresponding quadratic support tendency is
+\begin{equation}
+\widetilde S(\bm n)
+=
+\bm n^T M \bm n.
+\label{eq:support_quadratic_form}
+\end{equation}
+
+The matrix $M$ is symmetric and positive semidefinite because each term
+$\bm m_i\bm m_i^T$ is symmetric and positive semidefinite.
+Therefore, all eigenvalues of $M$ are real and nonnegative.
+
+\section{Eigenvalue Formulation}
+
+The optimization problem associated with the quadratic approximation is
+\begin{equation}
+\min_{\|\bm n\|=1}
+\bm n^T M \bm n.
+\label{eq:rayleigh_problem}
+\end{equation}
+
+Let the eigenvalues of $M$ be
+\[
+\lambda_1 \leq \lambda_2 \leq \lambda_3,
+\]
+with corresponding orthonormal eigenvectors
+\[
+\bm v_1,\bm v_2,\bm v_3.
+\]
+
+By the Rayleigh quotient theorem,
+\begin{equation}
+\min_{\|\bm n\|=1}
+\bm n^T M \bm n
+=
+\lambda_1,
+\end{equation}
+and the minimum is attained at
+\begin{equation}
+\bm n = \bm v_1.
+\end{equation}
+
+Thus, the eigenvector corresponding to the smallest eigenvalue provides a candidate build direction that minimizes the approximate support tendency.
+
+\section{Relation to Principal Component Analysis}
+
+Principal component analysis constructs a covariance matrix from point coordinates:
+\begin{equation}
+C
+=
+\sum_{j=1}^{P}
+(\bm x_j-\bar{\bm x})
+(\bm x_j-\bar{\bm x})^T.
+\end{equation}
+
+The eigenvectors of $C$ represent principal geometric axes of the point cloud.
+In contrast, the Support Tensor uses surface normals:
+\begin{equation}
+M
+=
+\sum_{i=1}^{N}
+A_i
+\bm m_i\bm m_i^T.
+\end{equation}
+
+Therefore, PCA describes the distribution of mass or geometry in space, while the Support Tensor describes the distribution of surface orientations.
+For support-structure prediction, the surface normal distribution is often more directly relevant than the point distribution.
+
+\section{Weighted Support Tensor}
+
+The basic Support Tensor can be generalized by assigning a nonnegative weight $w_i$ to each triangle:
+\begin{equation}
+M_w
+=
+\sum_{i=1}^{N}
+w_i A_i
+\bm m_i\bm m_i^T.
+\label{eq:weighted_support_tensor}
+\end{equation}
+
+The corresponding directional functional is
+\begin{equation}
+\widetilde S_w(\bm n)
+=
+\bm n^T M_w \bm n.
+\end{equation}
+
+The weight $w_i$ can encode additional manufacturing or geometric information, such as
+
+\begin{itemize}
+\item overhang sensitivity,
+\item local surface roughness requirement,
+\item distance from the build plate,
+\item internal cavity influence,
+\item accessibility for support removal,
+\item material-dependent support penalty.
+\end{itemize}
+
+\subsection{Cavity-Aware Weighting}
+
+For a part with internal concave spaces or cavities, support difficulty may depend not only on surface orientation but also on whether a region is internally trapped or difficult to access.
+A simple cavity-aware model can be written as
+\begin{equation}
+w_i
+=
+1+\alpha q_i,
+\end{equation}
+where
+
+\begin{itemize}
+\item $\alpha\geq 0$ is a tuning parameter,
+\item $q_i\in[0,1]$ is a cavity influence score for triangle $i$.
+\end{itemize}
+
+Then
+\begin{equation}
+M_{\text{cav}}
+=
+\sum_{i=1}^{N}
+(1+\alpha q_i)
+A_i
+\bm m_i\bm m_i^T.
+\end{equation}
+
+If $q_i$ is large for faces near internal cavities or concave pockets, the resulting eigenvectors become more sensitive to cavity-related support penalties.
+
+\section{Comparison with Buoyancy Analogy}
+
+The proposed idea is related to a buoyancy analogy.
+Consider an ice-like body containing internal air cavities.
+The orientation of the body in water depends on the relationship between the center of mass and the center of buoyancy.
+If the object has internal voids, the distribution of mass and displaced volume may differ, producing orientation-dependent torques.
+
+Similarly, in 3D printing, concave spaces and downward-facing surfaces generate orientation-dependent support requirements.
+Although exact buoyancy or support behavior is generally nonlinear, a tensor approximation can capture first-order directional tendencies.
+The Support Tensor is therefore not an exact physical law, but a compact directional descriptor useful for fast orientation screening.
+
+\section{Algorithm}
+
+\begin{algorithm}
+\caption{Support Tensor-Based Build Direction Estimation}
+\begin{algorithmic}[1]
+\Require Triangular mesh $\mathcal M=\{T_i\}_{i=1}^{N}$
+\Ensure Candidate build direction $\bm n^\ast$
+\State Initialize $M\leftarrow 0_{3\times 3}$
+\For{$i=1$ to $N$}
+    \State Compute triangle area $A_i$
+    \State Compute unit outward normal $\bm m_i$
+    \State Choose weight $w_i$; use $w_i=1$ for the basic model
+    \State Update $M\leftarrow M+w_i A_i\bm m_i\bm m_i^T$
+\EndFor
+\State Compute eigenvalues and eigenvectors of $M$
+\State Let $\bm v_1$ be the eigenvector corresponding to the smallest eigenvalue
+\State Set $\bm n^\ast\leftarrow \bm v_1$
+\State Optionally evaluate both $\bm v_1$ and $-\bm v_1$ using the original support functional
+\State \Return $\bm n^\ast$
+\end{algorithmic}
+\end{algorithm}
+
+\section{Post-Selection Using the Original Functional}
+
+Because the quadratic form satisfies
+\[
+\widetilde S(\bm n)=\widetilde S(-\bm n),
+\]
+it cannot distinguish upward and downward directions.
+However, the actual support functional
+\[
+S_1(\bm n)
+=
+\sum_{i=1}^{N}
+A_i
+(\bm m_i\cdot \bm n)_-
+\]
+is generally not identical for $\bm n$ and $-\bm n$.
+Therefore, after computing the eigenvector $\bm v_1$, one should evaluate
+\[
+S_1(\bm v_1)
+\quad\text{and}\quad
+S_1(-\bm v_1)
+\]
+and choose the better of the two.
+
+A practical decision rule is
+\begin{equation}
+\bm n^\ast
+=
+\arg\min_{\bm n\in\{\bm v_1,-\bm v_1\}}
+S_1(\bm n).
+\end{equation}
+
+\section{Experimental Design}
+
+To validate the proposed method, one may compare the following approaches:
+
+\begin{enumerate}
+\item exhaustive directional sampling on the unit sphere,
+\item PCA-based build direction estimation,
+\item basic Support Tensor eigenvector method,
+\item weighted or cavity-aware Support Tensor method,
+\item commercial slicer-based support volume estimation.
+\end{enumerate}
+
+For each mesh, compute
+
+\begin{itemize}
+\item predicted build direction,
+\item estimated support area or volume,
+\item computation time,
+\item angular error relative to the best sampled direction,
+\item material saving ratio.
+\end{itemize}
+
+A possible performance metric is
+\begin{equation}
+E_{\text{angle}}
+=
+\cos^{-1}
+\left(
+|\bm n_{\text{pred}}\cdot \bm n_{\text{best}}|
+\right).
+\end{equation}
+
+Another metric is the relative support penalty:
+\begin{equation}
+E_{\text{support}}
+=
+\frac{
+S(\bm n_{\text{pred}})-S(\bm n_{\text{best}})
+}{
+S(\bm n_{\text{best}})
+}.
+\end{equation}
+
+\section{Discussion}
+
+The Support Tensor method has several advantages.
+
+First, it is computationally inexpensive.
+The main computation is the construction and eigenvalue decomposition of a $3\times 3$ symmetric matrix.
+
+Second, it is interpretable.
+Each triangle contributes according to its area and normal direction, so the tensor directly reflects the surface orientation distribution.
+
+Third, it can be extended.
+Weights can encode overhang angle thresholds, cavity difficulty, surface quality constraints, or material-dependent penalties.
+
+However, the method also has limitations.
+The quadratic approximation does not fully represent actual support volume, which depends on visibility, connectivity, slicing, self-shadowing, support removal, and process-specific rules.
+Therefore, the method should be regarded as a fast candidate-generation technique rather than a complete replacement for slicer-based simulation.
+
+\section{Conclusion}
+
+This paper proposed a tensor-based method for estimating favorable build directions in additive manufacturing.
+By defining the Support Tensor
+\[
+M
+=
+\sum_{i=1}^{N}
+A_i
+\bm m_i\bm m_i^T,
+\]
+the approximate support tendency becomes a quadratic form
+\[
+\widetilde S(\bm n)=\bm n^T M\bm n.
+\]
+The eigenvector associated with the smallest eigenvalue of $M$ gives a mathematically justified candidate direction for minimizing support tendency.
+The method is simple, fast, and extensible to cavity-aware and process-aware weighting schemes.
+It may serve as a useful preprocessing step for build-orientation optimization and support-structure reduction in 3D printing.
+
+\section*{Future Work}
+
+Future research may include
+
+\begin{itemize}
+\item deriving better approximations from the nonlinear support functional,
+\item incorporating overhang threshold angles,
+\item modeling internal cavities using visibility or ray-casting scores,
+\item comparing the method with commercial slicer outputs,
+\item validating the approach on thermal manikin and functional garment-related 3D printed models,
+\item extending the tensor model to multi-objective optimization including strength, surface quality, and build time.
+\end{itemize}
+
+\bibliographystyle{plain}
+\begin{thebibliography}{9}
+
+\bibitem{pca}
+Jolliffe, I. T.
+\textit{Principal Component Analysis}.
+Springer, 2002.
+
+\bibitem{am}
+Gibson, I., Rosen, D., and Stucker, B.
+\textit{Additive Manufacturing Technologies}.
+Springer, 2015.
+
+\bibitem{tensor}
+Mardia, K. V. and Jupp, P. E.
+\textit{Directional Statistics}.
+Wiley, 2000.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,61 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"%USERPROFILE%\\.claude\\hooks\\texdoc-gen.mjs\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"[console]::beep(880,250)\""
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell -NoProfile -Command \"[console]::beep(1320,150);[console]::beep(1320,150)\""
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"%USERPROFILE%\\.claude\\hooks\\graphify-autoinstall.mjs\""
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"%USERPROFILE%\\.claude\\hooks\\uv-venv-setup.mjs\""
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"%USERPROFILE%\\.claude\\hooks\\cfms-sync.mjs\""
+          }
+        ]
+      }
+    ]
+  }
+}

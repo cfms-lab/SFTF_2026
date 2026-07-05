@@ -1,0 +1,8 @@
+# Extra deps for the SFTF partitioning comparison (beyond the project's pyproject).
+# trimesh, numpy, scipy, scikit-learn, plotly are already in Tomo_SFTF_dev.
+# Only PyMaxflow is new (needed by baseline_graphcut.py; import name is "maxflow").
+#
+#   uv add pymaxflow
+# or
+#   uv pip install -r scripts/comparison/requirements-comparison.txt
+PyMaxflow>=1.3.0

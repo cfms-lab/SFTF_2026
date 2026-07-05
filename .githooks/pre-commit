@@ -1,0 +1,30 @@
+#!/bin/sh
+# Block commits that introduce files >= 50 MiB.
+# Checks the staged blob size (what will actually be committed).
+# Bypass intentionally with: git commit --no-verify
+#
+# Enable in a fresh clone with:  git config core.hooksPath .githooks
+
+limit=$((50 * 1024 * 1024))   # 50 MiB
+too_big=""
+
+while IFS= read -r path; do
+	[ -z "$path" ] && continue
+	size=$(git cat-file -s ":$path" 2>/dev/null) || continue
+	if [ "$size" -ge "$limit" ]; then
+		mb=$(awk "BEGIN{printf \"%.1f\", $size/1048576}")
+		too_big="${too_big}  ${path} (${mb} MB)
+"
+	fi
+done <<EOF
+$(git diff --cached --name-only --diff-filter=ACM)
+EOF
+
+if [ -n "$too_big" ]; then
+	printf '\033[91mcommit blocked: staged files >= 50 MiB:\033[0m\n' >&2
+	printf '%s' "$too_big" >&2
+	printf 'Unstage the large file(s), or bypass with: git commit --no-verify\n' >&2
+	exit 1
+fi
+
+exit 0

@@ -1,0 +1,10 @@
+^D:\__TOMONV_PROJECTS\TOMO_SFTF_DEV\CPP_SRC\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SD:/__TomoNV_Projects/Tomo_SFTF_dev/cpp_src -BD:/__TomoNV_Projects/Tomo_SFTF_dev/cpp_src/build_sftf --check-stamp-file D:/__TomoNV_Projects/Tomo_SFTF_dev/cpp_src/build_sftf/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

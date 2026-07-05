@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "semantic-scholar": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/akapet00/semantic-scholar-mcp",
+        "semantic-scholar-mcp"
+      ],
+      "env": {
+        "SEMANTIC_SCHOLAR_API_KEY": "${SEMANTIC_SCHOLAR_API_KEY}"
+      }
+    }
+  }
+}

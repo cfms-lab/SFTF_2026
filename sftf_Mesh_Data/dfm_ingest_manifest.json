@@ -1,0 +1,225 @@
+{
+  "result": {
+    "folder": "D:\\__SFTF_Projects(2026)\\SFTF_InjMold_dev\\python\\src\\moldability\\data\\dfm",
+    "draft_angle_deg": 1.0,
+    "n_analyzed": 10,
+    "skipped": [],
+    "parts": [
+      {
+        "name": "cosmetic_panel",
+        "n_faces": 12,
+        "watertight": true,
+        "oracle_die_lock": false,
+        "oracle_side_actions": 0,
+        "oracle_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "off_principal_deg": 0.0,
+        "pca_die_lock": false,
+        "pca_side_actions": 0,
+        "bbox6_side_actions": 0,
+        "sftf_die_lock": false,
+        "sftf_side_actions": 0,
+        "sftf_match": true,
+        "pca_match": true,
+        "sftf_budget": 0.047
+      },
+      {
+        "name": "drafted_box",
+        "n_faces": 12,
+        "watertight": true,
+        "oracle_die_lock": false,
+        "oracle_side_actions": 0,
+        "oracle_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "off_principal_deg": 0.0,
+        "pca_die_lock": false,
+        "pca_side_actions": 0,
+        "bbox6_side_actions": 0,
+        "sftf_die_lock": false,
+        "sftf_side_actions": 0,
+        "sftf_match": true,
+        "pca_match": true,
+        "sftf_budget": 0.047
+      },
+      {
+        "name": "drafted_cone",
+        "n_faces": 192,
+        "watertight": true,
+        "oracle_die_lock": false,
+        "oracle_side_actions": 0,
+        "oracle_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "off_principal_deg": 0.0,
+        "pca_die_lock": false,
+        "pca_side_actions": 0,
+        "bbox6_side_actions": 0,
+        "sftf_die_lock": false,
+        "sftf_side_actions": 0,
+        "sftf_match": true,
+        "pca_match": true,
+        "sftf_budget": 0.047
+      },
+      {
+        "name": "drafted_panel",
+        "n_faces": 12,
+        "watertight": true,
+        "oracle_die_lock": false,
+        "oracle_side_actions": 0,
+        "oracle_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "off_principal_deg": 0.0,
+        "pca_die_lock": false,
+        "pca_side_actions": 0,
+        "bbox6_side_actions": 0,
+        "sftf_die_lock": false,
+        "sftf_side_actions": 0,
+        "sftf_match": true,
+        "pca_match": true,
+        "sftf_budget": 0.047
+      },
+      {
+        "name": "rect_tube",
+        "n_faces": 32,
+        "watertight": true,
+        "oracle_die_lock": false,
+        "oracle_side_actions": 0,
+        "oracle_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "off_principal_deg": 0.0,
+        "pca_die_lock": false,
+        "pca_side_actions": 0,
+        "bbox6_side_actions": 0,
+        "sftf_die_lock": false,
+        "sftf_side_actions": 0,
+        "sftf_match": true,
+        "pca_match": true,
+        "sftf_budget": 0.047
+      },
+      {
+        "name": "rect_tube_rotated",
+        "n_faces": 32,
+        "watertight": true,
+        "oracle_die_lock": false,
+        "oracle_side_actions": 0,
+        "oracle_axis": [
+          -0.8416,
+          -0.1937,
+          0.5042
+        ],
+        "off_principal_deg": 2.7,
+        "pca_die_lock": false,
+        "pca_side_actions": 0,
+        "bbox6_side_actions": 2,
+        "sftf_die_lock": false,
+        "sftf_side_actions": 0,
+        "sftf_match": true,
+        "pca_match": true,
+        "sftf_budget": 0.047
+      },
+      {
+        "name": "sealed_shell",
+        "n_faces": 24,
+        "watertight": true,
+        "oracle_die_lock": true,
+        "oracle_side_actions": null,
+        "oracle_axis": null,
+        "off_principal_deg": null,
+        "pca_die_lock": true,
+        "pca_side_actions": null,
+        "bbox6_side_actions": null,
+        "sftf_die_lock": true,
+        "sftf_side_actions": null,
+        "sftf_match": true,
+        "pca_match": true,
+        "sftf_budget": 0.125
+      },
+      {
+        "name": "tilted_tube",
+        "n_faces": 32,
+        "watertight": true,
+        "oracle_die_lock": false,
+        "oracle_side_actions": 0,
+        "oracle_axis": [
+          -0.5872,
+          -0.1873,
+          0.7875
+        ],
+        "off_principal_deg": 21.1,
+        "pca_die_lock": false,
+        "pca_side_actions": 0,
+        "bbox6_side_actions": 1,
+        "sftf_die_lock": false,
+        "sftf_side_actions": 0,
+        "sftf_match": true,
+        "pca_match": true,
+        "sftf_budget": 0.047
+      },
+      {
+        "name": "twin_parallel_undercuts",
+        "n_faces": 64,
+        "watertight": true,
+        "oracle_die_lock": false,
+        "oracle_side_actions": 0,
+        "oracle_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "off_principal_deg": 0.0,
+        "pca_die_lock": false,
+        "pca_side_actions": 0,
+        "bbox6_side_actions": 0,
+        "sftf_die_lock": false,
+        "sftf_side_actions": 0,
+        "sftf_match": true,
+        "pca_match": true,
+        "sftf_budget": 0.047
+      },
+      {
+        "name": "two_perp_undercuts",
+        "n_faces": 64,
+        "watertight": true,
+        "oracle_die_lock": false,
+        "oracle_side_actions": 1,
+        "oracle_axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "off_principal_deg": 0.0,
+        "pca_die_lock": false,
+        "pca_side_actions": 1,
+        "bbox6_side_actions": 1,
+        "sftf_die_lock": false,
+        "sftf_side_actions": 2,
+        "sftf_match": false,
+        "pca_match": true,
+        "sftf_budget": 0.125
+      }
+    ]
+  },
+  "summary": {
+    "n": 10,
+    "sftf_match_rate": 0.9,
+    "pca_match_rate": 1.0,
+    "mean_sftf_budget": 0.0626,
+    "n_off_principal": 1,
+    "sftf_match_off_principal": 1.0,
+    "pca_match_off_principal": 1.0
+  }
+}

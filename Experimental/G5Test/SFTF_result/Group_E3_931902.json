@@ -1,0 +1,173 @@
+{
+  "group": "E",
+  "group_id": "E3",
+  "mesh": "Group_E3_931902.stl",
+  "angle_step_deg": 1.0,
+  "critical_angle_deg": 60.0,
+  "face_count": 1050398,
+  "coarse_direction_count": 512,
+  "candidate_pool_size": 1292,
+  "score_min": -0.6140220759101471,
+  "score_median": 0.8394299767622003,
+  "score_max": 4.137231525948877,
+  "top_directions": [
+    {
+      "rank": 1,
+      "label": "support flow score 1 hits=233 ray=7.771 pair=129.2 bed=249.4",
+      "tuned_score": -0.6140220759101471,
+      "direction": [
+        -0.03413824833377543,
+        0.9993236011596474,
+        0.013671875000000002
+      ],
+      "rayleigh_score": 7.770987997230808,
+      "pair_score": 129.21205407434405,
+      "bed_score": 249.3811175892513,
+      "hit_count": 233,
+      "singular_values": [
+        111.64488212491105,
+        10.146139168213791,
+        0.9215908679867096
+      ]
+    },
+    {
+      "rank": 2,
+      "label": "support flow score 2 hits=245 ray=581.4 pair=1298 bed=460.3",
+      "tuned_score": -0.6060885360185898,
+      "direction": [
+        -0.6498906646885706,
+        -0.7599649705868077,
+        0.009765625
+      ],
+      "rayleigh_score": 581.3849629878379,
+      "pair_score": 1297.7454327821306,
+      "bed_score": 460.3380182291269,
+      "hit_count": 245,
+      "singular_values": [
+        1199.4524832892066,
+        21.459926366125398,
+        0.4468377393167707
+      ]
+    },
+    {
+      "rank": 3,
+      "label": "support flow score 3 hits=257 ray=473.3 pair=1013 bed=276.4",
+      "tuned_score": -0.5973690162664599,
+      "direction": [
+        -0.5649105165575824,
+        0.8244838753868262,
+        0.03320312499999999
+      ],
+      "rayleigh_score": 473.30386307208477,
+      "pair_score": 1013.453964766126,
+      "bed_score": 276.4143524653173,
+      "hit_count": 257,
+      "singular_values": [
+        934.6941666032066,
+        18.700659847497647,
+        0.20555473085924386
+      ]
+    }
+  ],
+  "html": "SFTF_result/Group_E3_931902.html",
+  "candidates_csv": "SFTF_result/Group_E3_931902_candidates.csv",
+  "elapsed_sec": 23.93386140000075,
+  "tomo_int3_dll_sec": 1331.9175716000027,
+  "tomo_int3_cached": false,
+  "tomo_int3_html": "Group_E3_931902_tomo_int3.html",
+  "tomo_int3_best": {
+    "yaw": 323.00000101973984,
+    "pitch": 0.0,
+    "vss": 0.0
+  },
+  "tomo_int3_error": null,
+  "tomo_cuda_dll_sec": 19943.394062699983,
+  "tomo_cuda_cached": false,
+  "tomo_cuda_html": "Group_E3_931902_tomo_cuda.html",
+  "tomo_cuda_best": null,
+  "tomo_cuda_error": "suspect (reproduced): re-sweep also yields exactly 7 zero cells clustered in the same two direction neighborhoods (yaw 0/360, pitch ~323; yaw ~180, pitch ~142) but at partly different cells, and nonzero cells differ run-to-run (max diff 831) -- stochastic CUDA kernel failure, see Tomo_Shell2026-dev/BUGREPORT_2026-07-03_INT16_vss_overflow.md issue A. dll_sec valid; do not use best until the dll is fixed.",
+  "sftf_cpp_ms": 6888.7083,
+  "sftf_cpp_optimal": [
+    {
+      "rank": 1,
+      "direction": [
+        -0.03413824833377543,
+        0.9993236011596474,
+        0.013671875000000002
+      ],
+      "tuned_score": -0.6140220759101471,
+      "rayleigh_score": 7.770987997230808,
+      "pair_score": 129.21205407434402,
+      "bed_score": 249.3811175892515,
+      "hit_count": 233
+    },
+    {
+      "rank": 2,
+      "direction": [
+        -0.6498906646885706,
+        -0.7599649705868077,
+        0.009765625
+      ],
+      "tuned_score": -0.6060885360185904,
+      "rayleigh_score": 581.384962987838,
+      "pair_score": 1297.7454327821306,
+      "bed_score": 460.33801822912613,
+      "hit_count": 245
+    },
+    {
+      "rank": 3,
+      "direction": [
+        -0.5649105165575825,
+        0.8244838753868264,
+        0.033203125
+      ],
+      "tuned_score": -0.5992877614252516,
+      "rayleigh_score": 473.30386307208505,
+      "pair_score": 1013.4539647661262,
+      "bed_score": 276.41435246531734,
+      "hit_count": 257
+    }
+  ],
+  "sftf_cpp_worst": [
+    {
+      "rank": 1,
+      "direction": [
+        0.1739592855920794,
+        -0.11065865798550392,
+        0.978515625
+      ],
+      "tuned_score": 4.137231525948878,
+      "rayleigh_score": 15.894335813509265,
+      "pair_score": 28.20246285537808,
+      "bed_score": 2154.0632076937536,
+      "hit_count": 616
+    },
+    {
+      "rank": 2,
+      "direction": [
+        -0.11074766515651636,
+        -0.2132378901077726,
+        0.970703125
+      ],
+      "tuned_score": 4.116312935708754,
+      "rayleigh_score": 19.910995794661165,
+      "pair_score": 30.198313474531354,
+      "bed_score": 2154.578652433808,
+      "hit_count": 632
+    },
+    {
+      "rank": 3,
+      "direction": [
+        0.012188250577684002,
+        -0.13887882889848602,
+        0.990234375
+      ],
+      "tuned_score": 4.010201936483346,
+      "rayleigh_score": 21.384030488111723,
+      "pair_score": 30.387309593202964,
+      "bed_score": 2153.8333444390505,
+      "hit_count": 574
+    }
+  ],
+  "sftf_cpp_error": null
+}

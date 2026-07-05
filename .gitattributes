@@ -1,0 +1,11 @@
+*.py text eol=lf
+# Mesh assets: store as-is, never apply line-ending conversion or text diffs.
+*.stl binary
+*.obj binary
+*.ply binary
+*.off binary
+*.3mf binary
+*.glb binary
+*.fbx binary
+MeshData/four_group_verification/Group_E10_65942.stl filter=lfs diff=lfs merge=lfs -text
+Experimental/G5Test/RawMesh/Group_E10_65942.stl filter=lfs diff=lfs merge=lfs -text

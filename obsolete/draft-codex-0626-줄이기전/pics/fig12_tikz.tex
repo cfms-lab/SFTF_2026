@@ -1,0 +1,115 @@
+% ============================================================
+%  Redrawn TikZ figures for SFTF_draft_eng.tex
+%  Fig.1 (fig:flow-geometry)  and  Fig.2 (fig:unified-flow)
+%
+%  HOW TO USE
+%  1) Add the PREAMBLE block once (before \begin{document}).
+%     If you already load tikz, just add the missing libraries,
+%     the two \definecolor lines, and the \tikzset{iso/...} block.
+%  2) Replace each existing inline-TikZ figure body with the
+%     matching FIGURE block below (captions/labels preserved).
+% ============================================================
+
+% ----------------------- PREAMBLE ---------------------------
+% \usepackage{tikz}
+% \usepackage{amsmath}
+% \usetikzlibrary{arrows.meta, calc, patterns, decorations.pathreplacing}
+% \definecolor{ohred}{HTML}{B23B2E}
+% \definecolor{rcblue}{HTML}{2F5FA6}
+% \tikzset{
+%   iso/.style={>=Latex, line join=round, line cap=round, scale=1.25,
+%     x={(0.87cm,-0.50cm)}, y={(-0.87cm,-0.50cm)}, z={(0cm,1.0cm)},
+%     every node/.style={font=\small}},
+%   rface/.style={fill=ohred!16, draw=ohred!72!black, line width=1pt},
+%   bface/.style={fill=rcblue!16, draw=rcblue!72!black, line width=1pt},
+%   nrm/.style={->, line width=1.2pt},
+%   flow/.style={->, line width=1pt, dash pattern=on 2.4pt off 2.4pt, gray!60!black},
+% }
+% ------------------------------------------------------------
+
+
+% ================= FIGURE 1 : flow-geometry =================
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[iso, scale=1.3]
+  % build plate
+  \fill[pattern=north east lines, pattern color=black!35] (-0.8,-0.8,0)--(2.9,-0.8,0)--(2.9,2.2,0)--(-0.8,2.2,0)--cycle;
+  \draw[black!55,line width=0.9pt] (-0.8,-0.8,0)--(2.9,-0.8,0)--(2.9,2.2,0)--(-0.8,2.2,0)--cycle;
+  \node[black!60,anchor=north,yshift=-2pt] at (2.9,2.2,0) {build plate $z_{\mathrm{plate}}(n)$};
+  % receiver triangle j
+  \fill[bface] (0.20,0.15,1.00)--(1.55,0.10,1.04)--(0.82,1.45,1.08)--cycle;
+  \coordinate (cj) at (0.857,0.567,1.04);
+  \fill[rcblue!72!black] (cj) circle (1.4pt);
+  \node[below=1pt,font=\footnotesize] at (cj) {$c_j$};
+  \draw[nrm,rcblue!72!black] (cj)--++(0,0,0.48) node[left=0pt,inner sep=1pt]{$m_j$};
+  \node[rcblue!72!black,anchor=west,xshift=5pt] at (1.55,0.10,1.04) {receiver face $j$};
+  % overhang triangle i
+  \fill[rface] (0.15,0.10,2.45)--(1.50,0.05,2.50)--(0.78,1.40,2.40)--cycle;
+  \coordinate (ci) at (0.81,0.517,2.45);
+  \fill[ohred!72!black] (ci) circle (1.4pt);
+  \node[above left=-3pt,font=\footnotesize] at (ci) {$c_i$};
+  \draw[nrm,ohred!72!black] (ci)--++(0,0,-0.52) node[right=1pt,inner sep=1pt]{$m_i$};
+  \node[ohred!72!black,anchor=west,xshift=5pt] at (1.50,0.05,2.50) {overhang face $i$};
+  % ray -n
+  \draw[flow] ($(ci)+(0,0,-0.07)$)--($(cj)+(0,0,0.16)$);
+  \node[anchor=east,xshift=-4pt,font=\footnotesize,gray!55!black] at (0.83,0.54,1.78) {ray $-n$};
+  % height brace
+  \draw[decorate,decoration={brace,amplitude=5pt},black!55]
+        (2.55,1.25,2.45)--(2.55,1.25,1.04) node[midway,right=6pt]{$h_{ij}>0$};
+  % build direction
+  \draw[->,line width=1.2pt] (-1.35,-0.2,1.5)--++(0,0,1.2) node[above,inner sep=1pt]{$n$ (build direction)};
+\end{tikzpicture}
+\caption{Geometry of the support flow. From overhang face $i$ (downward normal $m_i$, $O_i=\max(0,-m_i\cdot n)>0$),
+a ray is cast in $-n$, opposite the build direction, to find the valid receiver face $j$ below.
+A support flow is recognized only when the height difference $h_{ij}=(c_i-c_j)\cdot n>0$,
+and this face-to-face pair forms one term of the tensor $F(n)=\sum w_{ij}A_iA_j\,m_im_j^T$.}
+\label{fig:flow-geometry}
+\end{figure}
+
+
+% ================= FIGURE 2 : unified-flow ==================
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[iso, scale=1.2]
+  % ---- (a) face-to-face flow ----
+  \begin{scope}
+    \fill[black!5,draw=black!22,line width=0.4pt] (-0.6,-0.6,0)--(2.2,-0.6,0.05)--(2.2,1.9,0.10)--(-0.6,1.9,0.05)--cycle;
+    \draw[black!18,line width=0.35pt] (-0.6,-0.6,0)--(2.2,1.9,0.10);
+    \fill[ohred!6,draw=ohred!26,line width=0.4pt] (-0.5,-0.5,1.85)--(2.1,-0.5,1.9)--(2.1,1.8,1.78)--(-0.5,1.8,1.7)--cycle;
+    \fill[bface] (0.20,0.15,0.06)--(1.50,0.10,0.10)--(0.80,1.40,0.12)--cycle;
+    \coordinate (cj) at (0.833,0.55,0.093);
+    \fill[rcblue!72!black] (cj) circle (1.3pt);
+    \draw[nrm,rcblue!72!black] (cj)--++(0,0,0.60) node[above,inner sep=1pt]{$m_j$};
+    \fill[rface] (0.15,0.10,1.78)--(1.45,0.05,1.84)--(0.75,1.35,1.72)--cycle;
+    \coordinate (ci) at (0.783,0.50,1.78);
+    \fill[ohred!72!black] (ci) circle (1.3pt);
+    \draw[nrm,ohred!72!black] (ci)--++(0,0,-0.55) node[below right=-3pt]{$m_i$};
+    \draw[flow] ($(ci)+(0,0,-0.06)$)--($(cj)+(0,0,0.18)$);
+    \draw[black!55,line width=0.8pt] (2.05,1.0,1.78)--(2.05,1.0,0.093);
+    \node[right=1pt,font=\footnotesize] at (2.05,1.0,0.95) {$h_{ij}$};
+    \draw[->,line width=1.1pt] (-1.15,0.4,1.0)--++(0,0,1.0) node[above,inner sep=1pt]{$n$};
+    \node[font=\bfseries] at (0.8,0.8,-0.75) {(a) face-to-face flow};
+  \end{scope}
+  % ---- (b) build-plate / virtual ground node ----
+  \begin{scope}[xshift=7.2cm]
+    \fill[ohred!6,draw=ohred!26,line width=0.4pt] (-0.5,-0.5,1.85)--(2.1,-0.5,1.9)--(2.1,1.8,1.78)--(-0.5,1.8,1.7)--cycle;
+    \fill[rface] (0.15,0.10,1.78)--(1.45,0.05,1.84)--(0.75,1.35,1.72)--cycle;
+    \coordinate (ci) at (0.783,0.50,1.78);
+    \fill[ohred!72!black] (ci) circle (1.3pt);
+    \draw[nrm,ohred!72!black] (ci)--++(0,0,-0.55) node[below right=-3pt]{$m_i$};
+    \fill[pattern=north east lines, pattern color=black!42] (-0.5,-0.5,0.16)--(2.5,-0.5,0.16)--(2.5,2.0,0.16)--(-0.5,2.0,0.16)--cycle;
+    \draw[black!55,line width=0.9pt] (-0.5,-0.5,0.16)--(2.5,-0.5,0.16)--(2.5,2.0,0.16)--(-0.5,2.0,0.16)--cycle;
+    \coordinate (gp) at (0.85,0.75,0.16);
+    \fill[rcblue!72!black] (gp) circle (1.4pt);
+    \draw[nrm,rcblue!72!black] (gp)--++(0,0,0.60) node[above,inner sep=1pt]{$n$};
+    \draw[flow] ($(ci)+(0,0,-0.06)$)--($(gp)+(0,0,0.10)$);
+    \draw[->,line width=1.1pt] (-1.15,0.4,1.0)--++(0,0,1.0) node[above,inner sep=1pt]{$n$};
+    \node[font=\bfseries] at (0.9,0.9,-0.75) {(b) build-plate (virtual ground node)};
+  \end{scope}
+\end{tikzpicture}
+\caption{The two flow terms of the unified tensor. (a) When overhang $i$ is supported by an actual face $j$, the receiver normal is
+$m_j\cdot n\in(\eta,1)$ and the tensor term is $m_im_j^T$. (b) When there is no face to support it,
+it is supported by the build plate, ``a limiting receiver whose normal is exactly $n$'' ($m\cdot n=1$), and the term becomes $m_in^T$.
+The build-plate cost $B(n)$ is exactly equal to the Rayleigh contribution of this ground term (Eq.~\eqref{eq:Rtilde}).}
+\label{fig:unified-flow}
+\end{figure}

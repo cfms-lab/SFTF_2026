@@ -1,0 +1,1806 @@
+{
+  "source": "Thingi10K (Zhou & Jacobson 2016), HuggingFace",
+  "n": 300,
+  "parts": [
+    {
+      "file_id": "100077",
+      "num_faces": 528,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/100077.npz"
+    },
+    {
+      "file_id": "101550",
+      "num_faces": 1320,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/101550.npz"
+    },
+    {
+      "file_id": "101560",
+      "num_faces": 640,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/101560.npz"
+    },
+    {
+      "file_id": "1016856",
+      "num_faces": 1992,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1016856.npz"
+    },
+    {
+      "file_id": "1016874",
+      "num_faces": 1992,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1016874.npz"
+    },
+    {
+      "file_id": "1018274",
+      "num_faces": 576,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1018274.npz"
+    },
+    {
+      "file_id": "1018278",
+      "num_faces": 2084,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1018278.npz"
+    },
+    {
+      "file_id": "1018295",
+      "num_faces": 512,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1018295.npz"
+    },
+    {
+      "file_id": "102066",
+      "num_faces": 1320,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/102066.npz"
+    },
+    {
+      "file_id": "1020669",
+      "num_faces": 704,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1020669.npz"
+    },
+    {
+      "file_id": "102248",
+      "num_faces": 2260,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/102248.npz"
+    },
+    {
+      "file_id": "103144",
+      "num_faces": 868,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/103144.npz"
+    },
+    {
+      "file_id": "103145",
+      "num_faces": 924,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/103145.npz"
+    },
+    {
+      "file_id": "1036311",
+      "num_faces": 2208,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1036311.npz"
+    },
+    {
+      "file_id": "1036312",
+      "num_faces": 1016,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1036312.npz"
+    },
+    {
+      "file_id": "1036313",
+      "num_faces": 1850,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1036313.npz"
+    },
+    {
+      "file_id": "1036393",
+      "num_faces": 784,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1036393.npz"
+    },
+    {
+      "file_id": "1036394",
+      "num_faces": 784,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1036394.npz"
+    },
+    {
+      "file_id": "1036395",
+      "num_faces": 568,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1036395.npz"
+    },
+    {
+      "file_id": "1036462",
+      "num_faces": 844,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1036462.npz"
+    },
+    {
+      "file_id": "1036650",
+      "num_faces": 1016,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1036650.npz"
+    },
+    {
+      "file_id": "1036654",
+      "num_faces": 1604,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1036654.npz"
+    },
+    {
+      "file_id": "104301",
+      "num_faces": 1644,
+      "genus": 18,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/104301.npz"
+    },
+    {
+      "file_id": "1044251",
+      "num_faces": 568,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1044251.npz"
+    },
+    {
+      "file_id": "105103",
+      "num_faces": 1638,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/105103.npz"
+    },
+    {
+      "file_id": "105120",
+      "num_faces": 1968,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/105120.npz"
+    },
+    {
+      "file_id": "105330",
+      "num_faces": 1718,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/105330.npz"
+    },
+    {
+      "file_id": "105336",
+      "num_faces": 1086,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/105336.npz"
+    },
+    {
+      "file_id": "1053374",
+      "num_faces": 778,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1053374.npz"
+    },
+    {
+      "file_id": "1054518",
+      "num_faces": 692,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1054518.npz"
+    },
+    {
+      "file_id": "105691",
+      "num_faces": 734,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/105691.npz"
+    },
+    {
+      "file_id": "105692",
+      "num_faces": 692,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/105692.npz"
+    },
+    {
+      "file_id": "106683",
+      "num_faces": 1096,
+      "genus": 6,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/106683.npz"
+    },
+    {
+      "file_id": "1066896",
+      "num_faces": 888,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1066896.npz"
+    },
+    {
+      "file_id": "1066897",
+      "num_faces": 888,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1066897.npz"
+    },
+    {
+      "file_id": "1066898",
+      "num_faces": 1160,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1066898.npz"
+    },
+    {
+      "file_id": "1066899",
+      "num_faces": 908,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1066899.npz"
+    },
+    {
+      "file_id": "1066900",
+      "num_faces": 1744,
+      "genus": 9,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1066900.npz"
+    },
+    {
+      "file_id": "1066901",
+      "num_faces": 1432,
+      "genus": 7,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1066901.npz"
+    },
+    {
+      "file_id": "106705",
+      "num_faces": 1090,
+      "genus": 8,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/106705.npz"
+    },
+    {
+      "file_id": "106725",
+      "num_faces": 832,
+      "genus": 8,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/106725.npz"
+    },
+    {
+      "file_id": "107067",
+      "num_faces": 1374,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/107067.npz"
+    },
+    {
+      "file_id": "107068",
+      "num_faces": 1214,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/107068.npz"
+    },
+    {
+      "file_id": "107149",
+      "num_faces": 612,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/107149.npz"
+    },
+    {
+      "file_id": "107439",
+      "num_faces": 1010,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/107439.npz"
+    },
+    {
+      "file_id": "1075456",
+      "num_faces": 1452,
+      "genus": 6,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1075456.npz"
+    },
+    {
+      "file_id": "108329",
+      "num_faces": 740,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/108329.npz"
+    },
+    {
+      "file_id": "1083348",
+      "num_faces": 1648,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1083348.npz"
+    },
+    {
+      "file_id": "1083350",
+      "num_faces": 1196,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1083350.npz"
+    },
+    {
+      "file_id": "1083353",
+      "num_faces": 878,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1083353.npz"
+    },
+    {
+      "file_id": "1083354",
+      "num_faces": 1510,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1083354.npz"
+    },
+    {
+      "file_id": "108337",
+      "num_faces": 516,
+      "genus": 6,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/108337.npz"
+    },
+    {
+      "file_id": "108341",
+      "num_faces": 1388,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/108341.npz"
+    },
+    {
+      "file_id": "108517",
+      "num_faces": 1164,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/108517.npz"
+    },
+    {
+      "file_id": "108518",
+      "num_faces": 796,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/108518.npz"
+    },
+    {
+      "file_id": "108618",
+      "num_faces": 620,
+      "genus": 6,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/108618.npz"
+    },
+    {
+      "file_id": "108619",
+      "num_faces": 1664,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/108619.npz"
+    },
+    {
+      "file_id": "109344",
+      "num_faces": 2076,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/109344.npz"
+    },
+    {
+      "file_id": "109729",
+      "num_faces": 796,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/109729.npz"
+    },
+    {
+      "file_id": "110042",
+      "num_faces": 734,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110042.npz"
+    },
+    {
+      "file_id": "110172",
+      "num_faces": 1028,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110172.npz"
+    },
+    {
+      "file_id": "110201",
+      "num_faces": 528,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110201.npz"
+    },
+    {
+      "file_id": "110202",
+      "num_faces": 1978,
+      "genus": 8,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110202.npz"
+    },
+    {
+      "file_id": "110204",
+      "num_faces": 1066,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110204.npz"
+    },
+    {
+      "file_id": "110205",
+      "num_faces": 2408,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110205.npz"
+    },
+    {
+      "file_id": "110207",
+      "num_faces": 888,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110207.npz"
+    },
+    {
+      "file_id": "110211",
+      "num_faces": 672,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110211.npz"
+    },
+    {
+      "file_id": "1103938",
+      "num_faces": 1540,
+      "genus": 7,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1103938.npz"
+    },
+    {
+      "file_id": "110782",
+      "num_faces": 2402,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110782.npz"
+    },
+    {
+      "file_id": "110786",
+      "num_faces": 2220,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110786.npz"
+    },
+    {
+      "file_id": "110837",
+      "num_faces": 1380,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110837.npz"
+    },
+    {
+      "file_id": "110911",
+      "num_faces": 1364,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/110911.npz"
+    },
+    {
+      "file_id": "111021",
+      "num_faces": 1220,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/111021.npz"
+    },
+    {
+      "file_id": "111046",
+      "num_faces": 1440,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/111046.npz"
+    },
+    {
+      "file_id": "111400",
+      "num_faces": 1024,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/111400.npz"
+    },
+    {
+      "file_id": "1120760",
+      "num_faces": 1076,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1120760.npz"
+    },
+    {
+      "file_id": "1120763",
+      "num_faces": 944,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1120763.npz"
+    },
+    {
+      "file_id": "1120771",
+      "num_faces": 1416,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1120771.npz"
+    },
+    {
+      "file_id": "1120773",
+      "num_faces": 1268,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1120773.npz"
+    },
+    {
+      "file_id": "1129073",
+      "num_faces": 1944,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1129073.npz"
+    },
+    {
+      "file_id": "1129074",
+      "num_faces": 1944,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1129074.npz"
+    },
+    {
+      "file_id": "112919",
+      "num_faces": 1600,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/112919.npz"
+    },
+    {
+      "file_id": "112922",
+      "num_faces": 2000,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/112922.npz"
+    },
+    {
+      "file_id": "112928",
+      "num_faces": 1600,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/112928.npz"
+    },
+    {
+      "file_id": "112940",
+      "num_faces": 1600,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/112940.npz"
+    },
+    {
+      "file_id": "112941",
+      "num_faces": 1600,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/112941.npz"
+    },
+    {
+      "file_id": "113134",
+      "num_faces": 2170,
+      "genus": 8,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/113134.npz"
+    },
+    {
+      "file_id": "113344",
+      "num_faces": 624,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/113344.npz"
+    },
+    {
+      "file_id": "113887",
+      "num_faces": 1662,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/113887.npz"
+    },
+    {
+      "file_id": "113889",
+      "num_faces": 560,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/113889.npz"
+    },
+    {
+      "file_id": "113890",
+      "num_faces": 932,
+      "genus": 9,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/113890.npz"
+    },
+    {
+      "file_id": "113908",
+      "num_faces": 536,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/113908.npz"
+    },
+    {
+      "file_id": "1146162",
+      "num_faces": 694,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1146162.npz"
+    },
+    {
+      "file_id": "1146164",
+      "num_faces": 822,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1146164.npz"
+    },
+    {
+      "file_id": "1146184",
+      "num_faces": 1414,
+      "genus": 7,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1146184.npz"
+    },
+    {
+      "file_id": "1146186",
+      "num_faces": 1954,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1146186.npz"
+    },
+    {
+      "file_id": "1146190",
+      "num_faces": 1660,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1146190.npz"
+    },
+    {
+      "file_id": "1146195",
+      "num_faces": 1908,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1146195.npz"
+    },
+    {
+      "file_id": "1158265",
+      "num_faces": 1768,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1158265.npz"
+    },
+    {
+      "file_id": "116064",
+      "num_faces": 1610,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/116064.npz"
+    },
+    {
+      "file_id": "116067",
+      "num_faces": 1730,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/116067.npz"
+    },
+    {
+      "file_id": "116073",
+      "num_faces": 540,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/116073.npz"
+    },
+    {
+      "file_id": "1164424",
+      "num_faces": 1436,
+      "genus": 6,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1164424.npz"
+    },
+    {
+      "file_id": "117525",
+      "num_faces": 2260,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/117525.npz"
+    },
+    {
+      "file_id": "117526",
+      "num_faces": 2260,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/117526.npz"
+    },
+    {
+      "file_id": "117647",
+      "num_faces": 1536,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/117647.npz"
+    },
+    {
+      "file_id": "118287",
+      "num_faces": 2186,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/118287.npz"
+    },
+    {
+      "file_id": "1185140",
+      "num_faces": 800,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1185140.npz"
+    },
+    {
+      "file_id": "118675",
+      "num_faces": 1360,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/118675.npz"
+    },
+    {
+      "file_id": "118680",
+      "num_faces": 2416,
+      "genus": 13,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/118680.npz"
+    },
+    {
+      "file_id": "118681",
+      "num_faces": 1948,
+      "genus": 9,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/118681.npz"
+    },
+    {
+      "file_id": "118895",
+      "num_faces": 1028,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/118895.npz"
+    },
+    {
+      "file_id": "118921",
+      "num_faces": 2008,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/118921.npz"
+    },
+    {
+      "file_id": "1207655",
+      "num_faces": 1738,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1207655.npz"
+    },
+    {
+      "file_id": "1207659",
+      "num_faces": 986,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1207659.npz"
+    },
+    {
+      "file_id": "1207665",
+      "num_faces": 2382,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1207665.npz"
+    },
+    {
+      "file_id": "1207667",
+      "num_faces": 1474,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1207667.npz"
+    },
+    {
+      "file_id": "120787",
+      "num_faces": 1174,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/120787.npz"
+    },
+    {
+      "file_id": "120788",
+      "num_faces": 692,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/120788.npz"
+    },
+    {
+      "file_id": "120791",
+      "num_faces": 1048,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/120791.npz"
+    },
+    {
+      "file_id": "120792",
+      "num_faces": 660,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/120792.npz"
+    },
+    {
+      "file_id": "121122",
+      "num_faces": 800,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/121122.npz"
+    },
+    {
+      "file_id": "1223672",
+      "num_faces": 2314,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1223672.npz"
+    },
+    {
+      "file_id": "1223673",
+      "num_faces": 2162,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1223673.npz"
+    },
+    {
+      "file_id": "1223674",
+      "num_faces": 2382,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1223674.npz"
+    },
+    {
+      "file_id": "1223675",
+      "num_faces": 2016,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1223675.npz"
+    },
+    {
+      "file_id": "1228193",
+      "num_faces": 2210,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1228193.npz"
+    },
+    {
+      "file_id": "1228195",
+      "num_faces": 1140,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1228195.npz"
+    },
+    {
+      "file_id": "122870",
+      "num_faces": 840,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/122870.npz"
+    },
+    {
+      "file_id": "123958",
+      "num_faces": 2200,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/123958.npz"
+    },
+    {
+      "file_id": "124367",
+      "num_faces": 952,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/124367.npz"
+    },
+    {
+      "file_id": "124370",
+      "num_faces": 2416,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/124370.npz"
+    },
+    {
+      "file_id": "124374",
+      "num_faces": 1176,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/124374.npz"
+    },
+    {
+      "file_id": "124533",
+      "num_faces": 936,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/124533.npz"
+    },
+    {
+      "file_id": "124534",
+      "num_faces": 788,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/124534.npz"
+    },
+    {
+      "file_id": "126820",
+      "num_faces": 1200,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/126820.npz"
+    },
+    {
+      "file_id": "128076",
+      "num_faces": 1136,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/128076.npz"
+    },
+    {
+      "file_id": "128482",
+      "num_faces": 1888,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/128482.npz"
+    },
+    {
+      "file_id": "1291011",
+      "num_faces": 1100,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1291011.npz"
+    },
+    {
+      "file_id": "129288",
+      "num_faces": 1358,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129288.npz"
+    },
+    {
+      "file_id": "129892",
+      "num_faces": 1784,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129892.npz"
+    },
+    {
+      "file_id": "129894",
+      "num_faces": 1600,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129894.npz"
+    },
+    {
+      "file_id": "129896",
+      "num_faces": 520,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129896.npz"
+    },
+    {
+      "file_id": "129899",
+      "num_faces": 2236,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129899.npz"
+    },
+    {
+      "file_id": "129908",
+      "num_faces": 1548,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129908.npz"
+    },
+    {
+      "file_id": "129909",
+      "num_faces": 1940,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129909.npz"
+    },
+    {
+      "file_id": "129910",
+      "num_faces": 1940,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129910.npz"
+    },
+    {
+      "file_id": "129911",
+      "num_faces": 2048,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129911.npz"
+    },
+    {
+      "file_id": "129919",
+      "num_faces": 1576,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129919.npz"
+    },
+    {
+      "file_id": "129922",
+      "num_faces": 1404,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129922.npz"
+    },
+    {
+      "file_id": "129926",
+      "num_faces": 1940,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129926.npz"
+    },
+    {
+      "file_id": "129928",
+      "num_faces": 2340,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129928.npz"
+    },
+    {
+      "file_id": "129931",
+      "num_faces": 1940,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129931.npz"
+    },
+    {
+      "file_id": "129932",
+      "num_faces": 848,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/129932.npz"
+    },
+    {
+      "file_id": "130030",
+      "num_faces": 604,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/130030.npz"
+    },
+    {
+      "file_id": "130031",
+      "num_faces": 588,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/130031.npz"
+    },
+    {
+      "file_id": "1307396",
+      "num_faces": 1268,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1307396.npz"
+    },
+    {
+      "file_id": "1307397",
+      "num_faces": 1458,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1307397.npz"
+    },
+    {
+      "file_id": "1307398",
+      "num_faces": 1004,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1307398.npz"
+    },
+    {
+      "file_id": "130788",
+      "num_faces": 1168,
+      "genus": 49,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/130788.npz"
+    },
+    {
+      "file_id": "130972",
+      "num_faces": 736,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/130972.npz"
+    },
+    {
+      "file_id": "1312951",
+      "num_faces": 1374,
+      "genus": 7,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1312951.npz"
+    },
+    {
+      "file_id": "1312954",
+      "num_faces": 1216,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1312954.npz"
+    },
+    {
+      "file_id": "1312955",
+      "num_faces": 1902,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1312955.npz"
+    },
+    {
+      "file_id": "131720",
+      "num_faces": 762,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/131720.npz"
+    },
+    {
+      "file_id": "131725",
+      "num_faces": 1768,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/131725.npz"
+    },
+    {
+      "file_id": "131730",
+      "num_faces": 2042,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/131730.npz"
+    },
+    {
+      "file_id": "132057",
+      "num_faces": 530,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/132057.npz"
+    },
+    {
+      "file_id": "134618",
+      "num_faces": 1380,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/134618.npz"
+    },
+    {
+      "file_id": "134619",
+      "num_faces": 1012,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/134619.npz"
+    },
+    {
+      "file_id": "134621",
+      "num_faces": 728,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/134621.npz"
+    },
+    {
+      "file_id": "134633",
+      "num_faces": 1388,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/134633.npz"
+    },
+    {
+      "file_id": "135214",
+      "num_faces": 1304,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/135214.npz"
+    },
+    {
+      "file_id": "135217",
+      "num_faces": 1436,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/135217.npz"
+    },
+    {
+      "file_id": "135220",
+      "num_faces": 1024,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/135220.npz"
+    },
+    {
+      "file_id": "136235",
+      "num_faces": 1728,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/136235.npz"
+    },
+    {
+      "file_id": "136236",
+      "num_faces": 612,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/136236.npz"
+    },
+    {
+      "file_id": "136635",
+      "num_faces": 2184,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/136635.npz"
+    },
+    {
+      "file_id": "1382593",
+      "num_faces": 832,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1382593.npz"
+    },
+    {
+      "file_id": "1382595",
+      "num_faces": 748,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1382595.npz"
+    },
+    {
+      "file_id": "1382597",
+      "num_faces": 640,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1382597.npz"
+    },
+    {
+      "file_id": "1382598",
+      "num_faces": 624,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1382598.npz"
+    },
+    {
+      "file_id": "1382600",
+      "num_faces": 564,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1382600.npz"
+    },
+    {
+      "file_id": "1382601",
+      "num_faces": 1834,
+      "genus": 10,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1382601.npz"
+    },
+    {
+      "file_id": "1384321",
+      "num_faces": 1866,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1384321.npz"
+    },
+    {
+      "file_id": "1384322",
+      "num_faces": 2154,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1384322.npz"
+    },
+    {
+      "file_id": "1395582",
+      "num_faces": 1874,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1395582.npz"
+    },
+    {
+      "file_id": "1395584",
+      "num_faces": 964,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1395584.npz"
+    },
+    {
+      "file_id": "1395585",
+      "num_faces": 1990,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1395585.npz"
+    },
+    {
+      "file_id": "1439534",
+      "num_faces": 952,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1439534.npz"
+    },
+    {
+      "file_id": "1453582",
+      "num_faces": 1980,
+      "genus": 12,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1453582.npz"
+    },
+    {
+      "file_id": "1455630",
+      "num_faces": 1692,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1455630.npz"
+    },
+    {
+      "file_id": "1458669",
+      "num_faces": 1076,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458669.npz"
+    },
+    {
+      "file_id": "1458670",
+      "num_faces": 504,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458670.npz"
+    },
+    {
+      "file_id": "1458671",
+      "num_faces": 510,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458671.npz"
+    },
+    {
+      "file_id": "1458682",
+      "num_faces": 1024,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458682.npz"
+    },
+    {
+      "file_id": "1458689",
+      "num_faces": 568,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458689.npz"
+    },
+    {
+      "file_id": "1458691",
+      "num_faces": 1052,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458691.npz"
+    },
+    {
+      "file_id": "1458692",
+      "num_faces": 2232,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458692.npz"
+    },
+    {
+      "file_id": "1458693",
+      "num_faces": 936,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458693.npz"
+    },
+    {
+      "file_id": "1458694",
+      "num_faces": 1308,
+      "genus": 6,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458694.npz"
+    },
+    {
+      "file_id": "1458695",
+      "num_faces": 1346,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458695.npz"
+    },
+    {
+      "file_id": "1458701",
+      "num_faces": 830,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1458701.npz"
+    },
+    {
+      "file_id": "148292",
+      "num_faces": 1072,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/148292.npz"
+    },
+    {
+      "file_id": "1489591",
+      "num_faces": 788,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1489591.npz"
+    },
+    {
+      "file_id": "1489597",
+      "num_faces": 724,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1489597.npz"
+    },
+    {
+      "file_id": "1490842",
+      "num_faces": 1804,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1490842.npz"
+    },
+    {
+      "file_id": "1490843",
+      "num_faces": 2236,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1490843.npz"
+    },
+    {
+      "file_id": "1501546",
+      "num_faces": 1548,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1501546.npz"
+    },
+    {
+      "file_id": "1501590",
+      "num_faces": 800,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1501590.npz"
+    },
+    {
+      "file_id": "1501591",
+      "num_faces": 800,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1501591.npz"
+    },
+    {
+      "file_id": "1502911",
+      "num_faces": 800,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1502911.npz"
+    },
+    {
+      "file_id": "1505019",
+      "num_faces": 696,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1505019.npz"
+    },
+    {
+      "file_id": "1505032",
+      "num_faces": 1148,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1505032.npz"
+    },
+    {
+      "file_id": "1514494",
+      "num_faces": 1780,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1514494.npz"
+    },
+    {
+      "file_id": "153368",
+      "num_faces": 1352,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/153368.npz"
+    },
+    {
+      "file_id": "1535136",
+      "num_faces": 1422,
+      "genus": 8,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1535136.npz"
+    },
+    {
+      "file_id": "1535139",
+      "num_faces": 1422,
+      "genus": 8,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1535139.npz"
+    },
+    {
+      "file_id": "1536353",
+      "num_faces": 1164,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1536353.npz"
+    },
+    {
+      "file_id": "1536354",
+      "num_faces": 1152,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1536354.npz"
+    },
+    {
+      "file_id": "1536355",
+      "num_faces": 1148,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1536355.npz"
+    },
+    {
+      "file_id": "1536356",
+      "num_faces": 1136,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1536356.npz"
+    },
+    {
+      "file_id": "153951",
+      "num_faces": 1630,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/153951.npz"
+    },
+    {
+      "file_id": "1559483",
+      "num_faces": 636,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1559483.npz"
+    },
+    {
+      "file_id": "1566090",
+      "num_faces": 510,
+      "genus": 6,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1566090.npz"
+    },
+    {
+      "file_id": "1582439",
+      "num_faces": 1488,
+      "genus": 8,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1582439.npz"
+    },
+    {
+      "file_id": "1620063",
+      "num_faces": 2436,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1620063.npz"
+    },
+    {
+      "file_id": "1620064",
+      "num_faces": 1076,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1620064.npz"
+    },
+    {
+      "file_id": "1621241",
+      "num_faces": 1044,
+      "genus": 16,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1621241.npz"
+    },
+    {
+      "file_id": "162331",
+      "num_faces": 590,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/162331.npz"
+    },
+    {
+      "file_id": "162332",
+      "num_faces": 1076,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/162332.npz"
+    },
+    {
+      "file_id": "162337",
+      "num_faces": 512,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/162337.npz"
+    },
+    {
+      "file_id": "162338",
+      "num_faces": 1216,
+      "genus": 33,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/162338.npz"
+    },
+    {
+      "file_id": "1626828",
+      "num_faces": 1172,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1626828.npz"
+    },
+    {
+      "file_id": "1628454",
+      "num_faces": 1974,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1628454.npz"
+    },
+    {
+      "file_id": "1628455",
+      "num_faces": 1964,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1628455.npz"
+    },
+    {
+      "file_id": "168079",
+      "num_faces": 744,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/168079.npz"
+    },
+    {
+      "file_id": "1681119",
+      "num_faces": 1482,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1681119.npz"
+    },
+    {
+      "file_id": "1681120",
+      "num_faces": 1604,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/1681120.npz"
+    },
+    {
+      "file_id": "178202",
+      "num_faces": 740,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/178202.npz"
+    },
+    {
+      "file_id": "178226",
+      "num_faces": 2178,
+      "genus": 13,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/178226.npz"
+    },
+    {
+      "file_id": "186544",
+      "num_faces": 524,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/186544.npz"
+    },
+    {
+      "file_id": "186546",
+      "num_faces": 956,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/186546.npz"
+    },
+    {
+      "file_id": "186548",
+      "num_faces": 2408,
+      "genus": 19,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/186548.npz"
+    },
+    {
+      "file_id": "186554",
+      "num_faces": 788,
+      "genus": 8,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/186554.npz"
+    },
+    {
+      "file_id": "186559",
+      "num_faces": 2000,
+      "genus": 13,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/186559.npz"
+    },
+    {
+      "file_id": "188402",
+      "num_faces": 608,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/188402.npz"
+    },
+    {
+      "file_id": "188403",
+      "num_faces": 1508,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/188403.npz"
+    },
+    {
+      "file_id": "188495",
+      "num_faces": 1190,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/188495.npz"
+    },
+    {
+      "file_id": "188502",
+      "num_faces": 2016,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/188502.npz"
+    },
+    {
+      "file_id": "188505",
+      "num_faces": 2376,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/188505.npz"
+    },
+    {
+      "file_id": "190247",
+      "num_faces": 1548,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/190247.npz"
+    },
+    {
+      "file_id": "190249",
+      "num_faces": 782,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/190249.npz"
+    },
+    {
+      "file_id": "191078",
+      "num_faces": 596,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/191078.npz"
+    },
+    {
+      "file_id": "191968",
+      "num_faces": 1060,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/191968.npz"
+    },
+    {
+      "file_id": "194884",
+      "num_faces": 800,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/194884.npz"
+    },
+    {
+      "file_id": "196121",
+      "num_faces": 856,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196121.npz"
+    },
+    {
+      "file_id": "196122",
+      "num_faces": 856,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196122.npz"
+    },
+    {
+      "file_id": "196123",
+      "num_faces": 976,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196123.npz"
+    },
+    {
+      "file_id": "196126",
+      "num_faces": 2408,
+      "genus": 7,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196126.npz"
+    },
+    {
+      "file_id": "196127",
+      "num_faces": 2408,
+      "genus": 7,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196127.npz"
+    },
+    {
+      "file_id": "196187",
+      "num_faces": 2252,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196187.npz"
+    },
+    {
+      "file_id": "196188",
+      "num_faces": 1262,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196188.npz"
+    },
+    {
+      "file_id": "196189",
+      "num_faces": 1948,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196189.npz"
+    },
+    {
+      "file_id": "196191",
+      "num_faces": 2386,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196191.npz"
+    },
+    {
+      "file_id": "196192",
+      "num_faces": 2378,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196192.npz"
+    },
+    {
+      "file_id": "196194",
+      "num_faces": 1254,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196194.npz"
+    },
+    {
+      "file_id": "196196",
+      "num_faces": 1880,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/196196.npz"
+    },
+    {
+      "file_id": "200006",
+      "num_faces": 678,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/200006.npz"
+    },
+    {
+      "file_id": "200688",
+      "num_faces": 686,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/200688.npz"
+    },
+    {
+      "file_id": "200695",
+      "num_faces": 1990,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/200695.npz"
+    },
+    {
+      "file_id": "200697",
+      "num_faces": 1988,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/200697.npz"
+    },
+    {
+      "file_id": "201958",
+      "num_faces": 752,
+      "genus": 10,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/201958.npz"
+    },
+    {
+      "file_id": "201959",
+      "num_faces": 1048,
+      "genus": 11,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/201959.npz"
+    },
+    {
+      "file_id": "204951",
+      "num_faces": 660,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/204951.npz"
+    },
+    {
+      "file_id": "204953",
+      "num_faces": 572,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/204953.npz"
+    },
+    {
+      "file_id": "204954",
+      "num_faces": 584,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/204954.npz"
+    },
+    {
+      "file_id": "204955",
+      "num_faces": 742,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/204955.npz"
+    },
+    {
+      "file_id": "204956",
+      "num_faces": 892,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/204956.npz"
+    },
+    {
+      "file_id": "204957",
+      "num_faces": 976,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/204957.npz"
+    },
+    {
+      "file_id": "204958",
+      "num_faces": 850,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/204958.npz"
+    },
+    {
+      "file_id": "204959",
+      "num_faces": 712,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/204959.npz"
+    },
+    {
+      "file_id": "204960",
+      "num_faces": 728,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/204960.npz"
+    },
+    {
+      "file_id": "204962",
+      "num_faces": 1764,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/204962.npz"
+    },
+    {
+      "file_id": "205450",
+      "num_faces": 516,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/205450.npz"
+    },
+    {
+      "file_id": "206494",
+      "num_faces": 1408,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/206494.npz"
+    },
+    {
+      "file_id": "206495",
+      "num_faces": 1504,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/206495.npz"
+    },
+    {
+      "file_id": "212133",
+      "num_faces": 1152,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/212133.npz"
+    },
+    {
+      "file_id": "213384",
+      "num_faces": 1168,
+      "genus": 6,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/213384.npz"
+    },
+    {
+      "file_id": "213387",
+      "num_faces": 568,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/213387.npz"
+    },
+    {
+      "file_id": "213389",
+      "num_faces": 508,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/213389.npz"
+    },
+    {
+      "file_id": "213390",
+      "num_faces": 872,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/213390.npz"
+    },
+    {
+      "file_id": "214255",
+      "num_faces": 996,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/214255.npz"
+    },
+    {
+      "file_id": "215992",
+      "num_faces": 1568,
+      "genus": 5,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/215992.npz"
+    },
+    {
+      "file_id": "217016",
+      "num_faces": 992,
+      "genus": 6,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/217016.npz"
+    },
+    {
+      "file_id": "217031",
+      "num_faces": 2048,
+      "genus": 4,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/217031.npz"
+    },
+    {
+      "file_id": "222140",
+      "num_faces": 2062,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/222140.npz"
+    },
+    {
+      "file_id": "225941",
+      "num_faces": 884,
+      "genus": 1,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/225941.npz"
+    },
+    {
+      "file_id": "225945",
+      "num_faces": 2190,
+      "genus": 2,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/225945.npz"
+    },
+    {
+      "file_id": "225950",
+      "num_faces": 1044,
+      "genus": 3,
+      "source": "Thingi10K https://huggingface.co/datasets/Thingi10K/Thingi10K/resolve/main/npz/225950.npz"
+    }
+  ]
+}

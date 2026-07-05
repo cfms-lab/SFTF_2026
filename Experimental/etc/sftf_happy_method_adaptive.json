@@ -1,0 +1,5439 @@
+{
+  "config": {
+    "base_top_k": 10,
+    "escalate_top_k": 30,
+    "severe_escalate_top_k": 100,
+    "pareto_top_k": 10,
+    "window_degrees": 10.0,
+    "min_angle_degrees": 3.0,
+    "high_support_fraction": 0.03,
+    "edge_margin_degrees": 1.0,
+    "low_gain": 1.5,
+    "boundary_gain": 3.0,
+    "grid_suffix": "_tomo_int3_vss_grid_1deg_60deg.npz"
+  },
+  "summary": [
+    {
+      "stage": "adaptive_final",
+      "mesh_count": 5,
+      "triggered_count": 1,
+      "mean_local_ratio": 1.0118304158575318,
+      "median_local_ratio": 1.0,
+      "max_local_ratio": 1.0591520792876592,
+      "mean_local_cell_count": 4138.2,
+      "mean_local_budget_fraction": 0.03175389998542062,
+      "count_ratio_le_1_25": 5,
+      "count_ratio_le_1_50": 5,
+      "count_ratio_le_2_00": 5
+    },
+    {
+      "stage": "base_top_k",
+      "mesh_count": 5,
+      "triggered_count": 1,
+      "mean_local_ratio": 2.5151454051309208,
+      "median_local_ratio": 1.0,
+      "max_local_ratio": 8.516574946366944,
+      "mean_local_cell_count": 2763.6,
+      "mean_local_budget_fraction": 0.021206098786841723,
+      "count_ratio_le_1_25": 4,
+      "count_ratio_le_1_50": 4,
+      "count_ratio_le_2_00": 4
+    },
+    {
+      "stage": "happy_method",
+      "mesh_count": 1,
+      "triggered_count": 1,
+      "mean_local_ratio": 1.0,
+      "median_local_ratio": 1.0,
+      "max_local_ratio": 1.0,
+      "mean_local_cell_count": 9745.0,
+      "mean_local_budget_fraction": 0.07477689704652359,
+      "count_ratio_le_1_25": 1,
+      "count_ratio_le_1_50": 1,
+      "count_ratio_le_2_00": 1
+    }
+  ],
+  "rows": [
+    {
+      "mesh": "Group_C1_Bunny_69k.ply",
+      "stage": "base_top_k",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2707,
+      "local_budget_fraction": 0.020771786588500703,
+      "bbox_volume": 329847.7240470774,
+      "tomo_best_yaw": 265.00000168247254,
+      "tomo_best_pitch": 48.9999990868195,
+      "tomo_best_vss": 3201.394288007878,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 1,
+      "seed_best_yaw": 67.00000300280972,
+      "seed_best_pitch": 128.9999933444683,
+      "seed_best_vss": 4665.845681813137,
+      "seed_best_ratio": 1.457441746332514,
+      "local_best_yaw": 67.99999733881295,
+      "local_best_pitch": 128.9999933444683,
+      "local_best_vss": 3390.7634167631795,
+      "local_best_ratio": 1.0591520792876592,
+      "normalized_local_vss": 0.010279784183926138,
+      "seed_to_local_gain": 1.3760457774040604
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k.ply",
+      "stage": "adaptive_final",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2707,
+      "local_budget_fraction": 0.020771786588500703,
+      "bbox_volume": 329847.7240470774,
+      "tomo_best_yaw": 265.00000168247254,
+      "tomo_best_pitch": 48.9999990868195,
+      "tomo_best_vss": 3201.394288007878,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 1,
+      "seed_best_yaw": 67.00000300280972,
+      "seed_best_pitch": 128.9999933444683,
+      "seed_best_vss": 4665.845681813137,
+      "seed_best_ratio": 1.457441746332514,
+      "local_best_yaw": 67.99999733881295,
+      "local_best_pitch": 128.9999933444683,
+      "local_best_vss": 3390.7634167631795,
+      "local_best_ratio": 1.0591520792876592,
+      "normalized_local_vss": 0.010279784183926138,
+      "seed_to_local_gain": 1.3760457774040604
+    },
+    {
+      "mesh": "Group_C2_manikin.ply",
+      "stage": "base_top_k",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2050,
+      "local_budget_fraction": 0.0157303888091712,
+      "bbox_volume": 781290.2312873882,
+      "tomo_best_yaw": 192.99999967889,
+      "tomo_best_pitch": 7.000000052497138,
+      "tomo_best_vss": 4657.721223909993,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 10,
+      "seed_best_yaw": 3.999999969014533,
+      "seed_best_pitch": 183.99999601334758,
+      "seed_best_vss": 7410.920848531171,
+      "seed_best_ratio": 1.5911044247319646,
+      "local_best_yaw": 192.99999967889,
+      "local_best_pitch": 7.000000052497138,
+      "local_best_vss": 4657.721223909993,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.005961576168993089,
+      "seed_to_local_gain": 1.5911044247319646
+    },
+    {
+      "mesh": "Group_C2_manikin.ply",
+      "stage": "adaptive_final",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2050,
+      "local_budget_fraction": 0.0157303888091712,
+      "bbox_volume": 781290.2312873882,
+      "tomo_best_yaw": 192.99999967889,
+      "tomo_best_pitch": 7.000000052497138,
+      "tomo_best_vss": 4657.721223909993,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 10,
+      "seed_best_yaw": 3.999999969014533,
+      "seed_best_pitch": 183.99999601334758,
+      "seed_best_vss": 7410.920848531171,
+      "seed_best_ratio": 1.5911044247319646,
+      "local_best_yaw": 192.99999967889,
+      "local_best_pitch": 7.000000052497138,
+      "local_best_vss": 4657.721223909993,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.005961576168993089,
+      "seed_to_local_gain": 1.5911044247319646
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x.ply",
+      "stage": "base_top_k",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 3634,
+      "local_budget_fraction": 0.02788499167440397,
+      "bbox_volume": 1487645.696065514,
+      "tomo_best_yaw": 161.99999767787153,
+      "tomo_best_pitch": 257.9999866889366,
+      "tomo_best_vss": 24446.98002712786,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 6,
+      "seed_best_yaw": 171.00000134341394,
+      "seed_best_pitch": 259.0000083456965,
+      "seed_best_vss": 31505.09605722979,
+      "seed_best_ratio": 1.288711162780426,
+      "local_best_yaw": 161.99999767787153,
+      "local_best_pitch": 257.9999866889366,
+      "local_best_vss": 24446.98002712786,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.016433334961264354,
+      "seed_to_local_gain": 1.288711162780426
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x.ply",
+      "stage": "adaptive_final",
+      "triggered": false,
+      "trigger_reasons": "boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 3634,
+      "local_budget_fraction": 0.02788499167440397,
+      "bbox_volume": 1487645.696065514,
+      "tomo_best_yaw": 161.99999767787153,
+      "tomo_best_pitch": 257.9999866889366,
+      "tomo_best_vss": 24446.98002712786,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 6,
+      "seed_best_yaw": 171.00000134341394,
+      "seed_best_pitch": 259.0000083456965,
+      "seed_best_vss": 31505.09605722979,
+      "seed_best_ratio": 1.288711162780426,
+      "local_best_yaw": 161.99999767787153,
+      "local_best_pitch": 257.9999866889366,
+      "local_best_vss": 24446.98002712786,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.016433334961264354,
+      "seed_to_local_gain": 1.288711162780426
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x.ply",
+      "stage": "base_top_k",
+      "triggered": true,
+      "trigger_reasons": "high_normalized_support;boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2872,
+      "local_budget_fraction": 0.022037891053629115,
+      "bbox_volume": 349764.91179481667,
+      "tomo_best_yaw": 90.99999684048139,
+      "tomo_best_pitch": 110.99999967376182,
+      "tomo_best_vss": 2112.4674268990507,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 3,
+      "seed_best_yaw": 252.99998768816374,
+      "seed_best_pitch": 289.0000023503334,
+      "seed_best_vss": 23727.487926640788,
+      "seed_best_ratio": 11.232120138046826,
+      "local_best_yaw": 261.99999135370615,
+      "local_best_pitch": 279.00000434878774,
+      "local_best_vss": 17990.9871629447,
+      "local_best_ratio": 8.516574946366944,
+      "normalized_local_vss": 0.05143736994835774,
+      "seed_to_local_gain": 1.3188541413397994
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x.ply",
+      "stage": "happy_method",
+      "triggered": true,
+      "trigger_reasons": "high_normalized_support;boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 36,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 9745,
+      "local_budget_fraction": 0.07477689704652359,
+      "bbox_volume": 349764.91179481667,
+      "tomo_best_yaw": 90.99999684048139,
+      "tomo_best_pitch": 110.99999967376182,
+      "tomo_best_vss": 2112.4674268990507,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 30,
+      "seed_best_yaw": 86.99999900590097,
+      "seed_best_pitch": 96.99999700744661,
+      "seed_best_vss": 10705.223753432598,
+      "seed_best_ratio": 5.06763967913441,
+      "local_best_yaw": 90.99999684048139,
+      "local_best_pitch": 110.99999967376182,
+      "local_best_vss": 2112.4674268990507,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.0060396779541404995,
+      "seed_to_local_gain": 5.06763967913441
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x.ply",
+      "stage": "adaptive_final",
+      "triggered": true,
+      "trigger_reasons": "high_normalized_support;boundary_local_minimum;low_seed_to_local_gain",
+      "candidate_center_count": 36,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 9745,
+      "local_budget_fraction": 0.07477689704652359,
+      "bbox_volume": 349764.91179481667,
+      "tomo_best_yaw": 90.99999684048139,
+      "tomo_best_pitch": 110.99999967376182,
+      "tomo_best_vss": 2112.4674268990507,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 30,
+      "seed_best_yaw": 86.99999900590097,
+      "seed_best_pitch": 96.99999700744661,
+      "seed_best_vss": 10705.223753432598,
+      "seed_best_ratio": 5.06763967913441,
+      "local_best_yaw": 90.99999684048139,
+      "local_best_pitch": 110.99999967376182,
+      "local_best_vss": 2112.4674268990507,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.0060396779541404995,
+      "seed_to_local_gain": 5.06763967913441
+    },
+    {
+      "mesh": "Group_C5_lucy_50k.ply",
+      "stage": "base_top_k",
+      "triggered": false,
+      "trigger_reasons": "",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2555,
+      "local_budget_fraction": 0.01960543580850362,
+      "bbox_volume": 1133888.2427607272,
+      "tomo_best_yaw": 181.99999368096277,
+      "tomo_best_pitch": 358.99998836115276,
+      "tomo_best_vss": 5036.138305979327,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 6,
+      "seed_best_yaw": 357.99999402514953,
+      "seed_best_pitch": 181.99999368096277,
+      "seed_best_vss": 13939.90083174272,
+      "seed_best_ratio": 2.7679741867279732,
+      "local_best_yaw": 181.99999368096277,
+      "local_best_pitch": 358.99998836115276,
+      "local_best_vss": 5036.138305979327,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.0044414767840943664,
+      "seed_to_local_gain": 2.7679741867279732
+    },
+    {
+      "mesh": "Group_C5_lucy_50k.ply",
+      "stage": "adaptive_final",
+      "triggered": false,
+      "trigger_reasons": "",
+      "candidate_center_count": 10,
+      "window_degrees": 10.0,
+      "full_grid_cells": 130321,
+      "local_cell_count": 2555,
+      "local_budget_fraction": 0.01960543580850362,
+      "bbox_volume": 1133888.2427607272,
+      "tomo_best_yaw": 181.99999368096277,
+      "tomo_best_pitch": 358.99998836115276,
+      "tomo_best_vss": 5036.138305979327,
+      "seed_best_source": "sftf",
+      "seed_best_rank": 6,
+      "seed_best_yaw": 357.99999402514953,
+      "seed_best_pitch": 181.99999368096277,
+      "seed_best_vss": 13939.90083174272,
+      "seed_best_ratio": 2.7679741867279732,
+      "local_best_yaw": 181.99999368096277,
+      "local_best_pitch": 358.99998836115276,
+      "local_best_vss": 5036.138305979327,
+      "local_best_ratio": 1.0,
+      "normalized_local_vss": 0.0044414767840943664,
+      "seed_to_local_gain": 2.7679741867279732
+    }
+  ],
+  "details": [
+    {
+      "mesh": "Group_C1_Bunny_69k.ply",
+      "npz": "Experimental\\etc\\(1)Bunny_69k_tomo_int3_vss_grid_1deg_60deg.npz",
+      "face_count": 69662,
+      "candidate_pool_size": 1292,
+      "elapsed_sec": 10.01597710000351,
+      "bbox_volume": 329847.7240470774,
+      "tomo_best": {
+        "yaw": 265.00000168247254,
+        "pitch": 48.9999990868195,
+        "vss": 3201.394288007878
+      },
+      "triggered": false,
+      "severe_boundary": false,
+      "trigger_reasons": [
+        "boundary_local_minimum",
+        "low_seed_to_local_gain"
+      ],
+      "base_top_k": 10,
+      "escalate_top_k": 30,
+      "severe_escalate_top_k": 100,
+      "pareto_top_k": 10,
+      "baseline_centers": [
+        {
+          "source": "sftf",
+          "rank": 1.0,
+          "score": -1.473886367157242,
+          "yaw": 67.00000300280972,
+          "pitch": 128.9999933444683,
+          "vss": 4665.845681813137,
+          "alignment": 0.9999775240398989
+        },
+        {
+          "source": "sftf",
+          "rank": 2.0,
+          "score": -1.3390734314484893,
+          "yaw": 41.00000000256408,
+          "pitch": 120.99999767530745,
+          "vss": 7125.088006011711,
+          "alignment": 0.9999852294813312
+        },
+        {
+          "source": "sftf",
+          "rank": 3.0,
+          "score": -1.1121269558481792,
+          "yaw": 77.00000100435535,
+          "pitch": 135.00000034162267,
+          "vss": 7373.472875800015,
+          "alignment": 0.999998495801616
+        },
+        {
+          "source": "sftf",
+          "rank": 4.0,
+          "score": -1.0120847405112317,
+          "yaw": 39.00000108527387,
+          "pitch": 294.9999956871094,
+          "vss": 8735.985795328439,
+          "alignment": 0.9999879904968854
+        },
+        {
+          "source": "sftf",
+          "rank": 5.0,
+          "score": -0.9986444616576298,
+          "yaw": 56.000000419977106,
+          "pitch": 127.99999900846505,
+          "vss": 5928.169104678572,
+          "alignment": 0.9999597733665593
+        },
+        {
+          "source": "sftf",
+          "rank": 6.0,
+          "score": -0.9607494965143296,
+          "yaw": 241.9999953506149,
+          "pitch": 45.999999003336896,
+          "vss": 8250.196118000125,
+          "alignment": 0.9999917864172199
+        },
+        {
+          "source": "sftf",
+          "rank": 7.0,
+          "score": -0.9278864446165763,
+          "yaw": 48.9999990868195,
+          "pitch": 127.00000467246183,
+          "vss": 5039.617049792581,
+          "alignment": 0.9999776968199087
+        },
+        {
+          "source": "sftf",
+          "rank": 8.0,
+          "score": -0.9024714175058093,
+          "yaw": 224.00000167990842,
+          "pitch": 50.0000002530119,
+          "vss": 8527.373479417533,
+          "alignment": 0.9999984113684153
+        },
+        {
+          "source": "sftf",
+          "rank": 9.0,
+          "score": -0.8849629744384195,
+          "yaw": 48.9999990868195,
+          "pitch": 122.00000567168901,
+          "vss": 6073.529070073908,
+          "alignment": 0.9999890667390978
+        },
+        {
+          "source": "sftf",
+          "rank": 10.0,
+          "score": -0.8827554608830365,
+          "yaw": 241.9999953506149,
+          "pitch": 53.0000003364945,
+          "vss": 6594.56233347743,
+          "alignment": 0.999996180412495
+        },
+        {
+          "source": "sftf",
+          "rank": 11.0,
+          "score": -0.8276498063516651,
+          "yaw": 60.000001669652114,
+          "pitch": 130.00000134084985,
+          "vss": 6577.884855349202,
+          "alignment": 0.9999996573409513
+        },
+        {
+          "source": "sftf",
+          "rank": 12.0,
+          "score": -0.7971252517428351,
+          "yaw": 53.0000003364945,
+          "pitch": 294.9999956871094,
+          "vss": 8959.313069493317,
+          "alignment": 0.9999996673787175
+        },
+        {
+          "source": "sftf",
+          "rank": 13.0,
+          "score": -0.7422573973663824,
+          "yaw": 221.99999934752364,
+          "pitch": 56.000000419977106,
+          "vss": 6626.411903003031,
+          "alignment": 0.9999947720981511
+        },
+        {
+          "source": "sftf",
+          "rank": 14.0,
+          "score": -0.6866945003872961,
+          "yaw": 237.99999068584532,
+          "pitch": 56.000000419977106,
+          "vss": 5745.285798695461,
+          "alignment": 0.9999952125415175
+        },
+        {
+          "source": "sftf",
+          "rank": 15.0,
+          "score": -0.6783435321456234,
+          "yaw": 34.99999983559887,
+          "pitch": 123.00000000769225,
+          "vss": 6798.412189010746,
+          "alignment": 0.999973593744397
+        },
+        {
+          "source": "sftf",
+          "rank": 16.0,
+          "score": -0.6658048799380328,
+          "yaw": 231.00000301306605,
+          "pitch": 61.99999717184774,
+          "vss": 7863.922552628951,
+          "alignment": 0.9999941264688508
+        },
+        {
+          "source": "sftf",
+          "rank": 17.0,
+          "score": -0.642339349341595,
+          "yaw": 54.999999253784715,
+          "pitch": 120.00000333930423,
+          "vss": 7111.568096255468,
+          "alignment": 0.9999634086483361
+        },
+        {
+          "source": "sftf",
+          "rank": 18.0,
+          "score": -0.638968396591789,
+          "yaw": 54.999999253784715,
+          "pitch": 130.00000134084985,
+          "vss": 7055.6500726494905,
+          "alignment": 0.9999625967761514
+        },
+        {
+          "source": "sftf",
+          "rank": 19.0,
+          "score": -0.6202043377226953,
+          "yaw": 66.00000183661733,
+          "pitch": 123.00000000769225,
+          "vss": 6972.408984318253,
+          "alignment": 0.9999969617387678
+        },
+        {
+          "source": "sftf",
+          "rank": 20.0,
+          "score": -0.5674614252517425,
+          "yaw": 247.99998868739095,
+          "pitch": 48.00000133572169,
+          "vss": 6323.355288544963,
+          "alignment": 0.9999829336887984
+        },
+        {
+          "source": "sftf",
+          "rank": 21.0,
+          "score": -0.5142172734314485,
+          "yaw": 95.00000150525098,
+          "pitch": 156.99999867709872,
+          "vss": 12276.612037469533,
+          "alignment": 0.9999619277279713
+        },
+        {
+          "source": "sftf",
+          "rank": 22.0,
+          "score": -0.49293810999225407,
+          "yaw": 47.000000169529294,
+          "pitch": 289.0000023503334,
+          "vss": 9847.944433038885,
+          "alignment": 0.999986158315515
+        },
+        {
+          "source": "sftf",
+          "rank": 23.0,
+          "score": -0.4906053446940352,
+          "yaw": 25.999999585151052,
+          "pitch": 293.00000701510294,
+          "vss": 9631.781538655936,
+          "alignment": 0.9999964903268599
+        },
+        {
+          "source": "sftf",
+          "rank": 24.0,
+          "score": -0.4831895429899301,
+          "yaw": 98.9999993398314,
+          "pitch": 16.999999334703237,
+          "vss": 20443.668050214277,
+          "alignment": 0.9999986499259622
+        },
+        {
+          "source": "sftf",
+          "rank": 25.0,
+          "score": -0.45693106119287336,
+          "yaw": 75.99999983816295,
+          "pitch": 327.0000056845094,
+          "vss": 9574.941367157235,
+          "alignment": 0.9999614841369806
+        },
+        {
+          "source": "sftf",
+          "rank": 26.0,
+          "score": -0.392010457010069,
+          "yaw": 240.00000667860846,
+          "pitch": 242.99998968661814,
+          "vss": 8199.238087520127,
+          "alignment": 0.9999982255319195
+        },
+        {
+          "source": "sftf",
+          "rank": 27.0,
+          "score": -0.36293950426026306,
+          "yaw": 269.0000063472421,
+          "pitch": 178.00000267657154,
+          "vss": 13038.950518143078,
+          "alignment": 0.9999926010195354
+        },
+        {
+          "source": "sftf",
+          "rank": 28.0,
+          "score": -0.3601072811773819,
+          "yaw": 264.0000073464693,
+          "pitch": 37.999999919081475,
+          "vss": 8998.764447929445,
+          "alignment": 0.9999806400101717
+        },
+        {
+          "source": "sftf",
+          "rank": 29.0,
+          "score": -0.3315567002323782,
+          "yaw": 276.9999883560246,
+          "pitch": 183.00000167734436,
+          "vss": 15302.58517619992,
+          "alignment": 0.9999878072912992
+        },
+        {
+          "source": "sftf",
+          "rank": 30.0,
+          "score": -0.28964113090627386,
+          "yaw": 45.00000125223908,
+          "pitch": 297.00001167987256,
+          "vss": 8653.073271444022,
+          "alignment": 0.9999969924346365
+        },
+        {
+          "source": "sftf",
+          "rank": 31.0,
+          "score": -0.2241438419829587,
+          "yaw": 270.00000068324533,
+          "pitch": 210.99999334959645,
+          "vss": 7425.807724314288,
+          "alignment": 0.9999454617787696
+        },
+        {
+          "source": "sftf",
+          "rank": 32.0,
+          "score": -0.21301192873741276,
+          "yaw": 271.9999893552518,
+          "pitch": 190.00000301050196,
+          "vss": 12743.488816190356,
+          "alignment": 0.9999672513790616
+        },
+        {
+          "source": "sftf",
+          "rank": 33.0,
+          "score": -0.20452804027885318,
+          "yaw": 212.99999568198123,
+          "pitch": 53.0000003364945,
+          "vss": 7621.255787936124,
+          "alignment": 0.9999920762501684
+        },
+        {
+          "source": "sftf",
+          "rank": 34.0,
+          "score": -0.19747993803253283,
+          "yaw": 276.9999883560246,
+          "pitch": 149.99999734394112,
+          "vss": 22431.436649038773,
+          "alignment": 0.9999438938001441
+        },
+        {
+          "source": "sftf",
+          "rank": 35.0,
+          "score": -0.163097753679318,
+          "yaw": 84.99999667351618,
+          "pitch": 147.00000067555308,
+          "vss": 9817.873150849146,
+          "alignment": 0.9999918332534257
+        },
+        {
+          "source": "sftf",
+          "rank": 36.0,
+          "score": -0.13739124709527462,
+          "yaw": 264.0000073464693,
+          "pitch": 185.99999834573237,
+          "vss": 10464.615073085817,
+          "alignment": 0.9999495498895754
+        },
+        {
+          "source": "sftf",
+          "rank": 37.0,
+          "score": -0.09819945778466271,
+          "yaw": 39.99999883637168,
+          "pitch": 128.9999933444683,
+          "vss": 7855.496130698969,
+          "alignment": 0.999980748314415
+        },
+        {
+          "source": "sftf",
+          "rank": 38.0,
+          "score": -0.09454941905499548,
+          "yaw": 219.00000267913563,
+          "pitch": 251.99999335216052,
+          "vss": 10536.133750411105,
+          "alignment": 0.9999921867286828
+        },
+        {
+          "source": "sftf",
+          "rank": 39.0,
+          "score": -0.09314136328427558,
+          "yaw": 232.9999916850725,
+          "pitch": 54.999999253784715,
+          "vss": 6933.808326721191,
+          "alignment": 0.9999875746470004
+        },
+        {
+          "source": "sftf",
+          "rank": 40.0,
+          "score": -0.0923484895429898,
+          "yaw": 231.99999734906928,
+          "pitch": 247.99998868739095,
+          "vss": 9199.431119871533,
+          "alignment": 0.9999986173405073
+        },
+        {
+          "source": "sftf",
+          "rank": 41.0,
+          "score": -0.0830251742835012,
+          "yaw": 33.99999866940647,
+          "pitch": 118.99999534292266,
+          "vss": 8128.442054937694,
+          "alignment": 0.9999796266773677
+        },
+        {
+          "source": "sftf",
+          "rank": 42.0,
+          "score": -0.08132114639814086,
+          "yaw": 261.99999135370615,
+          "pitch": 205.99999434882363,
+          "vss": 10832.52646706321,
+          "alignment": 0.9999674993785883
+        },
+        {
+          "source": "sftf",
+          "rank": 43.0,
+          "score": -0.06046584043377212,
+          "yaw": 86.99999900590097,
+          "pitch": 342.0000026868279,
+          "vss": 11832.678613583903,
+          "alignment": 0.9999871661695985
+        },
+        {
+          "source": "sftf",
+          "rank": 44.0,
+          "score": -0.045361115414406905,
+          "yaw": 216.0000060107476,
+          "pitch": 247.99998868739095,
+          "vss": 9572.01926176213,
+          "alignment": 0.9999886425925593
+        },
+        {
+          "source": "sftf",
+          "rank": 45.0,
+          "score": -0.03463423702556134,
+          "yaw": 27.00000075134345,
+          "pitch": 118.99999534292266,
+          "vss": 8133.721745703831,
+          "alignment": 0.9999971345863625
+        },
+        {
+          "source": "sftf",
+          "rank": 46.0,
+          "score": -0.032654996127032876,
+          "yaw": 244.00001134337802,
+          "pitch": 219.00000267913563,
+          "vss": 10581.19092105834,
+          "alignment": 0.9999812086524342
+        },
+        {
+          "source": "sftf",
+          "rank": 47.0,
+          "score": -0.01963524399690142,
+          "yaw": 7.000000052497138,
+          "pitch": 122.00000567168901,
+          "vss": 9393.99939923247,
+          "alignment": 0.9999865899848568
+        },
+        {
+          "source": "sftf",
+          "rank": 48.0,
+          "score": -0.0161134004647554,
+          "yaw": 15.999999876058132,
+          "pitch": 115.99999867453464,
+          "vss": 11075.602090063174,
+          "alignment": 0.9999694911950081
+        },
+        {
+          "source": "sftf",
+          "rank": 49.0,
+          "score": 0.017431371030209808,
+          "yaw": 94.00000033905859,
+          "pitch": 9.99999970909292,
+          "vss": 17547.562102640957,
+          "alignment": 0.9999751589909922
+        },
+        {
+          "source": "sftf",
+          "rank": 50.0,
+          "score": 0.025314020139427018,
+          "yaw": 214.99999801436604,
+          "pitch": 50.0000002530119,
+          "vss": 8448.339690846846,
+          "alignment": 0.9999881166594495
+        },
+        {
+          "source": "sftf",
+          "rank": 51.0,
+          "score": 0.04846893880712644,
+          "yaw": 284.99999768556376,
+          "pitch": 7.000000052497138,
+          "vss": 15988.472079442552,
+          "alignment": 0.9999764980692615
+        },
+        {
+          "source": "sftf",
+          "rank": 52.0,
+          "score": 0.049581797056545335,
+          "yaw": 283.0000090135573,
+          "pitch": 323.00000101973984,
+          "vss": 16981.70811676782,
+          "alignment": 0.9999774887554589
+        },
+        {
+          "source": "sftf",
+          "rank": 53.0,
+          "score": 0.06212486444616569,
+          "yaw": 84.99999667351618,
+          "pitch": 19.99999941818584,
+          "vss": 18490.89181127627,
+          "alignment": 0.9999711719986052
+        },
+        {
+          "source": "sftf",
+          "rank": 54.0,
+          "score": 0.06549225406661541,
+          "yaw": 176.99999468018999,
+          "pitch": 62.99999833804013,
+          "vss": 12318.916557248958,
+          "alignment": 0.9999941350317312
+        },
+        {
+          "source": "sftf",
+          "rank": 55.0,
+          "score": 0.07664988381099958,
+          "yaw": 84.00000233751295,
+          "pitch": 347.0000016876007,
+          "vss": 9942.55128970816,
+          "alignment": 0.9999885176606772
+        },
+        {
+          "source": "sftf",
+          "rank": 56.0,
+          "score": 0.08652300542215385,
+          "yaw": 352.0000006883735,
+          "pitch": 123.00000000769225,
+          "vss": 12152.19103600368,
+          "alignment": 0.9999700504381642
+        },
+        {
+          "source": "sftf",
+          "rank": 57.0,
+          "score": 0.08911998450813324,
+          "yaw": 228.000006344678,
+          "pitch": 47.000000169529294,
+          "vss": 8331.970735029741,
+          "alignment": 0.9999856449419141
+        },
+        {
+          "source": "sftf",
+          "rank": 58.0,
+          "score": 0.08933392718822653,
+          "yaw": 197.9999986796628,
+          "pitch": 57.99999933726732,
+          "vss": 8434.80598828024,
+          "alignment": 0.9999650009711685
+        },
+        {
+          "source": "sftf",
+          "rank": 59.0,
+          "score": 0.10000054221533738,
+          "yaw": 199.00000667604436,
+          "pitch": 249.00001034415084,
+          "vss": 11249.413175031174,
+          "alignment": 0.9999974597769103
+        },
+        {
+          "source": "sftf",
+          "rank": 60.0,
+          "score": 0.1034058869093728,
+          "yaw": 28.000000209988553,
+          "pitch": 123.00000000769225,
+          "vss": 7428.207673317144,
+          "alignment": 0.9999827393194569
+        },
+        {
+          "source": "sftf",
+          "rank": 61.0,
+          "score": 0.10567149496514389,
+          "yaw": 82.00000000512816,
+          "pitch": 7.000000052497138,
+          "vss": 13679.072876607092,
+          "alignment": 0.9999891818326683
+        },
+        {
+          "source": "sftf",
+          "rank": 62.0,
+          "score": 0.131911309062742,
+          "yaw": 108.99999734137702,
+          "pitch": 161.0000033418683,
+          "vss": 12867.702925500791,
+          "alignment": 0.9999844212570346
+        },
+        {
+          "source": "sftf",
+          "rank": 63.0,
+          "score": 0.13838357862122413,
+          "yaw": 33.99999866940647,
+          "pitch": 132.99999800923788,
+          "vss": 9135.463021018288,
+          "alignment": 0.9999942243897413
+        },
+        {
+          "source": "sftf",
+          "rank": 64.0,
+          "score": 0.13909279628195192,
+          "yaw": 332.9999990212855,
+          "pitch": 294.00000135110616,
+          "vss": 13908.323177621383,
+          "alignment": 0.9999767771146637
+        },
+        {
+          "source": "sftf",
+          "rank": 65.0,
+          "score": 0.15028326878388887,
+          "yaw": 236.00000201383887,
+          "pitch": 255.00000368092688,
+          "vss": 11222.455127180116,
+          "alignment": 0.9999877681996625
+        },
+        {
+          "source": "sftf",
+          "rank": 66.0,
+          "score": 0.17085848179705665,
+          "yaw": 147.00000067555308,
+          "pitch": 33.99999866940647,
+          "vss": 13835.51881333028,
+          "alignment": 0.9999926322660584
+        },
+        {
+          "source": "sftf",
+          "rank": 67.0,
+          "score": 0.1723563903950429,
+          "yaw": 152.99999401232913,
+          "pitch": 48.9999990868195,
+          "vss": 14562.698435192266,
+          "alignment": 0.9999893449570384
+        },
+        {
+          "source": "sftf",
+          "rank": 68.0,
+          "score": 0.1748140201394267,
+          "yaw": 222.99999368352687,
+          "pitch": 42.00000116875648,
+          "vss": 10500.0547141083,
+          "alignment": 0.9999848706080843
+        },
+        {
+          "source": "sftf",
+          "rank": 69.0,
+          "score": 0.17540805577072038,
+          "yaw": 255.00000368092688,
+          "pitch": 36.99999875288908,
+          "vss": 9291.60551591353,
+          "alignment": 0.9999807132704693
+        },
+        {
+          "source": "sftf",
+          "rank": 70.0,
+          "score": 0.1793066615027113,
+          "yaw": 300.99998902388546,
+          "pitch": 166.99999667864435,
+          "vss": 15127.725837644466,
+          "alignment": 0.9999721994909458
+        },
+        {
+          "source": "sftf",
+          "rank": 71.0,
+          "score": 0.20225453137103033,
+          "yaw": 67.99999733881295,
+          "pitch": 117.0000066709162,
+          "vss": 9340.604474721862,
+          "alignment": 0.9999746867775299
+        },
+        {
+          "source": "sftf",
+          "rank": 72.0,
+          "score": 0.21184748257165026,
+          "yaw": 266.999990354479,
+          "pitch": 180.00000500895632,
+          "vss": 12253.637156210654,
+          "alignment": 0.9999742053045227
+        },
+        {
+          "source": "sftf",
+          "rank": 73.0,
+          "score": 0.22151115414407407,
+          "yaw": 221.99999934752364,
+          "pitch": 47.000000169529294,
+          "vss": 9327.53775730606,
+          "alignment": 0.999951961713887
+        },
+        {
+          "source": "sftf",
+          "rank": 74.0,
+          "score": 0.22943183578621285,
+          "yaw": 78.00000217054775,
+          "pitch": 122.00000567168901,
+          "vss": 8087.48726017219,
+          "alignment": 0.9999791369345175
+        },
+        {
+          "source": "sftf",
+          "rank": 75.0,
+          "score": 0.2327625096824173,
+          "yaw": 1.9999999845072665,
+          "pitch": 16.999999334703237,
+          "vss": 18434.70384266751,
+          "alignment": 0.9999955574311136
+        },
+        {
+          "source": "sftf",
+          "rank": 76.0,
+          "score": 0.24862804027885393,
+          "yaw": 259.0000083456965,
+          "pitch": 185.00000400972914,
+          "vss": 11605.141576656626,
+          "alignment": 0.9999889019785948
+        },
+        {
+          "source": "sftf",
+          "rank": 77.0,
+          "score": 0.2752972114639811,
+          "yaw": 270.00000068324533,
+          "pitch": 168.0000046750259,
+          "vss": 12890.770415629237,
+          "alignment": 0.9999980692134316
+        },
+        {
+          "source": "sftf",
+          "rank": 78.0,
+          "score": 0.2758388845855928,
+          "yaw": 212.000001345978,
+          "pitch": 41.00000000256408,
+          "vss": 11006.582867015492,
+          "alignment": 0.9999739649151795
+        },
+        {
+          "source": "sftf",
+          "rank": 79.0,
+          "score": 0.27786111541440767,
+          "yaw": 279.99999868479097,
+          "pitch": 15.000000417413029,
+          "vss": 13939.114641552129,
+          "alignment": 0.9999972667497273
+        },
+        {
+          "source": "sftf",
+          "rank": 80.0,
+          "score": 0.28926119287374147,
+          "yaw": 334.9999876932919,
+          "pitch": 127.00000467246183,
+          "vss": 14590.62000936713,
+          "alignment": 0.9999850676403745
+        },
+        {
+          "source": "sftf",
+          "rank": 81.0,
+          "score": 0.3021848954299001,
+          "yaw": 69.99999967119774,
+          "pitch": 120.00000333930423,
+          "vss": 7994.250325132008,
+          "alignment": 0.9999914678542412
+        },
+        {
+          "source": "sftf",
+          "rank": 82.0,
+          "score": 0.3200001549186683,
+          "yaw": 72.00000200358254,
+          "pitch": 123.99999434369548,
+          "vss": 6855.928700817518,
+          "alignment": 0.9999812773401366
+        },
+        {
+          "source": "sftf",
+          "rank": 83.0,
+          "score": 0.32000410534469426,
+          "yaw": 151.9999996763259,
+          "pitch": 42.99999891985429,
+          "vss": 13473.694974725897,
+          "alignment": 0.9999913944405708
+        },
+        {
+          "source": "sftf",
+          "rank": 84.0,
+          "score": 0.33327149496514363,
+          "yaw": 259.0000083456965,
+          "pitch": 192.99999967889,
+          "vss": 9917.714379050514,
+          "alignment": 0.9999626925616533
+        },
+        {
+          "source": "sftf",
+          "rank": 85.0,
+          "score": 0.33645228505034863,
+          "yaw": 39.99999883637168,
+          "pitch": 140.9999936783987,
+          "vss": 11757.856558177096,
+          "alignment": 0.9999783453769308
+        },
+        {
+          "source": "sftf",
+          "rank": 86.0,
+          "score": 0.35973020914020226,
+          "yaw": 28.000000209988553,
+          "pitch": 288.00000801433015,
+          "vss": 11107.572839279805,
+          "alignment": 0.999997049959577
+        },
+        {
+          "source": "sftf",
+          "rank": 87.0,
+          "score": 0.3600350116189001,
+          "yaw": 180.99999934495955,
+          "pitch": 57.0000015861695,
+          "vss": 10411.758068179295,
+          "alignment": 0.9999921494603353
+        },
+        {
+          "source": "sftf",
+          "rank": 88.0,
+          "score": 0.3669540666150272,
+          "yaw": 276.9999883560246,
+          "pitch": 15.999999876058132,
+          "vss": 13741.63410880349,
+          "alignment": 0.9999615451790221
+        },
+        {
+          "source": "sftf",
+          "rank": 89.0,
+          "score": 0.3693855151045705,
+          "yaw": 94.00000033905859,
+          "pitch": 151.9999996763259,
+          "vss": 11374.741546378647,
+          "alignment": 0.9999985135706676
+        },
+        {
+          "source": "sftf",
+          "rank": 90.0,
+          "score": 0.3902586367157246,
+          "yaw": 7.999999938029066,
+          "pitch": 288.00000801433015,
+          "vss": 12432.691479517409,
+          "alignment": 0.9999876565153836
+        },
+        {
+          "source": "sftf",
+          "rank": 91.0,
+          "score": 0.41102835011618877,
+          "yaw": 36.00000100179127,
+          "pitch": 135.9999946776259,
+          "vss": 10082.901016739774,
+          "alignment": 0.9999698828305056
+        },
+        {
+          "source": "sftf",
+          "rank": 92.0,
+          "score": 0.4172740511231604,
+          "yaw": 159.0000010094835,
+          "pitch": 50.0000002530119,
+          "vss": 13333.785632425102,
+          "alignment": 0.9999972423032982
+        },
+        {
+          "source": "sftf",
+          "rank": 93.0,
+          "score": 0.4222628969790867,
+          "yaw": 161.0000033418683,
+          "pitch": 62.99999833804013,
+          "vss": 14836.62857497034,
+          "alignment": 0.9999986614939507
+        },
+        {
+          "source": "sftf",
+          "rank": 94.0,
+          "score": 0.4265828814872197,
+          "yaw": 357.99999402514953,
+          "pitch": 286.9999863575702,
+          "vss": 11018.650590880843,
+          "alignment": 0.9999890743073209
+        },
+        {
+          "source": "sftf",
+          "rank": 95.0,
+          "score": 0.42882331525948914,
+          "yaw": 77.00000100435535,
+          "pitch": 15.000000417413029,
+          "vss": 15873.829195322083,
+          "alignment": 0.9999689648506046
+        },
+        {
+          "source": "sftf",
+          "rank": 96.0,
+          "score": 0.4317261037955078,
+          "yaw": 100.0000005060238,
+          "pitch": 144.9999983431683,
+          "vss": 9348.201357628688,
+          "alignment": 0.9999776538165448
+        },
+        {
+          "source": "sftf",
+          "rank": 97.0,
+          "score": 0.4483118512780794,
+          "yaw": 7.999999938029066,
+          "pitch": 114.000003172339,
+          "vss": 12160.925825765311,
+          "alignment": 0.9999804866659694
+        },
+        {
+          "source": "sftf",
+          "rank": 98.0,
+          "score": 0.45142594887683996,
+          "yaw": 166.00000234264112,
+          "pitch": 57.0000015861695,
+          "vss": 13040.305169160702,
+          "alignment": 0.9999861732137472
+        },
+        {
+          "source": "sftf",
+          "rank": 99.0,
+          "score": 0.46863834237025576,
+          "yaw": 73.00000316977493,
+          "pitch": 11.000000021511672,
+          "vss": 13888.242816136888,
+          "alignment": 0.9999672249930509
+        },
+        {
+          "source": "sftf",
+          "rank": 100.0,
+          "score": 0.4746927188226183,
+          "yaw": 274.0000053480149,
+          "pitch": 42.99999891985429,
+          "vss": 8108.583856220088,
+          "alignment": 0.9999799551826103
+        }
+      ],
+      "pareto_centers": [
+        {
+          "source": "pareto",
+          "rank": 1.0,
+          "score": 169.05875818789258,
+          "yaw": 11.000000021511672,
+          "pitch": 123.00000000769225,
+          "vss": 9696.163421820018,
+          "alignment": 0.9999691136062396
+        },
+        {
+          "source": "pareto",
+          "rank": 2.0,
+          "score": 169.21213310438685,
+          "yaw": 25.999999585151052,
+          "pitch": 120.99999767530745,
+          "vss": 8217.166277987897,
+          "alignment": 0.9999858950238686
+        },
+        {
+          "source": "pareto",
+          "rank": 3.0,
+          "score": 169.84318275178407,
+          "yaw": 22.999999501668448,
+          "pitch": 118.00000100691943,
+          "vss": 9558.922988324126,
+          "alignment": 0.9999989791680332
+        },
+        {
+          "source": "pareto",
+          "rank": 4.0,
+          "score": 171.36269938151327,
+          "yaw": 36.99999875288908,
+          "pitch": 122.00000567168901,
+          "vss": 7194.85056301779,
+          "alignment": 0.9999868284701132
+        },
+        {
+          "source": "pareto",
+          "rank": 5.0,
+          "score": 173.521492179707,
+          "yaw": 205.99999434882363,
+          "pitch": 246.0000000153845,
+          "vss": 10402.341519505524,
+          "alignment": 0.9999937241895108
+        },
+        {
+          "source": "pareto",
+          "rank": 6.0,
+          "score": 174.65728770649645,
+          "yaw": 228.000006344678,
+          "pitch": 57.0000015861695,
+          "vss": 6205.808525243081,
+          "alignment": 0.9999837682840325
+        },
+        {
+          "source": "pareto",
+          "rank": 7.0,
+          "score": 174.84391555821188,
+          "yaw": 200.0000010120476,
+          "pitch": 250.00000468015406,
+          "vss": 10999.935717622111,
+          "alignment": 0.9999838911863015
+        },
+        {
+          "source": "pareto",
+          "rank": 8.0,
+          "score": 175.77166614262202,
+          "yaw": 37.999999919081475,
+          "pitch": 298.0000060158758,
+          "vss": 8619.55378666397,
+          "alignment": 0.9999904805904919
+        },
+        {
+          "source": "pareto",
+          "rank": 9.0,
+          "score": 175.94227598846643,
+          "yaw": 59.00000050345972,
+          "pitch": 127.99999900846505,
+          "vss": 6114.728194622954,
+          "alignment": 0.9999982650674222
+        },
+        {
+          "source": "pareto",
+          "rank": 10.0,
+          "score": 177.2603589097878,
+          "yaw": 235.00000767783564,
+          "pitch": 56.000000419977106,
+          "vss": 6558.091187280072,
+          "alignment": 0.9999630960889138
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C2_manikin.ply",
+      "npz": "Experimental\\etc\\(2)manikin_tomo_int3_vss_grid_1deg_60deg.npz",
+      "face_count": 13672,
+      "candidate_pool_size": 1292,
+      "elapsed_sec": 5.600944599995273,
+      "bbox_volume": 781290.2312873882,
+      "tomo_best": {
+        "yaw": 192.99999967889,
+        "pitch": 7.000000052497138,
+        "vss": 4657.721223909993
+      },
+      "triggered": false,
+      "severe_boundary": false,
+      "trigger_reasons": [
+        "boundary_local_minimum"
+      ],
+      "base_top_k": 10,
+      "escalate_top_k": 30,
+      "severe_escalate_top_k": 100,
+      "pareto_top_k": 10,
+      "baseline_centers": [
+        {
+          "source": "sftf",
+          "rank": 1.0,
+          "score": -0.02847962819519667,
+          "yaw": 181.99999368096277,
+          "pitch": 353.99998936037997,
+          "vss": 8675.961455037772,
+          "alignment": 0.9999675539955412
+        },
+        {
+          "source": "sftf",
+          "rank": 2.0,
+          "score": 0.12013694810224673,
+          "yaw": 356.9999996891463,
+          "pitch": 185.00000400972914,
+          "vss": 13221.681610611844,
+          "alignment": 0.9999597235303745
+        },
+        {
+          "source": "sftf",
+          "rank": 3.0,
+          "score": 0.1257776917118516,
+          "yaw": 173.99999801180195,
+          "pitch": 1.9999999845072665,
+          "vss": 14577.801562537832,
+          "alignment": 0.9999861288417341
+        },
+        {
+          "source": "sftf",
+          "rank": 4.0,
+          "score": 0.14707296669248682,
+          "yaw": 356.0000053531431,
+          "pitch": 173.00000367579872,
+          "vss": 13852.00220691271,
+          "alignment": 0.999996408200494
+        },
+        {
+          "source": "sftf",
+          "rank": 5.0,
+          "score": 0.16945197521301347,
+          "yaw": 176.99999468018999,
+          "pitch": 351.0000063523703,
+          "vss": 13116.48187558513,
+          "alignment": 0.9999599367075892
+        },
+        {
+          "source": "sftf",
+          "rank": 6.0,
+          "score": 0.17528923315259481,
+          "yaw": 355.00001101713985,
+          "pitch": 166.00000234264112,
+          "vss": 16445.803248192653,
+          "alignment": 0.9999899055838244
+        },
+        {
+          "source": "sftf",
+          "rank": 7.0,
+          "score": 0.17827575522850547,
+          "yaw": 0.0,
+          "pitch": 188.9999950141204,
+          "vss": 10575.521090799126,
+          "alignment": 0.9999891222185227
+        },
+        {
+          "source": "sftf",
+          "rank": 8.0,
+          "score": 0.1788180480247874,
+          "yaw": 183.00000167734436,
+          "pitch": 4.99999985454646,
+          "vss": 8673.800909814756,
+          "alignment": 0.9999725090728002
+        },
+        {
+          "source": "sftf",
+          "rank": 9.0,
+          "score": 0.1828021688613486,
+          "yaw": 360.00001001791264,
+          "pitch": 183.00000167734436,
+          "vss": 11813.201194952342,
+          "alignment": 0.9999734662118638
+        },
+        {
+          "source": "sftf",
+          "rank": 10.0,
+          "score": 0.196866150271108,
+          "yaw": 3.999999969014533,
+          "pitch": 183.99999601334758,
+          "vss": 7410.920848531171,
+          "alignment": 0.9999639166407855
+        },
+        {
+          "source": "sftf",
+          "rank": 11.0,
+          "score": 0.19907838884585694,
+          "yaw": 0.0,
+          "pitch": 173.99999801180195,
+          "vss": 12137.48100375341,
+          "alignment": 0.9999928091241241
+        },
+        {
+          "source": "sftf",
+          "rank": 12.0,
+          "score": 0.2033637490317588,
+          "yaw": 181.99999368096277,
+          "pitch": 1.9999999845072665,
+          "vss": 10355.880437803662,
+          "alignment": 0.999970923145204
+        },
+        {
+          "source": "sftf",
+          "rank": 13.0,
+          "score": 0.2110061967467085,
+          "yaw": 173.00000367579872,
+          "pitch": 350.00001201636707,
+          "vss": 16851.442904511758,
+          "alignment": 0.9999900902691485
+        },
+        {
+          "source": "sftf",
+          "rank": 14.0,
+          "score": 0.21439651432997708,
+          "yaw": 353.99998936037997,
+          "pitch": 183.99999601334758,
+          "vss": 13697.081360935179,
+          "alignment": 0.9999937743625421
+        },
+        {
+          "source": "sftf",
+          "rank": 15.0,
+          "score": 0.22005577072037186,
+          "yaw": 173.00000367579872,
+          "pitch": 4.99999985454646,
+          "vss": 15456.841996878631,
+          "alignment": 0.9999942102926479
+        },
+        {
+          "source": "sftf",
+          "rank": 16.0,
+          "score": 0.2353099922540669,
+          "yaw": 176.99999468018999,
+          "pitch": 360.00001001791264,
+          "vss": 12335.28074154184,
+          "alignment": 0.9999380938695994
+        },
+        {
+          "source": "sftf",
+          "rank": 17.0,
+          "score": 0.2502333849728895,
+          "yaw": 353.99998936037997,
+          "pitch": 193.99999401489322,
+          "vss": 16734.00303549018,
+          "alignment": 0.9999498482102142
+        },
+        {
+          "source": "sftf",
+          "rank": 18.0,
+          "score": 0.25031564678543794,
+          "yaw": 171.99999567941717,
+          "pitch": 15.000000417413029,
+          "vss": 17556.32053722035,
+          "alignment": 0.9999981214669621
+        },
+        {
+          "source": "sftf",
+          "rank": 19.0,
+          "score": 0.2618594113090633,
+          "yaw": 346.00000735159745,
+          "pitch": 178.99999701257477,
+          "vss": 19806.04219042565,
+          "alignment": 0.9999756755479174
+        },
+        {
+          "source": "sftf",
+          "rank": 20.0,
+          "score": 0.26952215336948093,
+          "yaw": 176.00000034418676,
+          "pitch": 11.000000021511672,
+          "vss": 15072.842274815583,
+          "alignment": 0.999966764570701
+        },
+        {
+          "source": "sftf",
+          "rank": 21.0,
+          "score": 0.2746008520526728,
+          "yaw": 351.0000063523703,
+          "pitch": 180.99999934495955,
+          "vss": 14917.602223798263,
+          "alignment": 0.9999992579957439
+        },
+        {
+          "source": "sftf",
+          "rank": 22.0,
+          "score": 0.28131185127807923,
+          "yaw": 171.00000134341394,
+          "pitch": 18.000000500895634,
+          "vss": 18985.71282378898,
+          "alignment": 0.9999838587982035
+        },
+        {
+          "source": "sftf",
+          "rank": 23.0,
+          "score": 0.3169022463206821,
+          "yaw": 169.99999334703236,
+          "pitch": 6.000000166965211,
+          "vss": 17581.921963652305,
+          "alignment": 0.9999587101859397
+        },
+        {
+          "source": "sftf",
+          "rank": 24.0,
+          "score": 0.3181772269558485,
+          "yaw": 181.99999368096277,
+          "pitch": 342.9999970228311,
+          "vss": 11281.642046841707,
+          "alignment": 0.9999955577696105
+        },
+        {
+          "source": "sftf",
+          "rank": 25.0,
+          "score": 0.3204157242447718,
+          "yaw": 185.99999834573237,
+          "pitch": 6.000000166965211,
+          "vss": 7040.201139844154,
+          "alignment": 0.9999974780090676
+        },
+        {
+          "source": "sftf",
+          "rank": 26.0,
+          "score": 0.32450728117738215,
+          "yaw": 7.999999938029066,
+          "pitch": 176.00000034418676,
+          "vss": 7489.52114877622,
+          "alignment": 0.9999621775153402
+        },
+        {
+          "source": "sftf",
+          "rank": 27.0,
+          "score": 0.32655096824167384,
+          "yaw": 173.99999801180195,
+          "pitch": 18.999999959540737,
+          "vss": 17371.92051469787,
+          "alignment": 0.9999869679089315
+        },
+        {
+          "source": "sftf",
+          "rank": 28.0,
+          "score": 0.33278714175058166,
+          "yaw": 176.99999468018999,
+          "pitch": 347.0000016876007,
+          "vss": 15277.521669372054,
+          "alignment": 0.9999888743557459
+        },
+        {
+          "source": "sftf",
+          "rank": 29.0,
+          "score": 0.33405205267234694,
+          "yaw": 352.99999502437674,
+          "pitch": 171.99999567941717,
+          "vss": 16373.723006445514,
+          "alignment": 0.9999664625463779
+        },
+        {
+          "source": "sftf",
+          "rank": 30.0,
+          "score": 0.35162238574748306,
+          "yaw": 168.99999901102913,
+          "pitch": 356.0000053531431,
+          "vss": 16794.28155757179,
+          "alignment": 0.999992588107481
+        },
+        {
+          "source": "sftf",
+          "rank": 31.0,
+          "score": 0.35732161115414485,
+          "yaw": 166.00000234264112,
+          "pitch": 356.0000053531431,
+          "vss": 19503.8436858122,
+          "alignment": 0.9999485642979725
+        },
+        {
+          "source": "sftf",
+          "rank": 32.0,
+          "score": 0.3672195197521304,
+          "yaw": 352.0000006883735,
+          "pitch": 187.00000634211395,
+          "vss": 16938.32184657578,
+          "alignment": 0.9999853807532706
+        },
+        {
+          "source": "sftf",
+          "rank": 33.0,
+          "score": 0.3693502711076688,
+          "yaw": 352.0000006883735,
+          "pitch": 197.9999986796628,
+          "vss": 19509.92040397707,
+          "alignment": 0.9999467801961642
+        },
+        {
+          "source": "sftf",
+          "rank": 34.0,
+          "score": 0.3817288923315263,
+          "yaw": 0.9999999922536332,
+          "pitch": 166.00000234264112,
+          "vss": 11343.762894307287,
+          "alignment": 0.9999972819971223
+        },
+        {
+          "source": "sftf",
+          "rank": 35.0,
+          "score": 0.39188466305189773,
+          "yaw": 176.99999468018999,
+          "pitch": 334.9999876932919,
+          "vss": 16442.634842612526,
+          "alignment": 0.9999979561192742
+        },
+        {
+          "source": "sftf",
+          "rank": 36.0,
+          "score": 0.397695042602634,
+          "yaw": 169.99999334703236,
+          "pitch": 11.000000021511672,
+          "vss": 17132.282257080078,
+          "alignment": 0.9999615666183677
+        },
+        {
+          "source": "sftf",
+          "rank": 37.0,
+          "score": 0.4089800929512011,
+          "yaw": 183.99999601334758,
+          "pitch": 358.99998836115276,
+          "vss": 9633.001217172166,
+          "alignment": 0.9999906747580486
+        },
+        {
+          "source": "sftf",
+          "rank": 38.0,
+          "score": 0.4225752904725022,
+          "yaw": 6.000000166965211,
+          "pitch": 193.99999401489322,
+          "vss": 9123.041610087244,
+          "alignment": 0.9999680934555957
+        },
+        {
+          "source": "sftf",
+          "rank": 39.0,
+          "score": 0.45488017041053486,
+          "yaw": 188.00000067811717,
+          "pitch": 356.9999996891463,
+          "vss": 7902.641434314823,
+          "alignment": 0.9999805988257218
+        },
+        {
+          "source": "sftf",
+          "rank": 40.0,
+          "score": 0.47211750580945044,
+          "yaw": 345.0000130155942,
+          "pitch": 175.00000600818353,
+          "vss": 21844.237303930866,
+          "alignment": 0.9999574198085127
+        },
+        {
+          "source": "sftf",
+          "rank": 41.0,
+          "score": 0.4815982184353218,
+          "yaw": 357.99999402514953,
+          "pitch": 152.99999401232913,
+          "vss": 16315.51045031587,
+          "alignment": 0.9999914060513599
+        },
+        {
+          "source": "sftf",
+          "rank": 42.0,
+          "score": 0.5055387296669249,
+          "yaw": 161.99999767787153,
+          "pitch": 0.9999999922536332,
+          "vss": 21208.154268501217,
+          "alignment": 0.9999566804841106
+        },
+        {
+          "source": "sftf",
+          "rank": 43.0,
+          "score": 0.5060873741285827,
+          "yaw": 346.00000735159745,
+          "pitch": 187.00000634211395,
+          "vss": 19824.201410466976,
+          "alignment": 0.9999707729380806
+        },
+        {
+          "source": "sftf",
+          "rank": 44.0,
+          "score": 0.5068508907823395,
+          "yaw": 185.99999834573237,
+          "pitch": 352.0000006883735,
+          "vss": 6622.601146540366,
+          "alignment": 0.9999974994615416
+        },
+        {
+          "source": "sftf",
+          "rank": 45.0,
+          "score": 0.5243457010069719,
+          "yaw": 164.99999434625954,
+          "pitch": 7.999999938029066,
+          "vss": 21642.95488152622,
+          "alignment": 0.9999806226734242
+        },
+        {
+          "source": "sftf",
+          "rank": 46.0,
+          "score": 0.5306697134004652,
+          "yaw": 168.99999901102913,
+          "pitch": 342.0000026868279,
+          "vss": 21458.470131740098,
+          "alignment": 0.999992956774555
+        },
+        {
+          "source": "sftf",
+          "rank": 47.0,
+          "score": 0.5310108443067396,
+          "yaw": 346.00000735159745,
+          "pitch": 151.9999996763259,
+          "vss": 19567.095543727402,
+          "alignment": 0.9999818387024404
+        },
+        {
+          "source": "sftf",
+          "rank": 48.0,
+          "score": 0.5366051897753683,
+          "yaw": 180.99999934495955,
+          "pitch": 338.9999923580615,
+          "vss": 13773.882684628825,
+          "alignment": 0.9999865090558557
+        },
+        {
+          "source": "sftf",
+          "rank": 49.0,
+          "score": 0.5440667699457788,
+          "yaw": 185.00000400972914,
+          "pitch": 14.000000104994276,
+          "vss": 9770.48203964864,
+          "alignment": 0.9999934199616812
+        },
+        {
+          "source": "sftf",
+          "rank": 50.0,
+          "score": 0.5517246320681645,
+          "yaw": 163.0000056742531,
+          "pitch": 352.99999502437674,
+          "vss": 21954.790619779225,
+          "alignment": 0.9999862770919647
+        },
+        {
+          "source": "sftf",
+          "rank": 51.0,
+          "score": 0.5732087529047254,
+          "yaw": 348.9999903596071,
+          "pitch": 209.99999901359323,
+          "vss": 18916.500501396244,
+          "alignment": 0.9999724982038581
+        },
+        {
+          "source": "sftf",
+          "rank": 52.0,
+          "score": 0.6100795507358638,
+          "yaw": 146.00000633954986,
+          "pitch": 48.00000133572169,
+          "vss": 25988.302940179492,
+          "alignment": 0.9999734450435387
+        },
+        {
+          "source": "sftf",
+          "rank": 53.0,
+          "score": 0.6110872966692493,
+          "yaw": 12.000000333930423,
+          "pitch": 181.99999368096277,
+          "vss": 6466.001518501723,
+          "alignment": 0.9999976194289946
+        },
+        {
+          "source": "sftf",
+          "rank": 54.0,
+          "score": 0.622870797831139,
+          "yaw": 348.9999903596071,
+          "pitch": 190.00000301050196,
+          "vss": 18718.88302574473,
+          "alignment": 0.9999926913175801
+        },
+        {
+          "source": "sftf",
+          "rank": 55.0,
+          "score": 0.6280642137877612,
+          "yaw": 168.99999901102913,
+          "pitch": 346.00000735159745,
+          "vss": 19540.87738163215,
+          "alignment": 0.9999928065763368
+        },
+        {
+          "source": "sftf",
+          "rank": 56.0,
+          "score": 0.6314182029434552,
+          "yaw": 9.000000250447817,
+          "pitch": 188.9999950141204,
+          "vss": 5879.001183943315,
+          "alignment": 0.9999757928685827
+        },
+        {
+          "source": "sftf",
+          "rank": 57.0,
+          "score": 0.6370314484895433,
+          "yaw": 161.99999767787153,
+          "pitch": 356.0000053531431,
+          "vss": 22845.309627942803,
+          "alignment": 0.9999489369439665
+        },
+        {
+          "source": "sftf",
+          "rank": 58.0,
+          "score": 0.6488646785437647,
+          "yaw": 161.0000033418683,
+          "pitch": 4.99999985454646,
+          "vss": 23919.870045559466,
+          "alignment": 0.9999929846971005
+        },
+        {
+          "source": "sftf",
+          "rank": 59.0,
+          "score": 0.6529335398915572,
+          "yaw": 166.00000234264112,
+          "pitch": 12.000000333930423,
+          "vss": 20737.35442043336,
+          "alignment": 0.9999927404212008
+        },
+        {
+          "source": "sftf",
+          "rank": 60.0,
+          "score": 0.657001626646011,
+          "yaw": 3.0000000834826057,
+          "pitch": 156.99999867709872,
+          "vss": 14113.321777217645,
+          "alignment": 0.9999573452883016
+        },
+        {
+          "source": "sftf",
+          "rank": 61.0,
+          "score": 0.6621207591014721,
+          "yaw": 342.0000026868279,
+          "pitch": 168.99999901102913,
+          "vss": 23792.343691360853,
+          "alignment": 0.9999617076095222
+        },
+        {
+          "source": "sftf",
+          "rank": 62.0,
+          "score": 0.68186196746708,
+          "yaw": 171.99999567941717,
+          "pitch": 34.99999983559887,
+          "vss": 16820.69675981506,
+          "alignment": 0.999968644678251
+        },
+        {
+          "source": "sftf",
+          "rank": 63.0,
+          "score": 0.6848042602633622,
+          "yaw": 12.000000333930423,
+          "pitch": 176.00000034418676,
+          "vss": 6580.001066538914,
+          "alignment": 0.9999473411201989
+        },
+        {
+          "source": "sftf",
+          "rank": 64.0,
+          "score": 0.6931982958946561,
+          "yaw": 151.9999996763259,
+          "pitch": 42.99999891985429,
+          "vss": 17599.078249340215,
+          "alignment": 0.9999913944405708
+        },
+        {
+          "source": "sftf",
+          "rank": 65.0,
+          "score": 0.704520216886135,
+          "yaw": 336.0000093500518,
+          "pitch": 360.00001001791264,
+          "vss": 25353.94597644648,
+          "alignment": 0.9999631776590284
+        },
+        {
+          "source": "sftf",
+          "rank": 66.0,
+          "score": 0.7045687064291248,
+          "yaw": 190.00000301050196,
+          "pitch": 353.99998936037997,
+          "vss": 5767.6414812891935,
+          "alignment": 0.9999880361338044
+        },
+        {
+          "source": "sftf",
+          "rank": 67.0,
+          "score": 0.7093936483346245,
+          "yaw": 337.99999802205826,
+          "pitch": 173.99999801180195,
+          "vss": 26140.376556018167,
+          "alignment": 0.999977209312635
+        },
+        {
+          "source": "sftf",
+          "rank": 68.0,
+          "score": 0.744095042602634,
+          "yaw": 336.0000093500518,
+          "pitch": 185.99999834573237,
+          "vss": 27500.812672386484,
+          "alignment": 0.9999945708012252
+        },
+        {
+          "source": "sftf",
+          "rank": 69.0,
+          "score": 0.7491966692486447,
+          "yaw": 347.0000016876007,
+          "pitch": 163.0000056742531,
+          "vss": 21285.66592192847,
+          "alignment": 0.999959629319477
+        },
+        {
+          "source": "sftf",
+          "rank": 70.0,
+          "score": 0.7542756777691715,
+          "yaw": 345.0000130155942,
+          "pitch": 190.00000301050196,
+          "vss": 20959.91717882393,
+          "alignment": 0.9999961877314703
+        },
+        {
+          "source": "sftf",
+          "rank": 71.0,
+          "score": 0.7863872966692489,
+          "yaw": 159.0000010094835,
+          "pitch": 352.0000006883735,
+          "vss": 24341.981273052123,
+          "alignment": 0.9999678229056739
+        },
+        {
+          "source": "sftf",
+          "rank": 72.0,
+          "score": 0.7892046475600311,
+          "yaw": 338.9999923580615,
+          "pitch": 0.9999999922536332,
+          "vss": 25247.024110526094,
+          "alignment": 0.9999822373779433
+        },
+        {
+          "source": "sftf",
+          "rank": 73.0,
+          "score": 0.7964599535243998,
+          "yaw": 195.999996347278,
+          "pitch": 321.0000123477334,
+          "vss": 14721.4211708258,
+          "alignment": 0.9999654219185703
+        },
+        {
+          "source": "sftf",
+          "rank": 74.0,
+          "score": 0.7971676994577849,
+          "yaw": 328.00000002051263,
+          "pitch": 224.99999601591168,
+          "vss": 19068.239148983284,
+          "alignment": 0.9999754649727044
+        },
+        {
+          "source": "sftf",
+          "rank": 75.0,
+          "score": 0.8139155693261038,
+          "yaw": 12.999999792575526,
+          "pitch": 178.99999701257477,
+          "vss": 6915.88112145416,
+          "alignment": 0.9999892116113505
+        },
+        {
+          "source": "sftf",
+          "rank": 76.0,
+          "score": 0.8209267234701787,
+          "yaw": 171.00000134341394,
+          "pitch": 321.0000123477334,
+          "vss": 15945.738997341188,
+          "alignment": 0.9999808605280293
+        },
+        {
+          "source": "sftf",
+          "rank": 77.0,
+          "score": 0.8319542989930289,
+          "yaw": 164.99999434625954,
+          "pitch": 19.99999941818584,
+          "vss": 22501.61840895976,
+          "alignment": 0.9999823134179305
+        },
+        {
+          "source": "sftf",
+          "rank": 78.0,
+          "score": 0.8326793183578622,
+          "yaw": 346.00000735159745,
+          "pitch": 192.99999967889,
+          "vss": 20662.03779425503,
+          "alignment": 0.9999899053135406
+        },
+        {
+          "source": "sftf",
+          "rank": 79.0,
+          "score": 0.8397903175832693,
+          "yaw": 176.99999468018999,
+          "pitch": 328.00000002051263,
+          "vss": 17094.984527461784,
+          "alignment": 0.9999757795585009
+        },
+        {
+          "source": "sftf",
+          "rank": 80.0,
+          "score": 0.8432223857474827,
+          "yaw": 337.00000368605504,
+          "pitch": 146.00000633954986,
+          "vss": 19170.767019602878,
+          "alignment": 0.9999805124439397
+        },
+        {
+          "source": "sftf",
+          "rank": 81.0,
+          "score": 0.8535648334624328,
+          "yaw": 352.0000006883735,
+          "pitch": 204.00000567681718,
+          "vss": 20118.668059672207,
+          "alignment": 0.9999477911045423
+        },
+        {
+          "source": "sftf",
+          "rank": 82.0,
+          "score": 0.8546292796281952,
+          "yaw": 332.00000468528225,
+          "pitch": 360.00001001791264,
+          "vss": 27078.38223985404,
+          "alignment": 0.9999905210097567
+        },
+        {
+          "source": "sftf",
+          "rank": 83.0,
+          "score": 0.8773127033307513,
+          "yaw": 343.99999135883434,
+          "pitch": 164.99999434625954,
+          "vss": 23370.344776752565,
+          "alignment": 0.9999782722508653
+        },
+        {
+          "source": "sftf",
+          "rank": 84.0,
+          "score": 0.8890763749031757,
+          "yaw": 54.999999253784715,
+          "pitch": 122.00000567168901,
+          "vss": 58197.51014394208,
+          "alignment": 0.9999632555149675
+        },
+        {
+          "source": "sftf",
+          "rank": 85.0,
+          "score": 0.893515104570101,
+          "yaw": 323.00000101973984,
+          "pitch": 234.0000133418324,
+          "vss": 39229.85013851449,
+          "alignment": 0.9999983896490533
+        },
+        {
+          "source": "sftf",
+          "rank": 86.0,
+          "score": 0.9008965917893106,
+          "yaw": 130.99999567685308,
+          "pitch": 240.00000667860846,
+          "vss": 44310.78256654345,
+          "alignment": 0.9999775854186465
+        },
+        {
+          "source": "sftf",
+          "rank": 87.0,
+          "score": 0.9014258714175057,
+          "yaw": 156.99999867709872,
+          "pitch": 183.00000167734436,
+          "vss": 25975.384988075446,
+          "alignment": 0.9999446784365962
+        },
+        {
+          "source": "sftf",
+          "rank": 88.0,
+          "score": 0.9067271107668473,
+          "yaw": 195.999996347278,
+          "pitch": 34.99999983559887,
+          "vss": 12123.507901656727,
+          "alignment": 0.9999887156005172
+        },
+        {
+          "source": "sftf",
+          "rank": 89.0,
+          "score": 0.9081673896204494,
+          "yaw": 9.99999970909292,
+          "pitch": 147.9999950115563,
+          "vss": 11143.439072222749,
+          "alignment": 0.9999957777247575
+        },
+        {
+          "source": "sftf",
+          "rank": 90.0,
+          "score": 0.9109742835011622,
+          "yaw": 313.99999735419743,
+          "pitch": 127.99999900846505,
+          "vss": 45221.147458415384,
+          "alignment": 0.9999864697168643
+        },
+        {
+          "source": "sftf",
+          "rank": 91.0,
+          "score": 0.916720836560806,
+          "yaw": 337.99999802205826,
+          "pitch": 169.99999334703236,
+          "vss": 25219.57444750573,
+          "alignment": 0.9999945409353943
+        },
+        {
+          "source": "sftf",
+          "rank": 92.0,
+          "score": 0.9196961270333079,
+          "yaw": 18.999999959540737,
+          "pitch": 142.9999960107835,
+          "vss": 12886.501540822432,
+          "alignment": 0.9999789920584865
+        },
+        {
+          "source": "sftf",
+          "rank": 93.0,
+          "score": 0.9208486444616582,
+          "yaw": 33.99999866940647,
+          "pitch": 130.99999567685308,
+          "vss": 27944.091922980693,
+          "alignment": 0.9999674440976752
+        },
+        {
+          "source": "sftf",
+          "rank": 94.0,
+          "score": 0.9247566227730442,
+          "yaw": 273.00001101201167,
+          "pitch": 62.99999833804013,
+          "vss": 69976.17611215134,
+          "alignment": 0.9999980078361722
+        },
+        {
+          "source": "sftf",
+          "rank": 95.0,
+          "score": 0.9255687838884591,
+          "yaw": 149.0000030079379,
+          "pitch": 305.99998802465825,
+          "vss": 34659.94133436975,
+          "alignment": 0.9999971570524583
+        },
+        {
+          "source": "sftf",
+          "rank": 96.0,
+          "score": 0.9262440743609608,
+          "yaw": 7.000000052497138,
+          "pitch": 158.00000667348027,
+          "vss": 11878.08356009239,
+          "alignment": 0.999994368027617
+        },
+        {
+          "source": "sftf",
+          "rank": 97.0,
+          "score": 0.9283872192099152,
+          "yaw": 161.99999767787153,
+          "pitch": 345.0000130155942,
+          "vss": 23539.621967914674,
+          "alignment": 0.9999727006213266
+        },
+        {
+          "source": "sftf",
+          "rank": 98.0,
+          "score": 0.930230673896205,
+          "yaw": 202.00000334443237,
+          "pitch": 48.00000133572169,
+          "vss": 21056.386064891973,
+          "alignment": 0.9999847215453708
+        },
+        {
+          "source": "sftf",
+          "rank": 99.0,
+          "score": 0.9353702556158022,
+          "yaw": 16.999999334703237,
+          "pitch": 190.00000301050196,
+          "vss": 6222.2411809873975,
+          "alignment": 0.9999875761712346
+        },
+        {
+          "source": "sftf",
+          "rank": 100.0,
+          "score": 0.9367119287374133,
+          "yaw": 0.9999999922536332,
+          "pitch": 214.99999801436604,
+          "vss": 14290.190925282881,
+          "alignment": 0.9999838379185477
+        }
+      ],
+      "pareto_centers": [
+        {
+          "source": "pareto",
+          "rank": 1.0,
+          "score": 588.5663520511586,
+          "yaw": 175.00000600818353,
+          "pitch": 356.0000053531431,
+          "vss": 13455.362359354318,
+          "alignment": 0.999964356712908
+        },
+        {
+          "source": "pareto",
+          "rank": 2.0,
+          "score": 597.978703340569,
+          "yaw": 176.00000034418676,
+          "pitch": 358.99998836115276,
+          "vss": 14607.442312004152,
+          "alignment": 0.9999709170329919
+        },
+        {
+          "source": "pareto",
+          "rank": 3.0,
+          "score": 655.5329059385389,
+          "yaw": 351.0000063523703,
+          "pitch": 180.99999934495955,
+          "vss": 14917.602223798263,
+          "alignment": 0.9999992579957439
+        },
+        {
+          "source": "pareto",
+          "rank": 4.0,
+          "score": 696.9654649905017,
+          "yaw": 166.99999667864435,
+          "pitch": 358.99998836115276,
+          "vss": 18177.72211122119,
+          "alignment": 0.9999863546597665
+        },
+        {
+          "source": "pareto",
+          "rank": 5.0,
+          "score": 700.2954495656235,
+          "yaw": 346.00000735159745,
+          "pitch": 178.00000267657154,
+          "vss": 19810.920904490573,
+          "alignment": 0.9999868986554232
+        },
+        {
+          "source": "pareto",
+          "rank": 6.0,
+          "score": 736.3946921429673,
+          "yaw": 163.0000056742531,
+          "pitch": 356.9999996891463,
+          "vss": 22057.71454109633,
+          "alignment": 0.9999565240522956
+        },
+        {
+          "source": "pareto",
+          "rank": 7.0,
+          "score": 757.8721525236051,
+          "yaw": 161.99999767787153,
+          "pitch": 0.9999999922536332,
+          "vss": 21208.154268501217,
+          "alignment": 0.9999566804841106
+        },
+        {
+          "source": "pareto",
+          "rank": 8.0,
+          "score": 785.3223857662723,
+          "yaw": 159.0000010094835,
+          "pitch": 178.00000267657154,
+          "vss": 24418.704765887298,
+          "alignment": 0.9999797786358497
+        },
+        {
+          "source": "pareto",
+          "rank": 9.0,
+          "score": 809.9683648228021,
+          "yaw": 156.99999867709872,
+          "pitch": 180.99999934495955,
+          "vss": 24945.424607962617,
+          "alignment": 0.9999621598590174
+        },
+        {
+          "source": "pareto",
+          "rank": 10.0,
+          "score": 831.4005790893212,
+          "yaw": 337.99999802205826,
+          "pitch": 356.0000053531431,
+          "vss": 25333.865614961986,
+          "alignment": 0.9999974363642566
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x.ply",
+      "npz": "Experimental\\etc\\(3)dragon_100k_1.5x_tomo_int3_vss_grid_1deg_60deg.npz",
+      "face_count": 99999,
+      "candidate_pool_size": 1292,
+      "elapsed_sec": 18.41748510000616,
+      "bbox_volume": 1487645.696065514,
+      "tomo_best": {
+        "yaw": 161.99999767787153,
+        "pitch": 257.9999866889366,
+        "vss": 24446.98002712786
+      },
+      "triggered": false,
+      "severe_boundary": false,
+      "trigger_reasons": [
+        "boundary_local_minimum",
+        "low_seed_to_local_gain"
+      ],
+      "base_top_k": 10,
+      "escalate_top_k": 30,
+      "severe_escalate_top_k": 100,
+      "pareto_top_k": 10,
+      "baseline_centers": [
+        {
+          "source": "sftf",
+          "rank": 1.0,
+          "score": -0.06508079008520484,
+          "yaw": 210.99999334959645,
+          "pitch": 259.0000083456965,
+          "vss": 45804.406000562936,
+          "alignment": 0.9999724385419516
+        },
+        {
+          "source": "sftf",
+          "rank": 2.0,
+          "score": -0.0418177381874516,
+          "yaw": 41.00000000256408,
+          "pitch": 95.00000150525098,
+          "vss": 51231.620725521374,
+          "alignment": 0.9999780116561037
+        },
+        {
+          "source": "sftf",
+          "rank": 3.0,
+          "score": -0.026708830364058578,
+          "yaw": 12.999999792575526,
+          "pitch": 276.9999883560246,
+          "vss": 39547.57343639027,
+          "alignment": 0.9999732067999334
+        },
+        {
+          "source": "sftf",
+          "rank": 4.0,
+          "score": -0.0031845081332293468,
+          "yaw": 96.99999700744661,
+          "pitch": 95.00000150525098,
+          "vss": 45510.288112419694,
+          "alignment": 0.9999999639349522
+        },
+        {
+          "source": "sftf",
+          "rank": 5.0,
+          "score": 0.000215104570101321,
+          "yaw": 329.9999886925191,
+          "pitch": 274.0000053480149,
+          "vss": 42350.146396101016,
+          "alignment": 0.9999943753950407
+        },
+        {
+          "source": "sftf",
+          "rank": 6.0,
+          "score": 0.010565530596437389,
+          "yaw": 171.00000134341394,
+          "pitch": 259.0000083456965,
+          "vss": 31505.09605722979,
+          "alignment": 0.9999761496527108
+        },
+        {
+          "source": "sftf",
+          "rank": 7.0,
+          "score": 0.01149914794732787,
+          "yaw": 31.999999752116263,
+          "pitch": 91.99999800667379,
+          "vss": 50268.378139527376,
+          "alignment": 0.9999742755026059
+        },
+        {
+          "source": "sftf",
+          "rank": 8.0,
+          "score": 0.0253979860573208,
+          "yaw": 12.999999792575526,
+          "pitch": 281.9999873567974,
+          "vss": 41404.645305034544,
+          "alignment": 0.99997944362199
+        },
+        {
+          "source": "sftf",
+          "rank": 9.0,
+          "score": 0.029816189000775317,
+          "yaw": 73.99999750577815,
+          "pitch": 96.99999700744661,
+          "vss": 47526.11522832193,
+          "alignment": 0.9999997483435049
+        },
+        {
+          "source": "sftf",
+          "rank": 10.0,
+          "score": 0.043447017815647415,
+          "yaw": 347.9999960236039,
+          "pitch": 276.9999883560246,
+          "vss": 34760.08501919833,
+          "alignment": 0.9999997255911213
+        },
+        {
+          "source": "sftf",
+          "rank": 11.0,
+          "score": 0.04709132455460918,
+          "yaw": 56.000000419977106,
+          "pitch": 98.9999993398314,
+          "vss": 47096.03569724343,
+          "alignment": 0.9999969630611797
+        },
+        {
+          "source": "sftf",
+          "rank": 12.0,
+          "score": 0.052061657629744795,
+          "yaw": 214.99999801436604,
+          "pitch": 255.9999980169301,
+          "vss": 42079.172843743945,
+          "alignment": 0.9999687202914602
+        },
+        {
+          "source": "sftf",
+          "rank": 13.0,
+          "score": 0.05541487219209973,
+          "yaw": 12.999999792575526,
+          "pitch": 86.99999900590097,
+          "vss": 51350.81031105735,
+          "alignment": 0.9999998091740486
+        },
+        {
+          "source": "sftf",
+          "rank": 14.0,
+          "score": 0.06520131680867602,
+          "yaw": 264.0000073464693,
+          "pitch": 275.99999402002135,
+          "vss": 44732.51941775488,
+          "alignment": 0.9999796313429243
+        },
+        {
+          "source": "sftf",
+          "rank": 15.0,
+          "score": 0.07155352439969076,
+          "yaw": 314.99999169020066,
+          "pitch": 86.99999900590097,
+          "vss": 43093.90990202092,
+          "alignment": 0.9999825436578256
+        },
+        {
+          "source": "sftf",
+          "rank": 16.0,
+          "score": 0.08372649109217689,
+          "yaw": 21.00000058437824,
+          "pitch": 284.00000334956053,
+          "vss": 39589.093736380586,
+          "alignment": 0.9999729828410925
+        },
+        {
+          "source": "sftf",
+          "rank": 17.0,
+          "score": 0.09416134779240903,
+          "yaw": 212.99999568198123,
+          "pitch": 251.99999335216052,
+          "vss": 44298.12076663183,
+          "alignment": 0.9999907679386365
+        },
+        {
+          "source": "sftf",
+          "rank": 18.0,
+          "score": 0.10281285824941944,
+          "yaw": 139.99999934239548,
+          "pitch": 260.0000026816997,
+          "vss": 34568.82602912335,
+          "alignment": 0.9999773240378675
+        },
+        {
+          "source": "sftf",
+          "rank": 19.0,
+          "score": 0.1065561580170411,
+          "yaw": 163.0000056742531,
+          "pitch": 97.999998173639,
+          "vss": 53514.73280220977,
+          "alignment": 0.9999787869306276
+        },
+        {
+          "source": "sftf",
+          "rank": 20.0,
+          "score": 0.12730433772269611,
+          "yaw": 237.99999068584532,
+          "pitch": 274.0000053480149,
+          "vss": 44120.102874503646,
+          "alignment": 0.9999733321777244
+        },
+        {
+          "source": "sftf",
+          "rank": 21.0,
+          "score": 0.13817722695584878,
+          "yaw": 114.000003172339,
+          "pitch": 263.0000130104661,
+          "vss": 41472.28918784906,
+          "alignment": 0.9999937124341921
+        },
+        {
+          "source": "sftf",
+          "rank": 22.0,
+          "score": 0.15476816421378836,
+          "yaw": 202.9999976804356,
+          "pitch": 104.99999950679661,
+          "vss": 62555.73871707128,
+          "alignment": 0.9999980428265194
+        },
+        {
+          "source": "sftf",
+          "rank": 23.0,
+          "score": 0.16028822618125527,
+          "yaw": 353.99998936037997,
+          "pitch": 284.99999768556376,
+          "vss": 39807.217180236315,
+          "alignment": 0.9999960613357644
+        },
+        {
+          "source": "sftf",
+          "rank": 24.0,
+          "score": 0.16116855151045772,
+          "yaw": 231.99999734906928,
+          "pitch": 252.99998768816374,
+          "vss": 56520.61572744827,
+          "alignment": 0.9999975875822886
+        },
+        {
+          "source": "sftf",
+          "rank": 25.0,
+          "score": 0.16298628969790907,
+          "yaw": 54.0000015026869,
+          "pitch": 281.9999873567974,
+          "vss": 53671.50582557867,
+          "alignment": 0.9999974675924174
+        },
+        {
+          "source": "sftf",
+          "rank": 26.0,
+          "score": 0.17260193648334665,
+          "yaw": 192.99999967889,
+          "pitch": 252.99998768816374,
+          "vss": 40549.294022489186,
+          "alignment": 0.9999896883971062
+        },
+        {
+          "source": "sftf",
+          "rank": 27.0,
+          "score": 0.18224221533694807,
+          "yaw": 149.0000030079379,
+          "pitch": 257.9999866889366,
+          "vss": 33484.74266115299,
+          "alignment": 0.9999707789363678
+        },
+        {
+          "source": "sftf",
+          "rank": 28.0,
+          "score": 0.19480983733539903,
+          "yaw": 294.00000135110616,
+          "pitch": 79.99999767274336,
+          "vss": 43465.96110950817,
+          "alignment": 0.9999932225623089
+        },
+        {
+          "source": "sftf",
+          "rank": 29.0,
+          "score": 0.2018652982184359,
+          "yaw": 9.000000250447817,
+          "pitch": 74.99999867197056,
+          "vss": 55433.13144652311,
+          "alignment": 0.999989436771227
+        },
+        {
+          "source": "sftf",
+          "rank": 30.0,
+          "score": 0.2041595662277309,
+          "yaw": 207.99999668120842,
+          "pitch": 249.00001034415084,
+          "vss": 41783.435285584,
+          "alignment": 0.9999912720287388
+        },
+        {
+          "source": "sftf",
+          "rank": 31.0,
+          "score": 0.22591216111541468,
+          "yaw": 159.99999534548672,
+          "pitch": 255.00000368092688,
+          "vss": 38915.0312124205,
+          "alignment": 0.9999929452185785
+        },
+        {
+          "source": "sftf",
+          "rank": 32.0,
+          "score": 0.23299233152594923,
+          "yaw": 299.99999468788224,
+          "pitch": 279.99999868479097,
+          "vss": 35945.58495135347,
+          "alignment": 0.9999997639905936
+        },
+        {
+          "source": "sftf",
+          "rank": 33.0,
+          "score": 0.25154910921766127,
+          "yaw": 42.99999891985429,
+          "pitch": 289.9999966863366,
+          "vss": 49686.58163527812,
+          "alignment": 0.9999776405107306
+        },
+        {
+          "source": "sftf",
+          "rank": 34.0,
+          "score": 0.2568470952749813,
+          "yaw": 358.99998836115276,
+          "pitch": 61.99999717184774,
+          "vss": 72516.29947630827,
+          "alignment": 0.999981246525413
+        },
+        {
+          "source": "sftf",
+          "rank": 35.0,
+          "score": 0.2598078233927199,
+          "yaw": 166.00000234264112,
+          "pitch": 110.99999967376182,
+          "vss": 65900.30607113168,
+          "alignment": 0.9999773477217513
+        },
+        {
+          "source": "sftf",
+          "rank": 36.0,
+          "score": 0.2653754453911703,
+          "yaw": 334.9999876932919,
+          "pitch": 289.0000023503334,
+          "vss": 38816.448085564225,
+          "alignment": 0.9999949528172518
+        },
+        {
+          "source": "sftf",
+          "rank": 37.0,
+          "score": 0.27598690937257997,
+          "yaw": 183.00000167734436,
+          "pitch": 251.99999335216052,
+          "vss": 40236.84351897437,
+          "alignment": 0.9999963295437527
+        },
+        {
+          "source": "sftf",
+          "rank": 38.0,
+          "score": 0.2814609604957403,
+          "yaw": 18.999999959540737,
+          "pitch": 290.9999910223398,
+          "vss": 47069.27764514261,
+          "alignment": 0.9999941797206624
+        },
+        {
+          "source": "sftf",
+          "rank": 39.0,
+          "score": 0.296897134004648,
+          "yaw": 339.9999866940647,
+          "pitch": 72.00000200358254,
+          "vss": 59032.91702270508,
+          "alignment": 0.9999934410642907
+        },
+        {
+          "source": "sftf",
+          "rank": 40.0,
+          "score": 0.29993191324554647,
+          "yaw": 44.00000008604669,
+          "pitch": 75.99999983816295,
+          "vss": 58800.5239313299,
+          "alignment": 0.9999761349705787
+        },
+        {
+          "source": "sftf",
+          "rank": 41.0,
+          "score": 0.30149109217660763,
+          "yaw": 348.9999903596071,
+          "pitch": 288.00000801433015,
+          "vss": 39177.6817889253,
+          "alignment": 0.9999991140651459
+        },
+        {
+          "source": "sftf",
+          "rank": 42.0,
+          "score": 0.30549403563129385,
+          "yaw": 195.999996347278,
+          "pitch": 114.000003172339,
+          "vss": 71369.78590783993,
+          "alignment": 0.9999910937022792
+        },
+        {
+          "source": "sftf",
+          "rank": 43.0,
+          "score": 0.30603888458559325,
+          "yaw": 188.9999950141204,
+          "pitch": 249.00001034415084,
+          "vss": 46455.1192669829,
+          "alignment": 0.9999625290877717
+        },
+        {
+          "source": "sftf",
+          "rank": 44.0,
+          "score": 0.3287677769171189,
+          "yaw": 30.99999858592387,
+          "pitch": 294.00000135110616,
+          "vss": 46698.60965949445,
+          "alignment": 0.9999976718389546
+        },
+        {
+          "source": "sftf",
+          "rank": 45.0,
+          "score": 0.3333271882261817,
+          "yaw": 140.9999936783987,
+          "pitch": 106.000000672989,
+          "vss": 66989.22874513737,
+          "alignment": 0.9999698490576763
+        },
+        {
+          "source": "sftf",
+          "rank": 46.0,
+          "score": 0.33456599535244,
+          "yaw": 42.00000116875648,
+          "pitch": 294.00000135110616,
+          "vss": 51350.5068692294,
+          "alignment": 0.9999963895253603
+        },
+        {
+          "source": "sftf",
+          "rank": 47.0,
+          "score": 0.33722470952749894,
+          "yaw": 185.99999834573237,
+          "pitch": 127.99999900846505,
+          "vss": 81736.72226834888,
+          "alignment": 0.9999687585548689
+        },
+        {
+          "source": "sftf",
+          "rank": 48.0,
+          "score": 0.3624715724244777,
+          "yaw": 324.9999896917463,
+          "pitch": 288.00000801433015,
+          "vss": 42979.25223988935,
+          "alignment": 0.9999987365307926
+        },
+        {
+          "source": "sftf",
+          "rank": 49.0,
+          "score": 0.3659015491866773,
+          "yaw": 355.00001101713985,
+          "pitch": 290.9999910223398,
+          "vss": 48076.870027652454,
+          "alignment": 0.9999702706690048
+        },
+        {
+          "source": "sftf",
+          "rank": 50.0,
+          "score": 0.3663529821843532,
+          "yaw": 34.99999983559887,
+          "pitch": 67.00000300280972,
+          "vss": 81230.81774751017,
+          "alignment": 0.9999982120490781
+        },
+        {
+          "source": "sftf",
+          "rank": 51.0,
+          "score": 0.36681115414407506,
+          "yaw": 183.00000167734436,
+          "pitch": 112.00000083995421,
+          "vss": 65042.97650550023,
+          "alignment": 0.9999855748216523
+        },
+        {
+          "source": "sftf",
+          "rank": 52.0,
+          "score": 0.3673535243996904,
+          "yaw": 205.99999434882363,
+          "pitch": 244.00001134337802,
+          "vss": 48240.38182408357,
+          "alignment": 0.9999968649377468
+        },
+        {
+          "source": "sftf",
+          "rank": 53.0,
+          "score": 0.36951533694810235,
+          "yaw": 54.999999253784715,
+          "pitch": 290.9999910223398,
+          "vss": 59554.59263699114,
+          "alignment": 0.999990184467577
+        },
+        {
+          "source": "sftf",
+          "rank": 54.0,
+          "score": 0.392837955073587,
+          "yaw": 18.000000500895634,
+          "pitch": 295.9999900231126,
+          "vss": 49722.90007536076,
+          "alignment": 0.9999734665705661
+        },
+        {
+          "source": "sftf",
+          "rank": 55.0,
+          "score": 0.3950549186676998,
+          "yaw": 214.99999801436604,
+          "pitch": 242.99998968661814,
+          "vss": 51203.19177296536,
+          "alignment": 0.9999825215647822
+        },
+        {
+          "source": "sftf",
+          "rank": 56.0,
+          "score": 0.39794268009295175,
+          "yaw": 286.9999863575702,
+          "pitch": 74.99999867197056,
+          "vss": 50019.0159506049,
+          "alignment": 0.9999894146644086
+        },
+        {
+          "source": "sftf",
+          "rank": 57.0,
+          "score": 0.40466158017041076,
+          "yaw": 242.99998968661814,
+          "pitch": 72.00000200358254,
+          "vss": 60443.30281659591,
+          "alignment": 0.9999696691016956
+        },
+        {
+          "source": "sftf",
+          "rank": 58.0,
+          "score": 0.4070162664601087,
+          "yaw": 339.9999866940647,
+          "pitch": 293.00000701510294,
+          "vss": 49496.47730047053,
+          "alignment": 0.9999948117516853
+        },
+        {
+          "source": "sftf",
+          "rank": 59.0,
+          "score": 0.4172598760650661,
+          "yaw": 347.0000016876007,
+          "pitch": 290.9999910223398,
+          "vss": 46398.951002388945,
+          "alignment": 0.9999846618601541
+        },
+        {
+          "source": "sftf",
+          "rank": 60.0,
+          "score": 0.4201313710302099,
+          "yaw": 241.00000101461168,
+          "pitch": 102.00000283840859,
+          "vss": 59668.58430342241,
+          "alignment": 0.9999907907759736
+        },
+        {
+          "source": "sftf",
+          "rank": 61.0,
+          "score": 0.42205979860573206,
+          "yaw": 193.99999401489322,
+          "pitch": 241.00000101461168,
+          "vss": 55308.68482983802,
+          "alignment": 0.9999916068632931
+        },
+        {
+          "source": "sftf",
+          "rank": 62.0,
+          "score": 0.4221945003872971,
+          "yaw": 6.000000166965211,
+          "pitch": 293.00000701510294,
+          "vss": 50435.78344928331,
+          "alignment": 0.99997085081198
+        },
+        {
+          "source": "sftf",
+          "rank": 63.0,
+          "score": 0.43523462432223126,
+          "yaw": 28.99999966863366,
+          "pitch": 299.000000351879,
+          "vss": 50620.69380578916,
+          "alignment": 0.9999915623209636
+        },
+        {
+          "source": "sftf",
+          "rank": 64.0,
+          "score": 0.44131727343144944,
+          "yaw": 16.999999334703237,
+          "pitch": 61.99999717184774,
+          "vss": 75547.99072013414,
+          "alignment": 0.9999962113885086
+        },
+        {
+          "source": "sftf",
+          "rank": 65.0,
+          "score": 0.44870030983733566,
+          "yaw": 7.999999938029066,
+          "pitch": 42.00000116875648,
+          "vss": 82443.73384586051,
+          "alignment": 0.9999748535467734
+        },
+        {
+          "source": "sftf",
+          "rank": 66.0,
+          "score": 0.46225096824167355,
+          "yaw": 183.99999601334758,
+          "pitch": 241.9999953506149,
+          "vss": 50892.53827560046,
+          "alignment": 0.9999872789769345
+        },
+        {
+          "source": "sftf",
+          "rank": 67.0,
+          "score": 0.47583261037955094,
+          "yaw": 199.00000667604436,
+          "pitch": 123.99999434369548,
+          "vss": 83129.18923117897,
+          "alignment": 0.9999734891377073
+        },
+        {
+          "source": "sftf",
+          "rank": 68.0,
+          "score": 0.48972114639814146,
+          "yaw": 347.9999960236039,
+          "pitch": 54.999999253784715,
+          "vss": 87905.70251212633,
+          "alignment": 0.9999820143508331
+        },
+        {
+          "source": "sftf",
+          "rank": 69.0,
+          "score": 0.5060987606506591,
+          "yaw": 66.00000183661733,
+          "pitch": 110.99999967376182,
+          "vss": 71790.44297904022,
+          "alignment": 0.9999662164336883
+        },
+        {
+          "source": "sftf",
+          "rank": 70.0,
+          "score": 0.5087902401239355,
+          "yaw": 279.00000434878774,
+          "pitch": 283.0000090135573,
+          "vss": 45861.72103881836,
+          "alignment": 0.9999890444332525
+        },
+        {
+          "source": "sftf",
+          "rank": 71.0,
+          "score": 0.5149923315259489,
+          "yaw": 178.99999701257477,
+          "pitch": 245.00000567938125,
+          "vss": 43172.66684918364,
+          "alignment": 0.9999991977448632
+        },
+        {
+          "source": "sftf",
+          "rank": 72.0,
+          "score": 0.5293450038729668,
+          "yaw": 130.99999567685308,
+          "pitch": 108.0000030053738,
+          "vss": 58971.14493630149,
+          "alignment": 0.9999841767606356
+        },
+        {
+          "source": "sftf",
+          "rank": 73.0,
+          "score": 0.533875677769172,
+          "yaw": 356.0000053531431,
+          "pitch": 45.999999003336896,
+          "vss": 85713.70179988135,
+          "alignment": 0.999968320950537
+        },
+        {
+          "source": "sftf",
+          "rank": 74.0,
+          "score": 0.5344001549186682,
+          "yaw": 219.00000267913563,
+          "pitch": 240.00000667860846,
+          "vss": 50735.213539817116,
+          "alignment": 0.9999558606541188
+        },
+        {
+          "source": "sftf",
+          "rank": 75.0,
+          "score": 0.5498360185902404,
+          "yaw": 173.99999801180195,
+          "pitch": 120.00000333930423,
+          "vss": 80407.07958631279,
+          "alignment": 0.999985209933862
+        },
+        {
+          "source": "sftf",
+          "rank": 76.0,
+          "score": 0.5694846630518983,
+          "yaw": 226.99999834829646,
+          "pitch": 242.99998968661814,
+          "vss": 51692.28876917815,
+          "alignment": 0.9999904140819948
+        },
+        {
+          "source": "sftf",
+          "rank": 77.0,
+          "score": 0.5937396591789315,
+          "yaw": 268.0000120112389,
+          "pitch": 73.00000316977493,
+          "vss": 62324.504221766445,
+          "alignment": 0.9999998788028901
+        },
+        {
+          "source": "sftf",
+          "rank": 78.0,
+          "score": 0.6314265685515108,
+          "yaw": 204.00000567681718,
+          "pitch": 125.99999667608026,
+          "vss": 88533.25962035124,
+          "alignment": 0.9999886775634591
+        },
+        {
+          "source": "sftf",
+          "rank": 79.0,
+          "score": 0.6431364833462435,
+          "yaw": 54.999999253784715,
+          "pitch": 297.00001167987256,
+          "vss": 53361.34492858382,
+          "alignment": 0.9999986663432939
+        },
+        {
+          "source": "sftf",
+          "rank": 80.0,
+          "score": 0.6529281951975218,
+          "yaw": 202.9999976804356,
+          "pitch": 237.99999068584532,
+          "vss": 51783.2109750795,
+          "alignment": 0.9999937776978823
+        },
+        {
+          "source": "sftf",
+          "rank": 81.0,
+          "score": 0.6561634391944233,
+          "yaw": 18.000000500895634,
+          "pitch": 45.999999003336896,
+          "vss": 80333.81217767384,
+          "alignment": 0.999993930753527
+        },
+        {
+          "source": "sftf",
+          "rank": 82.0,
+          "score": 0.6588610379550739,
+          "yaw": 0.9999999922536332,
+          "pitch": 34.99999983559887,
+          "vss": 80089.00949777651,
+          "alignment": 0.9999838377389314
+        },
+        {
+          "source": "sftf",
+          "rank": 83.0,
+          "score": 0.6651146398140979,
+          "yaw": 31.999999752116263,
+          "pitch": 302.00001068064535,
+          "vss": 50828.996768667675,
+          "alignment": 0.9999756682944703
+        },
+        {
+          "source": "sftf",
+          "rank": 84.0,
+          "score": 0.6668368706429126,
+          "yaw": 59.00000050345972,
+          "pitch": 68.99999850500534,
+          "vss": 90712.15322195005,
+          "alignment": 0.999995156268799
+        },
+        {
+          "source": "sftf",
+          "rank": 85.0,
+          "score": 0.679558481797057,
+          "yaw": 156.99999867709872,
+          "pitch": 117.0000066709162,
+          "vss": 82601.61817566422,
+          "alignment": 0.9999959869029565
+        },
+        {
+          "source": "sftf",
+          "rank": 86.0,
+          "score": 0.6860144848954306,
+          "yaw": 79.99999767274336,
+          "pitch": 109.99999850756943,
+          "vss": 73199.96573708275,
+          "alignment": 0.9999777570482596
+        },
+        {
+          "source": "sftf",
+          "rank": 87.0,
+          "score": 0.693726026336174,
+          "yaw": 15.999999876058132,
+          "pitch": 34.99999983559887,
+          "vss": 88259.70484205514,
+          "alignment": 0.9999827479353269
+        },
+        {
+          "source": "sftf",
+          "rank": 88.0,
+          "score": 0.6969695584817973,
+          "yaw": 226.00000401229323,
+          "pitch": 239.00001234260523,
+          "vss": 53970.91621209767,
+          "alignment": 0.9999739050714731
+        },
+        {
+          "source": "sftf",
+          "rank": 89.0,
+          "score": 0.7242250968241677,
+          "yaw": 348.9999903596071,
+          "pitch": 295.9999900231126,
+          "vss": 52942.50456754826,
+          "alignment": 0.9999854263279125
+        },
+        {
+          "source": "sftf",
+          "rank": 90.0,
+          "score": 0.7293300542215337,
+          "yaw": 39.99999883637168,
+          "pitch": 59.00000050345972,
+          "vss": 99528.00530047456,
+          "alignment": 0.9999748488695829
+        },
+        {
+          "source": "sftf",
+          "rank": 91.0,
+          "score": 0.73460542215337,
+          "yaw": 318.000002018967,
+          "pitch": 289.9999966863366,
+          "vss": 43959.12895517901,
+          "alignment": 0.9999842185322396
+        },
+        {
+          "source": "sftf",
+          "rank": 92.0,
+          "score": 0.748997443841983,
+          "yaw": 61.99999717184774,
+          "pitch": 295.9999900231126,
+          "vss": 68641.14241166548,
+          "alignment": 0.9999716686765905
+        },
+        {
+          "source": "sftf",
+          "rank": 93.0,
+          "score": 0.7560237800154919,
+          "yaw": 245.00000567938125,
+          "pitch": 246.0000000153845,
+          "vss": 74216.71654567246,
+          "alignment": 0.999975409852285
+        },
+        {
+          "source": "sftf",
+          "rank": 94.0,
+          "score": 0.7669059643687064,
+          "yaw": 231.99999734906928,
+          "pitch": 240.00000667860846,
+          "vss": 56833.633706589375,
+          "alignment": 0.9999972468786602
+        },
+        {
+          "source": "sftf",
+          "rank": 95.0,
+          "score": 0.7785907823392726,
+          "yaw": 190.00000301050196,
+          "pitch": 159.99999534548672,
+          "vss": 84773.85970186596,
+          "alignment": 0.9999812509803138
+        },
+        {
+          "source": "sftf",
+          "rank": 96.0,
+          "score": 0.7968396591789313,
+          "yaw": 351.0000063523703,
+          "pitch": 39.00000108527387,
+          "vss": 92523.86644852062,
+          "alignment": 0.9999808591246326
+        },
+        {
+          "source": "sftf",
+          "rank": 97.0,
+          "score": 0.8020235476374906,
+          "yaw": 7.999999938029066,
+          "pitch": 28.000000209988553,
+          "vss": 85374.2173880585,
+          "alignment": 0.9999680358093435
+        },
+        {
+          "source": "sftf",
+          "rank": 98.0,
+          "score": 0.8110405886909376,
+          "yaw": 176.00000034418676,
+          "pitch": 241.00000101461168,
+          "vss": 54434.5319763688,
+          "alignment": 0.9999853600149397
+        },
+        {
+          "source": "sftf",
+          "rank": 99.0,
+          "score": 0.8130632842757557,
+          "yaw": 12.999999792575526,
+          "pitch": 47.000000169529294,
+          "vss": 77637.49902898615,
+          "alignment": 0.9999979859658774
+        },
+        {
+          "source": "sftf",
+          "rank": 100.0,
+          "score": 0.8358061967467079,
+          "yaw": 207.99999668120842,
+          "pitch": 235.00000767783564,
+          "vss": 49378.00494107333,
+          "alignment": 0.999988364603736
+        }
+      ],
+      "pareto_centers": [
+        {
+          "source": "pareto",
+          "rank": 1.0,
+          "score": 511.8282232489867,
+          "yaw": 221.00000501152041,
+          "pitch": 260.0000026816997,
+          "vss": 48773.93501849214,
+          "alignment": 0.9999631587402479
+        },
+        {
+          "source": "pareto",
+          "rank": 2.0,
+          "score": 523.3632643064985,
+          "yaw": 22.999999501668448,
+          "pitch": 281.9999873567974,
+          "vss": 41607.8449280794,
+          "alignment": 0.999996528103698
+        },
+        {
+          "source": "pareto",
+          "rank": 3.0,
+          "score": 526.5385117961652,
+          "yaw": 212.000001345978,
+          "pitch": 255.00000368092688,
+          "vss": 40887.64742386243,
+          "alignment": 0.9999993486848272
+        },
+        {
+          "source": "pareto",
+          "rank": 4.0,
+          "score": 541.3014210101238,
+          "yaw": 24.000000667860846,
+          "pitch": 286.9999863575702,
+          "vss": 42853.11895953722,
+          "alignment": 0.9999993313144103
+        },
+        {
+          "source": "pareto",
+          "rank": 5.0,
+          "score": 560.6651361833415,
+          "yaw": 221.00000501152041,
+          "pitch": 252.99998768816374,
+          "vss": 46202.758127007604,
+          "alignment": 0.9999734813972905
+        },
+        {
+          "source": "pareto",
+          "rank": 6.0,
+          "score": 563.6476849812544,
+          "yaw": 31.999999752116263,
+          "pitch": 289.0000023503334,
+          "vss": 42018.63028786399,
+          "alignment": 0.9999958149135906
+        },
+        {
+          "source": "pareto",
+          "rank": 7.0,
+          "score": 565.2549932345515,
+          "yaw": 197.00000434365958,
+          "pitch": 247.99998868739095,
+          "vss": 50089.19376972293,
+          "alignment": 0.9999931590067087
+        },
+        {
+          "source": "pareto",
+          "rank": 8.0,
+          "score": 574.5263853084939,
+          "yaw": 207.0000023452052,
+          "pitch": 247.99998868739095,
+          "vss": 45996.6304873632,
+          "alignment": 0.9999817536718218
+        },
+        {
+          "source": "pareto",
+          "rank": 9.0,
+          "score": 577.9661549216241,
+          "yaw": 22.000000043023345,
+          "pitch": 294.00000135110616,
+          "vss": 48614.05664239048,
+          "alignment": 0.999973542718554
+        },
+        {
+          "source": "pareto",
+          "rank": 10.0,
+          "score": 584.060795372181,
+          "yaw": 209.99999901359323,
+          "pitch": 245.00000567938125,
+          "vss": 47967.307823748626,
+          "alignment": 0.9999770037945299
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x.ply",
+      "npz": "Experimental\\etc\\(4)happy_50k_0.75x_tomo_int3_vss_grid_1deg_60deg.npz",
+      "face_count": 49944,
+      "candidate_pool_size": 1292,
+      "elapsed_sec": 9.103724900000088,
+      "bbox_volume": 349764.91179481667,
+      "tomo_best": {
+        "yaw": 90.99999684048139,
+        "pitch": 110.99999967376182,
+        "vss": 2112.4674268990507
+      },
+      "triggered": true,
+      "severe_boundary": false,
+      "trigger_reasons": [
+        "high_normalized_support",
+        "boundary_local_minimum",
+        "low_seed_to_local_gain"
+      ],
+      "base_top_k": 10,
+      "escalate_top_k": 30,
+      "severe_escalate_top_k": 100,
+      "pareto_top_k": 10,
+      "baseline_centers": [
+        {
+          "source": "sftf",
+          "rank": 1.0,
+          "score": -0.507567467079783,
+          "yaw": 113.00000200614662,
+          "pitch": 294.00000135110616,
+          "vss": 25467.93961327923,
+          "alignment": 0.9999997093323317
+        },
+        {
+          "source": "sftf",
+          "rank": 2.0,
+          "score": -0.42693524399690097,
+          "yaw": 303.9999993526518,
+          "pitch": 252.99998768816374,
+          "vss": 26544.86254227063,
+          "alignment": 0.9999977415794278
+        },
+        {
+          "source": "sftf",
+          "rank": 3.0,
+          "score": -0.375486909372579,
+          "yaw": 252.99998768816374,
+          "pitch": 289.0000023503334,
+          "vss": 23727.487926640788,
+          "alignment": 0.9999757513851625
+        },
+        {
+          "source": "sftf",
+          "rank": 4.0,
+          "score": -0.3722995352439967,
+          "yaw": 106.000000672989,
+          "pitch": 297.00001167987256,
+          "vss": 25424.12970676895,
+          "alignment": 0.999992592715292
+        },
+        {
+          "source": "sftf",
+          "rank": 5.0,
+          "score": -0.36112896979085973,
+          "yaw": 302.00001068064535,
+          "pitch": 255.9999980169301,
+          "vss": 23883.464907811693,
+          "alignment": 0.999996441260191
+        },
+        {
+          "source": "sftf",
+          "rank": 6.0,
+          "score": -0.3541095274980628,
+          "yaw": 112.00000083995421,
+          "pitch": 286.9999863575702,
+          "vss": 23764.58270490662,
+          "alignment": 0.9999765563578368
+        },
+        {
+          "source": "sftf",
+          "rank": 7.0,
+          "score": -0.34761572424477116,
+          "yaw": 108.0000030053738,
+          "pitch": 290.9999910223398,
+          "vss": 24126.21837016965,
+          "alignment": 0.9999893660125236
+        },
+        {
+          "source": "sftf",
+          "rank": 8.0,
+          "score": -0.29825817195972093,
+          "yaw": 73.99999750577815,
+          "pitch": 239.00001234260523,
+          "vss": 27302.371568916256,
+          "alignment": 0.9999826649437479
+        },
+        {
+          "source": "sftf",
+          "rank": 9.0,
+          "score": -0.29342021688613473,
+          "yaw": 108.0000030053738,
+          "pitch": 312.000008682191,
+          "vss": 25335.246866399593,
+          "alignment": 0.9999981922224428
+        },
+        {
+          "source": "sftf",
+          "rank": 10.0,
+          "score": -0.272790782339271,
+          "yaw": 224.00000167990842,
+          "pitch": 284.00000334956053,
+          "vss": 29048.125605937865,
+          "alignment": 0.9999761353561892
+        },
+        {
+          "source": "sftf",
+          "rank": 11.0,
+          "score": -0.2584994577846629,
+          "yaw": 285.999992021567,
+          "pitch": 77.00000100435535,
+          "vss": 22002.129515340504,
+          "alignment": 0.9999889907817034
+        },
+        {
+          "source": "sftf",
+          "rank": 12.0,
+          "score": -0.25302873741285814,
+          "yaw": 123.99999434369548,
+          "pitch": 97.999998173639,
+          "vss": 23233.293501798773,
+          "alignment": 0.9999997598598654
+        },
+        {
+          "source": "sftf",
+          "rank": 13.0,
+          "score": -0.24315956622773016,
+          "yaw": 318.9999963549702,
+          "pitch": 255.9999980169301,
+          "vss": 27210.676965634684,
+          "alignment": 0.9999627701656655
+        },
+        {
+          "source": "sftf",
+          "rank": 14.0,
+          "score": -0.23578218435321407,
+          "yaw": 123.00000000769225,
+          "pitch": 114.000003172339,
+          "vss": 30804.013417772025,
+          "alignment": 0.9999623412580272
+        },
+        {
+          "source": "sftf",
+          "rank": 15.0,
+          "score": -0.23142920216886065,
+          "yaw": 135.9999946776259,
+          "pitch": 279.99999868479097,
+          "vss": 22647.286249586374,
+          "alignment": 0.9999703370740455
+        },
+        {
+          "source": "sftf",
+          "rank": 16.0,
+          "score": -0.2034512780790086,
+          "yaw": 106.000000672989,
+          "pitch": 318.9999963549702,
+          "vss": 23746.839239577617,
+          "alignment": 0.999963965576368
+        },
+        {
+          "source": "sftf",
+          "rank": 17.0,
+          "score": -0.1924364058869092,
+          "yaw": 281.9999873567974,
+          "pitch": 219.00000267913563,
+          "vss": 23247.082371357057,
+          "alignment": 0.999999418710574
+        },
+        {
+          "source": "sftf",
+          "rank": 18.0,
+          "score": -0.1588532920216883,
+          "yaw": 278.0000100127845,
+          "pitch": 67.99999733881295,
+          "vss": 21283.861034172627,
+          "alignment": 0.9999959250310475
+        },
+        {
+          "source": "sftf",
+          "rank": 19.0,
+          "score": -0.15446839659178901,
+          "yaw": 283.0000090135573,
+          "pitch": 226.99999834829646,
+          "vss": 23776.052411922738,
+          "alignment": 0.9999860249549121
+        },
+        {
+          "source": "sftf",
+          "rank": 20.0,
+          "score": -0.14054384198295855,
+          "yaw": 279.99999868479097,
+          "pitch": 73.99999750577815,
+          "vss": 20891.50089862918,
+          "alignment": 0.9999851973958449
+        },
+        {
+          "source": "sftf",
+          "rank": 21.0,
+          "score": -0.1186209140201393,
+          "yaw": 65.00000067042492,
+          "pitch": 264.0000073464693,
+          "vss": 23316.058245572178,
+          "alignment": 0.9999996895020965
+        },
+        {
+          "source": "sftf",
+          "rank": 22.0,
+          "score": -0.11310271107668424,
+          "yaw": 342.9999970228311,
+          "pitch": 261.99999135370615,
+          "vss": 23737.406927692,
+          "alignment": 0.9999787857379564
+        },
+        {
+          "source": "sftf",
+          "rank": 23.0,
+          "score": -0.11027893106119258,
+          "yaw": 109.99999850756943,
+          "pitch": 328.00000002051263,
+          "vss": 26530.880573367285,
+          "alignment": 0.9999894177809326
+        },
+        {
+          "source": "sftf",
+          "rank": 24.0,
+          "score": -0.08481766072811758,
+          "yaw": 283.0000090135573,
+          "pitch": 232.9999916850725,
+          "vss": 24953.493402023945,
+          "alignment": 0.9999762055596828
+        },
+        {
+          "source": "sftf",
+          "rank": 25.0,
+          "score": -0.08279728892331506,
+          "yaw": 115.99999867453464,
+          "pitch": 329.9999886925191,
+          "vss": 30641.29766353891,
+          "alignment": 0.9999814997664684
+        },
+        {
+          "source": "sftf",
+          "rank": 26.0,
+          "score": -0.08132618125484026,
+          "yaw": 84.99999667351618,
+          "pitch": 102.00000283840859,
+          "vss": 15148.296829097528,
+          "alignment": 0.9999870488238968
+        },
+        {
+          "source": "sftf",
+          "rank": 27.0,
+          "score": -0.07883903950426013,
+          "yaw": 278.0000100127845,
+          "pitch": 229.00000068068124,
+          "vss": 27468.657690631455,
+          "alignment": 0.9999529949683648
+        },
+        {
+          "source": "sftf",
+          "rank": 28.0,
+          "score": -0.07700898528272626,
+          "yaw": 125.99999667608026,
+          "pitch": 289.9999966863366,
+          "vss": 29134.823271065703,
+          "alignment": 0.9999753525917772
+        },
+        {
+          "source": "sftf",
+          "rank": 29.0,
+          "score": -0.0643750580945,
+          "yaw": 284.00000334956053,
+          "pitch": 192.99999967889,
+          "vss": 25853.196451486634,
+          "alignment": 0.999975929590617
+        },
+        {
+          "source": "sftf",
+          "rank": 30.0,
+          "score": -0.05876669248644406,
+          "yaw": 86.99999900590097,
+          "pitch": 96.99999700744661,
+          "vss": 10705.223753432598,
+          "alignment": 0.9999998137001329
+        },
+        {
+          "source": "sftf",
+          "rank": 31.0,
+          "score": -0.046076607281177004,
+          "yaw": 104.99999950679661,
+          "pitch": 24.000000667860846,
+          "vss": 23612.245055269603,
+          "alignment": 0.999985741726201
+        },
+        {
+          "source": "sftf",
+          "rank": 32.0,
+          "score": -0.03710325329202102,
+          "yaw": 106.000000672989,
+          "pitch": 300.99998902388546,
+          "vss": 24451.409489655296,
+          "alignment": 0.9999634322661567
+        },
+        {
+          "source": "sftf",
+          "rank": 33.0,
+          "score": -0.0368954298993025,
+          "yaw": 188.9999950141204,
+          "pitch": 284.99999768556376,
+          "vss": 32789.68945022457,
+          "alignment": 0.9999894364626908
+        },
+        {
+          "source": "sftf",
+          "rank": 34.0,
+          "score": -0.018927652982183574,
+          "yaw": 16.999999334703237,
+          "pitch": 9.99999970909292,
+          "vss": 34767.82869701543,
+          "alignment": 0.9999875762293522
+        },
+        {
+          "source": "sftf",
+          "rank": 35.0,
+          "score": -0.015258017041053007,
+          "yaw": 195.999996347278,
+          "pitch": 180.00000500895632,
+          "vss": 33875.50480109601,
+          "alignment": 0.9999683984157047
+        },
+        {
+          "source": "sftf",
+          "rank": 36.0,
+          "score": -0.011105964368705923,
+          "yaw": 176.99999468018999,
+          "pitch": 178.99999701257477,
+          "vss": 26477.75460865872,
+          "alignment": 0.9999596276158474
+        },
+        {
+          "source": "sftf",
+          "rank": 37.0,
+          "score": -0.011002478698682983,
+          "yaw": 289.9999966863366,
+          "pitch": 231.99999734906928,
+          "vss": 27498.808774081142,
+          "alignment": 0.9999931836744019
+        },
+        {
+          "source": "sftf",
+          "rank": 38.0,
+          "score": -0.010924554608829684,
+          "yaw": 204.00000567681718,
+          "pitch": 175.00000600818353,
+          "vss": 28589.22895321176,
+          "alignment": 0.9999693750836779
+        },
+        {
+          "source": "sftf",
+          "rank": 39.0,
+          "score": -0.00977660728117713,
+          "yaw": 190.99999734650518,
+          "pitch": 193.99999401489322,
+          "vss": 29124.38408402372,
+          "alignment": 0.9999751987766491
+        },
+        {
+          "source": "sftf",
+          "rank": 40.0,
+          "score": -0.009769945778465905,
+          "yaw": 188.00000067811717,
+          "pitch": 169.99999334703236,
+          "vss": 30205.65174827891,
+          "alignment": 0.9999955325477339
+        },
+        {
+          "source": "sftf",
+          "rank": 41.0,
+          "score": -0.005615879163438642,
+          "yaw": 185.99999834573237,
+          "pitch": 178.00000267657154,
+          "vss": 38867.11498922553,
+          "alignment": 0.9999974535621166
+        },
+        {
+          "source": "sftf",
+          "rank": 42.0,
+          "score": -0.0036999999999995925,
+          "yaw": 188.9999950141204,
+          "pitch": 185.99999834573237,
+          "vss": 38770.47467822871,
+          "alignment": 0.9999991137688886
+        },
+        {
+          "source": "sftf",
+          "rank": 43.0,
+          "score": 0.001170100697134302,
+          "yaw": 207.99999668120842,
+          "pitch": 183.99999601334758,
+          "vss": 34989.42004747627,
+          "alignment": 0.9999970465508665
+        },
+        {
+          "source": "sftf",
+          "rank": 44.0,
+          "score": 0.0014620449264142188,
+          "yaw": 19.99999941818584,
+          "pitch": 352.0000006883735,
+          "vss": 35285.69355483883,
+          "alignment": 0.9999675850047005
+        },
+        {
+          "source": "sftf",
+          "rank": 45.0,
+          "score": 0.006562122385748159,
+          "yaw": 0.9999999922536332,
+          "pitch": 346.00000735159745,
+          "vss": 22919.231209873167,
+          "alignment": 0.9999972821952786
+        },
+        {
+          "source": "sftf",
+          "rank": 46.0,
+          "score": 0.009217893106119535,
+          "yaw": 135.9999946776259,
+          "pitch": 286.9999863575702,
+          "vss": 29859.66501157146,
+          "alignment": 0.9999680669628189
+        },
+        {
+          "source": "sftf",
+          "rank": 47.0,
+          "score": 0.018849883810999613,
+          "yaw": 297.00001167987256,
+          "pitch": 240.00000667860846,
+          "vss": 30653.61661359298,
+          "alignment": 0.9999857152861321
+        },
+        {
+          "source": "sftf",
+          "rank": 48.0,
+          "score": 0.019116498838110507,
+          "yaw": 356.0000053531431,
+          "pitch": 352.99999502437674,
+          "vss": 32446.829740666162,
+          "alignment": 0.9999964082907684
+        },
+        {
+          "source": "sftf",
+          "rank": 49.0,
+          "score": 0.024331758326878422,
+          "yaw": 103.99999834060421,
+          "pitch": 331.000010349279,
+          "vss": 23385.477460120335,
+          "alignment": 0.9999841794068184
+        },
+        {
+          "source": "sftf",
+          "rank": 50.0,
+          "score": 0.025450271107668954,
+          "yaw": 28.000000209988553,
+          "pitch": 12.000000333930423,
+          "vss": 30355.004239673457,
+          "alignment": 0.9999722863216876
+        },
+        {
+          "source": "sftf",
+          "rank": 51.0,
+          "score": 0.03802230828814879,
+          "yaw": 284.00000334956053,
+          "pitch": 80.99999883893577,
+          "vss": 20702.052707514486,
+          "alignment": 0.9999855918352474
+        },
+        {
+          "source": "sftf",
+          "rank": 52.0,
+          "score": 0.04995344694035664,
+          "yaw": 19.99999941818584,
+          "pitch": 342.9999970228311,
+          "vss": 38312.89228328988,
+          "alignment": 0.9999825650779304
+        },
+        {
+          "source": "sftf",
+          "rank": 53.0,
+          "score": 0.051465608055770884,
+          "yaw": 104.99999950679661,
+          "pitch": 12.000000333930423,
+          "vss": 25046.43132863951,
+          "alignment": 0.9999881857226756
+        },
+        {
+          "source": "sftf",
+          "rank": 54.0,
+          "score": 0.06134020139426832,
+          "yaw": 171.99999567941717,
+          "pitch": 84.99999667351618,
+          "vss": 25014.489150244342,
+          "alignment": 0.9999987308074784
+        },
+        {
+          "source": "sftf",
+          "rank": 55.0,
+          "score": 0.07684941905499665,
+          "yaw": 7.000000052497138,
+          "pitch": 337.99999802205826,
+          "vss": 33589.78870486425,
+          "alignment": 0.9999943683066677
+        },
+        {
+          "source": "sftf",
+          "rank": 56.0,
+          "score": 0.08460410534469465,
+          "yaw": 348.9999903596071,
+          "pitch": 288.00000801433015,
+          "vss": 33973.29582655725,
+          "alignment": 0.9999991140651459
+        },
+        {
+          "source": "sftf",
+          "rank": 57.0,
+          "score": 0.10230743609604964,
+          "yaw": 28.99999966863366,
+          "pitch": 345.0000130155942,
+          "vss": 26559.24844347741,
+          "alignment": 0.999958882031271
+        },
+        {
+          "source": "sftf",
+          "rank": 58.0,
+          "score": 0.11879542989930347,
+          "yaw": 197.00000434365958,
+          "pitch": 77.00000100435535,
+          "vss": 30551.31533914361,
+          "alignment": 0.9999787638327513
+        },
+        {
+          "source": "sftf",
+          "rank": 59.0,
+          "score": 0.12152827265685562,
+          "yaw": 101.00000167221619,
+          "pitch": 299.99999468788224,
+          "vss": 27366.933743815778,
+          "alignment": 0.999999626191819
+        },
+        {
+          "source": "sftf",
+          "rank": 60.0,
+          "score": 0.12426568551510497,
+          "yaw": 239.00001234260523,
+          "pitch": 290.9999910223398,
+          "vss": 30803.28436922436,
+          "alignment": 0.9999951557526267
+        },
+        {
+          "source": "sftf",
+          "rank": 61.0,
+          "score": 0.13560735863671614,
+          "yaw": 59.00000050345972,
+          "pitch": 244.00001134337802,
+          "vss": 33532.72587799829,
+          "alignment": 0.9999937487318408
+        },
+        {
+          "source": "sftf",
+          "rank": 62.0,
+          "score": 0.14081804802478706,
+          "yaw": 113.00000200614662,
+          "pitch": 322.0000066837366,
+          "vss": 28955.577818815374,
+          "alignment": 0.9999899403042511
+        },
+        {
+          "source": "sftf",
+          "rank": 63.0,
+          "score": 0.14597118512780788,
+          "yaw": 293.00000701510294,
+          "pitch": 207.0000023452052,
+          "vss": 27760.294843311152,
+          "alignment": 0.9999615572094736
+        },
+        {
+          "source": "sftf",
+          "rank": 64.0,
+          "score": 0.14940611928737435,
+          "yaw": 280.9999930207942,
+          "pitch": 236.9999963498421,
+          "vss": 27408.087549130778,
+          "alignment": 0.9999925342820493
+        },
+        {
+          "source": "sftf",
+          "rank": 65.0,
+          "score": 0.15679666924864444,
+          "yaw": 102.00000283840859,
+          "pitch": 316.00001334696054,
+          "vss": 24209.566352781185,
+          "alignment": 0.9999771840378854
+        },
+        {
+          "source": "sftf",
+          "rank": 66.0,
+          "score": 0.15682865995352535,
+          "yaw": 357.99999402514953,
+          "pitch": 9.000000250447817,
+          "vss": 27109.853492295446,
+          "alignment": 0.9999798429667746
+        },
+        {
+          "source": "sftf",
+          "rank": 67.0,
+          "score": 0.1668845081332304,
+          "yaw": 313.0000030181942,
+          "pitch": 67.99999733881295,
+          "vss": 32371.891431572025,
+          "alignment": 0.9999689787786512
+        },
+        {
+          "source": "sftf",
+          "rank": 68.0,
+          "score": 0.16702742060418352,
+          "yaw": 90.00000250447816,
+          "pitch": 108.99999734137702,
+          "vss": 9185.02058864625,
+          "alignment": 0.9999930092057339
+        },
+        {
+          "source": "sftf",
+          "rank": 69.0,
+          "score": 0.16732130131680867,
+          "yaw": 104.99999950679661,
+          "pitch": 326.0000113485062,
+          "vss": 22607.606304578545,
+          "alignment": 0.9999949627457377
+        },
+        {
+          "source": "sftf",
+          "rank": 70.0,
+          "score": 0.16764864446165784,
+          "yaw": 54.999999253784715,
+          "pitch": 123.99999434369548,
+          "vss": 35570.061896458144,
+          "alignment": 0.9999978588875198
+        },
+        {
+          "source": "sftf",
+          "rank": 71.0,
+          "score": 0.16988226181254884,
+          "yaw": 92.99999917286618,
+          "pitch": 120.99999767530745,
+          "vss": 22664.677013050426,
+          "alignment": 0.99998629598223
+        },
+        {
+          "source": "sftf",
+          "rank": 72.0,
+          "score": 0.17258931061192917,
+          "yaw": 33.99999866940647,
+          "pitch": 1.9999999845072665,
+          "vss": 22303.459072901198,
+          "alignment": 0.9999960026805694
+        },
+        {
+          "source": "sftf",
+          "rank": 73.0,
+          "score": 0.17333508907823392,
+          "yaw": 232.9999916850725,
+          "pitch": 84.00000233751295,
+          "vss": 22648.655678615098,
+          "alignment": 0.9999914885342208
+        },
+        {
+          "source": "sftf",
+          "rank": 74.0,
+          "score": 0.1816725019364842,
+          "yaw": 200.0000010120476,
+          "pitch": 161.99999767787153,
+          "vss": 35165.7828023611,
+          "alignment": 0.9999953035845351
+        },
+        {
+          "source": "sftf",
+          "rank": 75.0,
+          "score": 0.19460441518202953,
+          "yaw": 279.00000434878774,
+          "pitch": 210.99999334959645,
+          "vss": 25911.31541354597,
+          "alignment": 0.9999843114554946
+        },
+        {
+          "source": "sftf",
+          "rank": 76.0,
+          "score": 0.21618760650658486,
+          "yaw": 173.99999801180195,
+          "pitch": 199.00000667604436,
+          "vss": 26435.032363765495,
+          "alignment": 0.9999869683542577
+        },
+        {
+          "source": "sftf",
+          "rank": 77.0,
+          "score": 0.21834570100697148,
+          "yaw": 281.9999873567974,
+          "pitch": 130.99999567685308,
+          "vss": 23934.376141256536,
+          "alignment": 0.999982275973459
+        },
+        {
+          "source": "sftf",
+          "rank": 78.0,
+          "score": 0.22600635166537575,
+          "yaw": 283.0000090135573,
+          "pitch": 205.0000000128204,
+          "vss": 24199.11140252736,
+          "alignment": 0.9999715559470629
+        },
+        {
+          "source": "sftf",
+          "rank": 79.0,
+          "score": 0.229788845855926,
+          "yaw": 279.00000434878774,
+          "pitch": 169.99999334703236,
+          "vss": 26569.133947703463,
+          "alignment": 0.9999694997187011
+        },
+        {
+          "source": "sftf",
+          "rank": 80.0,
+          "score": 0.23405793958172016,
+          "yaw": 31.999999752116263,
+          "pitch": 260.0000026816997,
+          "vss": 25400.44942178017,
+          "alignment": 0.9999920835078804
+        },
+        {
+          "source": "sftf",
+          "rank": 81.0,
+          "score": 0.24287095274980697,
+          "yaw": 1.9999999845072665,
+          "pitch": 16.999999334703237,
+          "vss": 30288.339646394586,
+          "alignment": 0.9999955574311136
+        },
+        {
+          "source": "sftf",
+          "rank": 82.0,
+          "score": 0.24715414407436098,
+          "yaw": 1.9999999845072665,
+          "pitch": 295.9999900231126,
+          "vss": 32728.169575210446,
+          "alignment": 0.9999934447600901
+        },
+        {
+          "source": "sftf",
+          "rank": 83.0,
+          "score": 0.25065437645236277,
+          "yaw": 106.000000672989,
+          "pitch": 356.0000053531431,
+          "vss": 26523.41275175741,
+          "alignment": 0.9999631330339405
+        },
+        {
+          "source": "sftf",
+          "rank": 84.0,
+          "score": 0.29658729666924877,
+          "yaw": 109.99999850756943,
+          "pitch": 316.00001334696054,
+          "vss": 27394.046468183027,
+          "alignment": 0.9999765818585463
+        },
+        {
+          "source": "sftf",
+          "rank": 85.0,
+          "score": 0.2973189000774601,
+          "yaw": 308.0000040174214,
+          "pitch": 61.99999717184774,
+          "vss": 32966.62559194013,
+          "alignment": 0.9999860853386928
+        },
+        {
+          "source": "sftf",
+          "rank": 86.0,
+          "score": 0.2980388071262592,
+          "yaw": 97.999998173639,
+          "pitch": 305.99998802465825,
+          "vss": 28338.057935730485,
+          "alignment": 0.999991581348957
+        },
+        {
+          "source": "sftf",
+          "rank": 87.0,
+          "score": 0.30639465530596455,
+          "yaw": 297.00001167987256,
+          "pitch": 229.00000068068124,
+          "vss": 33971.60916289022,
+          "alignment": 0.9999942632531132
+        },
+        {
+          "source": "sftf",
+          "rank": 88.0,
+          "score": 0.3064781564678544,
+          "yaw": 106.000000672989,
+          "pitch": 348.9999903596071,
+          "vss": 26502.883138735433,
+          "alignment": 0.9999889270717416
+        },
+        {
+          "source": "sftf",
+          "rank": 89.0,
+          "score": 0.3133948102246329,
+          "yaw": 166.00000234264112,
+          "pitch": 110.99999967376182,
+          "vss": 36290.949041193184,
+          "alignment": 0.9999773477217513
+        },
+        {
+          "source": "sftf",
+          "rank": 90.0,
+          "score": 0.321335631293571,
+          "yaw": 103.99999834060421,
+          "pitch": 341.00000835082466,
+          "vss": 24108.159640603815,
+          "alignment": 0.9999821587451081
+        },
+        {
+          "source": "sftf",
+          "rank": 91.0,
+          "score": 0.32247676219984545,
+          "yaw": 205.0000000128204,
+          "pitch": 205.99999434882363,
+          "vss": 27345.014997750273,
+          "alignment": 0.9999765617503371
+        },
+        {
+          "source": "sftf",
+          "rank": 92.0,
+          "score": 0.32643214562354816,
+          "yaw": 22.999999501668448,
+          "pitch": 255.00000368092688,
+          "vss": 32255.249575149915,
+          "alignment": 0.9999980429312072
+        },
+        {
+          "source": "sftf",
+          "rank": 93.0,
+          "score": 0.3269957397366384,
+          "yaw": 279.00000434878774,
+          "pitch": 180.99999934495955,
+          "vss": 27445.56261488229,
+          "alignment": 0.9999723115518172
+        },
+        {
+          "source": "sftf",
+          "rank": 94.0,
+          "score": 0.3283214562354766,
+          "yaw": 274.0000053480149,
+          "pitch": 65.00000067042492,
+          "vss": 17160.30333652969,
+          "alignment": 0.9999948117543235
+        },
+        {
+          "source": "sftf",
+          "rank": 95.0,
+          "score": 0.3310263361735094,
+          "yaw": 61.000002835844505,
+          "pitch": 257.9999866889366,
+          "vss": 23075.972706818382,
+          "alignment": 0.999990791540305
+        },
+        {
+          "source": "sftf",
+          "rank": 96.0,
+          "score": 0.3381515104570103,
+          "yaw": 24.000000667860846,
+          "pitch": 263.0000130104661,
+          "vss": 22644.17104484621,
+          "alignment": 0.9999762017653302
+        },
+        {
+          "source": "sftf",
+          "rank": 97.0,
+          "score": 0.33900364058869087,
+          "yaw": 107.00000183918141,
+          "pitch": 338.9999923580615,
+          "vss": 25142.886421897194,
+          "alignment": 0.9999818932162063
+        },
+        {
+          "source": "sftf",
+          "rank": 98.0,
+          "score": 0.34286793183578657,
+          "yaw": 15.999999876058132,
+          "pitch": 246.0000000153845,
+          "vss": 41682.85417162682,
+          "alignment": 0.9999910936247152
+        },
+        {
+          "source": "sftf",
+          "rank": 99.0,
+          "score": 0.36326839659178933,
+          "yaw": 107.00000183918141,
+          "pitch": 7.000000052497138,
+          "vss": 25391.9569914006,
+          "alignment": 0.9999915719680471
+        },
+        {
+          "source": "sftf",
+          "rank": 100.0,
+          "score": 0.3687928737412862,
+          "yaw": 268.0000120112389,
+          "pitch": 283.0000090135573,
+          "vss": 19228.093880267184,
+          "alignment": 0.9999973817535555
+        }
+      ],
+      "pareto_centers": [
+        {
+          "source": "pareto",
+          "rank": 1.0,
+          "score": 301.03628876007093,
+          "yaw": 188.9999950141204,
+          "pitch": 185.99999834573237,
+          "vss": 38770.47467822871,
+          "alignment": 0.9999991137688886
+        },
+        {
+          "source": "pareto",
+          "rank": 2.0,
+          "score": 318.36690851519717,
+          "yaw": 185.99999834573237,
+          "pitch": 178.00000267657154,
+          "vss": 38867.11498922553,
+          "alignment": 0.9999974535621166
+        },
+        {
+          "source": "pareto",
+          "rank": 3.0,
+          "score": 334.497140836955,
+          "yaw": 290.9999910223398,
+          "pitch": 244.00001134337802,
+          "vss": 25747.854847553346,
+          "alignment": 0.9999952924622276
+        },
+        {
+          "source": "pareto",
+          "rank": 4.0,
+          "score": 336.9706297065387,
+          "yaw": 342.9999970228311,
+          "pitch": 261.99999135370615,
+          "vss": 23737.406927692,
+          "alignment": 0.9999787857379564
+        },
+        {
+          "source": "pareto",
+          "rank": 5.0,
+          "score": 337.3369817045606,
+          "yaw": 176.99999468018999,
+          "pitch": 178.99999701257477,
+          "vss": 26477.75460865872,
+          "alignment": 0.9999596276158474
+        },
+        {
+          "source": "pareto",
+          "rank": 6.0,
+          "score": 337.7912115091628,
+          "yaw": 279.99999868479097,
+          "pitch": 73.99999750577815,
+          "vss": 20891.50089862918,
+          "alignment": 0.9999851973958449
+        },
+        {
+          "source": "pareto",
+          "rank": 7.0,
+          "score": 339.45750541428527,
+          "yaw": 112.00000083995421,
+          "pitch": 286.9999863575702,
+          "vss": 23764.58270490662,
+          "alignment": 0.9999765563578368
+        },
+        {
+          "source": "pareto",
+          "rank": 8.0,
+          "score": 340.8603359738818,
+          "yaw": 283.0000090135573,
+          "pitch": 232.9999916850725,
+          "vss": 24953.493402023945,
+          "alignment": 0.9999762055596828
+        },
+        {
+          "source": "pareto",
+          "rank": 9.0,
+          "score": 342.52499301010505,
+          "yaw": 103.99999834060421,
+          "pitch": 298.0000060158758,
+          "vss": 26034.93446160939,
+          "alignment": 0.9999713605116279
+        },
+        {
+          "source": "pareto",
+          "rank": 10.0,
+          "score": 343.95847336866984,
+          "yaw": 118.00000100691943,
+          "pitch": 100.0000005060238,
+          "vss": 23633.968731588568,
+          "alignment": 0.9999850375462218
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C5_lucy_50k.ply",
+      "npz": "Experimental\\etc\\(5)lucy_50k_tomo_int3_vss_grid_1deg_60deg.npz",
+      "face_count": 49999,
+      "candidate_pool_size": 1292,
+      "elapsed_sec": 11.010762300000351,
+      "bbox_volume": 1133888.2427607272,
+      "tomo_best": {
+        "yaw": 181.99999368096277,
+        "pitch": 358.99998836115276,
+        "vss": 5036.138305979327
+      },
+      "triggered": false,
+      "severe_boundary": false,
+      "trigger_reasons": [],
+      "base_top_k": 10,
+      "escalate_top_k": 30,
+      "severe_escalate_top_k": 100,
+      "pareto_top_k": 10,
+      "baseline_centers": [
+        {
+          "source": "sftf",
+          "rank": 1.0,
+          "score": -0.7001813323005417,
+          "yaw": 357.99999402514953,
+          "pitch": 176.99999468018999,
+          "vss": 14192.6816672333,
+          "alignment": 0.9999674919762596
+        },
+        {
+          "source": "sftf",
+          "rank": 2.0,
+          "score": -0.6652532145623546,
+          "yaw": 173.00000367579872,
+          "pitch": 3.999999969014533,
+          "vss": 27814.36068952576,
+          "alignment": 0.999978880429649
+        },
+        {
+          "source": "sftf",
+          "rank": 3.0,
+          "score": -0.5514936483346242,
+          "yaw": 173.99999801180195,
+          "pitch": 7.000000052497138,
+          "vss": 25350.659346777546,
+          "alignment": 0.9999654488745943
+        },
+        {
+          "source": "sftf",
+          "rank": 4.0,
+          "score": -0.508071959721146,
+          "yaw": 357.99999402514953,
+          "pitch": 173.99999801180195,
+          "vss": 22066.439478850563,
+          "alignment": 0.9999657210671277
+        },
+        {
+          "source": "sftf",
+          "rank": 5.0,
+          "score": -0.48107807900851995,
+          "yaw": 168.99999901102913,
+          "pitch": 98.9999993398314,
+          "vss": 54996.730867496204,
+          "alignment": 0.9999992887989919
+        },
+        {
+          "source": "sftf",
+          "rank": 6.0,
+          "score": -0.4617395817195966,
+          "yaw": 357.99999402514953,
+          "pitch": 181.99999368096277,
+          "vss": 13939.90083174272,
+          "alignment": 0.9999972762005411
+        },
+        {
+          "source": "sftf",
+          "rank": 7.0,
+          "score": -0.43669000774593325,
+          "yaw": 0.9999999922536332,
+          "pitch": 350.00001201636707,
+          "vss": 31072.75450525205,
+          "alignment": 0.9999972779153266
+        },
+        {
+          "source": "sftf",
+          "rank": 8.0,
+          "score": -0.43154353214562313,
+          "yaw": 352.0000006883735,
+          "pitch": 1.9999999845072665,
+          "vss": 30706.267711544824,
+          "alignment": 0.9999386875308066
+        },
+        {
+          "source": "sftf",
+          "rank": 9.0,
+          "score": -0.4302924089852824,
+          "yaw": 176.99999468018999,
+          "pitch": 9.99999970909292,
+          "vss": 26188.49178976264,
+          "alignment": 0.9999585664216112
+        },
+        {
+          "source": "sftf",
+          "rank": 10.0,
+          "score": -0.42005073586367114,
+          "yaw": 180.99999934495955,
+          "pitch": 3.0000000834826057,
+          "vss": 18312.86209673921,
+          "alignment": 0.9999944502640695
+        },
+        {
+          "source": "sftf",
+          "rank": 11.0,
+          "score": -0.342616266460108,
+          "yaw": 188.9999950141204,
+          "pitch": 6.000000166965211,
+          "vss": 16404.87308344565,
+          "alignment": 0.9999991137265984
+        },
+        {
+          "source": "sftf",
+          "rank": 12.0,
+          "score": -0.32670580945003835,
+          "yaw": 183.99999601334758,
+          "pitch": 357.99999402514953,
+          "vss": 14571.166235553332,
+          "alignment": 0.9999974096255577
+        },
+        {
+          "source": "sftf",
+          "rank": 13.0,
+          "score": -0.32668799380325286,
+          "yaw": 180.00000500895632,
+          "pitch": 192.99999967889,
+          "vss": 32409.53398144935,
+          "alignment": 0.9999655594392001
+        },
+        {
+          "source": "sftf",
+          "rank": 14.0,
+          "score": -0.3124854376452353,
+          "yaw": 185.00000400972914,
+          "pitch": 6.000000166965211,
+          "vss": 20305.546847256748,
+          "alignment": 0.9999986581494023
+        },
+        {
+          "source": "sftf",
+          "rank": 15.0,
+          "score": -0.30424779240898503,
+          "yaw": 180.99999934495955,
+          "pitch": 6.000000166965211,
+          "vss": 16514.934784124704,
+          "alignment": 0.9999969535708874
+        },
+        {
+          "source": "sftf",
+          "rank": 16.0,
+          "score": -0.3010960495739734,
+          "yaw": 4.99999985454646,
+          "pitch": 178.00000267657154,
+          "vss": 14765.056696805086,
+          "alignment": 0.9999742782383522
+        },
+        {
+          "source": "sftf",
+          "rank": 17.0,
+          "score": -0.2511957397366378,
+          "yaw": 176.00000034418676,
+          "pitch": 360.00001001791264,
+          "vss": 14243.931809732736,
+          "alignment": 0.9999729376568909
+        },
+        {
+          "source": "sftf",
+          "rank": 18.0,
+          "score": -0.2344848179705653,
+          "yaw": 7.000000052497138,
+          "pitch": 168.0000046750259,
+          "vss": 21429.75350056798,
+          "alignment": 0.9999430631489957
+        },
+        {
+          "source": "sftf",
+          "rank": 19.0,
+          "score": -0.23121603408210623,
+          "yaw": 173.00000367579872,
+          "pitch": 353.99998936037997,
+          "vss": 13973.090274274842,
+          "alignment": 0.9999707991590016
+        },
+        {
+          "source": "sftf",
+          "rank": 20.0,
+          "score": -0.23025453137102958,
+          "yaw": 190.00000301050196,
+          "pitch": 360.00001001791264,
+          "vss": 16348.002370724009,
+          "alignment": 0.9999685370364348
+        },
+        {
+          "source": "sftf",
+          "rank": 21.0,
+          "score": -0.21462207591014726,
+          "yaw": 235.00000767783564,
+          "pitch": 255.9999980169301,
+          "vss": 58814.8684541056,
+          "alignment": 0.9999959344852671
+        },
+        {
+          "source": "sftf",
+          "rank": 22.0,
+          "score": -0.2144581719597209,
+          "yaw": 339.9999866940647,
+          "pitch": 72.00000200358254,
+          "vss": 52369.02315754536,
+          "alignment": 0.9999934410642907
+        },
+        {
+          "source": "sftf",
+          "rank": 23.0,
+          "score": -0.20516212238574738,
+          "yaw": 360.00001001791264,
+          "pitch": 183.99999601334758,
+          "vss": 5613.8004153228,
+          "alignment": 0.9999717620479305
+        },
+        {
+          "source": "sftf",
+          "rank": 24.0,
+          "score": -0.18727792408985233,
+          "yaw": 294.00000135110616,
+          "pitch": 79.99999767274336,
+          "vss": 73878.31979546665,
+          "alignment": 0.9999932225623089
+        },
+        {
+          "source": "sftf",
+          "rank": 25.0,
+          "score": -0.15112896979085955,
+          "yaw": 176.99999468018999,
+          "pitch": 352.99999502437674,
+          "vss": 13338.649568478922,
+          "alignment": 0.9999598166090982
+        },
+        {
+          "source": "sftf",
+          "rank": 26.0,
+          "score": -0.14018435321456235,
+          "yaw": 188.9999950141204,
+          "pitch": 355.00001101713985,
+          "vss": 21211.198538788092,
+          "alignment": 0.9999831421920191
+        },
+        {
+          "source": "sftf",
+          "rank": 27.0,
+          "score": -0.12245290472501918,
+          "yaw": 16.999999334703237,
+          "pitch": 283.0000090135573,
+          "vss": 55546.437413239284,
+          "alignment": 0.9999787649255205
+        },
+        {
+          "source": "sftf",
+          "rank": 28.0,
+          "score": -0.11394810224632046,
+          "yaw": 353.99998936037997,
+          "pitch": 168.99999901102913,
+          "vss": 41133.61264063307,
+          "alignment": 0.9999668616921982
+        },
+        {
+          "source": "sftf",
+          "rank": 29.0,
+          "score": -0.09030023237800089,
+          "yaw": 352.0000006883735,
+          "pitch": 274.9999996840181,
+          "vss": 59608.57769674506,
+          "alignment": 0.9999987307110295
+        },
+        {
+          "source": "sftf",
+          "rank": 30.0,
+          "score": -0.08213268783888461,
+          "yaw": 356.0000053531431,
+          "pitch": 166.99999667864435,
+          "vss": 29615.922407670456,
+          "alignment": 0.9999965323534908
+        },
+        {
+          "source": "sftf",
+          "rank": 31.0,
+          "score": -0.07436072811773786,
+          "yaw": 12.000000333930423,
+          "pitch": 181.99999368096277,
+          "vss": 18910.84347874665,
+          "alignment": 0.9999976194289946
+        },
+        {
+          "source": "sftf",
+          "rank": 32.0,
+          "score": -0.013293338497288754,
+          "yaw": 202.9999976804356,
+          "pitch": 104.99999950679661,
+          "vss": 55197.510837523405,
+          "alignment": 0.9999980428265194
+        },
+        {
+          "source": "sftf",
+          "rank": 33.0,
+          "score": -0.011030054221533026,
+          "yaw": 12.000000333930423,
+          "pitch": 176.00000034418676,
+          "vss": 15966.44299089416,
+          "alignment": 0.9999473411201989
+        },
+        {
+          "source": "sftf",
+          "rank": 34.0,
+          "score": 0.006002711076684986,
+          "yaw": 67.99999733881295,
+          "pitch": 86.99999900590097,
+          "vss": 84914.12076083096,
+          "alignment": 0.9999865458389973
+        },
+        {
+          "source": "sftf",
+          "rank": 35.0,
+          "score": 0.008948799380325556,
+          "yaw": 183.00000167734436,
+          "pitch": 15.000000417413029,
+          "vss": 31769.165322800312,
+          "alignment": 0.9999767806217044
+        },
+        {
+          "source": "sftf",
+          "rank": 36.0,
+          "score": 0.01071835786212283,
+          "yaw": 360.00001001791264,
+          "pitch": 188.00000067811717,
+          "vss": 17201.10246957826,
+          "alignment": 0.9999769239059452
+        },
+        {
+          "source": "sftf",
+          "rank": 37.0,
+          "score": 0.0562697134004653,
+          "yaw": 130.99999567685308,
+          "pitch": 108.0000030053738,
+          "vss": 45443.5269694683,
+          "alignment": 0.9999841767606356
+        },
+        {
+          "source": "sftf",
+          "rank": 38.0,
+          "score": 0.06798148721920994,
+          "yaw": 86.99999900590097,
+          "pitch": 276.9999883560246,
+          "vss": 79644.58938472527,
+          "alignment": 0.9999998137526942
+        },
+        {
+          "source": "sftf",
+          "rank": 39.0,
+          "score": 0.07002269558481866,
+          "yaw": 3.0000000834826057,
+          "pitch": 188.9999950141204,
+          "vss": 18209.187452458154,
+          "alignment": 0.9999685660116442
+        },
+        {
+          "source": "sftf",
+          "rank": 40.0,
+          "score": 0.08033601859024109,
+          "yaw": 232.9999916850725,
+          "pitch": 264.0000073464693,
+          "vss": 66619.21099197766,
+          "alignment": 0.9999914888947163
+        },
+        {
+          "source": "sftf",
+          "rank": 41.0,
+          "score": 0.08352300542215385,
+          "yaw": 195.00000201127477,
+          "pitch": 360.00001001791264,
+          "vss": 17568.28284460651,
+          "alignment": 0.9999714753029068
+        },
+        {
+          "source": "sftf",
+          "rank": 42.0,
+          "score": 0.08929496514329993,
+          "yaw": 7.999999938029066,
+          "pitch": 190.00000301050196,
+          "vss": 21725.820115775117,
+          "alignment": 0.9999955324241915
+        },
+        {
+          "source": "sftf",
+          "rank": 43.0,
+          "score": 0.1115190549961278,
+          "yaw": 176.00000034418676,
+          "pitch": 197.9999986796628,
+          "vss": 34251.524397164336,
+          "alignment": 0.999980675901196
+        },
+        {
+          "source": "sftf",
+          "rank": 44.0,
+          "score": 0.11759728892331545,
+          "yaw": 168.99999901102913,
+          "pitch": 356.0000053531431,
+          "vss": 34259.80402418404,
+          "alignment": 0.999992588107481
+        },
+        {
+          "source": "sftf",
+          "rank": 45.0,
+          "score": 0.13926839659178952,
+          "yaw": 139.99999934239548,
+          "pitch": 256.99999235293336,
+          "vss": 49691.06232824404,
+          "alignment": 0.9999959115280105
+        },
+        {
+          "source": "sftf",
+          "rank": 46.0,
+          "score": 0.1709411309062745,
+          "yaw": 3.999999969014533,
+          "pitch": 185.99999834573237,
+          "vss": 24358.619343150745,
+          "alignment": 0.9999701167370039
+        },
+        {
+          "source": "sftf",
+          "rank": 47.0,
+          "score": 0.18516351665375697,
+          "yaw": 351.0000063523703,
+          "pitch": 188.9999950141204,
+          "vss": 28991.119920714827,
+          "alignment": 0.9999779721207412
+        },
+        {
+          "source": "sftf",
+          "rank": 48.0,
+          "score": 0.18945429899302857,
+          "yaw": 59.00000050345972,
+          "pitch": 68.99999850500534,
+          "vss": 57460.91101780411,
+          "alignment": 0.999995156268799
+        },
+        {
+          "source": "sftf",
+          "rank": 49.0,
+          "score": 0.19003872966692537,
+          "yaw": 241.00000101461168,
+          "pitch": 102.00000283840859,
+          "vss": 60998.97573802097,
+          "alignment": 0.9999907907759736
+        },
+        {
+          "source": "sftf",
+          "rank": 50.0,
+          "score": 0.1948904725019367,
+          "yaw": 352.0000006883735,
+          "pitch": 12.999999792575526,
+          "vss": 35209.600590477305,
+          "alignment": 0.9999992057805173
+        },
+        {
+          "source": "sftf",
+          "rank": 51.0,
+          "score": 0.20586452362509736,
+          "yaw": 268.0000120112389,
+          "pitch": 252.99998768816374,
+          "vss": 71960.64625889802,
+          "alignment": 0.9999998788596431
+        },
+        {
+          "source": "sftf",
+          "rank": 52.0,
+          "score": 0.20839124709527465,
+          "yaw": 289.0000023503334,
+          "pitch": 67.00000300280972,
+          "vss": 54354.93957897848,
+          "alignment": 0.9999887089056055
+        },
+        {
+          "source": "sftf",
+          "rank": 53.0,
+          "score": 0.2505415182029438,
+          "yaw": 12.000000333930423,
+          "pitch": 171.00000134341394,
+          "vss": 19317.242724836364,
+          "alignment": 0.9999869891258528
+        },
+        {
+          "source": "sftf",
+          "rank": 54.0,
+          "score": 0.25384399690162684,
+          "yaw": 171.00000134341394,
+          "pitch": 180.99999934495955,
+          "vss": 30849.60259681891,
+          "alignment": 0.9999928578609422
+        },
+        {
+          "source": "sftf",
+          "rank": 55.0,
+          "score": 0.2690804027885364,
+          "yaw": 358.99998836115276,
+          "pitch": 280.9999930207942,
+          "vss": 53153.32176271549,
+          "alignment": 0.999995974188946
+        },
+        {
+          "source": "sftf",
+          "rank": 56.0,
+          "score": 0.27226065065840466,
+          "yaw": 352.99999502437674,
+          "pitch": 346.00000735159745,
+          "vss": 44011.5968057932,
+          "alignment": 0.9999786936029172
+        },
+        {
+          "source": "sftf",
+          "rank": 57.0,
+          "score": 0.2795350116189003,
+          "yaw": 74.99999867197056,
+          "pitch": 57.99999933726732,
+          "vss": 55285.79270544131,
+          "alignment": 0.9999808074700218
+        },
+        {
+          "source": "sftf",
+          "rank": 58.0,
+          "score": 0.2915108443067393,
+          "yaw": 348.9999903596071,
+          "pitch": 288.00000801433015,
+          "vss": 48561.576969367416,
+          "alignment": 0.9999991140651459
+        },
+        {
+          "source": "sftf",
+          "rank": 59.0,
+          "score": 0.29576134779240904,
+          "yaw": 15.000000417413029,
+          "pitch": 168.0000046750259,
+          "vss": 22419.210307854268,
+          "alignment": 0.9999597608355116
+        },
+        {
+          "source": "sftf",
+          "rank": 60.0,
+          "score": 0.3363120061967475,
+          "yaw": 166.00000234264112,
+          "pitch": 110.99999967376182,
+          "vss": 54834.71263538708,
+          "alignment": 0.9999773477217513
+        },
+        {
+          "source": "sftf",
+          "rank": 61.0,
+          "score": 0.33775274980635184,
+          "yaw": 171.00000134341394,
+          "pitch": 188.9999950141204,
+          "vss": 41338.10878785189,
+          "alignment": 0.9999547940840742
+        },
+        {
+          "source": "sftf",
+          "rank": 62.0,
+          "score": 0.34422130131680884,
+          "yaw": 140.9999936783987,
+          "pitch": 106.000000672989,
+          "vss": 46903.63781511291,
+          "alignment": 0.9999698490576763
+        },
+        {
+          "source": "sftf",
+          "rank": 63.0,
+          "score": 0.34506948102246376,
+          "yaw": 183.00000167734436,
+          "pitch": 112.00000083995421,
+          "vss": 60769.274215067715,
+          "alignment": 0.9999855748216523
+        },
+        {
+          "source": "sftf",
+          "rank": 64.0,
+          "score": 0.345807823392719,
+          "yaw": 205.0000000128204,
+          "pitch": 251.99999335216052,
+          "vss": 60001.31811977418,
+          "alignment": 0.999976529034606
+        },
+        {
+          "source": "sftf",
+          "rank": 65.0,
+          "score": 0.34855189775367945,
+          "yaw": 7.000000052497138,
+          "pitch": 164.00000001025631,
+          "vss": 31423.066273208493,
+          "alignment": 0.9999888303332009
+        },
+        {
+          "source": "sftf",
+          "rank": 66.0,
+          "score": 0.35224298993028724,
+          "yaw": 261.99999135370615,
+          "pitch": 113.00000200614662,
+          "vss": 64838.180857256426,
+          "alignment": 0.9999829016977411
+        },
+        {
+          "source": "sftf",
+          "rank": 67.0,
+          "score": 0.3576441518202945,
+          "yaw": 9.000000250447817,
+          "pitch": 74.99999867197056,
+          "vss": 55548.9201191043,
+          "alignment": 0.999989436771227
+        },
+        {
+          "source": "sftf",
+          "rank": 68.0,
+          "score": 0.36204430673896226,
+          "yaw": 15.999999876058132,
+          "pitch": 185.99999834573237,
+          "vss": 22404.038216456895,
+          "alignment": 0.9999685859414353
+        },
+        {
+          "source": "sftf",
+          "rank": 69.0,
+          "score": 0.37240511231603446,
+          "yaw": 9.000000250447817,
+          "pitch": 166.00000234264112,
+          "vss": 25937.39367713613,
+          "alignment": 0.9999830788044682
+        },
+        {
+          "source": "sftf",
+          "rank": 70.0,
+          "score": 0.3828856700232383,
+          "yaw": 318.000002018967,
+          "pitch": 62.99999833804013,
+          "vss": 47767.828318698346,
+          "alignment": 0.9999998263478894
+        },
+        {
+          "source": "sftf",
+          "rank": 71.0,
+          "score": 0.3871021688613483,
+          "yaw": 355.00001101713985,
+          "pitch": 338.9999923580615,
+          "vss": 36749.81613789708,
+          "alignment": 0.9999992905158689
+        },
+        {
+          "source": "sftf",
+          "rank": 72.0,
+          "score": 0.41593292021688666,
+          "yaw": 260.0000026816997,
+          "pitch": 250.00000468015406,
+          "vss": 62894.47437633167,
+          "alignment": 0.9999777574582758
+        },
+        {
+          "source": "sftf",
+          "rank": 73.0,
+          "score": 0.4332065840433773,
+          "yaw": 3.0000000834826057,
+          "pitch": 341.00000835082466,
+          "vss": 35186.022766365495,
+          "alignment": 0.9999853049872653
+        },
+        {
+          "source": "sftf",
+          "rank": 74.0,
+          "score": 0.43632192099148004,
+          "yaw": 197.9999986796628,
+          "pitch": 360.00001001791264,
+          "vss": 20334.24180401258,
+          "alignment": 0.9999684178758996
+        },
+        {
+          "source": "sftf",
+          "rank": 75.0,
+          "score": 0.44684663051897777,
+          "yaw": 0.0,
+          "pitch": 163.0000056742531,
+          "vss": 30607.672762279668,
+          "alignment": 0.9999957437242757
+        },
+        {
+          "source": "sftf",
+          "rank": 76.0,
+          "score": 0.4499761425251747,
+          "yaw": 169.99999334703236,
+          "pitch": 185.99999834573237,
+          "vss": 50037.28945393208,
+          "alignment": 0.9999587104476971
+        },
+        {
+          "source": "sftf",
+          "rank": 77.0,
+          "score": 0.4517812548412087,
+          "yaw": 195.999996347278,
+          "pitch": 6.000000166965211,
+          "vss": 19037.922551809264,
+          "alignment": 0.999968605736403
+        },
+        {
+          "source": "sftf",
+          "rank": 78.0,
+          "score": 0.46495058094500397,
+          "yaw": 176.99999468018999,
+          "pitch": 347.0000016876007,
+          "vss": 20330.732518976383,
+          "alignment": 0.9999888743557459
+        },
+        {
+          "source": "sftf",
+          "rank": 79.0,
+          "score": 0.48907226955848215,
+          "yaw": 358.99998836115276,
+          "pitch": 337.00000368605504,
+          "vss": 36418.37096411335,
+          "alignment": 0.9999717590355697
+        },
+        {
+          "source": "sftf",
+          "rank": 80.0,
+          "score": 0.48994639814097596,
+          "yaw": 355.00001101713985,
+          "pitch": 190.00000301050196,
+          "vss": 20501.970259611273,
+          "alignment": 0.9999888874788366
+        },
+        {
+          "source": "sftf",
+          "rank": 81.0,
+          "score": 0.5006177381874517,
+          "yaw": 358.99998836115276,
+          "pitch": 61.99999717184774,
+          "vss": 55633.74984362894,
+          "alignment": 0.999981246525413
+        },
+        {
+          "source": "sftf",
+          "rank": 82.0,
+          "score": 0.5029262587141752,
+          "yaw": 12.000000333930423,
+          "pitch": 188.00000067811717,
+          "vss": 17904.74071975582,
+          "alignment": 0.9999537122887189
+        },
+        {
+          "source": "sftf",
+          "rank": 83.0,
+          "score": 0.5159471727343147,
+          "yaw": 195.999996347278,
+          "pitch": 114.000003172339,
+          "vss": 65587.58759301556,
+          "alignment": 0.9999910937022792
+        },
+        {
+          "source": "sftf",
+          "rank": 84.0,
+          "score": 0.5376922540666152,
+          "yaw": 156.99999867709872,
+          "pitch": 117.0000066709162,
+          "vss": 51165.8014344775,
+          "alignment": 0.9999959869029565
+        },
+        {
+          "source": "sftf",
+          "rank": 85.0,
+          "score": 0.5415481022463213,
+          "yaw": 34.99999983559887,
+          "pitch": 67.00000300280972,
+          "vss": 70605.90854361038,
+          "alignment": 0.9999982120490781
+        },
+        {
+          "source": "sftf",
+          "rank": 86.0,
+          "score": 0.5573879938032538,
+          "yaw": 237.99999068584532,
+          "pitch": 120.00000333930423,
+          "vss": 77221.65761900342,
+          "alignment": 0.9999960928555386
+        },
+        {
+          "source": "sftf",
+          "rank": 87.0,
+          "score": 0.5619195972114643,
+          "yaw": 286.9999863575702,
+          "pitch": 74.99999867197056,
+          "vss": 69900.73338027828,
+          "alignment": 0.9999894146644086
+        },
+        {
+          "source": "sftf",
+          "rank": 88.0,
+          "score": 0.6014770720371806,
+          "yaw": 22.000000043023345,
+          "pitch": 292.0000126790997,
+          "vss": 61412.37779097124,
+          "alignment": 0.9999741128751414
+        },
+        {
+          "source": "sftf",
+          "rank": 89.0,
+          "score": 0.6175163439194424,
+          "yaw": 279.00000434878774,
+          "pitch": 283.0000090135573,
+          "vss": 80310.90034926233,
+          "alignment": 0.9999890444332525
+        },
+        {
+          "source": "sftf",
+          "rank": 90.0,
+          "score": 0.6454100697134009,
+          "yaw": 250.00000468015406,
+          "pitch": 130.00000134084985,
+          "vss": 76022.73925276827,
+          "alignment": 0.9999897953448842
+        },
+        {
+          "source": "sftf",
+          "rank": 91.0,
+          "score": 0.6604609604957407,
+          "yaw": 236.00000201383887,
+          "pitch": 246.0000000153845,
+          "vss": 79046.2336264366,
+          "alignment": 0.9999800716124139
+        },
+        {
+          "source": "sftf",
+          "rank": 92.0,
+          "score": 0.6617421378776149,
+          "yaw": 1.9999999845072665,
+          "pitch": 295.9999900231126,
+          "vss": 42127.78264825994,
+          "alignment": 0.9999934447600901
+        },
+        {
+          "source": "sftf",
+          "rank": 93.0,
+          "score": 0.6632714175058099,
+          "yaw": 214.00000367836282,
+          "pitch": 244.00001134337802,
+          "vss": 73951.5872041056,
+          "alignment": 0.9999787832057436
+        },
+        {
+          "source": "sftf",
+          "rank": 94.0,
+          "score": 0.6682137877614256,
+          "yaw": 352.0000006883735,
+          "pitch": 161.99999767787153,
+          "vss": 35333.39697467394,
+          "alignment": 0.9999610176202269
+        },
+        {
+          "source": "sftf",
+          "rank": 95.0,
+          "score": 0.6764406661502715,
+          "yaw": 44.00000008604669,
+          "pitch": 75.99999983816295,
+          "vss": 52016.33311500234,
+          "alignment": 0.9999761349705787
+        },
+        {
+          "source": "sftf",
+          "rank": 96.0,
+          "score": 0.6843763749031759,
+          "yaw": 346.00000735159745,
+          "pitch": 7.000000052497138,
+          "vss": 28860.20250556883,
+          "alignment": 0.9999707723448417
+        },
+        {
+          "source": "sftf",
+          "rank": 97.0,
+          "score": 0.7193907048799386,
+          "yaw": 78.00000217054775,
+          "pitch": 39.00000108527387,
+          "vss": 71917.36047918146,
+          "alignment": 0.99995758762068
+        },
+        {
+          "source": "sftf",
+          "rank": 98.0,
+          "score": 0.730356855151046,
+          "yaw": 187.00000634211395,
+          "pitch": 18.999999959540737,
+          "vss": 35826.281082531634,
+          "alignment": 0.9999693735342031
+        },
+        {
+          "source": "sftf",
+          "rank": 99.0,
+          "score": 0.7322075135553838,
+          "yaw": 108.99999734137702,
+          "pitch": 247.99998868739095,
+          "vss": 56937.12707393426,
+          "alignment": 0.9999923843517015
+        },
+        {
+          "source": "sftf",
+          "rank": 100.0,
+          "score": 0.7331195197521304,
+          "yaw": 257.9999866889366,
+          "pitch": 245.00000567938125,
+          "vss": 66718.56651621417,
+          "alignment": 0.9999889249244015
+        }
+      ],
+      "pareto_centers": [
+        {
+          "source": "pareto",
+          "rank": 1.0,
+          "score": 296.6173259430345,
+          "yaw": 357.99999402514953,
+          "pitch": 176.99999468018999,
+          "vss": 14192.6816672333,
+          "alignment": 0.9999674919762596
+        },
+        {
+          "source": "pareto",
+          "rank": 2.0,
+          "score": 305.1299975920668,
+          "yaw": 356.9999996891463,
+          "pitch": 173.00000367579872,
+          "vss": 17856.706272472034,
+          "alignment": 0.9999597936878948
+        },
+        {
+          "source": "pareto",
+          "rank": 3.0,
+          "score": 308.06498028790287,
+          "yaw": 180.99999934495955,
+          "pitch": 3.0000000834826057,
+          "vss": 18312.86209673921,
+          "alignment": 0.9999944502640695
+        },
+        {
+          "source": "pareto",
+          "rank": 4.0,
+          "score": 317.82722828832465,
+          "yaw": 178.00000267657154,
+          "pitch": 0.0,
+          "vss": 11128.975340157502,
+          "alignment": 0.9999974054568587
+        },
+        {
+          "source": "pareto",
+          "rank": 5.0,
+          "score": 325.7432823744644,
+          "yaw": 173.99999801180195,
+          "pitch": 3.999999969014533,
+          "vss": 25620.549178320514,
+          "alignment": 0.9999716563557325
+        },
+        {
+          "source": "pareto",
+          "rank": 6.0,
+          "score": 355.8239026424982,
+          "yaw": 175.00000600818353,
+          "pitch": 358.99998836115276,
+          "vss": 23426.00270736316,
+          "alignment": 0.9999596875952599
+        },
+        {
+          "source": "pareto",
+          "rank": 7.0,
+          "score": 379.1459886225659,
+          "yaw": 351.0000063523703,
+          "pitch": 355.00001101713985,
+          "vss": 38849.550830431224,
+          "alignment": 0.9999813287234186
+        },
+        {
+          "source": "pareto",
+          "rank": 8.0,
+          "score": 393.02025371323975,
+          "yaw": 351.0000063523703,
+          "pitch": 185.99999834573237,
+          "vss": 34425.108885962116,
+          "alignment": 0.9999556022355293
+        },
+        {
+          "source": "pareto",
+          "rank": 9.0,
+          "score": 398.3614140682925,
+          "yaw": 352.0000006883735,
+          "pitch": 178.00000267657154,
+          "vss": 29788.961095258222,
+          "alignment": 0.9999864992892488
+        },
+        {
+          "source": "pareto",
+          "rank": 10.0,
+          "score": 418.6835068691721,
+          "yaw": 351.0000063523703,
+          "pitch": 180.99999934495955,
+          "vss": 42268.32744503809,
+          "alignment": 0.9999992579957439
+        }
+      ]
+    }
+  ]
+}

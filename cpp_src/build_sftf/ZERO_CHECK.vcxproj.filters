@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\__TomoNV_Projects\Tomo_SFTF_dev\cpp_src\build_sftf\CMakeFiles\bb5e84773770b9f33e2e5ed95e52922d\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0AB82428-91FB-3032-BAAD-8164CA5D1536}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

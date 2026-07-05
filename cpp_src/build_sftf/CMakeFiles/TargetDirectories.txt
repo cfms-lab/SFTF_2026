@@ -1,0 +1,4 @@
+D:/__TomoNV_Projects/Tomo_SFTF_dev/cpp_src/build_sftf/CMakeFiles/tse6_vss.dir
+D:/__TomoNV_Projects/Tomo_SFTF_dev/cpp_src/build_sftf/CMakeFiles/sftf_cpp.dir
+D:/__TomoNV_Projects/Tomo_SFTF_dev/cpp_src/build_sftf/CMakeFiles/ALL_BUILD.dir
+D:/__TomoNV_Projects/Tomo_SFTF_dev/cpp_src/build_sftf/CMakeFiles/ZERO_CHECK.dir

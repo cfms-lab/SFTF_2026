@@ -1,0 +1,436 @@
+TY  - GEN
+ID  - sftf
+AU  - Sul, InHwan
+T1  - 적층제조 출력 방향을 위한 빌드플레이트 기반 고속 후보 생성과 슬라이서 Warm-Start: Support Flow Tensor Field 접근
+PY  - 2026
+N1  - Manuscript
+ER  -
+
+TY  - BOOK
+ID  - jolliffe
+AU  - Jolliffe, I. T.
+T1  - Principal Component Analysis
+PY  - 2002
+PB  - Springer
+CY  - New York
+ET  - 2
+T3  - Springer Series in Statistics
+ER  -
+
+TY  - BOOK
+ID  - mardia
+AU  - Mardia, K. V.
+AU  - Jupp, P. E.
+T1  - Directional Statistics
+PY  - 2000
+PB  - Wiley
+CY  - Chichester
+T3  - Wiley Series in Probability and Statistics
+ER  -
+
+TY  - BOOK
+ID  - chung
+AU  - Chung, Fan R. K.
+T1  - Spectral Graph Theory
+PY  - 1997
+IS  - 92
+PB  - American Mathematical Society
+T3  - CBMS Regional Conference Series in Mathematics
+ER  -
+
+TY  - BOOK
+ID  - gibson
+AU  - Gibson, Ian
+AU  - Rosen, David
+AU  - Stucker, Brent
+T1  - Additive Manufacturing Technologies
+PY  - 2015
+PB  - Springer
+CY  - New York
+ET  - 2
+ER  -
+
+TY  - CONF
+ID  - dbscan
+AU  - Ester, Martin
+AU  - Kriegel, Hans-Peter
+AU  - Sander, Jörg
+AU  - Xu, Xiaowei
+T1  - A Density-Based Algorithm for Discovering Clusters in Large Spatial Databases with Noise
+T2  - Proc. 2nd Int. Conf. Knowledge Discovery and Data Mining (KDD-96)
+PY  - 1996
+SP  - 226
+EP  - 231
+ER  -
+
+TY  - BOOK
+ID  - kmedoids
+AU  - Kaufman, Leonard
+AU  - Rousseeuw, Peter J.
+T1  - Finding Groups in Data: An Introduction to Cluster Analysis
+PY  - 1990
+PB  - Wiley
+CY  - New York
+ER  -
+
+TY  - JOUR
+ID  - gpumsst
+AU  - Kim, Jae Ryoung
+AU  - Sul, In Hwan
+T1  - Fast Prediction of 3D Printing Optimal Orientation Using General-Purpose Graphic Processor Unit Calculation
+JO  - 3D Printing and Additive Manufacturing
+PY  - 2026
+VL  - 13
+IS  - 1
+DO  - 10.1089/3dp.2024.0165
+SP  - 50
+EP  - 62
+ER  -
+
+TY  - JOUR
+ID  - msst
+AU  - Jung, Jae Yeol
+AU  - Chee, Seokjae
+AU  - Sul, In Hwan
+T1  - Support Structure Tomography Using Per-Pixel Signed Shadow Casting in Human Manikin 3D Printing
+JO  - Fashion and Textiles
+PY  - 2022
+VL  - 9
+IS  - 1
+DO  - 10.1186/s40691-022-00290-z
+SP  - 1
+EP  - 18
+ER  -
+
+TY  - JOUR
+ID  - ezair
+AU  - Ezair, Ben
+AU  - Massarwi, Fady
+AU  - Elber, Gershon
+T1  - Orientation Analysis of 3D Objects Toward Minimal Support Volume in 3D-Printing
+JO  - Computers & Graphics
+PY  - 2015
+VL  - 51
+DO  - 10.1016/j.cag.2015.05.009
+SP  - 117
+EP  - 124
+ER  -
+
+TY  - JOUR
+ID  - wang2010
+AU  - Wang, Charlie C. L.
+AU  - Leung, Yong-Shun
+AU  - Chen, Yong
+T1  - Solid Modeling of Polyhedral Objects by Layered Depth-Normal Images on the GPU
+JO  - Computer-Aided Design
+PY  - 2010
+VL  - 42
+IS  - 6
+DO  - 10.1016/j.cad.2010.02.001
+SP  - 535
+EP  - 544
+ER  -
+
+TY  - JOUR
+ID  - das2017
+AU  - Das, Paramita
+AU  - Mhapsekar, Kunal
+AU  - Chowdhury, Souran
+AU  - Samant, Rutuja
+AU  - Anand, Sam
+T1  - Selection of Build Orientation for Optimal Support Structures and Minimum Part Errors in Additive Manufacturing
+JO  - Computer-Aided Design and Applications
+PY  - 2017
+VL  - 14
+IS  - sup1
+DO  - 10.1080/16864360.2017.1308074
+SP  - 1
+EP  - 13
+ER  -
+
+TY  - JOUR
+ID  - langelaar2018
+AU  - Langelaar, Matthijs
+T1  - Combined Optimization of Part Topology, Support Structure Layout and Build Orientation for Additive Manufacturing
+JO  - Structural and Multidisciplinary Optimization
+PY  - 2018
+VL  - 57
+IS  - 5
+DO  - 10.1007/s00158-017-1877-z
+SP  - 1985
+EP  - 2004
+ER  -
+
+TY  - JOUR
+ID  - jiang2018
+AU  - Jiang, Jingchao
+AU  - Stringer, Jonathan
+AU  - Xu, Xun
+AU  - Zhong, Ray Y.
+T1  - Investigation of Printable Threshold Overhang Angle in Extrusion-Based Additive Manufacturing for Reducing Support Waste
+JO  - International Journal of Computer Integrated Manufacturing
+PY  - 2018
+VL  - 31
+IS  - 10
+DO  - 10.1080/0951192X.2018.1466398
+SP  - 961
+EP  - 969
+ER  -
+
+TY  - JOUR
+ID  - vaissier2019
+AU  - Vaissier, Benjamin
+AU  - Pernot, Jean-Philippe
+AU  - Chougrani, Laurent
+AU  - Véron, Philippe
+T1  - Genetic-Algorithm Based Framework for Lattice Support Structure Optimization in Additive Manufacturing
+JO  - Computer-Aided Design
+PY  - 2019
+VL  - 110
+DO  - 10.1016/j.cad.2018.12.007
+SP  - 11
+EP  - 23
+ER  -
+
+TY  - JOUR
+ID  - mirzendehdel2016
+AU  - Mirzendehdel, Amir M.
+AU  - Suresh, Krishnan
+T1  - Support Structure Constrained Topology Optimization for Additive Manufacturing
+JO  - Computer-Aided Design
+PY  - 2016
+VL  - 81
+DO  - 10.1016/j.cad.2016.07.006
+SP  - 1
+EP  - 13
+ER  -
+
+TY  - JOUR
+ID  - dai2018
+AU  - Dai, Chengkai
+AU  - Wang, Charlie C. L.
+AU  - Wu, Chenming
+AU  - Lefebvre, Sylvain
+AU  - Fang, Guoxin
+AU  - Liu, Yong-Jin
+T1  - Support-Free Volume Printing by Multi-Axis Motion
+JO  - ACM Transactions on Graphics
+PY  - 2018
+VL  - 37
+IS  - 4
+DO  - 10.1145/3197517.3201342
+SP  - 1
+EP  - 14
+ER  -
+
+TY  - CONF
+ID  - gaynor2014
+AU  - Gaynor, Andrew T.
+AU  - Meisel, Nicholas A.
+AU  - Williams, Christopher B.
+AU  - Guest, James K.
+T1  - Topology Optimization for Additive Manufacturing: Considering Maximum Overhang Constraint
+T2  - 15th AIAA/ISSMO Multidisciplinary Analysis and Optimization Conference
+PY  - 2014
+DO  - 10.2514/6.2014-2036
+SP  - 2036
+ER  -
+
+TY  - JOUR
+ID  - shin2025
+AU  - Shin, Seungheon
+AU  - Park, Yujin
+AU  - Yoon, Gil Ho
+T1  - Topology Optimization for Multi-Axis Additive Manufacturing Considering Overhang and Anisotropy
+JO  - International Journal of Mechanical Sciences
+PY  - 2025
+VL  - 301
+DO  - 10.1016/j.ijmecsci.2025.110443
+SP  - 110443
+ER  -
+
+TY  - JOUR
+ID  - garcke2023
+AU  - Garcke, Harald
+AU  - Lam, Kei Fong
+AU  - Nürnberg, Robert
+AU  - Signori, Andrea
+T1  - Overhang Penalization in Additive Manufacturing via Phase Field Structural Topology Optimization with Anisotropic Energies
+JO  - Applied Mathematics & Optimization
+PY  - 2023
+VL  - 87
+IS  - 3
+DO  - 10.1007/s00245-022-09939-z
+SP  - 44
+ER  -
+
+TY  - PAT
+ID  - smith2025patent
+AU  - Smith, Robert
+AU  - Hollenbeck, Michael C.
+T1  - Build Orientation for Additive Manufacturing of Complex Structures
+PY  - 2025
+M1  - 12,343,928
+N1  - U.S. Patent No. 12,343,928. Assignee: Optisys, Inc.
+ER  -
+
+TY  - JOUR
+ID  - saff1997
+AU  - Saff, E. B.
+AU  - Kuijlaars, A. B. J.
+T1  - Distributing Many Points on a Sphere
+JO  - The Mathematical Intelligencer
+PY  - 1997
+VL  - 19
+IS  - 1
+DO  - 10.1007/BF03024331
+SP  - 5
+EP  - 11
+ER  -
+
+TY  - JOUR
+ID  - gonzalez2010
+AU  - González, Álvaro
+T1  - Measurement of Areas on a Sphere Using Fibonacci and Latitude-Longitude Lattices
+JO  - Mathematical Geosciences
+PY  - 2010
+VL  - 42
+IS  - 1
+DO  - 10.1007/s11004-009-9257-x
+SP  - 49
+EP  - 64
+ER  -
+
+TY  - JOUR
+ID  - Thingi10K
+AU  - Zhou, Qingnan
+AU  - Jacobson, Alec
+T1  - Thingi10K: A Dataset of 10,000 3D-Printing Models
+JO  - arXiv preprint arXiv:1605.04797
+PY  - 2016
+ER  -
+
+TY  - JOUR
+ID  - moller1997
+AU  - Möller, Tomas
+AU  - Trumbore, Ben
+T1  - Fast, Minimum Storage Ray-Triangle Intersection
+JO  - Journal of Graphics Tools
+PY  - 1997
+VL  - 2
+IS  - 1
+DO  - 10.1080/10867651.1997.10487468
+SP  - 21
+EP  - 28
+ER  -
+
+TY  - JOUR
+ID  - kanatani1984
+AU  - Kanatani, Ken-Ichi
+T1  - Distribution of Directional Data and Fabric Tensors
+JO  - International Journal of Engineering Science
+PY  - 1984
+VL  - 22
+IS  - 2
+DO  - 10.1016/0020-7225(84)90090-9
+SP  - 149
+EP  - 164
+ER  -
+
+TY  - BOOK
+ID  - hornjohnson
+AU  - Horn, Roger A.
+AU  - Johnson, Charles R.
+T1  - Matrix Analysis
+PY  - 2013
+PB  - Cambridge University Press
+CY  - Cambridge
+ET  - 2
+ER  -
+
+TY  - BOOK
+ID  - golubvanloan
+AU  - Golub, Gene H.
+AU  - Van Loan, Charles F.
+T1  - Matrix Computations
+PY  - 2013
+PB  - Johns Hopkins University Press
+CY  - Baltimore
+ET  - 4
+ER  -
+
+TY  - JOUR
+ID  - roth1982
+AU  - Roth, Scott D.
+T1  - Ray Casting for Modeling Solids
+JO  - Computer Graphics and Image Processing
+PY  - 1982
+VL  - 18
+IS  - 2
+DO  - 10.1016/0146-664X(82)90169-1
+SP  - 109
+EP  - 144
+ER  -
+
+TY  - BOOK
+ID  - cochran1977
+AU  - Cochran, William G.
+T1  - Sampling Techniques
+PY  - 1977
+PB  - Wiley
+CY  - New York
+ET  - 3
+T3  - Wiley Series in Probability and Statistics
+ER  -
+
+TY  - JOUR
+ID  - spearman1904
+AU  - Spearman, Charles
+T1  - The Proof and Measurement of Association Between Two Things
+JO  - The American Journal of Psychology
+PY  - 1904
+VL  - 15
+IS  - 1
+DO  - 10.2307/1412159
+SP  - 72
+EP  - 101
+ER  -
+
+TY  - JOUR
+ID  - stone1974
+AU  - Stone, Mervyn
+T1  - Cross-Validatory Choice and Assessment of Statistical Predictions
+JO  - Journal of the Royal Statistical Society: Series B (Methodological)
+PY  - 1974
+VL  - 36
+IS  - 2
+DO  - 10.1111/j.2517-6161.1974.tb00994.x
+SP  - 111
+EP  - 133
+ER  -
+
+TY  - JOUR
+ID  - hoerl1970
+AU  - Hoerl, Arthur E.
+AU  - Kennard, Robert W.
+T1  - Ridge Regression: Biased Estimation for Nonorthogonal Problems
+JO  - Technometrics
+PY  - 1970
+VL  - 12
+IS  - 1
+DO  - 10.1080/00401706.1970.10488634
+SP  - 55
+EP  - 67
+ER  -
+
+TY  - BOOK
+ID  - hanmining
+AU  - Han, Jiawei
+AU  - Kamber, Micheline
+AU  - Pei, Jian
+T1  - Data Mining: Concepts and Techniques
+PY  - 2011
+PB  - Morgan Kaufmann
+CY  - Waltham, MA
+ET  - 3
+ER  -

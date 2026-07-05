@@ -1,0 +1,177 @@
+{
+  "group": "E",
+  "group_id": "E5",
+  "mesh": "Group_E5_55280.stl",
+  "angle_step_deg": 1.0,
+  "critical_angle_deg": 60.0,
+  "face_count": 900490,
+  "coarse_direction_count": 512,
+  "candidate_pool_size": 1292,
+  "score_min": -1.051,
+  "score_median": 1.138,
+  "score_max": 2.754,
+  "top_directions": [
+    {
+      "rank": 1,
+      "label": "support flow score 1 hits=1072 ray=5.708 pair=15.96 bed=189.4",
+      "tuned_score": -1.051,
+      "direction": [
+        -0.682,
+        0.682,
+        -0.264
+      ],
+      "rayleigh_score": 5.708390527987733,
+      "pair_score": 15.957041637100215,
+      "bed_score": 189.38817794438114,
+      "hit_count": 1072,
+      "singular_values": [
+        6.051659719277137,
+        3.5555602020785995,
+        0.4142084880873961
+      ]
+    },
+    {
+      "rank": 2,
+      "label": "support flow score 2 hits=733 ray=4.12 pair=12.87 bed=217.3",
+      "tuned_score": -0.6833,
+      "direction": [
+        -0.541722796889232,
+        0.576900628284016,
+        -0.6113281250000001
+      ],
+      "rayleigh_score": 4.120448628738739,
+      "pair_score": 12.870261667385442,
+      "bed_score": 217.295269701807,
+      "hit_count": 733,
+      "singular_values": [
+        5.259789342855977,
+        3.179545215897432,
+        1.098107362534102
+      ]
+    },
+    {
+      "rank": 3,
+      "label": "support flow score 3 hits=1088 ray=5.744 pair=14.53 bed=182.9",
+      "tuned_score": -0.6386,
+      "direction": [
+        -0.9740140869895074,
+        -0.1677486391157212,
+        0.15217408590433476
+      ],
+      "rayleigh_score": 5.743589402229913,
+      "pair_score": 14.527868014543607,
+      "bed_score": 182.89071779840836,
+      "hit_count": 1088,
+      "singular_values": [
+        5.875232859561717,
+        1.3796075832762364,
+        1.3379395988340108
+      ]
+    }
+  ],
+  "html": "SFTF_result/Group_E5_55280.html",
+  "candidates_csv": "SFTF_result/Group_E5_55280_candidates.csv",
+  "elapsed_sec": 16.78,
+  "tomo_int3_dll_sec": 1312.3659164999845,
+  "tomo_int3_cached": false,
+  "tomo_int3_html": "Group_E5_55280_tomo_int3.html",
+  "tomo_int3_best": {
+    "yaw": 250.9999990161573,
+    "pitch": 209.99999901359323,
+    "vss": 35028.122673349935
+  },
+  "tomo_int3_error": null,
+  "tomo_cuda_dll_sec": 1102.825331,
+  "tomo_cuda_cached": false,
+  "tomo_cuda_html": "Group_E5_55280_tomo_cuda.html",
+  "tomo_cuda_best": {
+    "yaw": 246.99999435138773,
+    "pitch": 178.00000267657154,
+    "vss": 124317.27953193602
+  },
+  "tomo_cuda_error": null,
+  "sftf_cpp_ms": 3957.9,
+  "sftf_cpp_optimal": [
+    {
+      "rank": 1,
+      "direction": [
+        -0.68217670002815,
+        0.6819912699387638,
+        -0.263671875
+      ],
+      "tuned_score": -1.054979705654531,
+      "rayleigh_score": 5.708390490706248,
+      "pair_score": 15.957041504664048,
+      "bed_score": 189.3881779908364,
+      "hit_count": 1072
+    },
+    {
+      "rank": 2,
+      "direction": [
+        -0.541722796889232,
+        0.576900628284016,
+        -0.6113281250000001
+      ],
+      "tuned_score": -0.6827218435321454,
+      "rayleigh_score": 4.120448609794069,
+      "pair_score": 12.870261644968725,
+      "bed_score": 217.29526968664683,
+      "hit_count": 733
+    },
+    {
+      "rank": 3,
+      "direction": [
+        -0.9740140869895074,
+        -0.1677486391157212,
+        0.15217408590433476
+      ],
+      "tuned_score": -0.6418069713400464,
+      "rayleigh_score": 5.743589387405543,
+      "pair_score": 14.527868025152369,
+      "bed_score": 182.89071757542567,
+      "hit_count": 1088
+    }
+  ],
+  "sftf_cpp_worst": [
+    {
+      "rank": 1,
+      "direction": [
+        -0.29370656798372363,
+        0.9439910549551472,
+        -0.15039062500000003
+      ],
+      "tuned_score": 2.7525683965917893,
+      "rayleigh_score": 6.286290739328339,
+      "pair_score": 13.620237033476322,
+      "bed_score": 202.8337360051181,
+      "hit_count": 1182
+    },
+    {
+      "rank": 2,
+      "direction": [
+        0.5369589531160505,
+        0.7294140135255832,
+        0.423828125
+      ],
+      "tuned_score": 2.541302711076685,
+      "rayleigh_score": 5.219990574504887,
+      "pair_score": 12.770884735195065,
+      "bed_score": 227.15035974671818,
+      "hit_count": 1152
+    },
+    {
+      "rank": 3,
+      "direction": [
+        0.44833460103840744,
+        -0.30062286465265137,
+        -0.841796875
+      ],
+      "tuned_score": 2.531039504260263,
+      "rayleigh_score": 5.501953365957846,
+      "pair_score": 11.050136679545028,
+      "bed_score": 248.7577458241068,
+      "hit_count": 824
+    }
+  ],
+  "sftf_cpp_error": null
+}

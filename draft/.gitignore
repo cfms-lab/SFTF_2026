@@ -1,0 +1,13 @@
+# LaTeX build intermediates (compiled PDFs are intentionally committed)
+*.aux
+*.fls
+*.fdb_latexmk
+*.out
+*.log
+*.bbl
+*.blg
+*.synctex.gz
+*.xdv
+*.toc
+*.lof
+*.lot

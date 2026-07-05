@@ -1,0 +1,441 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{kotex}
+\usepackage{amsmath,amssymb,amsfonts,amsthm,bm}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{booktabs}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{margin=25mm}
+
+\title{Support Flow Tensor Field 기반 출력지향 메쉬 분할:\\
+지지흐름 면특징을 이용한 클러스터링과 다방향 빌드 분할}
+\author{설인환}
+\date{}
+
+\newtheorem{definition}{정의}
+\newtheorem{theorem}{정리}
+\newtheorem{proposition}{명제}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+본 연구에서는 적층제조 출력을 고려한 메쉬 분할(mesh partitioning) 방법을 제안한다.
+기존 분할 기법은 정점 좌표 $V\in\mathbb{R}^{N\times3}$ 또는 면 중심만을 입력으로 하여
+DBSCAN, $k$-means, $k$-medoids 등으로 군집화하므로,
+분할 경계에 ``출력 적합성''(오버행, 지지 구조, 빌드플레이트 접촉)이 전혀 반영되지 않는다.
+본 연구는 Support Flow Tensor Field(SFTF)가 빌드 방향마다 면 단위로 계산하지만
+3$\times$3 텐서와 스칼라 점수로 환원하면서 버리는 면별 지지흐름 물리량을 보존하여,
+메쉬마다 자동 선택된 최적 빌드 방향에서 면별 특징행렬(adaptive mesh data)을 생성한다.
+SFTF의 동반 연구에서 빌드플레이트 지지 비용마저 흐름 텐서에 가상 접지 노드를 더한
+Rayleigh 항 $\tilde R=R+B$로 통합됨을 고려하면,
+본 연구가 보존하는 면별 물리량은 바로 그 통합 흐름 텐서를 면별로 분해한 것에 해당한다.
+이 특징행렬을 두 계열로 사용한다.
+\textbf{(a) 특징 기반 군집화}는 SFTF 특징을 좌표와 융합하여
+기존 $k$-medoids/DBSCAN/$k$-means에 입력한다.
+\textbf{(b) 순수 지지흐름 분할}은 군집화 라이브러리 없이
+SFTF의 지지 쌍과 역할만으로 메쉬를 나눈다
+(지지 basin 분할 \texttt{support\_flow}, 영역 성장 \texttt{flow\_region}).
+또한 상위 $K$개 빌드 방향에 대한 softmax--argmax 선호도로
+각 부분이 서로 다른 좋은 빌드 방향을 갖도록 나누는 다방향 분할을 제시한다.
+manikin($13{,}672$면)에서 기존 좌표 전용 $k$-means의 지지 클래스 순도는 $0.51$인 반면,
+(a)와 (b)는 모두 $0.73$--$0.87$로 향상되어 분할 경계가 출력 지지 거동을 따름을 정량 확인하였다.
+Stanford Bunny(69{,}662면)에서 면특징 추출은 약 $2.1$초,
+각 분할은 $0.57$--$8.4$초에 수행되었고 모든 면이 빠짐없이 분할되었다.
+\end{abstract}
+
+\section{서론}
+
+대형 또는 복잡한 형상을 적층제조로 출력할 때, 메쉬를 여러 부분으로 분할하여
+각각을 개별 출력한 뒤 조립하는 전략이 널리 쓰인다.
+이때 분할 경계는 단순히 기하학적으로 균등한 것이 아니라,
+각 부분이 \emph{출력하기 좋은} 형태——즉 오버행과 지지구조가 적고
+명확한 빌드 방향을 갖는 형태가 되도록 결정되어야 한다.
+
+그러나 기존 메쉬 분할 파이프라인(예: \texttt{cut\_function})은
+정점 좌표 $V$ 또는 면 중심 $F_c$만을 입력으로 하여
+\begin{itemize}
+\item DBSCAN: \texttt{DBSCAN(eps,min\_samples).fit(V)}
+\item $k$-means: \texttt{k\_means(}$F_c$\texttt{,k)}
+\item $k$-medoids: \texttt{KMedoids(k,metric="manhattan").fit(V)}
+\item 응집형(agglomerative), 스펙트럴 군집화
+\end{itemize}
+와 같이 \emph{순수 좌표}에 대해 군집화한다.
+이 경우 분할 기준은 공간적 근접성뿐이며,
+``이 면이 특정 방향에서 오버행인가'', ``아래에 받쳐 줄 면이 있는가'',
+``빌드플레이트까지 직접 지지되어야 하는가''와 같은 출력 정보는 반영되지 않는다.
+
+한편 Support Flow Tensor Field(SFTF)~\cite{sftf}는 출력 방향 $n\in S^2$마다
+면 단위로 오버행 계수, 면-면 지지 관계, 지지 높이, 빌드플레이트 접촉을 계산한다.
+그러나 SFTF는 이 면별 물리량을 방향별 3$\times$3 텐서 $F(n)$과
+스칼라 목적함수 $J(n)$으로 환원하여 \emph{최적 방향 랭킹}만을 출력하고,
+면별 정보는 폐기한다.
+최근 SFTF 개정에서는 이 환원을 더 밀고 나가, 빌드플레이트 penalty마저 흐름 텐서에
+``법선이 빌드 방향인 가상 접지 노드''를 추가한 Rayleigh 항 $\tilde R=R+B$로 통합한다~\cite{sftf}.
+즉 방향별 비용은 단일 통합 텐서의 스칼라 수축으로 수렴하는 반면,
+그 텐서가 요약하는 면별 흐름장(flow field)——각 면이 어느 receiver로 흐르는지, 얼마나 높이 떨어져 있는지——은 폐기된다.
+본 연구가 보존하려는 대상이 바로 이 면별 흐름장이다.
+본 연구의 핵심 관찰은 다음과 같다.
+
+\begin{quote}
+군집화는 결국 $(N\times d)$ 특징행렬에 대해 수행된다.
+기존 방법은 $d=3$(좌표)뿐이지만,
+SFTF가 내부에서 이미 계산하는 면별 지지흐름 물리량을 행렬로 노출하면
+그대로 군집화 입력으로 사용할 수 있다.
+\end{quote}
+
+따라서 본 연구는 SFTF를 \emph{메쉬 분할 구동기}로 재구성한다.
+구체적 기여는 다음과 같다.
+\begin{enumerate}
+\item 메쉬별 최적 빌드 방향에서 면별 지지흐름 특징행렬을 생성하는
+``adaptive mesh data'' 추출기(\S\ref{sec:features}).
+\item 그 특징을 이용하는 세 가지 분할 경로:
+지지영역 성장(\S\ref{sec:flowregion}),
+좌표 융합 군집화(\S\ref{sec:cluster}),
+다방향 softmax--argmax 빌드 분할(\S\ref{sec:multidir}).
+\item 기존 점수 함수를 변경하지 않고 기존 SFTF 헬퍼를 재사용하는 구현과
+예비 실험(\S\ref{sec:exp}).
+\end{enumerate}
+
+\section{면별 지지흐름 특징 추출}
+\label{sec:features}
+
+\subsection{빌드 방향의 적응적 선택}
+
+분할의 기준이 되는 빌드 방향 $n^\ast$는 고정값이 아니라
+SFTF 후보 평가에서 메쉬마다 자동으로 선택한다.
+SFTF 후보 풀 $\{(J(n_k),\dots)\}$을 생성하고 각도 비최대억제(NMS)로
+상위 방향을 고른 뒤, 최상위 방향을 $n^\ast$로 사용한다.
+이 ``적응성''이 본 방법의 핵심으로,
+면특징이 각 메쉬의 실제 최적 배향에 정렬된다.
+다방향 확장(\S\ref{sec:multidir})에서는 상위 $K$개 방향을 모두 사용한다.
+
+\subsection{면별 특징}
+
+면 $i$의 중심을 $c_i$, 외향 단위법선을 $m_i$, 면적을 $A_i$,
+빌드 방향을 $n=n^\ast$라 하자.
+방향 $n$에서의 빌드플레이트 높이 기준은 $z_{\mathrm{plate}}(n)=\min_{v\in V}v\cdot n$이다.
+각 면에 대해 다음 특징을 정의한다.
+
+\begin{align}
+O_i(n) &= \max(0,\,-m_i\cdot n) && \text{(오버행 계수)}\\
+\tau_i(n) &= m_i\cdot n && \text{(부호 있는 기울기)}\\
+\eta_i(n) &= c_i\cdot n - z_{\mathrm{plate}}(n) && \text{(빌드플레이트 위 높이)}
+\end{align}
+
+오버행 면($O_i>0$) 각각에 대해 SFTF와 동일하게 $c_i-\varepsilon n$에서 $-n$ 방향으로
+ray를 발사하여 유효 receiver 면 $j$를 찾는다.
+분할용 특징에서는 \emph{모든} 오버행 면에서 ray를 발사한다
+(SFTF 채점에서 쓰는 $K_{\mathrm{ray}}$ stratified subsampling을 사용하지 않는다).
+이로부터 다음을 면별로 기록한다.
+
+\begin{itemize}
+\item 지지 역할 $\rho_i\in\{\textsc{none},\textsc{bed},\textsc{face}\}$:
+오버행이 아니면 \textsc{none},
+유효 receiver를 찾으면 \textsc{face}(면-면 자기지지),
+찾지 못하면 \textsc{bed}(빌드플레이트 직접 지지).
+통합 텐서 관점에서 이 역할은 면 $i$의 지지 흐름이 향하는 receiver의 \emph{종류}와 같다.
+\textsc{face}는 실제 면 receiver로의 흐름($m_im_j^T$ 항),
+\textsc{bed}는 가상 접지 노드(법선 $n$)로의 흐름($m_in^T$ 항)이다~\cite{sftf}.
+즉 $\rho_i$는 동반 연구의 증강 흐름 텐서를 면별로 분해한 것이며,
+스칼라 환원에서 사라지는 ``어느 receiver로 흐르는가''라는 정보를 분할에 직접 사용한다.
+\item 지지 높이 $h_i = h_{ij}(n)=(c_i-c_j)\cdot n$ (\textsc{face}일 때, 아니면 $0$).
+\item 지지 대상 면 $t_i = j$ (없으면 $-1$).
+\item 수신 횟수 $r_i$: 면 $i$를 향해 들어오는 지지 ray 수.
+\end{itemize}
+
+\subsection{특징행렬의 표준화}
+
+면별 SFTF 특징을 열별로 $z$-점수 표준화한다.
+값이 일정한 열은 $0$으로 둔다.
+\begin{equation}
+\Phi_{\mathrm{SFTF}}
+= \operatorname{zscore}\!\Big(\big[\,O_i,\ \tau_i,\ \eta_i,\ h_i,\ r_i\,\big]\Big)
+\in\mathbb{R}^{N\times 5}.
+\end{equation}
+표준화는 좌표(단위: 길이)와 지지량(단위: 무차원/길이/개수)의 척도 차이를 제거하여
+거리 기반 군집화와 DBSCAN의 $\varepsilon$가 의미를 갖도록 하는 데 필수적이다.
+
+\section{분할 방법}
+
+세 가지 분할 경로는 모두 면별 라벨 $\ell\in\{0,\dots,K-1\}$(또는 잡음 $-1$)을 반환한다.
+
+\subsection{순수 지지흐름 분할 (방법 b)}
+\label{sec:flowregion}
+
+군집화 라이브러리 없이 SFTF의 지지 물리량만으로 분할하는 두 변형을 제시한다.
+이 계열은 좌표 군집화와 달리 sklearn 의존성이 없고,
+분할 경계가 ``출력 지지 거동''을 직접 따른다.
+
+\paragraph{지지흐름 basin 분할 (\texttt{support\_flow}).}
+이 방법은 SFTF의 \emph{지지 쌍}(hit\_map)을 직접 사용한다.
+먼저 각 면을 빌드 방향 $n^\ast$에서의 물리적 역할로 분류한다.
+\begin{equation}
+\kappa_i\in\{\textsc{bed},\ \textsc{needs},\ \textsc{supporter},\ \textsc{free}\},
+\end{equation}
+여기서 빌드플레이트 근처($\eta_i\le \delta\,\max_j\eta_j$)이면 \textsc{bed}(바닥접촉),
+오버행이면 \textsc{needs}(지지 필요),
+다른 면을 받치면($r_i>0$) \textsc{supporter}(지지함),
+그 외는 \textsc{free}(자기지지)이다($\delta=0.02$ 기본값).
+바닥접촉이 오버행보다 우선하는데, 이는 플레이트에 안착한 하향면은 지지가 불필요하기 때문이다.
+이어 면-인접 그래프 위에서 다음 두 종류의 간선으로 union--find를 수행한다.
+\begin{enumerate}
+\item \emph{지지 쌍 간선}: 면지지 source $i$와 그 receiver $t_i$를 병합한다
+(공간적으로 떨어진 패치라도 ``서로 받치는'' 면들을 하나로 묶는다).
+\item \emph{동일 역할 인접 간선}: $\kappa_i=\kappa_j$인 인접면을 병합하여
+각 역할 영역을 공간적으로 연결한다.
+\end{enumerate}
+결과적으로 각 부분은 ``오버행과 그것을 받치는 base''를 함께 포함하는
+\emph{지지 basin}이 되어, 분할면을 따라 잘라도 지지 기둥이 한 부분 안에 유지된다.
+
+\paragraph{기하적 지지영역 성장 (\texttt{flow\_region}).}
+대안적으로, 지지 쌍 대신 법선 유사도로 영역을 성장시킨다.
+인접한 두 면 $i,j$를
+\begin{equation}
+\rho_i=\rho_j \quad\text{이고}\quad m_i\cdot m_j \ge \cos\theta_{\mathrm{sim}}
+\end{equation}
+일 때에만 병합한다($\theta_{\mathrm{sim}}=35^\circ$ 기본값).
+즉 같은 지지 역할이면서 법선이 충분히 유사한 면들을 한 영역으로 성장시킨다.
+\texttt{support\_flow}가 지지 물리(쌍)를 강조한다면,
+\texttt{flow\_region}은 표면 곡률 연속성을 강조하는 변형이다.
+
+두 변형 모두 면 수가 $\tau_{\min}$ 미만인 작은 영역은
+가장 많이 접한 이웃 영역으로 흡수하여 과분할을 억제한다.
+
+\subsection{좌표 융합 군집화 (방법 a)}
+\label{sec:cluster}
+
+표준 군집화에 SFTF 특징을 추가 차원으로 주입한다.
+표준화한 면 중심과 SFTF 특징을 가중 결합하여 군집화 행렬을 만든다.
+\begin{equation}
+M
+= \big[\, w_s\,\operatorname{zscore}(C)\ \big|\ w_f\,\Phi_{\mathrm{SFTF}}\,\big]
+\in\mathbb{R}^{N\times 8},
+\label{eq:cluster-matrix}
+\end{equation}
+여기서 $C\in\mathbb{R}^{N\times3}$는 면 중심, $w_s,w_f$는 좌표/특징 가중치이다.
+이후 $M$에 대해 다음 중 하나를 적용한다.
+\begin{itemize}
+\item \textbf{DBSCAN/$k$-means/agglomerative}: scikit-learn 구현을 $M$에 적합.
+\item \textbf{$k$-medoids}: 대형 메쉬에서 $O(N^2)$ 거리행렬을 피하기 위해
+교대 갱신형 확장 $k$-medoids를 자체 구현한다.
+각 반복은 (i) 현 medoid까지의 거리로 $O(NK)$ 군집 배정,
+(ii) 군집 평균에 가장 가까운 실제 구성원으로 medoid를 갱신한다.
+거리는 manhattan을 사용하며 난수 시드를 고정하여 결정론적이다.
+\end{itemize}
+DBSCAN의 잡음 면(라벨 $-1$)은 분할 부분에서 제외할 수 있다.
+
+\subsection{다방향 softmax--argmax 빌드 분할 (방법 a+b)}
+\label{sec:multidir}
+
+단일 방향만 사용하면 모든 부분이 같은 빌드 방향을 전제한다.
+각 부분이 \emph{서로 다른} 좋은 빌드 방향을 갖게 하려면,
+상위 $K$개 SFTF 방향 $\{n_1,\dots,n_K\}$ 각각에 대한 면별 비용을 쌓는다.
+면 $i$의 방향 $n_k$에 대한 지지 비용을
+\begin{equation}
+c_{ik} = O_i(n_k) = \max(0,\,-m_i\cdot n_k)
+\end{equation}
+로 두면(저비용, ray 불필요), 비용행렬 $C\in\mathbb{R}^{N\times K}$를 얻는다.
+선택적으로 ``support'' 모드에서는 방향마다 전체 면특징을 추출하여
+지지기둥 높이와 빌드플레이트 접촉까지 비용에 반영한다($K$회 ray casting).
+
+면별 선호 방향과 soft 가중치를
+\begin{align}
+b_i &= \arg\min_k c_{ik}
+   && \text{(그 면을 가장 덜 오버행으로 만드는 방향)}\\
+w_{ik} &= \operatorname{softmax}_k(-\beta\, c_{ik})
+   = \frac{e^{-\beta c_{ik}}}{\sum_{k'} e^{-\beta c_{ik'}}}
+   && (\textstyle\sum_k w_{ik}=1)
+\end{align}
+로 정의한다($\beta=8$ 기본값).
+$b_i$를 면별 ``regime''으로 사용하여 \S\ref{sec:flowregion}의 영역 성장을 수행하면,
+각 부분은 \emph{단일하고 일관된} 빌드 방향을 갖는 연결 영역이 된다.
+한편 soft 가중치 $w_{ik}$는 식~\eqref{eq:cluster-matrix}에
+$w_d\,[\,w_{i1},\dots,w_{iK}\,]$ 블록으로 덧붙여
+$k$-medoids/DBSCAN에도 방향 선호를 융합할 수 있다(가중치 $w_d$).
+
+\section{알고리즘과 구현}
+
+\begin{algorithm}[H]
+\caption{출력지향 메쉬 분할}
+\begin{algorithmic}[1]
+\State 후보 풀에서 상위 빌드 방향 $n^\ast$(또는 상위 $K$개 $\{n_k\}$)를 선택
+\For{each face $i$}
+  \State $O_i\gets\max(0,-m_i\cdot n^\ast)$, $\tau_i\gets m_i\cdot n^\ast$,
+         $\eta_i\gets c_i\cdot n^\ast-z_{\mathrm{plate}}$
+\EndFor
+\For{each overhang face $i$ ($O_i>0$)}
+  \State $c_i-\varepsilon n^\ast$에서 $-n^\ast$로 ray 발사, 유효 receiver $j$ 탐색
+  \If{$j$ 존재} $\rho_i\gets\textsc{face}$, $h_i\gets(c_i-c_j)\cdot n^\ast$, $r_j\gets r_j+1$
+  \Else\ $\rho_i\gets\textsc{bed}$ \EndIf
+\EndFor
+\State $\Phi_{\mathrm{SFTF}}\gets\operatorname{zscore}([O,\tau,\eta,h,r])$
+\If{method = support\_flow}\Comment{방법 b: 지지 물리}
+  \State 각 면을 $\kappa_i\in\{$bed, needs, supporter, free$\}$로 분류
+  \State union--find: 지지 쌍 $(i,t_i)$ 병합 $\wedge$ $\kappa_i{=}\kappa_j$ 인접면 병합
+  \State 작은 영역 흡수(선택)
+\ElsIf{method = flow\_region 또는 build\_direction}\Comment{방법 b: 기하/방향}
+  \State regime $\gets \rho$ (또는 다방향 $b$)
+  \State $\ell\gets$ 면-인접 union--find: regime 동일 $\wedge$ $m_i\cdot m_j\ge\cos\theta_{\mathrm{sim}}$일 때 병합
+  \State 작은 영역 흡수(선택)
+\Else\Comment{방법 a: 특징 군집화}
+  \State $M\gets[w_s\,\operatorname{zscore}(C)\mid w_f\,\Phi_{\mathrm{SFTF}}\mid w_d\,W]$
+  \State $\ell\gets$ \{DBSCAN, $k$-medoids, $k$-means, agglomerative\} 중 적용
+\EndIf
+\State \Return 면별 라벨 $\ell$; 라벨별 submesh로 분리
+\end{algorithmic}
+\end{algorithm}
+
+구현은 기존 SFTF 모듈의 헬퍼(표면 데이터 캐시, ray sampling, 유효 hit 판정)를
+\emph{변경 없이} 재사용하며, 테스트로 보호된 방향별 점수 함수
+$F(n),J(n)$은 수정하지 않는다.
+면특징 추출은 별도 경로로 동일한 ray casting 원천 함수를 호출한다.
+복잡도는 면특징 추출이 ray 수에 선형,
+영역 성장이 인접 모서리 수에 거의 선형($O(E\,\alpha(N))$),
+확장 $k$-medoids가 반복당 $O(NK)$이다.
+
+\section{예비 실험}
+\label{sec:exp}
+
+Stanford Bunny($N=69{,}662$면)에 대해 단일 추출을 공유하여 세 방법을 적용하였다.
+면특징 추출은 약 $2.1$초였고,
+자동 선택된 빌드 방향은 $n^\ast\approx(0.78,0.58,0.24)$,
+오버행 면은 $35{,}933/69{,}662$였다.
+
+\begin{table}[H]
+\centering
+\caption{Bunny(69{,}662면) 분할 결과.
+모든 비잡음 방법에서 분할 부분의 면 수 합은 원본과 동일하다(면 보존).}
+\label{tab:partition}
+\begin{tabular}{lrrr}
+\toprule
+방법 & 시간(s) & 부분 수 & 잡음 면\\
+\midrule
+support\_flow (방법 b, 지지 basin)   & 0.69 & 4  & 0\\
+flow\_region (방법 b, 영역 성장)     & 0.57 & 9  & 0\\
+$k$-medoids (방법 a, 좌표+특징 융합)  & 0.68 & 6  & 0\\
+DBSCAN (방법 a, 좌표+특징 융합)      & 8.36 & 16 & 347\\
+build\_direction (다방향 argmax)    & 0.59 & 5  & 0\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+다방향 분할에서는 상위 $K=3$ 방향에 대해 면이
+방향 0에 $51.8\%$, 방향 1에 $48.2\%$로 갈렸으며
+(세 번째 방향은 첫 방향과 거의 같은 축이어서 흡수됨),
+영역 성장 결과 5개 연결 부분이 두 빌드 방향(3개$\to$방향1, 2개$\to$방향0)에 사상되었다.
+모든 방법에서 전 면이 분할되었다.
+
+\subsection{기존 좌표 기반 군집화와의 정량 비교}
+\label{sec:purity}
+
+Figure~\ref{fig:partition-capture}는 manikin에 다섯 분할 방법을 적용한 실제 결과로,
+\texttt{run\_mesh\_partition.py}의 직교(평행) 투영 렌더링을 캡처한 것이다.
+면색은 부분 라벨을 나타낸다.
+순수 지지흐름 방법(\texttt{support\_flow}, \texttt{flow\_region})과
+특징 융합 방법($k$-medoids, DBSCAN)은 분할 경계가 오버행/지지 영역 구조를 따르는 반면,
+다방향 \texttt{build\_direction}은 빌드 방향 선호가 균질한(73\%가 동일 방향) manikin에서
+대부분 단일 영역으로 묶인다.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+  width=\linewidth,
+  axis equal image,
+  enlargelimits=false,
+  axis on top,
+  xmin=0, xmax=1, ymin=0, ymax=0.3158,
+  axis y line=none,
+  axis x line=bottom,
+  x axis line style={draw=none},
+  major tick length=0pt,
+  xtick={0.1183,0.3091,0.5000,0.6909,0.8817},
+  xticklabels={\texttt{support\_flow},\texttt{flow\_region},$k$-medoids,\textsc{dbscan},\texttt{build\_direction}},
+  xticklabel style={font=\footnotesize},
+]
+\addplot graphics [xmin=0,xmax=1,ymin=0,ymax=0.3158] {sftf_partition_manikin.png};
+\end{axis}
+\end{tikzpicture}
+\caption{manikin($13{,}672$면)에 대한 다섯 분할 방법의 적용 결과(직교 투영 렌더링 캡처).
+면색은 부분 라벨이며, 좌측부터 순수 지지흐름(방법 b) 두 가지, 특징 융합(방법 a) 두 가지,
+다방향 빌드 분할이다. 이미지는 pgfplots의 그래픽 삽입 기능(\texttt{addplot graphics})으로 넣고
+열별 방법명을 축 눈금으로 주석하였다.}
+\label{fig:partition-capture}
+\end{figure}
+
+본 방법의 핵심 주장——``분할 경계가 출력 지지 거동을 따른다''——을 정량화하기 위해
+\emph{지지 클래스 순도}(support-class purity)를 정의한다.
+면별 지지 클래스 $\kappa_i\in\{$bed, needs, supporter, free$\}$에 대해,
+분할 $\{\mathcal{P}_\ell\}$의 순도는 각 부분에서 지배 클래스가 차지하는 비율의
+면 수 가중 평균이다.
+\begin{equation}
+\mathrm{Purity}
+= \frac{1}{N}\sum_\ell \max_{\kappa}
+\big|\{i\in\mathcal{P}_\ell : \kappa_i=\kappa\}\big|.
+\end{equation}
+순도가 $1$에 가까울수록 각 부분이 단일 지지 거동(예: 오버행만, 또는 자기지지만)으로
+구성되어 출력 적합성이 높다.
+
+Table~\ref{tab:purity}는 manikin($13{,}672$면)에 대해
+기존 좌표 전용 $k$-means와 본 연구의 (a)/(b) 방법을 비교한다.
+좌표만 사용하는 기존 $k$-means는 순도 $0.51$로,
+한 부분 안에 오버행과 자기지지 면이 섞인다.
+SFTF 특징을 융합한 방법 (a)와 순수 지지흐름 방법 (b)는 모두 순도 $0.73$--$0.87$로
+크게 향상되어, 분할 경계가 실제 지지 영역 구조를 따름을 정량적으로 확인한다.
+
+\begin{table}[H]
+\centering
+\caption{manikin($13{,}672$면)에 대한 분할 방법별 지지 클래스 순도 비교(높을수록 좋음).
+기준선은 좌표만 사용하는 기존 $k$-means이다.}
+\label{tab:purity}
+\begin{tabular}{llrr}
+\toprule
+계열 & 방법 & 부분 수 & 순도\\
+\midrule
+기준선 & $k$-means (좌표 전용)          & 6  & 0.508\\
+\midrule
+(a)   & $k$-means (좌표+SFTF 특징)     & 6  & \textbf{0.873}\\
+(a)   & $k$-medoids (좌표+SFTF 특징)   & 6  & 0.745\\
+(a)   & DBSCAN (좌표+SFTF 특징)        & 13 & 0.566\\
+\midrule
+(b)   & flow\_region (영역 성장)       & 29 & 0.725\\
+(b)   & support\_flow (지지 basin)     & 16 & 0.749\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+기존 좌표 기반 군집화는 공간적 근접성만 보므로 출력 적합성과 무관하게 분할되는 반면,
+(a)는 동일한 군집화 알고리즘에 SFTF 특징을 추가하는 것만으로 순도를 $0.51\to0.87$로 끌어올리고,
+(b)는 군집화 라이브러리 없이도 지지 물리만으로 $0.73$ 이상의 순도를 달성한다.
+모든 방법은 manikin에서 $1$초 이내(특징 추출 별도)에 수행되었다.
+
+\section{결론 및 향후 연구}
+
+본 연구는 SFTF의 면별 지지흐름 물리량을 보존하여
+출력 적합성을 직접 반영하는 메쉬 분할 방법을 제안하였다.
+두 계열——(a) SFTF 특징을 기존 군집화에 융합하는 방법과
+(b) 지지 쌍/역할만으로 분할하는 순수 지지흐름 방법——은
+모두 좌표 전용 군집화 대비 지지 클래스 순도를 크게 높였으며,
+다방향 softmax--argmax 분할은 각 부분이 서로 다른 좋은 빌드 방향을 갖도록 한다.
+방법론적으로 본 연구는 동반 연구가 면별 흐름장을 단일 통합 텐서의 Rayleigh 수축
+$\tilde R=R+B$로 환원하는 것과 정확히 상보적이다~\cite{sftf}.
+동반 연구는 그 통합 텐서로 \emph{방향}을 고르고, 본 연구는 같은 흐름장의 면별 분해(특히 receiver 종류 $\rho_i$)로 \emph{분할}을 수행한다.
+
+향후 연구로는 (i) 각 부분의 빌드 방향을 TOMO\_INT3 또는 슬라이서로 재검증하여
+분할 품질을 정량화하고,
+(ii) ``support'' 비용 모드와 후보 방향의 직교성 제어로 다방향 분할의 방향 다양성을 높이며,
+(iii) 절단면 면적/접합 강도/조립성 항을 더한 다목적 분할로 확장할 계획이다.
+
+\nocite{dbscan,kmedoids}
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

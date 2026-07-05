@@ -1,0 +1,65 @@
+# Claude Code local (personal) settings
+.claude/settings.local.json
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments and local Python tooling
+.venv/
+venv/
+.uv-cache/
+env/
+.env
+.env.*
+.python-version
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Build, packaging, and dependency artifacts
+build/
+dist/
+*.egg-info/
+*.whl
+
+# Project-generated outputs and local caches
+graphify-out/
+.cache/
+*_visible_triangle_pairs.csv
+
+# Thingi10K fetch output (large downloaded meshes; see Experimental/etc/fetch_thingi10k.py)
+# Matches the script's default --out dir wherever it is run from.
+thingi10k_out/
+
+# Oversized verification mesh (>50 MB; tracked via external source, not git)
+Experimental/G5Test/RawMesh/Group_D10_65942.stl
+
+# Local renderer / UI state
+.polyscope.ini
+imgui.ini
+
+# IDE and editor state
+.vs/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+~$*
+.aider*

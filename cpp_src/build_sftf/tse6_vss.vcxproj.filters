@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\__TomoNV_Projects\Tomo_SFTF_dev\cpp_src\TSE6_vss.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\__TomoNV_Projects\Tomo_SFTF_dev\cpp_src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C1BF8F32-0ABB-3FF5-A028-2C59923138F5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

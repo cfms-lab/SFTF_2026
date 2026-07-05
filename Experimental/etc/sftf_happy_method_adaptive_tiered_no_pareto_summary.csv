@@ -1,0 +1,4 @@
+stage,mesh_count,triggered_count,mean_local_ratio,median_local_ratio,max_local_ratio,mean_local_cell_count,mean_local_budget_fraction,count_ratio_le_1_25,count_ratio_le_1_50,count_ratio_le_2_00
+adaptive_final,5,1,1.0118304158575318,1.0,1.0591520792876592,3902.0,0.029941452260188312,5,5,5
+base_top_k,5,1,2.5151454051309208,1.0,8.516574946366944,2763.6,0.021206098786841723,4,4,4
+happy_method,1,1,1.0,1.0,1.0,8564.0,0.06571465842036203,1,1,1

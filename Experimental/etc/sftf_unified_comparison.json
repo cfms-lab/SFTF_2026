@@ -1,0 +1,43 @@
+{
+  "rows": [
+    {
+      "mesh": "(1)Bunny_69k.ply",
+      "PCA": 1.549027099394325,
+      "SupportTensor": 2.1114718802015866,
+      "SFTF_untuned": 1.3813697599177108,
+      "SFTF_tuned_LOMO": 1.20679767954031,
+      "SFTF_oracle": 1.0197404592550583
+    },
+    {
+      "mesh": "(2)manikin.ply",
+      "PCA": 2.8965263262964016,
+      "SupportTensor": 2.3879675783566654,
+      "SFTF_untuned": 5.01784703451211,
+      "SFTF_tuned_LOMO": 3.0156417548720205,
+      "SFTF_oracle": 1.1710214857292547
+    },
+    {
+      "mesh": "(3)dragon_100k_1.5x.ply",
+      "PCA": 2.1010080063979397,
+      "SupportTensor": 1.5799596651625227,
+      "SFTF_untuned": 1.3972256619747694,
+      "SFTF_tuned_LOMO": 1.4056072546624538,
+      "SFTF_oracle": 1.0341979637412693
+    },
+    {
+      "mesh": "(5)lucy_50k.ply",
+      "PCA": 1.256375664351988,
+      "SupportTensor": 3.755935197291741,
+      "SFTF_untuned": 1.2007361995137988,
+      "SFTF_tuned_LOMO": 1.2007361995137988,
+      "SFTF_oracle": 1.0105555999228721
+    }
+  ],
+  "mean": {
+    "PCA": 1.9507342741101634,
+    "SupportTensor": 2.458833580253129,
+    "SFTF_untuned": 2.249294663979597,
+    "SFTF_tuned_LOMO": 1.7071957221471457,
+    "SFTF_oracle": 1.0588788771621136
+  }
+}
