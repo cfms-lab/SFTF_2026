@@ -1,0 +1,119 @@
+{
+  "config": {
+    "engine": "legacy CuraEngine 15.04 (DP103 profile)",
+    "critical_angle": 60.0,
+    "support_placement": "everywhere",
+    "pattern": "lines",
+    "target_diag_mm": 140.0,
+    "top_k": 20,
+    "window_degrees": 10.0
+  },
+  "spearman_pred_vs_measured": 0.1,
+  "pearson_pred_vs_measured": 0.5725698932108145,
+  "rows": [
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "branch": "sftf",
+      "scale": 1.1546252144996225,
+      "deployed_yaw": 230.00000867706282,
+      "deployed_pitch": 54.0000015026869,
+      "tomo_best_yaw": 299.000000351879,
+      "tomo_best_pitch": 36.99999875288908,
+      "tomo_ratio_predicted": 1.0147593608041465,
+      "cura_support_deployed_mm3": 2167.35382162433,
+      "cura_support_tomo_best_mm3": 3570.446332681723,
+      "cura_ratio_measured": 0.6070260185080151
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "branch": "sftf",
+      "scale": 0.6288174846204355,
+      "deployed_yaw": 190.00000301050196,
+      "deployed_pitch": 9.000000250447817,
+      "tomo_best_yaw": 190.00000301050196,
+      "tomo_best_pitch": 9.000000250447817,
+      "tomo_ratio_predicted": 1.0,
+      "cura_support_deployed_mm3": 1506.895841837906,
+      "cura_support_tomo_best_mm3": 1506.895841837906,
+      "cura_ratio_measured": 1.0
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "branch": "sftf",
+      "scale": 0.6407302894564282,
+      "deployed_yaw": 130.99999567685308,
+      "deployed_pitch": 257.9999866889366,
+      "tomo_best_yaw": 130.99999567685308,
+      "tomo_best_pitch": 257.9999866889366,
+      "tomo_ratio_predicted": 1.0,
+      "cura_support_deployed_mm3": 3346.009216306694,
+      "cura_support_tomo_best_mm3": 3346.009216306694,
+      "cura_ratio_measured": 1.0
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "branch": "sftf",
+      "scale": 0.9495566935899393,
+      "deployed_yaw": 274.0000053480149,
+      "deployed_pitch": 82.00000000512816,
+      "tomo_best_yaw": 346.00000735159745,
+      "tomo_best_pitch": 31.999999752116263,
+      "tomo_ratio_predicted": 1.6621244595083648,
+      "cura_support_deployed_mm3": 3536.661863723917,
+      "cura_support_tomo_best_mm3": 5489.561980030867,
+      "cura_ratio_measured": 0.6442521054665332
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "branch": "sftf",
+      "scale": 0.6459722539454414,
+      "deployed_yaw": 178.00000267657154,
+      "deployed_pitch": 358.99998836115276,
+      "tomo_best_yaw": 178.00000267657154,
+      "tomo_best_pitch": 358.99998836115276,
+      "tomo_ratio_predicted": 1.0,
+      "cura_support_deployed_mm3": 2269.4010561076516,
+      "cura_support_tomo_best_mm3": 2269.4010561076516,
+      "cura_ratio_measured": 1.0
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "branch": "uniform",
+      "scale": 0.21274826353924448,
+      "deployed_yaw": 97.999998173639,
+      "deployed_pitch": 209.99999901359323,
+      "tomo_best_yaw": 163.0000056742531,
+      "tomo_best_pitch": 1.9999999845072665,
+      "tomo_ratio_predicted": 2.5036124100654242,
+      "cura_support_deployed_mm3": 1893.8613662455468,
+      "cura_support_tomo_best_mm3": 1987.4310885477028,
+      "cura_ratio_measured": 0.9529192620356306
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "branch": "uniform",
+      "scale": 0.4606669100904038,
+      "deployed_yaw": 351.0000063523703,
+      "deployed_pitch": 313.0000030181942,
+      "tomo_best_yaw": 3.0000000834826057,
+      "tomo_best_pitch": 312.000008682191,
+      "tomo_ratio_predicted": 2.6128619942276337,
+      "cura_support_deployed_mm3": 771.6550267878627,
+      "cura_support_tomo_best_mm3": 371.3592618570064,
+      "cura_ratio_measured": 2.07792050999119
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "branch": "sftf",
+      "scale": 1.0777293903161111,
+      "deployed_yaw": 212.99999568198123,
+      "deployed_pitch": 353.99998936037997,
+      "tomo_best_yaw": 33.99999866940647,
+      "tomo_best_pitch": 185.99999834573237,
+      "tomo_ratio_predicted": 1.0302917144141157,
+      "cura_support_deployed_mm3": 244.26282060278302,
+      "cura_support_tomo_best_mm3": 237.0418276733344,
+      "cura_ratio_measured": 1.030462948249791
+    }
+  ]
+}

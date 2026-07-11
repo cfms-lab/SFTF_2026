@@ -72,7 +72,7 @@
   "html": "SFTF_result/Group_C5_lucy_50k.html",
   "candidates_csv": "SFTF_result/Group_C5_lucy_50k_candidates.csv",
   "elapsed_sec": 1.8741692999610677,
-  "tomo_int3_dll_sec": 259.0983679999772,
+  "tomo_int3_dll_sec": 65.44527010002639,
   "tomo_int3_cached": false,
   "tomo_int3_html": "Group_C5_lucy_50k_tomo_int3.html",
   "tomo_int3_best": {
@@ -81,13 +81,13 @@
     "vss": 7605.40144502624
   },
   "tomo_int3_error": null,
-  "tomo_cuda_dll_sec": 71.72611059999326,
+  "tomo_cuda_dll_sec": 94.58489310002187,
   "tomo_cuda_cached": false,
   "tomo_cuda_html": "Group_C5_lucy_50k_tomo_cuda.html",
   "tomo_cuda_best": {
-    "yaw": 178.99999701257477,
-    "pitch": 0.0,
-    "vss": 16844.840089151683
+    "yaw": 178.00000267657154,
+    "pitch": 358.99998836115276,
+    "vss": 6572.99973747947
   },
   "tomo_cuda_error": null,
   "sftf_cpp_ms": 172.479,

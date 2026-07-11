@@ -72,7 +72,7 @@
   "html": "SFTF_result/Group_E4_439142.html",
   "candidates_csv": "SFTF_result/Group_E4_439142_candidates.csv",
   "elapsed_sec": 22.583500900000217,
-  "tomo_int3_dll_sec": 1374.8331356999988,
+  "tomo_int3_dll_sec": 1296.9955565999844,
   "tomo_int3_cached": false,
   "tomo_int3_html": "Group_E4_439142_tomo_int3.html",
   "tomo_int3_best": {
@@ -81,13 +81,13 @@
     "vss": 19892.645276282445
   },
   "tomo_int3_error": null,
-  "tomo_cuda_dll_sec": 12392.051063799998,
+  "tomo_cuda_dll_sec": 1683.2551153000095,
   "tomo_cuda_cached": false,
   "tomo_cuda_html": "Group_E4_439142_tomo_cuda.html",
   "tomo_cuda_best": {
     "yaw": 271.9999893552518,
     "pitch": 319.99999069097345,
-    "vss": 14259.000455052399
+    "vss": 14273.001142769806
   },
   "tomo_cuda_error": null,
   "sftf_cpp_ms": 5589.8013,

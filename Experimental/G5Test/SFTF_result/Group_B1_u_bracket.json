@@ -72,7 +72,7 @@
   "html": "SFTF_result/Group_B1_u_bracket.html",
   "candidates_csv": "SFTF_result/Group_B1_u_bracket_candidates.csv",
   "elapsed_sec": 0.15,
-  "tomo_int3_dll_sec": 255.40065130000585,
+  "tomo_int3_dll_sec": 12.668479199986905,
   "tomo_int3_cached": false,
   "tomo_int3_html": "Group_B1_u_bracket_tomo_int3.html",
   "tomo_int3_best": {
@@ -81,7 +81,7 @@
     "vss": 0.0
   },
   "tomo_int3_error": null,
-  "tomo_cuda_dll_sec": 168.83522740000626,
+  "tomo_cuda_dll_sec": 70.66538419999415,
   "tomo_cuda_cached": false,
   "tomo_cuda_html": "Group_B1_u_bracket_tomo_cuda.html",
   "tomo_cuda_best": {

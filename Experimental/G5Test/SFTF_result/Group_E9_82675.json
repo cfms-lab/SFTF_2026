@@ -72,7 +72,7 @@
   "html": "SFTF_result/Group_E9_82675.html",
   "candidates_csv": "SFTF_result/Group_E9_82675_candidates.csv",
   "elapsed_sec": 23.11832460000005,
-  "tomo_int3_dll_sec": 1545.4730094999832,
+  "tomo_int3_dll_sec": 1526.543372199987,
   "tomo_int3_cached": false,
   "tomo_int3_html": "Group_E9_82675_tomo_int3.html",
   "tomo_int3_best": {
@@ -81,7 +81,7 @@
     "vss": 8430.707963528619
   },
   "tomo_int3_error": null,
-  "tomo_cuda_dll_sec": 2083.62703589999,
+  "tomo_cuda_dll_sec": 1403.0701894999947,
   "tomo_cuda_cached": false,
   "tomo_cuda_html": "Group_E9_82675_tomo_cuda.html",
   "tomo_cuda_best": {

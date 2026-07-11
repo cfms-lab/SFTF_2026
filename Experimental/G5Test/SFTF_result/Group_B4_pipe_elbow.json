@@ -72,7 +72,7 @@
   "html": "SFTF_result/Group_B4_pipe_elbow.html",
   "candidates_csv": "SFTF_result/Group_B4_pipe_elbow_candidates.csv",
   "elapsed_sec": 1.6092670999987604,
-  "tomo_int3_dll_sec": 129.78262220000033,
+  "tomo_int3_dll_sec": 13.931456199963577,
   "tomo_int3_cached": false,
   "tomo_int3_html": "Group_B4_pipe_elbow_tomo_int3.html",
   "tomo_int3_best": {
@@ -81,7 +81,7 @@
     "vss": 0.0
   },
   "tomo_int3_error": null,
-  "tomo_cuda_dll_sec": 171.4790359000035,
+  "tomo_cuda_dll_sec": 73.67608960001962,
   "tomo_cuda_cached": false,
   "tomo_cuda_html": "Group_B4_pipe_elbow_tomo_cuda.html",
   "tomo_cuda_best": {

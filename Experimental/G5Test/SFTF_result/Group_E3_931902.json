@@ -72,7 +72,7 @@
   "html": "SFTF_result/Group_E3_931902.html",
   "candidates_csv": "SFTF_result/Group_E3_931902_candidates.csv",
   "elapsed_sec": 23.93386140000075,
-  "tomo_int3_dll_sec": 1331.9175716000027,
+  "tomo_int3_dll_sec": 1245.6715863000136,
   "tomo_int3_cached": false,
   "tomo_int3_html": "Group_E3_931902_tomo_int3.html",
   "tomo_int3_best": {
@@ -81,11 +81,15 @@
     "vss": 0.0
   },
   "tomo_int3_error": null,
-  "tomo_cuda_dll_sec": 19943.394062699983,
+  "tomo_cuda_dll_sec": 1861.8148076999933,
   "tomo_cuda_cached": false,
   "tomo_cuda_html": "Group_E3_931902_tomo_cuda.html",
-  "tomo_cuda_best": null,
-  "tomo_cuda_error": "suspect (reproduced): re-sweep also yields exactly 7 zero cells clustered in the same two direction neighborhoods (yaw 0/360, pitch ~323; yaw ~180, pitch ~142) but at partly different cells, and nonzero cells differ run-to-run (max diff 831) -- stochastic CUDA kernel failure, see Tomo_Shell2026-dev/BUGREPORT_2026-07-03_INT16_vss_overflow.md issue A. dll_sec valid; do not use best until the dll is fixed.",
+  "tomo_cuda_best": {
+    "yaw": 323.00000101973984,
+    "pitch": 0.0,
+    "vss": 0.0
+  },
+  "tomo_cuda_error": null,
   "sftf_cpp_ms": 6888.7083,
   "sftf_cpp_optimal": [
     {

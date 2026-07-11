@@ -72,7 +72,7 @@
   "html": "SFTF_result/Group_A5_torus.html",
   "candidates_csv": "SFTF_result/Group_A5_torus_candidates.csv",
   "elapsed_sec": 0.45,
-  "tomo_int3_dll_sec": 196.72790290002013,
+  "tomo_int3_dll_sec": 14.263744700001553,
   "tomo_int3_cached": false,
   "tomo_int3_html": "Group_A5_torus_tomo_int3.html",
   "tomo_int3_best": {
@@ -81,7 +81,7 @@
     "vss": 548.3602073566973
   },
   "tomo_int3_error": null,
-  "tomo_cuda_dll_sec": 171.59126099999412,
+  "tomo_cuda_dll_sec": 73.2977402000106,
   "tomo_cuda_cached": false,
   "tomo_cuda_html": "Group_A5_torus_tomo_cuda.html",
   "tomo_cuda_best": {

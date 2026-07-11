@@ -72,7 +72,7 @@
   "html": "SFTF_result/Group_A4_cone.html",
   "candidates_csv": "SFTF_result/Group_A4_cone_candidates.csv",
   "elapsed_sec": 0.12,
-  "tomo_int3_dll_sec": 199.73764559999108,
+  "tomo_int3_dll_sec": 12.270083100011107,
   "tomo_int3_cached": false,
   "tomo_int3_html": "Group_A4_cone_tomo_int3.html",
   "tomo_int3_best": {
@@ -81,7 +81,7 @@
     "vss": 0.0
   },
   "tomo_int3_error": null,
-  "tomo_cuda_dll_sec": 167.80851160001475,
+  "tomo_cuda_dll_sec": 70.10562649997883,
   "tomo_cuda_cached": false,
   "tomo_cuda_html": "Group_A4_cone_tomo_cuda.html",
   "tomo_cuda_best": {

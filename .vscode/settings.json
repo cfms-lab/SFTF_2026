@@ -1,4 +1,5 @@
 {
+  "workbench.colorCustomizations": {"titleBar.activeBackground": "#104831", "titleBar.activeForeground": "#ffffff", "titleBar.inactiveBackground": "#104831", "titleBar.inactiveForeground": "#ffffffb3", "titleBar.border": "#104831", "activityBar.background": "#104831", "activityBar.foreground": "#ffffff", "activityBar.inactiveForeground": "#ffffffb3", "statusBar.background": "#104831", "statusBar.foreground": "#ffffff", "statusBar.border": "#104831"},
 	"python.REPL.enableREPLSmartSend": false,
 	"python-envs.defaultPackageManager": "ms-python.python:conda",
 	"python-envs.pythonProjects": [],
