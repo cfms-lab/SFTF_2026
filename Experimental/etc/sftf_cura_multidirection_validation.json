@@ -1,0 +1,5112 @@
+{
+  "status": "complete",
+  "started_utc": "2026-07-10T22:27:52.519674+00:00",
+  "updated_utc": "2026-07-10T23:03:22.658891+00:00",
+  "completed_utc": "2026-07-10T23:03:22.658891+00:00",
+  "configuration_fingerprint": "51454fe9bca65ebb3ce16fd29bb6a1372eaeced3b884f93816296b5e4efc0a21",
+  "config": {
+    "engine": {
+      "generation": "legacy CuraEngine 15.04.6",
+      "executable": "C:\\Program Files (x86)\\Cura_15.04.6\\CuraEngine.exe",
+      "sha256": "962e56d2f84f99be75577490b9b75c5b6d2b2e3928cb77e8469a3f02c612ba18",
+      "size_bytes": 577764,
+      "mtime_utc": "2016-04-28T15:01:14+00:00",
+      "command_shape": "CuraEngine -s camelCaseKey=value ... -o out.gcode oriented.stl"
+    },
+    "profile": {
+      "name": "Sindoh DP103 PLA translated from the official 3DWOX profile",
+      "source_module": "D:\\__SFTF_Projects(2026)\\_Cura_CLI\\python\\src\\cura_cli\\legacy_profile.py",
+      "source_sha256": "baa0ca632bb57c564e66cff8c7806865d1bc0aa84b910984a795922910aefdb5",
+      "legacy_engine_settings": {
+        "coolHeadLift": "0",
+        "downSkinCount": "4",
+        "enableCombing": "1",
+        "extrusionWidth": "400",
+        "fanFullOnLayerNr": "2",
+        "fanSpeedMax": "50",
+        "fanSpeedMin": "50",
+        "filamentDiameter": "1750",
+        "filamentFlow": "100",
+        "fixHorrible": "1",
+        "infillOverlap": "15",
+        "infillSpeed": "40",
+        "initialLayerSpeed": "10",
+        "initialLayerThickness": "200",
+        "initialSpeedupLayers": "4",
+        "inset0Speed": "40",
+        "insetCount": "2",
+        "insetXSpeed": "40",
+        "layer0extrusionWidth": "400",
+        "layerThickness": "200",
+        "minimalExtrusionBeforeRetraction": "20",
+        "minimalFeedrate": "10",
+        "minimalLayerTime": "5",
+        "moveSpeed": "130",
+        "multiVolumeOverlap": "150",
+        "nozzleSize": "400",
+        "objectSink": "0",
+        "perimeterBeforeInfill": "0",
+        "printSpeed": "40",
+        "retractionAmount": "6000",
+        "retractionMinimalDistance": "1500",
+        "retractionSpeed": "30",
+        "retractionZHop": "0",
+        "skinSpeed": "40",
+        "skirtDistance": "3000",
+        "skirtLineCount": "1",
+        "skirtMinLength": "150000",
+        "sparseInfillLineDistance": "2666",
+        "supportAngle": "60",
+        "supportEverywhere": "1",
+        "supportLineDistance": "2000",
+        "supportType": "1",
+        "supportXYDistance": "800",
+        "supportZDistance": "200",
+        "upSkinCount": "4"
+      },
+      "human_units": {
+        "layer_height_mm": 0.2,
+        "initial_layer_height_mm": 0.2,
+        "nozzle_diameter_mm": 0.4,
+        "wall_thickness_mm": 0.8,
+        "solid_layer_thickness_mm": 0.8,
+        "infill_density_percent": 15.0,
+        "infill_pattern": "lines",
+        "filament_diameter_mm": 1.75,
+        "support_enabled": true,
+        "support_placement": "everywhere",
+        "support_angle_deg": 60.0,
+        "support_pattern": "lines (legacy supportType=1)",
+        "support_fill_rate_percent": 20.0,
+        "support_xy_distance_mm": 0.8,
+        "support_z_distance_mm": 0.2,
+        "bed_adhesion": "one DP103 skirt line; excluded from support-only metric"
+      }
+    },
+    "build_plate": {
+      "width_mm": 210.0,
+      "depth_mm": 200.0,
+      "mesh_placement": "AABB centred at (width/2, depth/2), minimum z=0"
+    },
+    "mesh_scaling": {
+      "rule": "uniform scale to target axis-aligned bounding-box diagonal",
+      "target_aabb_diagonal_mm": 140.0
+    },
+    "metrics": {
+      "cura": "support-only extruded filament volume",
+      "cura_unit": "mm^3",
+      "cura_parser": "D:\\__SFTF_Projects(2026)\\_Cura_CLI\\python\\src\\cura_cli\\gcode_support.py",
+      "cura_parser_sha256": "5561f27dc5d3b53347d4b1bb84e5ea995d32c58a2ce63d4b1cb447335b6a15cb",
+      "cura_parser_method": "TYPE:SUPPORT segments with E high-water-mark correction",
+      "tomo": "cached TOMO_CPU v_ss at 1-degree resolution and 60-degree critical angle",
+      "tomo_unit": "native v_ss proxy units (rank comparisons only)",
+      "direction_convention_module": "D:\\__SFTF_Projects(2026)\\_Cura_CLI\\python\\src\\cura_cli\\mesh_rotation.py",
+      "direction_convention_sha256": "bd6874f6d535626040d9d06f5f58a7086679da03581e6dbaa65a9f68cd8b00bf"
+    },
+    "candidate_rule": {
+      "ranking_panel": "same 16-point directed spherical-Fibonacci panel for every mesh; independent of TOMO scores",
+      "anchors": [
+        "deployed_pipeline",
+        "tomo_global_optimum"
+      ],
+      "deduplication": "exact canonical 1-degree yaw/pitch grid cell; 360-degree endpoints removed",
+      "ranking_metrics_scope": "fixed Fibonacci panel only",
+      "regret_scope": "TOMO global optimum versus best Cura support among all sliced panel+anchor directions",
+      "top_k_definition": "set overlap fraction |TOMO top-k intersect Cura top-k| / k",
+      "tie_break": "candidate_id lexical order after metric value",
+      "panel_size": 16,
+      "max_candidates_debug_limit": null
+    },
+    "selected_meshes": [
+      "Group_C1_Bunny_69k",
+      "Group_C2_manikin",
+      "Group_C3_dragon_100k_1.5x",
+      "Group_C4_happy_50k_0.75x",
+      "Group_C5_lucy_50k",
+      "Group_C6_nefertiti_100k",
+      "Group_C7_liver_19k",
+      "Group_C8_kidney_12k"
+    ]
+  },
+  "inputs": [
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_C1_Bunny_69k.ply",
+      "mesh_sha256": "bd188bc2c25ccf6098632ba2a956075f8e8c985d091157b5974e0fefcca43ca0",
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_C1_Bunny_69k_tomo_int3_1deg_60deg.npz",
+      "grid_sha256": "def348fbb927f6a1a2bf3eeab87b927a5ab009a9e7e050f65a41707e98f7b4e5",
+      "grid_shape_canonical": [
+        360,
+        360
+      ],
+      "original_aabb_diagonal_mesh_units": 121.2514660531396,
+      "uniform_scale_to_mm": 1.1546252144996225,
+      "deployed_route": "sftf",
+      "deployed_verification_count": 50,
+      "deployed_escalated": true,
+      "candidate_count": 18,
+      "candidates": [
+        {
+          "candidate_id": "fibonacci_00",
+          "sources": [
+            "fibonacci_00"
+          ],
+          "fixed_panel": true,
+          "panel_index": 0,
+          "yaw_index": 0,
+          "pitch_index": 340,
+          "yaw_deg": 0.0,
+          "pitch_deg": 339.9999866940647,
+          "tomo_vss": 19511.518399577497
+        },
+        {
+          "candidate_id": "fibonacci_01",
+          "sources": [
+            "fibonacci_01"
+          ],
+          "fixed_panel": true,
+          "panel_index": 1,
+          "yaw_index": 206,
+          "pitch_index": 155,
+          "yaw_deg": 205.99999434882363,
+          "pitch_deg": 154.99999634471394,
+          "tomo_vss": 6621.189353879819
+        },
+        {
+          "candidate_id": "fibonacci_02",
+          "sources": [
+            "fibonacci_02"
+          ],
+          "fixed_panel": true,
+          "panel_index": 2,
+          "yaw_index": 314,
+          "pitch_index": 356,
+          "yaw_deg": 313.99999735419743,
+          "pitch_deg": 356.0000053531431,
+          "tomo_vss": 14784.481899797423
+        },
+        {
+          "candidate_id": "fibonacci_03",
+          "sources": [
+            "fibonacci_03"
+          ],
+          "fixed_panel": true,
+          "panel_index": 3,
+          "yaw_index": 49,
+          "pitch_index": 330,
+          "yaw_deg": 48.9999990868195,
+          "pitch_deg": 329.9999886925191,
+          "tomo_vss": 9632.016016432077
+        },
+        {
+          "candidate_id": "fibonacci_04",
+          "sources": [
+            "fibonacci_04"
+          ],
+          "fixed_panel": true,
+          "panel_index": 4,
+          "yaw_index": 160,
+          "pitch_index": 118,
+          "yaw_deg": 159.99999534548672,
+          "pitch_deg": 118.00000100691943,
+          "tomo_vss": 12223.035836022747
+        },
+        {
+          "candidate_id": "fibonacci_05",
+          "sources": [
+            "fibonacci_05"
+          ],
+          "fixed_panel": true,
+          "panel_index": 5,
+          "yaw_index": 122,
+          "pitch_index": 233,
+          "yaw_deg": 122.00000567168901,
+          "pitch_deg": 232.9999916850725,
+          "tomo_vss": 11173.220705394902
+        },
+        {
+          "candidate_id": "fibonacci_06",
+          "sources": [
+            "fibonacci_06"
+          ],
+          "fixed_panel": true,
+          "panel_index": 6,
+          "yaw_index": 79,
+          "pitch_index": 15,
+          "yaw_deg": 79.00000333674014,
+          "pitch_deg": 15.000000417413029,
+          "tomo_vss": 11356.669024002453
+        },
+        {
+          "candidate_id": "fibonacci_07",
+          "sources": [
+            "fibonacci_07"
+          ],
+          "fixed_panel": true,
+          "panel_index": 7,
+          "yaw_index": 94,
+          "pitch_index": 153,
+          "yaw_deg": 94.00000033905859,
+          "pitch_deg": 152.99999401232913,
+          "tomo_vss": 9132.16456894047
+        },
+        {
+          "candidate_id": "fibonacci_08",
+          "sources": [
+            "fibonacci_08"
+          ],
+          "fixed_panel": true,
+          "panel_index": 8,
+          "yaw_index": 100,
+          "pitch_index": 290,
+          "yaw_deg": 100.0000005060238,
+          "pitch_deg": 289.9999966863366,
+          "tomo_vss": 9516.009614487324
+        },
+        {
+          "candidate_id": "fibonacci_09",
+          "sources": [
+            "fibonacci_09"
+          ],
+          "fixed_panel": true,
+          "panel_index": 9,
+          "yaw_index": 117,
+          "pitch_index": 65,
+          "yaw_deg": 117.0000066709162,
+          "pitch_deg": 65.00000067042492,
+          "tomo_vss": 18814.31351023272
+        },
+        {
+          "candidate_id": "fibonacci_10",
+          "sources": [
+            "fibonacci_10"
+          ],
+          "fixed_panel": true,
+          "panel_index": 10,
+          "yaw_index": 250,
+          "pitch_index": 336,
+          "yaw_deg": 250.00000468015406,
+          "pitch_deg": 336.0000093500518,
+          "tomo_vss": 31761.480757027617
+        },
+        {
+          "candidate_id": "fibonacci_11",
+          "sources": [
+            "fibonacci_11"
+          ],
+          "fixed_panel": true,
+          "panel_index": 11,
+          "yaw_index": 297,
+          "pitch_index": 196,
+          "yaw_deg": 297.00001167987256,
+          "pitch_deg": 195.999996347278,
+          "tomo_vss": 17741.642707635547
+        },
+        {
+          "candidate_id": "fibonacci_12",
+          "sources": [
+            "fibonacci_12"
+          ],
+          "fixed_panel": true,
+          "panel_index": 12,
+          "yaw_index": 36,
+          "pitch_index": 134,
+          "yaw_deg": 36.00000100179127,
+          "pitch_deg": 134.00000600561944,
+          "tomo_vss": 7123.558974463092
+        },
+        {
+          "candidate_id": "fibonacci_13",
+          "sources": [
+            "fibonacci_13"
+          ],
+          "fixed_panel": true,
+          "panel_index": 13,
+          "yaw_index": 193,
+          "pitch_index": 315,
+          "yaw_deg": 192.99999967889,
+          "pitch_deg": 314.99999169020066,
+          "tomo_vss": 14054.2343628308
+        },
+        {
+          "candidate_id": "fibonacci_14",
+          "sources": [
+            "fibonacci_14"
+          ],
+          "fixed_panel": true,
+          "panel_index": 14,
+          "yaw_index": 330,
+          "pitch_index": 160,
+          "yaw_deg": 329.9999886925191,
+          "pitch_deg": 159.99999534548672,
+          "tomo_vss": 13071.743909977684
+        },
+        {
+          "candidate_id": "fibonacci_15",
+          "sources": [
+            "fibonacci_15"
+          ],
+          "fixed_panel": true,
+          "panel_index": 15,
+          "yaw_index": 200,
+          "pitch_index": 3,
+          "yaw_deg": 200.0000010120476,
+          "pitch_deg": 3.0000000834826057,
+          "tomo_vss": 25196.085291460528
+        },
+        {
+          "candidate_id": "deployed_pipeline",
+          "sources": [
+            "deployed_pipeline"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 230,
+          "pitch_index": 54,
+          "yaw_deg": 230.00000867706282,
+          "pitch_deg": 54.0000015026869,
+          "tomo_vss": 4505.873711641169
+        },
+        {
+          "candidate_id": "tomo_global_optimum",
+          "sources": [
+            "tomo_global_optimum"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 299,
+          "pitch_index": 37,
+          "yaw_deg": 299.000000351879,
+          "pitch_deg": 36.99999875288908,
+          "tomo_vss": 4440.337173209703
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_C2_manikin.ply",
+      "mesh_sha256": "9f2c45231190b7c533243e81df6d4974ca2e5c33eab6c9f2c174333782dc17ad",
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_C2_manikin_tomo_int3_1deg_60deg.npz",
+      "grid_sha256": "1c5090ab613ae0f2157a5a13a72019d4425b0819f5d7b75394e091f728e93e06",
+      "grid_shape_canonical": [
+        360,
+        360
+      ],
+      "original_aabb_diagonal_mesh_units": 222.6401196278858,
+      "uniform_scale_to_mm": 0.6288174846204355,
+      "deployed_route": "sftf",
+      "deployed_verification_count": 10,
+      "deployed_escalated": false,
+      "candidate_count": 17,
+      "candidates": [
+        {
+          "candidate_id": "fibonacci_00",
+          "sources": [
+            "fibonacci_00"
+          ],
+          "fixed_panel": true,
+          "panel_index": 0,
+          "yaw_index": 0,
+          "pitch_index": 340,
+          "yaw_deg": 0.0,
+          "pitch_deg": 339.9999866940647,
+          "tomo_vss": 17697.722458642376
+        },
+        {
+          "candidate_id": "fibonacci_01",
+          "sources": [
+            "fibonacci_01"
+          ],
+          "fixed_panel": true,
+          "panel_index": 1,
+          "yaw_index": 206,
+          "pitch_index": 155,
+          "yaw_deg": 205.99999434882363,
+          "pitch_deg": 154.99999634471394,
+          "tomo_vss": 23392.963015343532
+        },
+        {
+          "candidate_id": "fibonacci_02",
+          "sources": [
+            "fibonacci_02"
+          ],
+          "fixed_panel": true,
+          "panel_index": 2,
+          "yaw_index": 314,
+          "pitch_index": 356,
+          "yaw_deg": 313.99999735419743,
+          "pitch_deg": 356.0000053531431,
+          "tomo_vss": 47963.402488014915
+        },
+        {
+          "candidate_id": "fibonacci_03",
+          "sources": [
+            "fibonacci_03"
+          ],
+          "fixed_panel": true,
+          "panel_index": 3,
+          "yaw_index": 49,
+          "pitch_index": 330,
+          "yaw_deg": 48.9999990868195,
+          "pitch_deg": 329.9999886925191,
+          "tomo_vss": 50158.62283627849
+        },
+        {
+          "candidate_id": "fibonacci_04",
+          "sources": [
+            "fibonacci_04"
+          ],
+          "fixed_panel": true,
+          "panel_index": 4,
+          "yaw_index": 160,
+          "pitch_index": 118,
+          "yaw_deg": 159.99999534548672,
+          "pitch_deg": 118.00000100691943,
+          "tomo_vss": 35051.724142279505
+        },
+        {
+          "candidate_id": "fibonacci_05",
+          "sources": [
+            "fibonacci_05"
+          ],
+          "fixed_panel": true,
+          "panel_index": 5,
+          "yaw_index": 122,
+          "pitch_index": 233,
+          "yaw_deg": 122.00000567168901,
+          "pitch_deg": 232.9999916850725,
+          "tomo_vss": 43426.54913910164
+        },
+        {
+          "candidate_id": "fibonacci_06",
+          "sources": [
+            "fibonacci_06"
+          ],
+          "fixed_panel": true,
+          "panel_index": 6,
+          "yaw_index": 79,
+          "pitch_index": 15,
+          "yaw_deg": 79.00000333674014,
+          "pitch_deg": 15.000000417413029,
+          "tomo_vss": 51313.70765118559
+        },
+        {
+          "candidate_id": "fibonacci_07",
+          "sources": [
+            "fibonacci_07"
+          ],
+          "fixed_panel": true,
+          "panel_index": 7,
+          "yaw_index": 94,
+          "pitch_index": 153,
+          "yaw_deg": 94.00000033905859,
+          "pitch_deg": 152.99999401232913,
+          "tomo_vss": 30701.071762841595
+        },
+        {
+          "candidate_id": "fibonacci_08",
+          "sources": [
+            "fibonacci_08"
+          ],
+          "fixed_panel": true,
+          "panel_index": 8,
+          "yaw_index": 100,
+          "pitch_index": 290,
+          "yaw_deg": 100.0000005060238,
+          "pitch_deg": 289.9999966863366,
+          "tomo_vss": 88216.63186569844
+        },
+        {
+          "candidate_id": "fibonacci_09",
+          "sources": [
+            "fibonacci_09"
+          ],
+          "fixed_panel": true,
+          "panel_index": 9,
+          "yaw_index": 117,
+          "pitch_index": 65,
+          "yaw_deg": 117.0000066709162,
+          "pitch_deg": 65.00000067042492,
+          "tomo_vss": 84470.9065334856
+        },
+        {
+          "candidate_id": "fibonacci_10",
+          "sources": [
+            "fibonacci_10"
+          ],
+          "fixed_panel": true,
+          "panel_index": 10,
+          "yaw_index": 250,
+          "pitch_index": 336,
+          "yaw_deg": 250.00000468015406,
+          "pitch_deg": 336.0000093500518,
+          "tomo_vss": 28206.139556632555
+        },
+        {
+          "candidate_id": "fibonacci_11",
+          "sources": [
+            "fibonacci_11"
+          ],
+          "fixed_panel": true,
+          "panel_index": 11,
+          "yaw_index": 297,
+          "pitch_index": 196,
+          "yaw_deg": 297.00001167987256,
+          "pitch_deg": 195.999996347278,
+          "tomo_vss": 19461.68694614379
+        },
+        {
+          "candidate_id": "fibonacci_12",
+          "sources": [
+            "fibonacci_12"
+          ],
+          "fixed_panel": true,
+          "panel_index": 12,
+          "yaw_index": 36,
+          "pitch_index": 134,
+          "yaw_deg": 36.00000100179127,
+          "pitch_deg": 134.00000600561944,
+          "tomo_vss": 24058.064153371764
+        },
+        {
+          "candidate_id": "fibonacci_13",
+          "sources": [
+            "fibonacci_13"
+          ],
+          "fixed_panel": true,
+          "panel_index": 13,
+          "yaw_index": 193,
+          "pitch_index": 315,
+          "yaw_deg": 192.99999967889,
+          "pitch_deg": 314.99999169020066,
+          "tomo_vss": 14764.583800449844
+        },
+        {
+          "candidate_id": "fibonacci_14",
+          "sources": [
+            "fibonacci_14"
+          ],
+          "fixed_panel": true,
+          "panel_index": 14,
+          "yaw_index": 330,
+          "pitch_index": 160,
+          "yaw_deg": 329.9999886925191,
+          "pitch_deg": 159.99999534548672,
+          "tomo_vss": 21710.411576200124
+        },
+        {
+          "candidate_id": "fibonacci_15",
+          "sources": [
+            "fibonacci_15"
+          ],
+          "fixed_panel": true,
+          "panel_index": 15,
+          "yaw_index": 200,
+          "pitch_index": 3,
+          "yaw_deg": 200.0000010120476,
+          "pitch_deg": 3.0000000834826057,
+          "tomo_vss": 4942.7210792037085
+        },
+        {
+          "candidate_id": "deployed_pipeline",
+          "sources": [
+            "deployed_pipeline",
+            "tomo_global_optimum"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 190,
+          "pitch_index": 9,
+          "yaw_deg": 190.00000301050196,
+          "pitch_deg": 9.000000250447817,
+          "tomo_vss": 2956.1209284569604
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_C3_dragon_100k_1.5x.ply",
+      "mesh_sha256": "61aec8ea1ff44d460e016a7c1b4665fcdfb0fed019f3785b673593f71f8d7665",
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_C3_dragon_100k_1.5x_tomo_int3_1deg_60deg.npz",
+      "grid_sha256": "ab8cf8a3c03c8017b28523bc48f806e85018f5826d31c2db806b0f5cc4d03644",
+      "grid_shape_canonical": [
+        360,
+        360
+      ],
+      "original_aabb_diagonal_mesh_units": 218.50067384635557,
+      "uniform_scale_to_mm": 0.6407302894564282,
+      "deployed_route": "sftf",
+      "deployed_verification_count": 200,
+      "deployed_escalated": true,
+      "candidate_count": 17,
+      "candidates": [
+        {
+          "candidate_id": "fibonacci_00",
+          "sources": [
+            "fibonacci_00"
+          ],
+          "fixed_panel": true,
+          "panel_index": 0,
+          "yaw_index": 0,
+          "pitch_index": 340,
+          "yaw_deg": 0.0,
+          "pitch_deg": 339.9999866940647,
+          "tomo_vss": 99428.21628791242
+        },
+        {
+          "candidate_id": "fibonacci_01",
+          "sources": [
+            "fibonacci_01"
+          ],
+          "fixed_panel": true,
+          "panel_index": 1,
+          "yaw_index": 206,
+          "pitch_index": 155,
+          "yaw_deg": 205.99999434882363,
+          "pitch_deg": 154.99999634471394,
+          "tomo_vss": 89035.82234027957
+        },
+        {
+          "candidate_id": "fibonacci_02",
+          "sources": [
+            "fibonacci_02"
+          ],
+          "fixed_panel": true,
+          "panel_index": 2,
+          "yaw_index": 314,
+          "pitch_index": 356,
+          "yaw_deg": 313.99999735419743,
+          "pitch_deg": 356.0000053531431,
+          "tomo_vss": 79060.81459738991
+        },
+        {
+          "candidate_id": "fibonacci_03",
+          "sources": [
+            "fibonacci_03"
+          ],
+          "fixed_panel": true,
+          "panel_index": 3,
+          "yaw_index": 49,
+          "pitch_index": 330,
+          "yaw_deg": 48.9999990868195,
+          "pitch_deg": 329.9999886925191,
+          "tomo_vss": 65616.3318098084
+        },
+        {
+          "candidate_id": "fibonacci_04",
+          "sources": [
+            "fibonacci_04"
+          ],
+          "fixed_panel": true,
+          "panel_index": 4,
+          "yaw_index": 160,
+          "pitch_index": 118,
+          "yaw_deg": 159.99999534548672,
+          "pitch_deg": 118.00000100691943,
+          "tomo_vss": 73680.1289329844
+        },
+        {
+          "candidate_id": "fibonacci_05",
+          "sources": [
+            "fibonacci_05"
+          ],
+          "fixed_panel": true,
+          "panel_index": 5,
+          "yaw_index": 122,
+          "pitch_index": 233,
+          "yaw_deg": 122.00000567168901,
+          "pitch_deg": 232.9999916850725,
+          "tomo_vss": 64836.395673515384
+        },
+        {
+          "candidate_id": "fibonacci_06",
+          "sources": [
+            "fibonacci_06"
+          ],
+          "fixed_panel": true,
+          "panel_index": 6,
+          "yaw_index": 79,
+          "pitch_index": 15,
+          "yaw_deg": 79.00000333674014,
+          "pitch_deg": 15.000000417413029,
+          "tomo_vss": 148996.65265043903
+        },
+        {
+          "candidate_id": "fibonacci_07",
+          "sources": [
+            "fibonacci_07"
+          ],
+          "fixed_panel": true,
+          "panel_index": 7,
+          "yaw_index": 94,
+          "pitch_index": 153,
+          "yaw_deg": 94.00000033905859,
+          "pitch_deg": 152.99999401232913,
+          "tomo_vss": 112416.29103983729
+        },
+        {
+          "candidate_id": "fibonacci_08",
+          "sources": [
+            "fibonacci_08"
+          ],
+          "fixed_panel": true,
+          "panel_index": 8,
+          "yaw_index": 100,
+          "pitch_index": 290,
+          "yaw_deg": 100.0000005060238,
+          "pitch_deg": 289.9999966863366,
+          "tomo_vss": 101811.4720494294
+        },
+        {
+          "candidate_id": "fibonacci_09",
+          "sources": [
+            "fibonacci_09"
+          ],
+          "fixed_panel": true,
+          "panel_index": 9,
+          "yaw_index": 117,
+          "pitch_index": 65,
+          "yaw_deg": 117.0000066709162,
+          "pitch_deg": 65.00000067042492,
+          "tomo_vss": 105595.41528875177
+        },
+        {
+          "candidate_id": "fibonacci_10",
+          "sources": [
+            "fibonacci_10"
+          ],
+          "fixed_panel": true,
+          "panel_index": 10,
+          "yaw_index": 250,
+          "pitch_index": 336,
+          "yaw_deg": 250.00000468015406,
+          "pitch_deg": 336.0000093500518,
+          "tomo_vss": 145567.35015112505
+        },
+        {
+          "candidate_id": "fibonacci_11",
+          "sources": [
+            "fibonacci_11"
+          ],
+          "fixed_panel": true,
+          "panel_index": 11,
+          "yaw_index": 297,
+          "pitch_index": 196,
+          "yaw_deg": 297.00001167987256,
+          "pitch_deg": 195.999996347278,
+          "tomo_vss": 192633.30569937208
+        },
+        {
+          "candidate_id": "fibonacci_12",
+          "sources": [
+            "fibonacci_12"
+          ],
+          "fixed_panel": true,
+          "panel_index": 12,
+          "yaw_index": 36,
+          "pitch_index": 134,
+          "yaw_deg": 36.00000100179127,
+          "pitch_deg": 134.00000600561944,
+          "tomo_vss": 84774.63209924618
+        },
+        {
+          "candidate_id": "fibonacci_13",
+          "sources": [
+            "fibonacci_13"
+          ],
+          "fixed_panel": true,
+          "panel_index": 13,
+          "yaw_index": 193,
+          "pitch_index": 315,
+          "yaw_deg": 192.99999967889,
+          "pitch_deg": 314.99999169020066,
+          "tomo_vss": 96676.15654054753
+        },
+        {
+          "candidate_id": "fibonacci_14",
+          "sources": [
+            "fibonacci_14"
+          ],
+          "fixed_panel": true,
+          "panel_index": 14,
+          "yaw_index": 330,
+          "pitch_index": 160,
+          "yaw_deg": 329.9999886925191,
+          "pitch_deg": 159.99999534548672,
+          "tomo_vss": 104454.02476413191
+        },
+        {
+          "candidate_id": "fibonacci_15",
+          "sources": [
+            "fibonacci_15"
+          ],
+          "fixed_panel": true,
+          "panel_index": 15,
+          "yaw_index": 200,
+          "pitch_index": 3,
+          "yaw_deg": 200.0000010120476,
+          "pitch_deg": 3.0000000834826057,
+          "tomo_vss": 76249.64280561967
+        },
+        {
+          "candidate_id": "deployed_pipeline",
+          "sources": [
+            "deployed_pipeline",
+            "tomo_global_optimum"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 131,
+          "pitch_index": 258,
+          "yaw_deg": 130.99999567685308,
+          "pitch_deg": 257.9999866889366,
+          "tomo_vss": 28106.973190938144
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_C4_happy_50k_0.75x.ply",
+      "mesh_sha256": "5046dc4a4a595603088bf56e6aa46dc9cdcfa97d5a1ab27391c914a7e50f014a",
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_C4_happy_50k_0.75x_tomo_int3_1deg_60deg.npz",
+      "grid_sha256": "dd1152ca98432206b0ad722bf6519f31e661a919e5413d9adc17a55f022f16bd",
+      "grid_shape_canonical": [
+        360,
+        360
+      ],
+      "original_aabb_diagonal_mesh_units": 147.4372209106434,
+      "uniform_scale_to_mm": 0.9495566935899393,
+      "deployed_route": "sftf",
+      "deployed_verification_count": 50,
+      "deployed_escalated": true,
+      "candidate_count": 18,
+      "candidates": [
+        {
+          "candidate_id": "fibonacci_00",
+          "sources": [
+            "fibonacci_00"
+          ],
+          "fixed_panel": true,
+          "panel_index": 0,
+          "yaw_index": 0,
+          "pitch_index": 340,
+          "yaw_deg": 0.0,
+          "pitch_deg": 339.9999866940647,
+          "tomo_vss": 25482.114681527633
+        },
+        {
+          "candidate_id": "fibonacci_01",
+          "sources": [
+            "fibonacci_01"
+          ],
+          "fixed_panel": true,
+          "panel_index": 1,
+          "yaw_index": 206,
+          "pitch_index": 155,
+          "yaw_deg": 205.99999434882363,
+          "pitch_deg": 154.99999634471394,
+          "tomo_vss": 17862.16625497361
+        },
+        {
+          "candidate_id": "fibonacci_02",
+          "sources": [
+            "fibonacci_02"
+          ],
+          "fixed_panel": true,
+          "panel_index": 2,
+          "yaw_index": 314,
+          "pitch_index": 356,
+          "yaw_deg": 313.99999735419743,
+          "pitch_deg": 356.0000053531431,
+          "tomo_vss": 13486.096681642139
+        },
+        {
+          "candidate_id": "fibonacci_03",
+          "sources": [
+            "fibonacci_03"
+          ],
+          "fixed_panel": true,
+          "panel_index": 3,
+          "yaw_index": 49,
+          "pitch_index": 330,
+          "yaw_deg": 48.9999990868195,
+          "pitch_deg": 329.9999886925191,
+          "tomo_vss": 21866.502840656878
+        },
+        {
+          "candidate_id": "fibonacci_04",
+          "sources": [
+            "fibonacci_04"
+          ],
+          "fixed_panel": true,
+          "panel_index": 4,
+          "yaw_index": 160,
+          "pitch_index": 118,
+          "yaw_deg": 159.99999534548672,
+          "pitch_deg": 118.00000100691943,
+          "tomo_vss": 24096.390432562708
+        },
+        {
+          "candidate_id": "fibonacci_05",
+          "sources": [
+            "fibonacci_05"
+          ],
+          "fixed_panel": true,
+          "panel_index": 5,
+          "yaw_index": 122,
+          "pitch_index": 233,
+          "yaw_deg": 122.00000567168901,
+          "pitch_deg": 232.9999916850725,
+          "tomo_vss": 24946.185182933965
+        },
+        {
+          "candidate_id": "fibonacci_06",
+          "sources": [
+            "fibonacci_06"
+          ],
+          "fixed_panel": true,
+          "panel_index": 6,
+          "yaw_index": 79,
+          "pitch_index": 15,
+          "yaw_deg": 79.00000333674014,
+          "pitch_deg": 15.000000417413029,
+          "tomo_vss": 39011.76610268837
+        },
+        {
+          "candidate_id": "fibonacci_07",
+          "sources": [
+            "fibonacci_07"
+          ],
+          "fixed_panel": true,
+          "panel_index": 7,
+          "yaw_index": 94,
+          "pitch_index": 153,
+          "yaw_deg": 94.00000033905859,
+          "pitch_deg": 152.99999401232913,
+          "tomo_vss": 29605.014265076188
+        },
+        {
+          "candidate_id": "fibonacci_08",
+          "sources": [
+            "fibonacci_08"
+          ],
+          "fixed_panel": true,
+          "panel_index": 8,
+          "yaw_index": 100,
+          "pitch_index": 290,
+          "yaw_deg": 100.0000005060238,
+          "pitch_deg": 289.9999966863366,
+          "tomo_vss": 21846.15450457108
+        },
+        {
+          "candidate_id": "fibonacci_09",
+          "sources": [
+            "fibonacci_09"
+          ],
+          "fixed_panel": true,
+          "panel_index": 9,
+          "yaw_index": 117,
+          "pitch_index": 65,
+          "yaw_deg": 117.0000066709162,
+          "pitch_deg": 65.00000067042492,
+          "tomo_vss": 24248.714289389365
+        },
+        {
+          "candidate_id": "fibonacci_10",
+          "sources": [
+            "fibonacci_10"
+          ],
+          "fixed_panel": true,
+          "panel_index": 10,
+          "yaw_index": 250,
+          "pitch_index": 336,
+          "yaw_deg": 250.00000468015406,
+          "pitch_deg": 336.0000093500518,
+          "tomo_vss": 35504.57363286294
+        },
+        {
+          "candidate_id": "fibonacci_11",
+          "sources": [
+            "fibonacci_11"
+          ],
+          "fixed_panel": true,
+          "panel_index": 11,
+          "yaw_index": 297,
+          "pitch_index": 196,
+          "yaw_deg": 297.00001167987256,
+          "pitch_deg": 195.999996347278,
+          "tomo_vss": 19492.87446077205
+        },
+        {
+          "candidate_id": "fibonacci_12",
+          "sources": [
+            "fibonacci_12"
+          ],
+          "fixed_panel": true,
+          "panel_index": 12,
+          "yaw_index": 36,
+          "pitch_index": 134,
+          "yaw_deg": 36.00000100179127,
+          "pitch_deg": 134.00000600561944,
+          "tomo_vss": 27569.591506453584
+        },
+        {
+          "candidate_id": "fibonacci_13",
+          "sources": [
+            "fibonacci_13"
+          ],
+          "fixed_panel": true,
+          "panel_index": 13,
+          "yaw_index": 193,
+          "pitch_index": 315,
+          "yaw_deg": 192.99999967889,
+          "pitch_deg": 314.99999169020066,
+          "tomo_vss": 38917.54938551217
+        },
+        {
+          "candidate_id": "fibonacci_14",
+          "sources": [
+            "fibonacci_14"
+          ],
+          "fixed_panel": true,
+          "panel_index": 14,
+          "yaw_index": 330,
+          "pitch_index": 160,
+          "yaw_deg": 329.9999886925191,
+          "pitch_deg": 159.99999534548672,
+          "tomo_vss": 26076.50796243967
+        },
+        {
+          "candidate_id": "fibonacci_15",
+          "sources": [
+            "fibonacci_15"
+          ],
+          "fixed_panel": true,
+          "panel_index": 15,
+          "yaw_index": 200,
+          "pitch_index": 3,
+          "yaw_deg": 200.0000010120476,
+          "pitch_deg": 3.0000000834826057,
+          "tomo_vss": 45113.8078673812
+        },
+        {
+          "candidate_id": "deployed_pipeline",
+          "sources": [
+            "deployed_pipeline"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 274,
+          "pitch_index": 82,
+          "yaw_deg": 274.0000053480149,
+          "pitch_deg": 82.00000000512816,
+          "tomo_vss": 14149.066830469557
+        },
+        {
+          "candidate_id": "tomo_global_optimum",
+          "sources": [
+            "tomo_global_optimum"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 346,
+          "pitch_index": 32,
+          "yaw_deg": 346.00000735159745,
+          "pitch_deg": 31.999999752116263,
+          "tomo_vss": 8512.6398023495
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_C5_lucy_50k.ply",
+      "mesh_sha256": "022e1aeba3135cb19c6a9619966fde1453c49f2c5db0ca2097a914a0059fafe6",
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_C5_lucy_50k_tomo_int3_1deg_60deg.npz",
+      "grid_sha256": "b4896c72fd10fae5ecc84710b3d8002f061851b6d8bd407bb47c85ad090b27e0",
+      "grid_shape_canonical": [
+        360,
+        360
+      ],
+      "original_aabb_diagonal_mesh_units": 216.72757482216,
+      "uniform_scale_to_mm": 0.6459722539454414,
+      "deployed_route": "sftf",
+      "deployed_verification_count": 10,
+      "deployed_escalated": false,
+      "candidate_count": 17,
+      "candidates": [
+        {
+          "candidate_id": "fibonacci_00",
+          "sources": [
+            "fibonacci_00"
+          ],
+          "fixed_panel": true,
+          "panel_index": 0,
+          "yaw_index": 0,
+          "pitch_index": 340,
+          "yaw_deg": 0.0,
+          "pitch_deg": 339.9999866940647,
+          "tomo_vss": 29187.817218875098
+        },
+        {
+          "candidate_id": "fibonacci_01",
+          "sources": [
+            "fibonacci_01"
+          ],
+          "fixed_panel": true,
+          "panel_index": 1,
+          "yaw_index": 206,
+          "pitch_index": 155,
+          "yaw_deg": 205.99999434882363,
+          "pitch_deg": 154.99999634471394,
+          "tomo_vss": 69780.31820502163
+        },
+        {
+          "candidate_id": "fibonacci_02",
+          "sources": [
+            "fibonacci_02"
+          ],
+          "fixed_panel": true,
+          "panel_index": 2,
+          "yaw_index": 314,
+          "pitch_index": 356,
+          "yaw_deg": 313.99999735419743,
+          "pitch_deg": 356.0000053531431,
+          "tomo_vss": 27442.614894267943
+        },
+        {
+          "candidate_id": "fibonacci_03",
+          "sources": [
+            "fibonacci_03"
+          ],
+          "fixed_panel": true,
+          "panel_index": 3,
+          "yaw_index": 49,
+          "pitch_index": 330,
+          "yaw_deg": 48.9999990868195,
+          "pitch_deg": 329.9999886925191,
+          "tomo_vss": 99020.69785378197
+        },
+        {
+          "candidate_id": "fibonacci_04",
+          "sources": [
+            "fibonacci_04"
+          ],
+          "fixed_panel": true,
+          "panel_index": 4,
+          "yaw_index": 160,
+          "pitch_index": 118,
+          "yaw_deg": 159.99999534548672,
+          "pitch_deg": 118.00000100691943,
+          "tomo_vss": 37664.058779882005
+        },
+        {
+          "candidate_id": "fibonacci_05",
+          "sources": [
+            "fibonacci_05"
+          ],
+          "fixed_panel": true,
+          "panel_index": 5,
+          "yaw_index": 122,
+          "pitch_index": 233,
+          "yaw_deg": 122.00000567168901,
+          "pitch_deg": 232.9999916850725,
+          "tomo_vss": 37351.41517702213
+        },
+        {
+          "candidate_id": "fibonacci_06",
+          "sources": [
+            "fibonacci_06"
+          ],
+          "fixed_panel": true,
+          "panel_index": 6,
+          "yaw_index": 79,
+          "pitch_index": 15,
+          "yaw_deg": 79.00000333674014,
+          "pitch_deg": 15.000000417413029,
+          "tomo_vss": 61228.444753599564
+        },
+        {
+          "candidate_id": "fibonacci_07",
+          "sources": [
+            "fibonacci_07"
+          ],
+          "fixed_panel": true,
+          "panel_index": 7,
+          "yaw_index": 94,
+          "pitch_index": 153,
+          "yaw_deg": 94.00000033905859,
+          "pitch_deg": 152.99999401232913,
+          "tomo_vss": 64282.92172014221
+        },
+        {
+          "candidate_id": "fibonacci_08",
+          "sources": [
+            "fibonacci_08"
+          ],
+          "fixed_panel": true,
+          "panel_index": 8,
+          "yaw_index": 100,
+          "pitch_index": 290,
+          "yaw_deg": 100.0000005060238,
+          "pitch_deg": 289.9999966863366,
+          "tomo_vss": 70958.04293293598
+        },
+        {
+          "candidate_id": "fibonacci_09",
+          "sources": [
+            "fibonacci_09"
+          ],
+          "fixed_panel": true,
+          "panel_index": 9,
+          "yaw_index": 117,
+          "pitch_index": 65,
+          "yaw_deg": 117.0000066709162,
+          "pitch_deg": 65.00000067042492,
+          "tomo_vss": 88683.53031883555
+        },
+        {
+          "candidate_id": "fibonacci_10",
+          "sources": [
+            "fibonacci_10"
+          ],
+          "fixed_panel": true,
+          "panel_index": 10,
+          "yaw_index": 250,
+          "pitch_index": 336,
+          "yaw_deg": 250.00000468015406,
+          "pitch_deg": 336.0000093500518,
+          "tomo_vss": 163245.1459395984
+        },
+        {
+          "candidate_id": "fibonacci_11",
+          "sources": [
+            "fibonacci_11"
+          ],
+          "fixed_panel": true,
+          "panel_index": 11,
+          "yaw_index": 297,
+          "pitch_index": 196,
+          "yaw_deg": 297.00001167987256,
+          "pitch_deg": 195.999996347278,
+          "tomo_vss": 64634.33494252607
+        },
+        {
+          "candidate_id": "fibonacci_12",
+          "sources": [
+            "fibonacci_12"
+          ],
+          "fixed_panel": true,
+          "panel_index": 12,
+          "yaw_index": 36,
+          "pitch_index": 134,
+          "yaw_deg": 36.00000100179127,
+          "pitch_deg": 134.00000600561944,
+          "tomo_vss": 151640.553119754
+        },
+        {
+          "candidate_id": "fibonacci_13",
+          "sources": [
+            "fibonacci_13"
+          ],
+          "fixed_panel": true,
+          "panel_index": 13,
+          "yaw_index": 193,
+          "pitch_index": 315,
+          "yaw_deg": 192.99999967889,
+          "pitch_deg": 314.99999169020066,
+          "tomo_vss": 122020.31947364492
+        },
+        {
+          "candidate_id": "fibonacci_14",
+          "sources": [
+            "fibonacci_14"
+          ],
+          "fixed_panel": true,
+          "panel_index": 14,
+          "yaw_index": 330,
+          "pitch_index": 160,
+          "yaw_deg": 329.9999886925191,
+          "pitch_deg": 159.99999534548672,
+          "tomo_vss": 64701.73843636001
+        },
+        {
+          "candidate_id": "fibonacci_15",
+          "sources": [
+            "fibonacci_15"
+          ],
+          "fixed_panel": true,
+          "panel_index": 15,
+          "yaw_index": 200,
+          "pitch_index": 3,
+          "yaw_deg": 200.0000010120476,
+          "pitch_deg": 3.0000000834826057,
+          "tomo_vss": 13082.20181583373
+        },
+        {
+          "candidate_id": "deployed_pipeline",
+          "sources": [
+            "deployed_pipeline",
+            "tomo_global_optimum"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 178,
+          "pitch_index": 359,
+          "yaw_deg": 178.00000267657154,
+          "pitch_deg": 358.99998836115276,
+          "tomo_vss": 7605.40144502624
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_C6_nefertiti_100k.ply",
+      "mesh_sha256": "58dfb44ebd102e381cff769d13559b7a45846847f6d2764aee5f89dbf9aa0b11",
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_C6_nefertiti_100k_tomo_int3_1deg_60deg.npz",
+      "grid_sha256": "35aa47df3c82892bc1bbf485e5dcd815b5b732b8a055127f7e9a2b6769c83eaf",
+      "grid_shape_canonical": [
+        360,
+        360
+      ],
+      "original_aabb_diagonal_mesh_units": 658.0547247295158,
+      "uniform_scale_to_mm": 0.21274826353924448,
+      "deployed_route": "uniform",
+      "deployed_verification_count": 10,
+      "deployed_escalated": false,
+      "candidate_count": 18,
+      "candidates": [
+        {
+          "candidate_id": "fibonacci_00",
+          "sources": [
+            "fibonacci_00"
+          ],
+          "fixed_panel": true,
+          "panel_index": 0,
+          "yaw_index": 0,
+          "pitch_index": 340,
+          "yaw_deg": 0.0,
+          "pitch_deg": 339.9999866940647,
+          "tomo_vss": 1420835.2914424692
+        },
+        {
+          "candidate_id": "fibonacci_01",
+          "sources": [
+            "fibonacci_01"
+          ],
+          "fixed_panel": true,
+          "panel_index": 1,
+          "yaw_index": 206,
+          "pitch_index": 155,
+          "yaw_deg": 205.99999434882363,
+          "pitch_deg": 154.99999634471394,
+          "tomo_vss": 428609.55462230917
+        },
+        {
+          "candidate_id": "fibonacci_02",
+          "sources": [
+            "fibonacci_02"
+          ],
+          "fixed_panel": true,
+          "panel_index": 2,
+          "yaw_index": 314,
+          "pitch_index": 356,
+          "yaw_deg": 313.99999735419743,
+          "pitch_deg": 356.0000053531431,
+          "tomo_vss": 5458540.7251948705
+        },
+        {
+          "candidate_id": "fibonacci_03",
+          "sources": [
+            "fibonacci_03"
+          ],
+          "fixed_panel": true,
+          "panel_index": 3,
+          "yaw_index": 49,
+          "pitch_index": 330,
+          "yaw_deg": 48.9999990868195,
+          "pitch_deg": 329.9999886925191,
+          "tomo_vss": 825964.0823455628
+        },
+        {
+          "candidate_id": "fibonacci_04",
+          "sources": [
+            "fibonacci_04"
+          ],
+          "fixed_panel": true,
+          "panel_index": 4,
+          "yaw_index": 160,
+          "pitch_index": 118,
+          "yaw_deg": 159.99999534548672,
+          "pitch_deg": 118.00000100691943,
+          "tomo_vss": 5398955.465990655
+        },
+        {
+          "candidate_id": "fibonacci_05",
+          "sources": [
+            "fibonacci_05"
+          ],
+          "fixed_panel": true,
+          "panel_index": 5,
+          "yaw_index": 122,
+          "pitch_index": 233,
+          "yaw_deg": 122.00000567168901,
+          "pitch_deg": 232.9999916850725,
+          "tomo_vss": 3455473.7734162393
+        },
+        {
+          "candidate_id": "fibonacci_06",
+          "sources": [
+            "fibonacci_06"
+          ],
+          "fixed_panel": true,
+          "panel_index": 6,
+          "yaw_index": 79,
+          "pitch_index": 15,
+          "yaw_deg": 79.00000333674014,
+          "pitch_deg": 15.000000417413029,
+          "tomo_vss": 949029.2579110876
+        },
+        {
+          "candidate_id": "fibonacci_07",
+          "sources": [
+            "fibonacci_07"
+          ],
+          "fixed_panel": true,
+          "panel_index": 7,
+          "yaw_index": 94,
+          "pitch_index": 153,
+          "yaw_deg": 94.00000033905859,
+          "pitch_deg": 152.99999401232913,
+          "tomo_vss": 546288.6059697614
+        },
+        {
+          "candidate_id": "fibonacci_08",
+          "sources": [
+            "fibonacci_08"
+          ],
+          "fixed_panel": true,
+          "panel_index": 8,
+          "yaw_index": 100,
+          "pitch_index": 290,
+          "yaw_deg": 100.0000005060238,
+          "pitch_deg": 289.9999966863366,
+          "tomo_vss": 1318269.3300849074
+        },
+        {
+          "candidate_id": "fibonacci_09",
+          "sources": [
+            "fibonacci_09"
+          ],
+          "fixed_panel": true,
+          "panel_index": 9,
+          "yaw_index": 117,
+          "pitch_index": 65,
+          "yaw_deg": 117.0000066709162,
+          "pitch_deg": 65.00000067042492,
+          "tomo_vss": 1421424.9813981422
+        },
+        {
+          "candidate_id": "fibonacci_10",
+          "sources": [
+            "fibonacci_10"
+          ],
+          "fixed_panel": true,
+          "panel_index": 10,
+          "yaw_index": 250,
+          "pitch_index": 336,
+          "yaw_deg": 250.00000468015406,
+          "pitch_deg": 336.0000093500518,
+          "tomo_vss": 4274402.12803853
+        },
+        {
+          "candidate_id": "fibonacci_11",
+          "sources": [
+            "fibonacci_11"
+          ],
+          "fixed_panel": true,
+          "panel_index": 11,
+          "yaw_index": 297,
+          "pitch_index": 196,
+          "yaw_deg": 297.00001167987256,
+          "pitch_deg": 195.999996347278,
+          "tomo_vss": 2470750.531798591
+        },
+        {
+          "candidate_id": "fibonacci_12",
+          "sources": [
+            "fibonacci_12"
+          ],
+          "fixed_panel": true,
+          "panel_index": 12,
+          "yaw_index": 36,
+          "pitch_index": 134,
+          "yaw_deg": 36.00000100179127,
+          "pitch_deg": 134.00000600561944,
+          "tomo_vss": 1245211.7521030991
+        },
+        {
+          "candidate_id": "fibonacci_13",
+          "sources": [
+            "fibonacci_13"
+          ],
+          "fixed_panel": true,
+          "panel_index": 13,
+          "yaw_index": 193,
+          "pitch_index": 315,
+          "yaw_deg": 192.99999967889,
+          "pitch_deg": 314.99999169020066,
+          "tomo_vss": 1100624.5828115474
+        },
+        {
+          "candidate_id": "fibonacci_14",
+          "sources": [
+            "fibonacci_14"
+          ],
+          "fixed_panel": true,
+          "panel_index": 14,
+          "yaw_index": 330,
+          "pitch_index": 160,
+          "yaw_deg": 329.9999886925191,
+          "pitch_deg": 159.99999534548672,
+          "tomo_vss": 737238.9383859793
+        },
+        {
+          "candidate_id": "fibonacci_15",
+          "sources": [
+            "fibonacci_15"
+          ],
+          "fixed_panel": true,
+          "panel_index": 15,
+          "yaw_index": 200,
+          "pitch_index": 3,
+          "yaw_deg": 200.0000010120476,
+          "pitch_deg": 3.0000000834826057,
+          "tomo_vss": 1855278.8827368086
+        },
+        {
+          "candidate_id": "deployed_pipeline",
+          "sources": [
+            "deployed_pipeline"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 98,
+          "pitch_index": 210,
+          "yaw_deg": 97.999998173639,
+          "pitch_deg": 209.99999901359323,
+          "tomo_vss": 271912.0445199427
+        },
+        {
+          "candidate_id": "tomo_global_optimum",
+          "sources": [
+            "tomo_global_optimum"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 163,
+          "pitch_index": 2,
+          "yaw_deg": 163.0000056742531,
+          "pitch_deg": 1.9999999845072665,
+          "tomo_vss": 108607.88332361603
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_C7_liver_19k.ply",
+      "mesh_sha256": "a886968d093099bbd6df08c36d0d0028f67dc53ac55fa3bcfa55e1e980a3ab7b",
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_C7_liver_19k_tomo_int3_1deg_60deg.npz",
+      "grid_sha256": "1c6a8da6a2e1a320334ec943f1a0532ebd3ee9d46986a14302c7683290f8e0be",
+      "grid_shape_canonical": [
+        360,
+        360
+      ],
+      "original_aabb_diagonal_mesh_units": 303.90722001831136,
+      "uniform_scale_to_mm": 0.4606669100904038,
+      "deployed_route": "uniform",
+      "deployed_verification_count": 10,
+      "deployed_escalated": false,
+      "candidate_count": 18,
+      "candidates": [
+        {
+          "candidate_id": "fibonacci_00",
+          "sources": [
+            "fibonacci_00"
+          ],
+          "fixed_panel": true,
+          "panel_index": 0,
+          "yaw_index": 0,
+          "pitch_index": 340,
+          "yaw_deg": 0.0,
+          "pitch_deg": 339.9999866940647,
+          "tomo_vss": 96821.81649956822
+        },
+        {
+          "candidate_id": "fibonacci_01",
+          "sources": [
+            "fibonacci_01"
+          ],
+          "fixed_panel": true,
+          "panel_index": 1,
+          "yaw_index": 206,
+          "pitch_index": 155,
+          "yaw_deg": 205.99999434882363,
+          "pitch_deg": 154.99999634471394,
+          "tomo_vss": 203735.9978541855
+        },
+        {
+          "candidate_id": "fibonacci_02",
+          "sources": [
+            "fibonacci_02"
+          ],
+          "fixed_panel": true,
+          "panel_index": 2,
+          "yaw_index": 314,
+          "pitch_index": 356,
+          "yaw_deg": 313.99999735419743,
+          "pitch_deg": 356.0000053531431,
+          "tomo_vss": 542502.9786165096
+        },
+        {
+          "candidate_id": "fibonacci_03",
+          "sources": [
+            "fibonacci_03"
+          ],
+          "fixed_panel": true,
+          "panel_index": 3,
+          "yaw_index": 49,
+          "pitch_index": 330,
+          "yaw_deg": 48.9999990868195,
+          "pitch_deg": 329.9999886925191,
+          "tomo_vss": 61933.66720656718
+        },
+        {
+          "candidate_id": "fibonacci_04",
+          "sources": [
+            "fibonacci_04"
+          ],
+          "fixed_panel": true,
+          "panel_index": 4,
+          "yaw_index": 160,
+          "pitch_index": 118,
+          "yaw_deg": 159.99999534548672,
+          "pitch_deg": 118.00000100691943,
+          "tomo_vss": 806319.1815841297
+        },
+        {
+          "candidate_id": "fibonacci_05",
+          "sources": [
+            "fibonacci_05"
+          ],
+          "fixed_panel": true,
+          "panel_index": 5,
+          "yaw_index": 122,
+          "pitch_index": 233,
+          "yaw_deg": 122.00000567168901,
+          "pitch_deg": 232.9999916850725,
+          "tomo_vss": 77007.19912190082
+        },
+        {
+          "candidate_id": "fibonacci_06",
+          "sources": [
+            "fibonacci_06"
+          ],
+          "fixed_panel": true,
+          "panel_index": 6,
+          "yaw_index": 79,
+          "pitch_index": 15,
+          "yaw_deg": 79.00000333674014,
+          "pitch_deg": 15.000000417413029,
+          "tomo_vss": 136840.42623220396
+        },
+        {
+          "candidate_id": "fibonacci_07",
+          "sources": [
+            "fibonacci_07"
+          ],
+          "fixed_panel": true,
+          "panel_index": 7,
+          "yaw_index": 94,
+          "pitch_index": 153,
+          "yaw_deg": 94.00000033905859,
+          "pitch_deg": 152.99999401232913,
+          "tomo_vss": 331808.89413376484
+        },
+        {
+          "candidate_id": "fibonacci_08",
+          "sources": [
+            "fibonacci_08"
+          ],
+          "fixed_panel": true,
+          "panel_index": 8,
+          "yaw_index": 100,
+          "pitch_index": 290,
+          "yaw_deg": 100.0000005060238,
+          "pitch_deg": 289.9999966863366,
+          "tomo_vss": 124084.97707902892
+        },
+        {
+          "candidate_id": "fibonacci_09",
+          "sources": [
+            "fibonacci_09"
+          ],
+          "fixed_panel": true,
+          "panel_index": 9,
+          "yaw_index": 117,
+          "pitch_index": 65,
+          "yaw_deg": 117.0000066709162,
+          "pitch_deg": 65.00000067042492,
+          "tomo_vss": 119190.71260562613
+        },
+        {
+          "candidate_id": "fibonacci_10",
+          "sources": [
+            "fibonacci_10"
+          ],
+          "fixed_panel": true,
+          "panel_index": 10,
+          "yaw_index": 250,
+          "pitch_index": 336,
+          "yaw_deg": 250.00000468015406,
+          "pitch_deg": 336.0000093500518,
+          "tomo_vss": 67242.79577081854
+        },
+        {
+          "candidate_id": "fibonacci_11",
+          "sources": [
+            "fibonacci_11"
+          ],
+          "fixed_panel": true,
+          "panel_index": 11,
+          "yaw_index": 297,
+          "pitch_index": 196,
+          "yaw_deg": 297.00001167987256,
+          "pitch_deg": 195.999996347278,
+          "tomo_vss": 74714.95226395031
+        },
+        {
+          "candidate_id": "fibonacci_12",
+          "sources": [
+            "fibonacci_12"
+          ],
+          "fixed_panel": true,
+          "panel_index": 12,
+          "yaw_index": 36,
+          "pitch_index": 134,
+          "yaw_deg": 36.00000100179127,
+          "pitch_deg": 134.00000600561944,
+          "tomo_vss": 115642.26386960872
+        },
+        {
+          "candidate_id": "fibonacci_13",
+          "sources": [
+            "fibonacci_13"
+          ],
+          "fixed_panel": true,
+          "panel_index": 13,
+          "yaw_index": 193,
+          "pitch_index": 315,
+          "yaw_deg": 192.99999967889,
+          "pitch_deg": 314.99999169020066,
+          "tomo_vss": 22557.960068883975
+        },
+        {
+          "candidate_id": "fibonacci_14",
+          "sources": [
+            "fibonacci_14"
+          ],
+          "fixed_panel": true,
+          "panel_index": 14,
+          "yaw_index": 330,
+          "pitch_index": 160,
+          "yaw_deg": 329.9999886925191,
+          "pitch_deg": 159.99999534548672,
+          "tomo_vss": 73917.81452273534
+        },
+        {
+          "candidate_id": "fibonacci_15",
+          "sources": [
+            "fibonacci_15"
+          ],
+          "fixed_panel": true,
+          "panel_index": 15,
+          "yaw_index": 200,
+          "pitch_index": 3,
+          "yaw_deg": 200.0000010120476,
+          "pitch_deg": 3.0000000834826057,
+          "tomo_vss": 187975.22931059528
+        },
+        {
+          "candidate_id": "deployed_pipeline",
+          "sources": [
+            "deployed_pipeline"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 351,
+          "pitch_index": 313,
+          "yaw_deg": 351.0000063523703,
+          "pitch_deg": 313.0000030181942,
+          "tomo_vss": 7574.480919798543
+        },
+        {
+          "candidate_id": "tomo_global_optimum",
+          "sources": [
+            "tomo_global_optimum"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 3,
+          "pitch_index": 312,
+          "yaw_deg": 3.0000000834826057,
+          "pitch_deg": 312.000008682191,
+          "tomo_vss": 2898.9211586881274
+        }
+      ]
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_C8_kidney_12k.ply",
+      "mesh_sha256": "d4bfc749ef980313d38836cf8074dd1176612fe6a9cc1367ba67685a4335c2d7",
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_C8_kidney_12k_tomo_int3_1deg_60deg.npz",
+      "grid_sha256": "664c522e74b134a2d1a23e53c3d6b18da1eff2d8ede11befed4d11f665e615a1",
+      "grid_shape_canonical": [
+        360,
+        360
+      ],
+      "original_aabb_diagonal_mesh_units": 129.90273927570658,
+      "uniform_scale_to_mm": 1.0777293903161111,
+      "deployed_route": "sftf",
+      "deployed_verification_count": 10,
+      "deployed_escalated": false,
+      "candidate_count": 18,
+      "candidates": [
+        {
+          "candidate_id": "fibonacci_00",
+          "sources": [
+            "fibonacci_00"
+          ],
+          "fixed_panel": true,
+          "panel_index": 0,
+          "yaw_index": 0,
+          "pitch_index": 340,
+          "yaw_deg": 0.0,
+          "pitch_deg": 339.9999866940647,
+          "tomo_vss": 1550.1611488909762
+        },
+        {
+          "candidate_id": "fibonacci_01",
+          "sources": [
+            "fibonacci_01"
+          ],
+          "fixed_panel": true,
+          "panel_index": 1,
+          "yaw_index": 206,
+          "pitch_index": 155,
+          "yaw_deg": 205.99999434882363,
+          "pitch_deg": 154.99999634471394,
+          "tomo_vss": 6812.881339680065
+        },
+        {
+          "candidate_id": "fibonacci_02",
+          "sources": [
+            "fibonacci_02"
+          ],
+          "fixed_panel": true,
+          "panel_index": 2,
+          "yaw_index": 314,
+          "pitch_index": 356,
+          "yaw_deg": 313.99999735419743,
+          "pitch_deg": 356.0000053531431,
+          "tomo_vss": 9543.329231009995
+        },
+        {
+          "candidate_id": "fibonacci_03",
+          "sources": [
+            "fibonacci_03"
+          ],
+          "fixed_panel": true,
+          "panel_index": 3,
+          "yaw_index": 49,
+          "pitch_index": 330,
+          "yaw_deg": 48.9999990868195,
+          "pitch_deg": 329.9999886925191,
+          "tomo_vss": 6188.166042989936
+        },
+        {
+          "candidate_id": "fibonacci_04",
+          "sources": [
+            "fibonacci_04"
+          ],
+          "fixed_panel": true,
+          "panel_index": 4,
+          "yaw_index": 160,
+          "pitch_index": 118,
+          "yaw_deg": 159.99999534548672,
+          "pitch_deg": 118.00000100691943,
+          "tomo_vss": 21780.61304013591
+        },
+        {
+          "candidate_id": "fibonacci_05",
+          "sources": [
+            "fibonacci_05"
+          ],
+          "fixed_panel": true,
+          "panel_index": 5,
+          "yaw_index": 122,
+          "pitch_index": 233,
+          "yaw_deg": 122.00000567168901,
+          "pitch_deg": 232.9999916850725,
+          "tomo_vss": 4218.850254027311
+        },
+        {
+          "candidate_id": "fibonacci_06",
+          "sources": [
+            "fibonacci_06"
+          ],
+          "fixed_panel": true,
+          "panel_index": 6,
+          "yaw_index": 79,
+          "pitch_index": 15,
+          "yaw_deg": 79.00000333674014,
+          "pitch_deg": 15.000000417413029,
+          "tomo_vss": 21120.737406833112
+        },
+        {
+          "candidate_id": "fibonacci_07",
+          "sources": [
+            "fibonacci_07"
+          ],
+          "fixed_panel": true,
+          "panel_index": 7,
+          "yaw_index": 94,
+          "pitch_index": 153,
+          "yaw_deg": 94.00000033905859,
+          "pitch_deg": 152.99999401232913,
+          "tomo_vss": 20072.665096314486
+        },
+        {
+          "candidate_id": "fibonacci_08",
+          "sources": [
+            "fibonacci_08"
+          ],
+          "fixed_panel": true,
+          "panel_index": 8,
+          "yaw_index": 100,
+          "pitch_index": 290,
+          "yaw_deg": 100.0000005060238,
+          "pitch_deg": 289.9999966863366,
+          "tomo_vss": 8662.263223947572
+        },
+        {
+          "candidate_id": "fibonacci_09",
+          "sources": [
+            "fibonacci_09"
+          ],
+          "fixed_panel": true,
+          "panel_index": 9,
+          "yaw_index": 117,
+          "pitch_index": 65,
+          "yaw_deg": 117.0000066709162,
+          "pitch_deg": 65.00000067042492,
+          "tomo_vss": 10823.370011384823
+        },
+        {
+          "candidate_id": "fibonacci_10",
+          "sources": [
+            "fibonacci_10"
+          ],
+          "fixed_panel": true,
+          "panel_index": 10,
+          "yaw_index": 250,
+          "pitch_index": 336,
+          "yaw_deg": 250.00000468015406,
+          "pitch_deg": 336.0000093500518,
+          "tomo_vss": 4489.252882555496
+        },
+        {
+          "candidate_id": "fibonacci_11",
+          "sources": [
+            "fibonacci_11"
+          ],
+          "fixed_panel": true,
+          "panel_index": 11,
+          "yaw_index": 297,
+          "pitch_index": 196,
+          "yaw_deg": 297.00001167987256,
+          "pitch_deg": 195.999996347278,
+          "tomo_vss": 20379.933443936436
+        },
+        {
+          "candidate_id": "fibonacci_12",
+          "sources": [
+            "fibonacci_12"
+          ],
+          "fixed_panel": true,
+          "panel_index": 12,
+          "yaw_index": 36,
+          "pitch_index": 134,
+          "yaw_deg": 36.00000100179127,
+          "pitch_deg": 134.00000600561944,
+          "tomo_vss": 5665.76236535695
+        },
+        {
+          "candidate_id": "fibonacci_13",
+          "sources": [
+            "fibonacci_13"
+          ],
+          "fixed_panel": true,
+          "panel_index": 13,
+          "yaw_index": 193,
+          "pitch_index": 315,
+          "yaw_deg": 192.99999967889,
+          "pitch_deg": 314.99999169020066,
+          "tomo_vss": 6045.913893329211
+        },
+        {
+          "candidate_id": "fibonacci_14",
+          "sources": [
+            "fibonacci_14"
+          ],
+          "fixed_panel": true,
+          "panel_index": 14,
+          "yaw_index": 330,
+          "pitch_index": 160,
+          "yaw_deg": 329.9999886925191,
+          "pitch_deg": 159.99999534548672,
+          "tomo_vss": 9612.241067177009
+        },
+        {
+          "candidate_id": "fibonacci_15",
+          "sources": [
+            "fibonacci_15"
+          ],
+          "fixed_panel": true,
+          "panel_index": 15,
+          "yaw_index": 200,
+          "pitch_index": 3,
+          "yaw_deg": 200.0000010120476,
+          "pitch_deg": 3.0000000834826057,
+          "tomo_vss": 1436.8006266838263
+        },
+        {
+          "candidate_id": "deployed_pipeline",
+          "sources": [
+            "deployed_pipeline"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 31,
+          "pitch_index": 184,
+          "yaw_deg": 30.99999858592387,
+          "pitch_deg": 183.99999601334758,
+          "tomo_vss": 1070.200781191676
+        },
+        {
+          "candidate_id": "tomo_global_optimum",
+          "sources": [
+            "tomo_global_optimum"
+          ],
+          "fixed_panel": false,
+          "panel_index": null,
+          "yaw_index": 34,
+          "pitch_index": 186,
+          "yaw_deg": 33.99999866940647,
+          "pitch_deg": 185.99999834573237,
+          "tomo_vss": 969.2408575499353
+        }
+      ]
+    }
+  ],
+  "expected_slice_count": 141,
+  "completed_slice_count": 141,
+  "summary": {
+    "mesh_count": 8,
+    "successful_slice_count": 141,
+    "failed_slice_count": 0,
+    "fixed_panel_spearman_macro_mean": 0.8584558823529411,
+    "fixed_panel_kendall_tau_b_macro_mean": 0.71875,
+    "fixed_panel_top3_agreement_macro_mean": 0.7083333333333333,
+    "fixed_panel_top5_agreement_macro_mean": 0.65,
+    "fixed_panel_best_exact_agreement_count": 3,
+    "tomo_global_is_cura_best_evaluated_count": 3,
+    "tomo_global_cura_regret_ratio_mean": 1.1951643865844763,
+    "tomo_global_cura_regret_ratio_median": 1.066899295657874,
+    "tomo_global_cura_regret_ratio_max": 1.6473758447090292,
+    "total_cura_wall_clock_s": 1062.2708137999966
+  },
+  "mesh_summaries": [
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "fixed_panel_count": 16,
+      "all_evaluated_count": 18,
+      "fixed_panel_spearman": 0.95,
+      "fixed_panel_kendall_tau_b": 0.8166666666666667,
+      "fixed_panel_tomo_best_candidate": "fibonacci_01",
+      "fixed_panel_cura_best_candidate": "fibonacci_07",
+      "fixed_panel_best_exact_agreement": false,
+      "fixed_panel_best_angular_difference_deg": 96.35219714062204,
+      "tomo_global_yaw_deg": 299.000000351879,
+      "tomo_global_pitch_deg": 36.99999875288908,
+      "tomo_global_cura_support_mm3": 3570.446332681723,
+      "cura_best_evaluated_candidate": "deployed_pipeline",
+      "cura_best_evaluated_yaw_deg": 230.00000867706282,
+      "cura_best_evaluated_pitch_deg": 54.0000015026869,
+      "cura_best_evaluated_support_mm3": 2167.35382162433,
+      "tomo_global_is_cura_best_evaluated": false,
+      "tomo_global_cura_regret_ratio": 1.6473758447090292,
+      "tomo_global_cura_regret_percent": 64.73758447090292,
+      "tomo_global_to_cura_best_angle_deg": 49.07231719497173,
+      "fixed_panel_top3_overlap_count": 3,
+      "fixed_panel_top3_agreement_fraction": 1.0,
+      "fixed_panel_tomo_top3": "fibonacci_01;fibonacci_12;fibonacci_07",
+      "fixed_panel_cura_top3": "fibonacci_07;fibonacci_12;fibonacci_01",
+      "fixed_panel_top5_overlap_count": 4,
+      "fixed_panel_top5_agreement_fraction": 0.8,
+      "fixed_panel_tomo_top5": "fibonacci_01;fibonacci_12;fibonacci_07;fibonacci_08;fibonacci_03",
+      "fixed_panel_cura_top5": "fibonacci_07;fibonacci_12;fibonacci_01;fibonacci_05;fibonacci_08",
+      "deployed_route": "sftf",
+      "deployed_yaw_deg": 230.00000867706282,
+      "deployed_pitch_deg": 54.0000015026869,
+      "deployed_cura_support_mm3": 2167.35382162433,
+      "deployed_cura_regret_ratio": 1.0,
+      "deployed_cura_regret_percent": 0.0
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "fixed_panel_count": 16,
+      "all_evaluated_count": 17,
+      "fixed_panel_spearman": 0.8411764705882352,
+      "fixed_panel_kendall_tau_b": 0.6666666666666667,
+      "fixed_panel_tomo_best_candidate": "fibonacci_15",
+      "fixed_panel_cura_best_candidate": "fibonacci_15",
+      "fixed_panel_best_exact_agreement": true,
+      "fixed_panel_best_angular_difference_deg": 0.0,
+      "tomo_global_yaw_deg": 190.00000301050196,
+      "tomo_global_pitch_deg": 9.000000250447817,
+      "tomo_global_cura_support_mm3": 1506.895841837906,
+      "cura_best_evaluated_candidate": "fibonacci_15",
+      "cura_best_evaluated_yaw_deg": 200.0000010120476,
+      "cura_best_evaluated_pitch_deg": 3.0000000834826057,
+      "cura_best_evaluated_support_mm3": 1389.6231249776458,
+      "tomo_global_is_cura_best_evaluated": false,
+      "tomo_global_cura_regret_ratio": 1.0843917424461014,
+      "tomo_global_cura_regret_percent": 8.439174244610136,
+      "tomo_global_to_cura_best_angle_deg": 11.610819915685024,
+      "fixed_panel_top3_overlap_count": 2,
+      "fixed_panel_top3_agreement_fraction": 0.6666666666666666,
+      "fixed_panel_tomo_top3": "fibonacci_15;fibonacci_13;fibonacci_00",
+      "fixed_panel_cura_top3": "fibonacci_15;fibonacci_13;fibonacci_07",
+      "fixed_panel_top5_overlap_count": 2,
+      "fixed_panel_top5_agreement_fraction": 0.4,
+      "fixed_panel_tomo_top5": "fibonacci_15;fibonacci_13;fibonacci_00;fibonacci_11;fibonacci_14",
+      "fixed_panel_cura_top5": "fibonacci_15;fibonacci_13;fibonacci_07;fibonacci_10;fibonacci_12",
+      "deployed_route": "sftf",
+      "deployed_yaw_deg": 190.00000301050196,
+      "deployed_pitch_deg": 9.000000250447817,
+      "deployed_cura_support_mm3": 1506.895841837906,
+      "deployed_cura_regret_ratio": 1.0843917424461014,
+      "deployed_cura_regret_percent": 8.439174244610136
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "fixed_panel_count": 16,
+      "all_evaluated_count": 17,
+      "fixed_panel_spearman": 0.8176470588235294,
+      "fixed_panel_kendall_tau_b": 0.6333333333333333,
+      "fixed_panel_tomo_best_candidate": "fibonacci_05",
+      "fixed_panel_cura_best_candidate": "fibonacci_04",
+      "fixed_panel_best_exact_agreement": false,
+      "fixed_panel_best_angular_difference_deg": 118.84962544498428,
+      "tomo_global_yaw_deg": 130.99999567685308,
+      "tomo_global_pitch_deg": 257.9999866889366,
+      "tomo_global_cura_support_mm3": 3346.009216306694,
+      "cura_best_evaluated_candidate": "deployed_pipeline",
+      "cura_best_evaluated_yaw_deg": 130.99999567685308,
+      "cura_best_evaluated_pitch_deg": 257.9999866889366,
+      "cura_best_evaluated_support_mm3": 3346.009216306694,
+      "tomo_global_is_cura_best_evaluated": true,
+      "tomo_global_cura_regret_ratio": 1.0,
+      "tomo_global_cura_regret_percent": 0.0,
+      "tomo_global_to_cura_best_angle_deg": 0.0,
+      "fixed_panel_top3_overlap_count": 3,
+      "fixed_panel_top3_agreement_fraction": 1.0,
+      "fixed_panel_tomo_top3": "fibonacci_05;fibonacci_03;fibonacci_04",
+      "fixed_panel_cura_top3": "fibonacci_04;fibonacci_03;fibonacci_05",
+      "fixed_panel_top5_overlap_count": 3,
+      "fixed_panel_top5_agreement_fraction": 0.6,
+      "fixed_panel_tomo_top5": "fibonacci_05;fibonacci_03;fibonacci_04;fibonacci_15;fibonacci_02",
+      "fixed_panel_cura_top5": "fibonacci_04;fibonacci_03;fibonacci_05;fibonacci_00;fibonacci_12",
+      "deployed_route": "sftf",
+      "deployed_yaw_deg": 130.99999567685308,
+      "deployed_pitch_deg": 257.9999866889366,
+      "deployed_cura_support_mm3": 3346.009216306694,
+      "deployed_cura_regret_ratio": 1.0,
+      "deployed_cura_regret_percent": 0.0
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "fixed_panel_count": 16,
+      "all_evaluated_count": 18,
+      "fixed_panel_spearman": 0.5911764705882353,
+      "fixed_panel_kendall_tau_b": 0.43333333333333335,
+      "fixed_panel_tomo_best_candidate": "fibonacci_02",
+      "fixed_panel_cura_best_candidate": "fibonacci_08",
+      "fixed_panel_best_exact_agreement": false,
+      "fixed_panel_best_angular_difference_deg": 102.55092399302752,
+      "tomo_global_yaw_deg": 346.00000735159745,
+      "tomo_global_pitch_deg": 31.999999752116263,
+      "tomo_global_cura_support_mm3": 5489.561980030867,
+      "cura_best_evaluated_candidate": "deployed_pipeline",
+      "cura_best_evaluated_yaw_deg": 274.0000053480149,
+      "cura_best_evaluated_pitch_deg": 82.00000000512816,
+      "cura_best_evaluated_support_mm3": 3536.661863723917,
+      "tomo_global_is_cura_best_evaluated": false,
+      "tomo_global_cura_regret_ratio": 1.5521873991794763,
+      "tomo_global_cura_regret_percent": 55.21873991794764,
+      "tomo_global_to_cura_best_angle_deg": 55.85881997715106,
+      "fixed_panel_top3_overlap_count": 0,
+      "fixed_panel_top3_agreement_fraction": 0.0,
+      "fixed_panel_tomo_top3": "fibonacci_02;fibonacci_01;fibonacci_11",
+      "fixed_panel_cura_top3": "fibonacci_08;fibonacci_00;fibonacci_09",
+      "fixed_panel_top5_overlap_count": 2,
+      "fixed_panel_top5_agreement_fraction": 0.4,
+      "fixed_panel_tomo_top5": "fibonacci_02;fibonacci_01;fibonacci_11;fibonacci_08;fibonacci_03",
+      "fixed_panel_cura_top5": "fibonacci_08;fibonacci_00;fibonacci_09;fibonacci_07;fibonacci_11",
+      "deployed_route": "sftf",
+      "deployed_yaw_deg": 274.0000053480149,
+      "deployed_pitch_deg": 82.00000000512816,
+      "deployed_cura_support_mm3": 3536.661863723917,
+      "deployed_cura_regret_ratio": 1.0,
+      "deployed_cura_regret_percent": 0.0
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "fixed_panel_count": 16,
+      "all_evaluated_count": 17,
+      "fixed_panel_spearman": 0.9470588235294116,
+      "fixed_panel_kendall_tau_b": 0.8499999999999999,
+      "fixed_panel_tomo_best_candidate": "fibonacci_15",
+      "fixed_panel_cura_best_candidate": "fibonacci_15",
+      "fixed_panel_best_exact_agreement": true,
+      "fixed_panel_best_angular_difference_deg": 0.0,
+      "tomo_global_yaw_deg": 178.00000267657154,
+      "tomo_global_pitch_deg": 358.99998836115276,
+      "tomo_global_cura_support_mm3": 2269.4010561076516,
+      "cura_best_evaluated_candidate": "deployed_pipeline",
+      "cura_best_evaluated_yaw_deg": 178.00000267657154,
+      "cura_best_evaluated_pitch_deg": 358.99998836115276,
+      "cura_best_evaluated_support_mm3": 2269.4010561076516,
+      "tomo_global_is_cura_best_evaluated": true,
+      "tomo_global_cura_regret_ratio": 1.0,
+      "tomo_global_cura_regret_percent": 0.0,
+      "tomo_global_to_cura_best_angle_deg": 0.0,
+      "fixed_panel_top3_overlap_count": 2,
+      "fixed_panel_top3_agreement_fraction": 0.6666666666666666,
+      "fixed_panel_tomo_top3": "fibonacci_15;fibonacci_02;fibonacci_00",
+      "fixed_panel_cura_top3": "fibonacci_15;fibonacci_00;fibonacci_05",
+      "fixed_panel_top5_overlap_count": 4,
+      "fixed_panel_top5_agreement_fraction": 0.8,
+      "fixed_panel_tomo_top5": "fibonacci_15;fibonacci_02;fibonacci_00;fibonacci_05;fibonacci_04",
+      "fixed_panel_cura_top5": "fibonacci_15;fibonacci_00;fibonacci_05;fibonacci_04;fibonacci_07",
+      "deployed_route": "sftf",
+      "deployed_yaw_deg": 178.00000267657154,
+      "deployed_pitch_deg": 358.99998836115276,
+      "deployed_cura_support_mm3": 2269.4010561076516,
+      "deployed_cura_regret_ratio": 1.0,
+      "deployed_cura_regret_percent": 0.0
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "fixed_panel_count": 16,
+      "all_evaluated_count": 18,
+      "fixed_panel_spearman": 0.8970588235294116,
+      "fixed_panel_kendall_tau_b": 0.7833333333333333,
+      "fixed_panel_tomo_best_candidate": "fibonacci_01",
+      "fixed_panel_cura_best_candidate": "fibonacci_07",
+      "fixed_panel_best_exact_agreement": false,
+      "fixed_panel_best_angular_difference_deg": 96.35219714062204,
+      "tomo_global_yaw_deg": 163.0000056742531,
+      "tomo_global_pitch_deg": 1.9999999845072665,
+      "tomo_global_cura_support_mm3": 1987.4310885477028,
+      "cura_best_evaluated_candidate": "deployed_pipeline",
+      "cura_best_evaluated_yaw_deg": 97.999998173639,
+      "cura_best_evaluated_pitch_deg": 209.99999901359323,
+      "cura_best_evaluated_support_mm3": 1893.8613662455468,
+      "tomo_global_is_cura_best_evaluated": false,
+      "tomo_global_cura_regret_ratio": 1.0494068488696464,
+      "tomo_global_cura_regret_percent": 4.940684886964641,
+      "tomo_global_to_cura_best_angle_deg": 112.53358048781026,
+      "fixed_panel_top3_overlap_count": 2,
+      "fixed_panel_top3_agreement_fraction": 0.6666666666666666,
+      "fixed_panel_tomo_top3": "fibonacci_01;fibonacci_07;fibonacci_14",
+      "fixed_panel_cura_top3": "fibonacci_07;fibonacci_01;fibonacci_08",
+      "fixed_panel_top5_overlap_count": 3,
+      "fixed_panel_top5_agreement_fraction": 0.6,
+      "fixed_panel_tomo_top5": "fibonacci_01;fibonacci_07;fibonacci_14;fibonacci_03;fibonacci_06",
+      "fixed_panel_cura_top5": "fibonacci_07;fibonacci_01;fibonacci_08;fibonacci_03;fibonacci_13",
+      "deployed_route": "uniform",
+      "deployed_yaw_deg": 97.999998173639,
+      "deployed_pitch_deg": 209.99999901359323,
+      "deployed_cura_support_mm3": 1893.8613662455468,
+      "deployed_cura_regret_ratio": 1.0,
+      "deployed_cura_regret_percent": 0.0
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "fixed_panel_count": 16,
+      "all_evaluated_count": 18,
+      "fixed_panel_spearman": 0.888235294117647,
+      "fixed_panel_kendall_tau_b": 0.75,
+      "fixed_panel_tomo_best_candidate": "fibonacci_13",
+      "fixed_panel_cura_best_candidate": "fibonacci_13",
+      "fixed_panel_best_exact_agreement": true,
+      "fixed_panel_best_angular_difference_deg": 0.0,
+      "tomo_global_yaw_deg": 3.0000000834826057,
+      "tomo_global_pitch_deg": 312.000008682191,
+      "tomo_global_cura_support_mm3": 371.3592618570064,
+      "cura_best_evaluated_candidate": "fibonacci_13",
+      "cura_best_evaluated_yaw_deg": 192.99999967889,
+      "cura_best_evaluated_pitch_deg": 314.99999169020066,
+      "cura_best_evaluated_support_mm3": 302.42133370911966,
+      "tomo_global_is_cura_best_evaluated": false,
+      "tomo_global_cura_regret_ratio": 1.2279532574715575,
+      "tomo_global_cura_regret_percent": 22.795325747155747,
+      "tomo_global_to_cura_best_angle_deg": 86.5875024156391,
+      "fixed_panel_top3_overlap_count": 2,
+      "fixed_panel_top3_agreement_fraction": 0.6666666666666666,
+      "fixed_panel_tomo_top3": "fibonacci_13;fibonacci_03;fibonacci_10",
+      "fixed_panel_cura_top3": "fibonacci_13;fibonacci_05;fibonacci_03",
+      "fixed_panel_top5_overlap_count": 4,
+      "fixed_panel_top5_agreement_fraction": 0.8,
+      "fixed_panel_tomo_top5": "fibonacci_13;fibonacci_03;fibonacci_10;fibonacci_14;fibonacci_11",
+      "fixed_panel_cura_top5": "fibonacci_13;fibonacci_05;fibonacci_03;fibonacci_10;fibonacci_14",
+      "deployed_route": "uniform",
+      "deployed_yaw_deg": 351.0000063523703,
+      "deployed_pitch_deg": 313.0000030181942,
+      "deployed_cura_support_mm3": 771.6550267878627,
+      "deployed_cura_regret_ratio": 2.5515892590106417,
+      "deployed_cura_regret_percent": 155.15892590106418
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "fixed_panel_count": 16,
+      "all_evaluated_count": 18,
+      "fixed_panel_spearman": 0.9352941176470588,
+      "fixed_panel_kendall_tau_b": 0.8166666666666667,
+      "fixed_panel_tomo_best_candidate": "fibonacci_15",
+      "fixed_panel_cura_best_candidate": "fibonacci_00",
+      "fixed_panel_best_exact_agreement": false,
+      "fixed_panel_best_angular_difference_deg": 154.12023056354982,
+      "tomo_global_yaw_deg": 33.99999866940647,
+      "tomo_global_pitch_deg": 185.99999834573237,
+      "tomo_global_cura_support_mm3": 237.0418276733344,
+      "cura_best_evaluated_candidate": "tomo_global_optimum",
+      "cura_best_evaluated_yaw_deg": 33.99999866940647,
+      "cura_best_evaluated_pitch_deg": 185.99999834573237,
+      "cura_best_evaluated_support_mm3": 237.0418276733344,
+      "tomo_global_is_cura_best_evaluated": true,
+      "tomo_global_cura_regret_ratio": 1.0,
+      "tomo_global_cura_regret_percent": 0.0,
+      "tomo_global_to_cura_best_angle_deg": 0.0,
+      "fixed_panel_top3_overlap_count": 3,
+      "fixed_panel_top3_agreement_fraction": 1.0,
+      "fixed_panel_tomo_top3": "fibonacci_15;fibonacci_00;fibonacci_05",
+      "fixed_panel_cura_top3": "fibonacci_00;fibonacci_15;fibonacci_05",
+      "fixed_panel_top5_overlap_count": 4,
+      "fixed_panel_top5_agreement_fraction": 0.8,
+      "fixed_panel_tomo_top5": "fibonacci_15;fibonacci_00;fibonacci_05;fibonacci_10;fibonacci_12",
+      "fixed_panel_cura_top5": "fibonacci_00;fibonacci_15;fibonacci_05;fibonacci_10;fibonacci_13",
+      "deployed_route": "sftf",
+      "deployed_yaw_deg": 30.99999858592387,
+      "deployed_pitch_deg": 183.99999601334758,
+      "deployed_cura_support_mm3": 248.77236332687693,
+      "deployed_cura_regret_ratio": 1.0494871971275395,
+      "deployed_cura_regret_percent": 4.948719712753946
+    }
+  ],
+  "records": [
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_00",
+      "sources": [
+        "fibonacci_00"
+      ],
+      "fixed_panel": true,
+      "panel_index": 0,
+      "yaw_deg": 0.0,
+      "pitch_deg": 339.9999866940647,
+      "tomo_vss": 19511.518399577497,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 8566.685649493214,
+      "cura_total_volume_mm3": 43269.30481801647,
+      "cura_support_length_mm": 3561.6140199999977,
+      "cura_wall_clock_s": 8.552742800000033,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_01",
+      "sources": [
+        "fibonacci_01"
+      ],
+      "fixed_panel": true,
+      "panel_index": 1,
+      "yaw_deg": 205.99999434882363,
+      "pitch_deg": 154.99999634471394,
+      "tomo_vss": 6621.189353879819,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 4575.909045133261,
+      "cura_total_volume_mm3": 39451.80722145608,
+      "cura_support_length_mm": 1902.4419099999957,
+      "cura_wall_clock_s": 7.745373599999766,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_02",
+      "sources": [
+        "fibonacci_02"
+      ],
+      "fixed_panel": true,
+      "panel_index": 2,
+      "yaw_deg": 313.99999735419743,
+      "pitch_deg": 356.0000053531431,
+      "tomo_vss": 14784.481899797423,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 8510.588270531527,
+      "cura_total_volume_mm3": 43752.03125246273,
+      "cura_support_length_mm": 3538.2914399999927,
+      "cura_wall_clock_s": 8.472498799999812,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_03",
+      "sources": [
+        "fibonacci_03"
+      ],
+      "fixed_panel": true,
+      "panel_index": 3,
+      "yaw_deg": 48.9999990868195,
+      "pitch_deg": 329.9999886925191,
+      "tomo_vss": 9632.016016432077,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 5482.605640266218,
+      "cura_total_volume_mm3": 40413.74149970163,
+      "cura_support_length_mm": 2279.4025499999984,
+      "cura_wall_clock_s": 7.990280999999868,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_04",
+      "sources": [
+        "fibonacci_04"
+      ],
+      "fixed_panel": true,
+      "panel_index": 4,
+      "yaw_deg": 159.99999534548672,
+      "pitch_deg": 118.00000100691943,
+      "tomo_vss": 12223.035836022747,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 7302.497974317879,
+      "cura_total_volume_mm3": 42014.739400823804,
+      "cura_support_length_mm": 3036.025859999982,
+      "cura_wall_clock_s": 7.3125144999999065,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_05",
+      "sources": [
+        "fibonacci_05"
+      ],
+      "fixed_panel": true,
+      "panel_index": 5,
+      "yaw_deg": 122.00000567168901,
+      "pitch_deg": 232.9999916850725,
+      "tomo_vss": 11173.220705394902,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 5142.288104444526,
+      "cura_total_volume_mm3": 40011.18994116398,
+      "cura_support_length_mm": 2137.9149599999973,
+      "cura_wall_clock_s": 7.641806999999972,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_06",
+      "sources": [
+        "fibonacci_06"
+      ],
+      "fixed_panel": true,
+      "panel_index": 6,
+      "yaw_deg": 79.00000333674014,
+      "pitch_deg": 15.000000417413029,
+      "tomo_vss": 11356.669024002453,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 6504.48120249257,
+      "cura_total_volume_mm3": 41313.70929473547,
+      "cura_support_length_mm": 2704.249040000021,
+      "cura_wall_clock_s": 8.168990699999995,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_07",
+      "sources": [
+        "fibonacci_07"
+      ],
+      "fixed_panel": true,
+      "panel_index": 7,
+      "yaw_deg": 94.00000033905859,
+      "pitch_deg": 152.99999401232913,
+      "tomo_vss": 9132.16456894047,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 3626.8049493079106,
+      "cura_total_volume_mm3": 38340.633813747925,
+      "cura_support_length_mm": 1507.8502800000128,
+      "cura_wall_clock_s": 6.9902790999999525,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_08",
+      "sources": [
+        "fibonacci_08"
+      ],
+      "fixed_panel": true,
+      "panel_index": 8,
+      "yaw_deg": 100.0000005060238,
+      "pitch_deg": 289.9999966863366,
+      "tomo_vss": 9516.009614487324,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 5239.481840895538,
+      "cura_total_volume_mm3": 39657.84943957977,
+      "cura_support_length_mm": 2178.323419999996,
+      "cura_wall_clock_s": 7.023400000000038,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_09",
+      "sources": [
+        "fibonacci_09"
+      ],
+      "fixed_panel": true,
+      "panel_index": 9,
+      "yaw_deg": 117.0000066709162,
+      "pitch_deg": 65.00000067042492,
+      "tomo_vss": 18814.31351023272,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 9369.771192078735,
+      "cura_total_volume_mm3": 43858.147117450855,
+      "cura_support_length_mm": 3895.4981899999907,
+      "cura_wall_clock_s": 8.059314599999652,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_10",
+      "sources": [
+        "fibonacci_10"
+      ],
+      "fixed_panel": true,
+      "panel_index": 10,
+      "yaw_deg": 250.00000468015406,
+      "pitch_deg": 336.0000093500518,
+      "tomo_vss": 31761.480757027617,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 17533.97881250124,
+      "cura_total_volume_mm3": 52507.958659131975,
+      "cura_support_length_mm": 7289.781290000023,
+      "cura_wall_clock_s": 10.741920400000254,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_11",
+      "sources": [
+        "fibonacci_11"
+      ],
+      "fixed_panel": true,
+      "panel_index": 11,
+      "yaw_deg": 297.00001167987256,
+      "pitch_deg": 195.999996347278,
+      "tomo_vss": 17741.642707635547,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 10134.538453688276,
+      "cura_total_volume_mm3": 45146.03328930694,
+      "cura_support_length_mm": 4213.45147000002,
+      "cura_wall_clock_s": 9.840873800000281,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_12",
+      "sources": [
+        "fibonacci_12"
+      ],
+      "fixed_panel": true,
+      "panel_index": 12,
+      "yaw_deg": 36.00000100179127,
+      "pitch_deg": 134.00000600561944,
+      "tomo_vss": 7123.558974463092,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 4027.080702293556,
+      "cura_total_volume_mm3": 38814.17524640232,
+      "cura_support_length_mm": 1674.2656000000022,
+      "cura_wall_clock_s": 8.889997499999936,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_13",
+      "sources": [
+        "fibonacci_13"
+      ],
+      "fixed_panel": true,
+      "panel_index": 13,
+      "yaw_deg": 192.99999967889,
+      "pitch_deg": 314.99999169020066,
+      "tomo_vss": 14054.2343628308,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 9266.718285190535,
+      "cura_total_volume_mm3": 44154.432504937824,
+      "cura_support_length_mm": 3852.6537700000013,
+      "cura_wall_clock_s": 8.96225209999966,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_14",
+      "sources": [
+        "fibonacci_14"
+      ],
+      "fixed_panel": true,
+      "panel_index": 14,
+      "yaw_deg": 329.9999886925191,
+      "pitch_deg": 159.99999534548672,
+      "tomo_vss": 13071.743909977684,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 7167.749681991921,
+      "cura_total_volume_mm3": 42335.68595096034,
+      "cura_support_length_mm": 2980.0040300000005,
+      "cura_wall_clock_s": 8.860396199999741,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "fibonacci_15",
+      "sources": [
+        "fibonacci_15"
+      ],
+      "fixed_panel": true,
+      "panel_index": 15,
+      "yaw_deg": 200.0000010120476,
+      "pitch_deg": 3.0000000834826057,
+      "tomo_vss": 25196.085291460528,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 12059.995963441394,
+      "cura_total_volume_mm3": 46699.15237100321,
+      "cura_support_length_mm": 5013.963680000007,
+      "cura_wall_clock_s": 8.829331599999932,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "deployed_pipeline",
+      "sources": [
+        "deployed_pipeline"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 230.00000867706282,
+      "pitch_deg": 54.0000015026869,
+      "tomo_vss": 4505.873711641169,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2167.35382162433,
+      "cura_total_volume_mm3": 36810.86477554691,
+      "cura_support_length_mm": 901.0810099999926,
+      "cura_wall_clock_s": 6.910016199999973,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C1_Bunny_69k",
+      "candidate_id": "tomo_global_optimum",
+      "sources": [
+        "tomo_global_optimum"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 299.000000351879,
+      "pitch_deg": 36.99999875288908,
+      "tomo_vss": 4440.337173209703,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 3570.446332681723,
+      "cura_total_volume_mm3": 38439.75632168259,
+      "cura_support_length_mm": 1484.4190900000028,
+      "cura_wall_clock_s": 7.68440610000016,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_00",
+      "sources": [
+        "fibonacci_00"
+      ],
+      "fixed_panel": true,
+      "panel_index": 0,
+      "yaw_deg": 0.0,
+      "pitch_deg": 339.9999866940647,
+      "tomo_vss": 17697.722458642376,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2911.7147920669754,
+      "cura_total_volume_mm3": 8921.153771274563,
+      "cura_support_length_mm": 1210.5503399999984,
+      "cura_wall_clock_s": 2.5113423000002513,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_01",
+      "sources": [
+        "fibonacci_01"
+      ],
+      "fixed_panel": true,
+      "panel_index": 1,
+      "yaw_deg": 205.99999434882363,
+      "pitch_deg": 154.99999634471394,
+      "tomo_vss": 23392.963015343532,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 3955.2426055243895,
+      "cura_total_volume_mm3": 10207.307755335438,
+      "cura_support_length_mm": 1644.3987899999977,
+      "cura_wall_clock_s": 2.939526399999977,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_02",
+      "sources": [
+        "fibonacci_02"
+      ],
+      "fixed_panel": true,
+      "panel_index": 2,
+      "yaw_deg": 313.99999735419743,
+      "pitch_deg": 356.0000053531431,
+      "tomo_vss": 47963.402488014915,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 6311.208457475649,
+      "cura_total_volume_mm3": 12646.011864247535,
+      "cura_support_length_mm": 2623.8955700000015,
+      "cura_wall_clock_s": 4.1438302999999905,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_03",
+      "sources": [
+        "fibonacci_03"
+      ],
+      "fixed_panel": true,
+      "panel_index": 3,
+      "yaw_deg": 48.9999990868195,
+      "pitch_deg": 329.9999886925191,
+      "tomo_vss": 50158.62283627849,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 6763.680919752835,
+      "cura_total_volume_mm3": 13131.912621342433,
+      "cura_support_length_mm": 2812.011760000002,
+      "cura_wall_clock_s": 3.86582959999987,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_04",
+      "sources": [
+        "fibonacci_04"
+      ],
+      "fixed_panel": true,
+      "panel_index": 4,
+      "yaw_deg": 159.99999534548672,
+      "pitch_deg": 118.00000100691943,
+      "tomo_vss": 35051.724142279505,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 4079.3843744700393,
+      "cura_total_volume_mm3": 10417.37316818801,
+      "cura_support_length_mm": 1696.0109399999901,
+      "cura_wall_clock_s": 2.726811699999871,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_05",
+      "sources": [
+        "fibonacci_05"
+      ],
+      "fixed_panel": true,
+      "panel_index": 5,
+      "yaw_deg": 122.00000567168901,
+      "pitch_deg": 232.9999916850725,
+      "tomo_vss": 43426.54913910164,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 4556.830926565222,
+      "cura_total_volume_mm3": 10929.72954847205,
+      "cura_support_length_mm": 1894.5101500000046,
+      "cura_wall_clock_s": 3.408002000000124,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_06",
+      "sources": [
+        "fibonacci_06"
+      ],
+      "fixed_panel": true,
+      "panel_index": 6,
+      "yaw_deg": 79.00000333674014,
+      "pitch_deg": 15.000000417413029,
+      "tomo_vss": 51313.70765118559,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 4159.928845990805,
+      "cura_total_volume_mm3": 10538.292388582644,
+      "cura_support_length_mm": 1729.4974400000012,
+      "cura_wall_clock_s": 2.9446814000002632,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_07",
+      "sources": [
+        "fibonacci_07"
+      ],
+      "fixed_panel": true,
+      "panel_index": 7,
+      "yaw_deg": 94.00000033905859,
+      "pitch_deg": 152.99999401232913,
+      "tomo_vss": 30701.071762841595,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2491.600755229338,
+      "cura_total_volume_mm3": 8869.560475047125,
+      "cura_support_length_mm": 1035.887219999997,
+      "cura_wall_clock_s": 2.4024994999999763,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_08",
+      "sources": [
+        "fibonacci_08"
+      ],
+      "fixed_panel": true,
+      "panel_index": 8,
+      "yaw_deg": 100.0000005060238,
+      "pitch_deg": 289.9999966863366,
+      "tomo_vss": 88216.63186569844,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 7758.859512806627,
+      "cura_total_volume_mm3": 14096.843712436199,
+      "cura_support_length_mm": 3225.7589399999993,
+      "cura_wall_clock_s": 4.704725200000212,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_09",
+      "sources": [
+        "fibonacci_09"
+      ],
+      "fixed_panel": true,
+      "panel_index": 9,
+      "yaw_deg": 117.0000066709162,
+      "pitch_deg": 65.00000067042492,
+      "tomo_vss": 84470.9065334856,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 7982.180939183747,
+      "cura_total_volume_mm3": 14345.438686224747,
+      "cura_support_length_mm": 3318.6052000000027,
+      "cura_wall_clock_s": 4.5982051999999385,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_10",
+      "sources": [
+        "fibonacci_10"
+      ],
+      "fixed_panel": true,
+      "panel_index": 10,
+      "yaw_deg": 250.00000468015406,
+      "pitch_deg": 336.0000093500518,
+      "tomo_vss": 28206.139556632555,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2535.6403358855205,
+      "cura_total_volume_mm3": 8938.207099507086,
+      "cura_support_length_mm": 1054.1967499999985,
+      "cura_wall_clock_s": 2.2251240999999027,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_11",
+      "sources": [
+        "fibonacci_11"
+      ],
+      "fixed_panel": true,
+      "panel_index": 11,
+      "yaw_deg": 297.00001167987256,
+      "pitch_deg": 195.999996347278,
+      "tomo_vss": 19461.68694614379,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2777.190575800494,
+      "cura_total_volume_mm3": 9196.09935364556,
+      "cura_support_length_mm": 1154.6216700000018,
+      "cura_wall_clock_s": 2.699087899999995,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_12",
+      "sources": [
+        "fibonacci_12"
+      ],
+      "fixed_panel": true,
+      "panel_index": 12,
+      "yaw_deg": 36.00000100179127,
+      "pitch_deg": 134.00000600561944,
+      "tomo_vss": 24058.064153371764,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2650.412401444014,
+      "cura_total_volume_mm3": 8943.196159225863,
+      "cura_support_length_mm": 1101.9134300000019,
+      "cura_wall_clock_s": 2.4275096000001213,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_13",
+      "sources": [
+        "fibonacci_13"
+      ],
+      "fixed_panel": true,
+      "panel_index": 13,
+      "yaw_deg": 192.99999967889,
+      "pitch_deg": 314.99999169020066,
+      "tomo_vss": 14764.583800449844,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2480.5685931683315,
+      "cura_total_volume_mm3": 8756.803626802312,
+      "cura_support_length_mm": 1031.3005799999967,
+      "cura_wall_clock_s": 2.422816999999668,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_14",
+      "sources": [
+        "fibonacci_14"
+      ],
+      "fixed_panel": true,
+      "panel_index": 14,
+      "yaw_deg": 329.9999886925191,
+      "pitch_deg": 159.99999534548672,
+      "tomo_vss": 21710.411576200124,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 3110.352325884386,
+      "cura_total_volume_mm3": 9328.826800298306,
+      "cura_support_length_mm": 1293.134229999997,
+      "cura_wall_clock_s": 2.839099499999975,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "fibonacci_15",
+      "sources": [
+        "fibonacci_15"
+      ],
+      "fixed_panel": true,
+      "panel_index": 15,
+      "yaw_deg": 200.0000010120476,
+      "pitch_deg": 3.0000000834826057,
+      "tomo_vss": 4942.7210792037085,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 1389.6231249776458,
+      "cura_total_volume_mm3": 7463.807193073546,
+      "cura_support_length_mm": 577.7381599999974,
+      "cura_wall_clock_s": 2.297102999999879,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C2_manikin",
+      "candidate_id": "deployed_pipeline",
+      "sources": [
+        "deployed_pipeline",
+        "tomo_global_optimum"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 190.00000301050196,
+      "pitch_deg": 9.000000250447817,
+      "tomo_vss": 2956.1209284569604,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 1506.895841837906,
+      "cura_total_volume_mm3": 7458.85469363928,
+      "cura_support_length_mm": 626.4944900000017,
+      "cura_wall_clock_s": 2.2309761999999864,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_00",
+      "sources": [
+        "fibonacci_00"
+      ],
+      "fixed_panel": true,
+      "panel_index": 0,
+      "yaw_deg": 0.0,
+      "pitch_deg": 339.9999866940647,
+      "tomo_vss": 99428.21628791242,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 9262.462499704305,
+      "cura_total_volume_mm3": 34761.18910509532,
+      "cura_support_length_mm": 3850.8844200000085,
+      "cura_wall_clock_s": 10.472614400000111,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_01",
+      "sources": [
+        "fibonacci_01"
+      ],
+      "fixed_panel": true,
+      "panel_index": 1,
+      "yaw_deg": 205.99999434882363,
+      "pitch_deg": 154.99999634471394,
+      "tomo_vss": 89035.82234027957,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 11860.434873542396,
+      "cura_total_volume_mm3": 38279.601181223654,
+      "cura_support_length_mm": 4930.995820000055,
+      "cura_wall_clock_s": 12.506391800000074,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_02",
+      "sources": [
+        "fibonacci_02"
+      ],
+      "fixed_panel": true,
+      "panel_index": 2,
+      "yaw_deg": 313.99999735419743,
+      "pitch_deg": 356.0000053531431,
+      "tomo_vss": 79060.81459738991,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 10826.737110370197,
+      "cura_total_volume_mm3": 37527.14097728023,
+      "cura_support_length_mm": 4501.234230000014,
+      "cura_wall_clock_s": 13.305614700000206,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_03",
+      "sources": [
+        "fibonacci_03"
+      ],
+      "fixed_panel": true,
+      "panel_index": 3,
+      "yaw_deg": 48.9999990868195,
+      "pitch_deg": 329.9999886925191,
+      "tomo_vss": 65616.3318098084,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 8490.121703000894,
+      "cura_total_volume_mm3": 34781.35736956851,
+      "cura_support_length_mm": 3529.7824299999943,
+      "cura_wall_clock_s": 11.844989000000169,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_04",
+      "sources": [
+        "fibonacci_04"
+      ],
+      "fixed_panel": true,
+      "panel_index": 4,
+      "yaw_deg": 159.99999534548672,
+      "pitch_deg": 118.00000100691943,
+      "tomo_vss": 73680.1289329844,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 6949.6752577618745,
+      "cura_total_volume_mm3": 32986.521289763084,
+      "cura_support_length_mm": 2889.3392199999853,
+      "cura_wall_clock_s": 10.833180799999809,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_05",
+      "sources": [
+        "fibonacci_05"
+      ],
+      "fixed_panel": true,
+      "panel_index": 5,
+      "yaw_deg": 122.00000567168901,
+      "pitch_deg": 232.9999916850725,
+      "tomo_vss": 64836.395673515384,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 9133.487052248945,
+      "cura_total_volume_mm3": 35444.655770774,
+      "cura_support_length_mm": 3797.2626599999844,
+      "cura_wall_clock_s": 12.095897100000002,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_06",
+      "sources": [
+        "fibonacci_06"
+      ],
+      "fixed_panel": true,
+      "panel_index": 6,
+      "yaw_deg": 79.00000333674014,
+      "pitch_deg": 15.000000417413029,
+      "tomo_vss": 148996.65265043903,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 15421.068257492754,
+      "cura_total_volume_mm3": 41676.610046138,
+      "cura_support_length_mm": 6411.335159999982,
+      "cura_wall_clock_s": 17.413262600000053,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_07",
+      "sources": [
+        "fibonacci_07"
+      ],
+      "fixed_panel": true,
+      "panel_index": 7,
+      "yaw_deg": 94.00000033905859,
+      "pitch_deg": 152.99999401232913,
+      "tomo_vss": 112416.29103983729,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 10722.313553605207,
+      "cura_total_volume_mm3": 37067.33928438966,
+      "cura_support_length_mm": 4457.819959999987,
+      "cura_wall_clock_s": 12.27974979999999,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_08",
+      "sources": [
+        "fibonacci_08"
+      ],
+      "fixed_panel": true,
+      "panel_index": 8,
+      "yaw_deg": 100.0000005060238,
+      "pitch_deg": 289.9999966863366,
+      "tomo_vss": 101811.4720494294,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 11210.594890330663,
+      "cura_total_volume_mm3": 37093.69982678591,
+      "cura_support_length_mm": 4660.823749999986,
+      "cura_wall_clock_s": 11.182431199999883,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_09",
+      "sources": [
+        "fibonacci_09"
+      ],
+      "fixed_panel": true,
+      "panel_index": 9,
+      "yaw_deg": 117.0000066709162,
+      "pitch_deg": 65.00000067042492,
+      "tomo_vss": 105595.41528875177,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 13271.358212696001,
+      "cura_total_volume_mm3": 39520.88588264644,
+      "cura_support_length_mm": 5517.589580000104,
+      "cura_wall_clock_s": 13.527389500000027,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_10",
+      "sources": [
+        "fibonacci_10"
+      ],
+      "fixed_panel": true,
+      "panel_index": 10,
+      "yaw_deg": 250.00000468015406,
+      "pitch_deg": 336.0000093500518,
+      "tomo_vss": 145567.35015112505,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 12913.818738381977,
+      "cura_total_volume_mm3": 39229.77035991629,
+      "cura_support_length_mm": 5368.9419399999615,
+      "cura_wall_clock_s": 14.851604899999984,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_11",
+      "sources": [
+        "fibonacci_11"
+      ],
+      "fixed_panel": true,
+      "panel_index": 11,
+      "yaw_deg": 297.00001167987256,
+      "pitch_deg": 195.999996347278,
+      "tomo_vss": 192633.30569937208,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 19443.20127091579,
+      "cura_total_volume_mm3": 45991.95940358509,
+      "cura_support_length_mm": 8083.543749999987,
+      "cura_wall_clock_s": 16.075843300000088,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_12",
+      "sources": [
+        "fibonacci_12"
+      ],
+      "fixed_panel": true,
+      "panel_index": 12,
+      "yaw_deg": 36.00000100179127,
+      "pitch_deg": 134.00000600561944,
+      "tomo_vss": 84774.63209924618,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 9842.39253225647,
+      "cura_total_volume_mm3": 35789.74365403352,
+      "cura_support_length_mm": 4091.9913099999985,
+      "cura_wall_clock_s": 11.355629200000294,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_13",
+      "sources": [
+        "fibonacci_13"
+      ],
+      "fixed_panel": true,
+      "panel_index": 13,
+      "yaw_deg": 192.99999967889,
+      "pitch_deg": 314.99999169020066,
+      "tomo_vss": 96676.15654054753,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 12672.7751470413,
+      "cura_total_volume_mm3": 38986.76511688942,
+      "cura_support_length_mm": 5268.727659999984,
+      "cura_wall_clock_s": 12.521169500000724,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_14",
+      "sources": [
+        "fibonacci_14"
+      ],
+      "fixed_panel": true,
+      "panel_index": 14,
+      "yaw_deg": 329.9999886925191,
+      "pitch_deg": 159.99999534548672,
+      "tomo_vss": 104454.02476413191,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 11011.639739041648,
+      "cura_total_volume_mm3": 37310.54127947381,
+      "cura_support_length_mm": 4578.107810000005,
+      "cura_wall_clock_s": 11.872046200000113,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "fibonacci_15",
+      "sources": [
+        "fibonacci_15"
+      ],
+      "fixed_panel": true,
+      "panel_index": 15,
+      "yaw_deg": 200.0000010120476,
+      "pitch_deg": 3.0000000834826057,
+      "tomo_vss": 76249.64280561967,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 9852.361198936227,
+      "cura_total_volume_mm3": 35826.86583643862,
+      "cura_support_length_mm": 4096.135799999982,
+      "cura_wall_clock_s": 11.422140499999841,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C3_dragon_100k_1.5x",
+      "candidate_id": "deployed_pipeline",
+      "sources": [
+        "deployed_pipeline",
+        "tomo_global_optimum"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 130.99999567685308,
+      "pitch_deg": 257.9999866889366,
+      "tomo_vss": 28106.973190938144,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 3346.009216306694,
+      "cura_total_volume_mm3": 29420.010334969964,
+      "cura_support_length_mm": 1391.108979999998,
+      "cura_wall_clock_s": 10.175897600000098,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_00",
+      "sources": [
+        "fibonacci_00"
+      ],
+      "fixed_panel": true,
+      "panel_index": 0,
+      "yaw_deg": 0.0,
+      "pitch_deg": 339.9999866940647,
+      "tomo_vss": 25482.114681527633,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 6583.290287193004,
+      "cura_total_volume_mm3": 34412.897771222415,
+      "cura_support_length_mm": 2737.014050000013,
+      "cura_wall_clock_s": 9.057385799999793,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_01",
+      "sources": [
+        "fibonacci_01"
+      ],
+      "fixed_panel": true,
+      "panel_index": 1,
+      "yaw_deg": 205.99999434882363,
+      "pitch_deg": 154.99999634471394,
+      "tomo_vss": 17862.16625497361,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 9240.597789925096,
+      "cura_total_volume_mm3": 38038.69591764363,
+      "cura_support_length_mm": 3841.794129999994,
+      "cura_wall_clock_s": 12.597414500000014,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_02",
+      "sources": [
+        "fibonacci_02"
+      ],
+      "fixed_panel": true,
+      "panel_index": 2,
+      "yaw_deg": 313.99999735419743,
+      "pitch_deg": 356.0000053531431,
+      "tomo_vss": 13486.096681642139,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 9691.520456931548,
+      "cura_total_volume_mm3": 38667.445836156105,
+      "cura_support_length_mm": 4029.2659900000135,
+      "cura_wall_clock_s": 13.00068100000044,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_03",
+      "sources": [
+        "fibonacci_03"
+      ],
+      "fixed_panel": true,
+      "panel_index": 3,
+      "yaw_deg": 48.9999990868195,
+      "pitch_deg": 329.9999886925191,
+      "tomo_vss": 21866.502840656878,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 14319.490890197892,
+      "cura_total_volume_mm3": 43181.515372907474,
+      "cura_support_length_mm": 5953.35250999996,
+      "cura_wall_clock_s": 15.045984000000317,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_04",
+      "sources": [
+        "fibonacci_04"
+      ],
+      "fixed_panel": true,
+      "panel_index": 4,
+      "yaw_deg": 159.99999534548672,
+      "pitch_deg": 118.00000100691943,
+      "tomo_vss": 24096.390432562708,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 11018.021529124748,
+      "cura_total_volume_mm3": 39736.31798447078,
+      "cura_support_length_mm": 4580.7610500000055,
+      "cura_wall_clock_s": 12.498043200000211,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_05",
+      "sources": [
+        "fibonacci_05"
+      ],
+      "fixed_panel": true,
+      "panel_index": 5,
+      "yaw_deg": 122.00000567168901,
+      "pitch_deg": 232.9999916850725,
+      "tomo_vss": 24946.185182933965,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 11580.93989292641,
+      "cura_total_volume_mm3": 40258.41012799061,
+      "cura_support_length_mm": 4814.7953099999695,
+      "cura_wall_clock_s": 13.069500900000094,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_06",
+      "sources": [
+        "fibonacci_06"
+      ],
+      "fixed_panel": true,
+      "panel_index": 6,
+      "yaw_deg": 79.00000333674014,
+      "pitch_deg": 15.000000417413029,
+      "tomo_vss": 39011.76610268837,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 15951.766740091036,
+      "cura_total_volume_mm3": 44217.802518228265,
+      "cura_support_length_mm": 6631.973950000008,
+      "cura_wall_clock_s": 12.903297500000008,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_07",
+      "sources": [
+        "fibonacci_07"
+      ],
+      "fixed_panel": true,
+      "panel_index": 7,
+      "yaw_deg": 94.00000033905859,
+      "pitch_deg": 152.99999401232913,
+      "tomo_vss": 29605.014265076188,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 7850.803986145572,
+      "cura_total_volume_mm3": 36135.60825091618,
+      "cura_support_length_mm": 3263.9850099999967,
+      "cura_wall_clock_s": 10.475303500000336,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_08",
+      "sources": [
+        "fibonacci_08"
+      ],
+      "fixed_panel": true,
+      "panel_index": 8,
+      "yaw_deg": 100.0000005060238,
+      "pitch_deg": 289.9999966863366,
+      "tomo_vss": 21846.15450457108,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 6429.08557356551,
+      "cura_total_volume_mm3": 34620.89363144472,
+      "cura_support_length_mm": 2672.9031799999843,
+      "cura_wall_clock_s": 10.061034299999847,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_09",
+      "sources": [
+        "fibonacci_09"
+      ],
+      "fixed_panel": true,
+      "panel_index": 9,
+      "yaw_deg": 117.0000066709162,
+      "pitch_deg": 65.00000067042492,
+      "tomo_vss": 24248.714289389365,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 7685.172788546507,
+      "cura_total_volume_mm3": 36036.89762345044,
+      "cura_support_length_mm": 3195.1235600000055,
+      "cura_wall_clock_s": 11.340061599999899,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_10",
+      "sources": [
+        "fibonacci_10"
+      ],
+      "fixed_panel": true,
+      "panel_index": 10,
+      "yaw_deg": 250.00000468015406,
+      "pitch_deg": 336.0000093500518,
+      "tomo_vss": 35504.57363286294,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 11715.517578609039,
+      "cura_total_volume_mm3": 40351.147550605194,
+      "cura_support_length_mm": 4870.74620999999,
+      "cura_wall_clock_s": 12.859102899999925,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_11",
+      "sources": [
+        "fibonacci_11"
+      ],
+      "fixed_panel": true,
+      "panel_index": 11,
+      "yaw_deg": 297.00001167987256,
+      "pitch_deg": 195.999996347278,
+      "tomo_vss": 19492.87446077205,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 8399.301650833057,
+      "cura_total_volume_mm3": 37250.490651380394,
+      "cura_support_length_mm": 3492.023839999994,
+      "cura_wall_clock_s": 12.322997000000214,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_12",
+      "sources": [
+        "fibonacci_12"
+      ],
+      "fixed_panel": true,
+      "panel_index": 12,
+      "yaw_deg": 36.00000100179127,
+      "pitch_deg": 134.00000600561944,
+      "tomo_vss": 27569.591506453584,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 11043.553572179204,
+      "cura_total_volume_mm3": 39857.46938672499,
+      "cura_support_length_mm": 4591.376039999945,
+      "cura_wall_clock_s": 12.577375900000334,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_13",
+      "sources": [
+        "fibonacci_13"
+      ],
+      "fixed_panel": true,
+      "panel_index": 13,
+      "yaw_deg": 192.99999967889,
+      "pitch_deg": 314.99999169020066,
+      "tomo_vss": 38917.54938551217,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 14922.022610895821,
+      "cura_total_volume_mm3": 43811.88192947468,
+      "cura_support_length_mm": 6203.856089999935,
+      "cura_wall_clock_s": 13.573544599999877,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_14",
+      "sources": [
+        "fibonacci_14"
+      ],
+      "fixed_panel": true,
+      "panel_index": 14,
+      "yaw_deg": 329.9999886925191,
+      "pitch_deg": 159.99999534548672,
+      "tomo_vss": 26076.50796243967,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 13029.944857372318,
+      "cura_total_volume_mm3": 41629.252884243564,
+      "cura_support_length_mm": 5417.221570000002,
+      "cura_wall_clock_s": 12.584079199999906,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "fibonacci_15",
+      "sources": [
+        "fibonacci_15"
+      ],
+      "fixed_panel": true,
+      "panel_index": 15,
+      "yaw_deg": 200.0000010120476,
+      "pitch_deg": 3.0000000834826057,
+      "tomo_vss": 45113.8078673812,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 16107.67319064509,
+      "cura_total_volume_mm3": 44240.26751420583,
+      "cura_support_length_mm": 6696.792319999916,
+      "cura_wall_clock_s": 11.580755799999679,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "deployed_pipeline",
+      "sources": [
+        "deployed_pipeline"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 274.0000053480149,
+      "pitch_deg": 82.00000000512816,
+      "tomo_vss": 14149.066830469557,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 3536.661863723917,
+      "cura_total_volume_mm3": 31702.178699430002,
+      "cura_support_length_mm": 1470.3731400000172,
+      "cura_wall_clock_s": 8.607953099999577,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C4_happy_50k_0.75x",
+      "candidate_id": "tomo_global_optimum",
+      "sources": [
+        "tomo_global_optimum"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 346.00000735159745,
+      "pitch_deg": 31.999999752116263,
+      "tomo_vss": 8512.6398023495,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 5489.561980030867,
+      "cura_total_volume_mm3": 34243.62103220199,
+      "cura_support_length_mm": 2282.294659999987,
+      "cura_wall_clock_s": 11.094182499999988,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_00",
+      "sources": [
+        "fibonacci_00"
+      ],
+      "fixed_panel": true,
+      "panel_index": 0,
+      "yaw_deg": 0.0,
+      "pitch_deg": 339.9999866940647,
+      "tomo_vss": 29187.817218875098,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 4103.499778658532,
+      "cura_total_volume_mm3": 18494.410198473663,
+      "cura_support_length_mm": 1706.03696000001,
+      "cura_wall_clock_s": 7.372374699999455,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_01",
+      "sources": [
+        "fibonacci_01"
+      ],
+      "fixed_panel": true,
+      "panel_index": 1,
+      "yaw_deg": 205.99999434882363,
+      "pitch_deg": 154.99999634471394,
+      "tomo_vss": 69780.31820502163,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 10761.030437893702,
+      "cura_total_volume_mm3": 25761.556734850474,
+      "cura_support_length_mm": 4473.916570000002,
+      "cura_wall_clock_s": 11.166600499999731,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_02",
+      "sources": [
+        "fibonacci_02"
+      ],
+      "fixed_panel": true,
+      "panel_index": 2,
+      "yaw_deg": 313.99999735419743,
+      "pitch_deg": 356.0000053531431,
+      "tomo_vss": 27442.614894267943,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 8005.311524761087,
+      "cura_total_volume_mm3": 22661.994407247836,
+      "cura_support_length_mm": 3328.221779999986,
+      "cura_wall_clock_s": 10.006347900000037,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_03",
+      "sources": [
+        "fibonacci_03"
+      ],
+      "fixed_panel": true,
+      "panel_index": 3,
+      "yaw_deg": 48.9999990868195,
+      "pitch_deg": 329.9999886925191,
+      "tomo_vss": 99020.69785378197,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 15305.552502831053,
+      "cura_total_volume_mm3": 30404.73867580594,
+      "cura_support_length_mm": 6363.309289999916,
+      "cura_wall_clock_s": 12.615882899999633,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_04",
+      "sources": [
+        "fibonacci_04"
+      ],
+      "fixed_panel": true,
+      "panel_index": 4,
+      "yaw_deg": 159.99999534548672,
+      "pitch_deg": 118.00000100691943,
+      "tomo_vss": 37664.058779882005,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 6448.898746274725,
+      "cura_total_volume_mm3": 21621.0228071035,
+      "cura_support_length_mm": 2681.140539999998,
+      "cura_wall_clock_s": 9.211488899999495,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_05",
+      "sources": [
+        "fibonacci_05"
+      ],
+      "fixed_panel": true,
+      "panel_index": 5,
+      "yaw_deg": 122.00000567168901,
+      "pitch_deg": 232.9999916850725,
+      "tomo_vss": 37351.41517702213,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 5647.829888224811,
+      "cura_total_volume_mm3": 20723.807881229044,
+      "cura_support_length_mm": 2348.0948100000014,
+      "cura_wall_clock_s": 7.999603800000841,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_06",
+      "sources": [
+        "fibonacci_06"
+      ],
+      "fixed_panel": true,
+      "panel_index": 6,
+      "yaw_deg": 79.00000333674014,
+      "pitch_deg": 15.000000417413029,
+      "tomo_vss": 61228.444753599564,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 8635.245996492311,
+      "cura_total_volume_mm3": 23642.287023461355,
+      "cura_support_length_mm": 3590.1181000000024,
+      "cura_wall_clock_s": 9.399950799999715,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_07",
+      "sources": [
+        "fibonacci_07"
+      ],
+      "fixed_panel": true,
+      "panel_index": 7,
+      "yaw_deg": 94.00000033905859,
+      "pitch_deg": 152.99999401232913,
+      "tomo_vss": 64282.92172014221,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 7233.377028272143,
+      "cura_total_volume_mm3": 22222.11188783822,
+      "cura_support_length_mm": 3007.288710000003,
+      "cura_wall_clock_s": 8.840955399999984,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_08",
+      "sources": [
+        "fibonacci_08"
+      ],
+      "fixed_panel": true,
+      "panel_index": 8,
+      "yaw_deg": 100.0000005060238,
+      "pitch_deg": 289.9999966863366,
+      "tomo_vss": 70958.04293293598,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 9381.2239417285,
+      "cura_total_volume_mm3": 24239.771067721176,
+      "cura_support_length_mm": 3900.2596900000017,
+      "cura_wall_clock_s": 8.881024299999808,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_09",
+      "sources": [
+        "fibonacci_09"
+      ],
+      "fixed_panel": true,
+      "panel_index": 9,
+      "yaw_deg": 117.0000066709162,
+      "pitch_deg": 65.00000067042492,
+      "tomo_vss": 88683.53031883555,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 11831.02135496685,
+      "cura_total_volume_mm3": 26771.31583394612,
+      "cura_support_length_mm": 4918.767099999994,
+      "cura_wall_clock_s": 10.381017899999279,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_10",
+      "sources": [
+        "fibonacci_10"
+      ],
+      "fixed_panel": true,
+      "panel_index": 10,
+      "yaw_deg": 250.00000468015406,
+      "pitch_deg": 336.0000093500518,
+      "tomo_vss": 163245.1459395984,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 18062.331399633535,
+      "cura_total_volume_mm3": 33066.56149393827,
+      "cura_support_length_mm": 7509.444770000013,
+      "cura_wall_clock_s": 10.720185300000594,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_11",
+      "sources": [
+        "fibonacci_11"
+      ],
+      "fixed_panel": true,
+      "panel_index": 11,
+      "yaw_deg": 297.00001167987256,
+      "pitch_deg": 195.999996347278,
+      "tomo_vss": 64634.33494252607,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 8612.579149260495,
+      "cura_total_volume_mm3": 23844.068813904763,
+      "cura_support_length_mm": 3580.694319999996,
+      "cura_wall_clock_s": 9.101163399999677,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_12",
+      "sources": [
+        "fibonacci_12"
+      ],
+      "fixed_panel": true,
+      "panel_index": 12,
+      "yaw_deg": 36.00000100179127,
+      "pitch_deg": 134.00000600561944,
+      "tomo_vss": 151640.553119754,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 19985.49181708991,
+      "cura_total_volume_mm3": 35038.87901787508,
+      "cura_support_length_mm": 8309.001959999961,
+      "cura_wall_clock_s": 12.71345569999994,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_13",
+      "sources": [
+        "fibonacci_13"
+      ],
+      "fixed_panel": true,
+      "panel_index": 13,
+      "yaw_deg": 192.99999967889,
+      "pitch_deg": 314.99999169020066,
+      "tomo_vss": 122020.31947364492,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 15491.435115497197,
+      "cura_total_volume_mm3": 30589.14425297753,
+      "cura_support_length_mm": 6440.590299999989,
+      "cura_wall_clock_s": 11.257783499999277,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_14",
+      "sources": [
+        "fibonacci_14"
+      ],
+      "fixed_panel": true,
+      "panel_index": 14,
+      "yaw_deg": 329.9999886925191,
+      "pitch_deg": 159.99999534548672,
+      "tomo_vss": 64701.73843636001,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 10134.365345551636,
+      "cura_total_volume_mm3": 24474.615934982394,
+      "cura_support_length_mm": 4213.379499999992,
+      "cura_wall_clock_s": 9.837960200000452,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "fibonacci_15",
+      "sources": [
+        "fibonacci_15"
+      ],
+      "fixed_panel": true,
+      "panel_index": 15,
+      "yaw_deg": 200.0000010120476,
+      "pitch_deg": 3.0000000834826057,
+      "tomo_vss": 13082.20181583373,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2310.126086181048,
+      "cura_total_volume_mm3": 17247.702765010992,
+      "cura_support_length_mm": 960.4388199999938,
+      "cura_wall_clock_s": 7.619740700000875,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C5_lucy_50k",
+      "candidate_id": "deployed_pipeline",
+      "sources": [
+        "deployed_pipeline",
+        "tomo_global_optimum"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 178.00000267657154,
+      "pitch_deg": 358.99998836115276,
+      "tomo_vss": 7605.40144502624,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2269.4010561076516,
+      "cura_total_volume_mm3": 16377.89677174414,
+      "cura_support_length_mm": 943.5073200000013,
+      "cura_wall_clock_s": 6.875571399999899,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_00",
+      "sources": [
+        "fibonacci_00"
+      ],
+      "fixed_panel": true,
+      "panel_index": 0,
+      "yaw_deg": 0.0,
+      "pitch_deg": 339.9999866940647,
+      "tomo_vss": 1420835.2914424692,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 3695.4920546618114,
+      "cura_total_volume_mm3": 33779.77673395787,
+      "cura_support_length_mm": 1536.4070600000052,
+      "cura_wall_clock_s": 6.532225599999947,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_01",
+      "sources": [
+        "fibonacci_01"
+      ],
+      "fixed_panel": true,
+      "panel_index": 1,
+      "yaw_deg": 205.99999434882363,
+      "pitch_deg": 154.99999634471394,
+      "tomo_vss": 428609.55462230917,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 2427.220667865614,
+      "cura_total_volume_mm3": 32303.024389691724,
+      "cura_support_length_mm": 1009.1210899999975,
+      "cura_wall_clock_s": 6.34857909999937,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_02",
+      "sources": [
+        "fibonacci_02"
+      ],
+      "fixed_panel": true,
+      "panel_index": 2,
+      "yaw_deg": 313.99999735419743,
+      "pitch_deg": 356.0000053531431,
+      "tomo_vss": 5458540.7251948705,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 13395.378635170784,
+      "cura_total_volume_mm3": 43565.91578445864,
+      "cura_support_length_mm": 5569.151279999992,
+      "cura_wall_clock_s": 7.995700599999509,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_03",
+      "sources": [
+        "fibonacci_03"
+      ],
+      "fixed_panel": true,
+      "panel_index": 3,
+      "yaw_deg": 48.9999990868195,
+      "pitch_deg": 329.9999886925191,
+      "tomo_vss": 825964.0823455628,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 3036.596209242158,
+      "cura_total_volume_mm3": 33546.45193268408,
+      "cura_support_length_mm": 1262.470000000002,
+      "cura_wall_clock_s": 7.047385099999701,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_04",
+      "sources": [
+        "fibonacci_04"
+      ],
+      "fixed_panel": true,
+      "panel_index": 4,
+      "yaw_deg": 159.99999534548672,
+      "pitch_deg": 118.00000100691943,
+      "tomo_vss": 5398955.465990655,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 12902.94402607264,
+      "cura_total_volume_mm3": 43210.04321858934,
+      "cura_support_length_mm": 5364.420760000005,
+      "cura_wall_clock_s": 8.556494700000258,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_05",
+      "sources": [
+        "fibonacci_05"
+      ],
+      "fixed_panel": true,
+      "panel_index": 5,
+      "yaw_deg": 122.00000567168901,
+      "pitch_deg": 232.9999916850725,
+      "tomo_vss": 3455473.7734162393,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 8588.343889876216,
+      "cura_total_volume_mm3": 38654.23518624915,
+      "cura_support_length_mm": 3570.6184700000035,
+      "cura_wall_clock_s": 7.080206199999338,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_06",
+      "sources": [
+        "fibonacci_06"
+      ],
+      "fixed_panel": true,
+      "panel_index": 6,
+      "yaw_deg": 79.00000333674014,
+      "pitch_deg": 15.000000417413029,
+      "tomo_vss": 949029.2579110876,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 4092.3251036463907,
+      "cura_total_volume_mm3": 34243.188490363085,
+      "cura_support_length_mm": 1701.3910700000029,
+      "cura_wall_clock_s": 7.161344499999359,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_07",
+      "sources": [
+        "fibonacci_07"
+      ],
+      "fixed_panel": true,
+      "panel_index": 7,
+      "yaw_deg": 94.00000033905859,
+      "pitch_deg": 152.99999401232913,
+      "tomo_vss": 546288.6059697614,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 2364.0934196723347,
+      "cura_total_volume_mm3": 32318.779803770798,
+      "cura_support_length_mm": 982.8758299999992,
+      "cura_wall_clock_s": 6.302513100000397,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_08",
+      "sources": [
+        "fibonacci_08"
+      ],
+      "fixed_panel": true,
+      "panel_index": 8,
+      "yaw_deg": 100.0000005060238,
+      "pitch_deg": 289.9999966863366,
+      "tomo_vss": 1318269.3300849074,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 2602.4054767040825,
+      "cura_total_volume_mm3": 32370.12545217718,
+      "cura_support_length_mm": 1081.9544700000001,
+      "cura_wall_clock_s": 5.750332399999934,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_09",
+      "sources": [
+        "fibonacci_09"
+      ],
+      "fixed_panel": true,
+      "panel_index": 9,
+      "yaw_deg": 117.0000066709162,
+      "pitch_deg": 65.00000067042492,
+      "tomo_vss": 1421424.9813981422,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 3846.0527903008006,
+      "cura_total_volume_mm3": 33649.70539197416,
+      "cura_support_length_mm": 1599.002939999998,
+      "cura_wall_clock_s": 6.528526699999929,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_10",
+      "sources": [
+        "fibonacci_10"
+      ],
+      "fixed_panel": true,
+      "panel_index": 10,
+      "yaw_deg": 250.00000468015406,
+      "pitch_deg": 336.0000093500518,
+      "tomo_vss": 4274402.12803853,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 10548.865141805456,
+      "cura_total_volume_mm3": 41028.804257914584,
+      "cura_support_length_mm": 4385.708490000003,
+      "cura_wall_clock_s": 7.294027699999788,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_11",
+      "sources": [
+        "fibonacci_11"
+      ],
+      "fixed_panel": true,
+      "panel_index": 11,
+      "yaw_deg": 297.00001167987256,
+      "pitch_deg": 195.999996347278,
+      "tomo_vss": 2470750.531798591,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 5978.664311618914,
+      "cura_total_volume_mm3": 35871.22916803546,
+      "cura_support_length_mm": 2485.6397800000104,
+      "cura_wall_clock_s": 6.5610484999997425,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_12",
+      "sources": [
+        "fibonacci_12"
+      ],
+      "fixed_panel": true,
+      "panel_index": 12,
+      "yaw_deg": 36.00000100179127,
+      "pitch_deg": 134.00000600561944,
+      "tomo_vss": 1245211.7521030991,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 4180.366020976921,
+      "cura_total_volume_mm3": 34920.65825916418,
+      "cura_support_length_mm": 1737.9942299999998,
+      "cura_wall_clock_s": 7.373118099999374,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_13",
+      "sources": [
+        "fibonacci_13"
+      ],
+      "fixed_panel": true,
+      "panel_index": 13,
+      "yaw_deg": 192.99999967889,
+      "pitch_deg": 314.99999169020066,
+      "tomo_vss": 1100624.5828115474,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 3336.8066319042237,
+      "cura_total_volume_mm3": 34110.9722142139,
+      "cura_support_length_mm": 1387.282990000002,
+      "cura_wall_clock_s": 6.753406799999539,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_14",
+      "sources": [
+        "fibonacci_14"
+      ],
+      "fixed_panel": true,
+      "panel_index": 14,
+      "yaw_deg": 329.9999886925191,
+      "pitch_deg": 159.99999534548672,
+      "tomo_vss": 737238.9383859793,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 3585.240523965556,
+      "cura_total_volume_mm3": 34081.36920753232,
+      "cura_support_length_mm": 1490.5697999999873,
+      "cura_wall_clock_s": 7.065151499999956,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "fibonacci_15",
+      "sources": [
+        "fibonacci_15"
+      ],
+      "fixed_panel": true,
+      "panel_index": 15,
+      "yaw_deg": 200.0000010120476,
+      "pitch_deg": 3.0000000834826057,
+      "tomo_vss": 1855278.8827368086,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 4411.81099825434,
+      "cura_total_volume_mm3": 33546.84954983041,
+      "cura_support_length_mm": 1834.2178699999806,
+      "cura_wall_clock_s": 5.7028425999997125,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "deployed_pipeline",
+      "sources": [
+        "deployed_pipeline"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 97.999998173639,
+      "pitch_deg": 209.99999901359323,
+      "tomo_vss": 271912.0445199427,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 1893.8613662455468,
+      "cura_total_volume_mm3": 31874.835075962008,
+      "cura_support_length_mm": 787.3760599999979,
+      "cura_wall_clock_s": 6.388299899999765,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C6_nefertiti_100k",
+      "candidate_id": "tomo_global_optimum",
+      "sources": [
+        "tomo_global_optimum"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 163.0000056742531,
+      "pitch_deg": 1.9999999845072665,
+      "tomo_vss": 108607.88332361603,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 1987.4310885477028,
+      "cura_total_volume_mm3": 32091.084997677033,
+      "cura_support_length_mm": 826.2778299999954,
+      "cura_wall_clock_s": 6.898300699999709,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_00",
+      "sources": [
+        "fibonacci_00"
+      ],
+      "fixed_panel": true,
+      "panel_index": 0,
+      "yaw_deg": 0.0,
+      "pitch_deg": 339.9999866940647,
+      "tomo_vss": 96821.81649956822,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 4373.025900171937,
+      "cura_total_volume_mm3": 42252.71700341355,
+      "cura_support_length_mm": 1818.0928999999974,
+      "cura_wall_clock_s": 4.855380299999524,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_01",
+      "sources": [
+        "fibonacci_01"
+      ],
+      "fixed_panel": true,
+      "panel_index": 1,
+      "yaw_deg": 205.99999434882363,
+      "pitch_deg": 154.99999634471394,
+      "tomo_vss": 203735.9978541855,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 5404.997849545634,
+      "cura_total_volume_mm3": 44007.38420242087,
+      "cura_support_length_mm": 2247.1369800000057,
+      "cura_wall_clock_s": 4.721001699999761,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_02",
+      "sources": [
+        "fibonacci_02"
+      ],
+      "fixed_panel": true,
+      "panel_index": 2,
+      "yaw_deg": 313.99999735419743,
+      "pitch_deg": 356.0000053531431,
+      "tomo_vss": 542502.9786165096,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 15810.08534302332,
+      "cura_total_volume_mm3": 54652.499464544286,
+      "cura_support_length_mm": 6573.069670000027,
+      "cura_wall_clock_s": 7.434538399999838,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_03",
+      "sources": [
+        "fibonacci_03"
+      ],
+      "fixed_panel": true,
+      "panel_index": 3,
+      "yaw_deg": 48.9999990868195,
+      "pitch_deg": 329.9999886925191,
+      "tomo_vss": 61933.66720656718,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 1665.1973277667935,
+      "cura_total_volume_mm3": 40313.75951239504,
+      "cura_support_length_mm": 692.3086000000006,
+      "cura_wall_clock_s": 4.193086299999777,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_04",
+      "sources": [
+        "fibonacci_04"
+      ],
+      "fixed_panel": true,
+      "panel_index": 4,
+      "yaw_deg": 159.99999534548672,
+      "pitch_deg": 118.00000100691943,
+      "tomo_vss": 806319.1815841297,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 19772.860281163008,
+      "cura_total_volume_mm3": 58488.21735994697,
+      "cura_support_length_mm": 8220.60003999999,
+      "cura_wall_clock_s": 8.016553100000237,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_05",
+      "sources": [
+        "fibonacci_05"
+      ],
+      "fixed_panel": true,
+      "panel_index": 5,
+      "yaw_deg": 122.00000567168901,
+      "pitch_deg": 232.9999916850725,
+      "tomo_vss": 77007.19912190082,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 1521.737345016281,
+      "cura_total_volume_mm3": 39770.30983683212,
+      "cura_support_length_mm": 632.6648700000082,
+      "cura_wall_clock_s": 3.8633299000002808,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_06",
+      "sources": [
+        "fibonacci_06"
+      ],
+      "fixed_panel": true,
+      "panel_index": 6,
+      "yaw_deg": 79.00000333674014,
+      "pitch_deg": 15.000000417413029,
+      "tomo_vss": 136840.42623220396,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 2658.75225934342,
+      "cura_total_volume_mm3": 40766.30360396617,
+      "cura_support_length_mm": 1105.3807400000005,
+      "cura_wall_clock_s": 3.875750799999878,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_07",
+      "sources": [
+        "fibonacci_07"
+      ],
+      "fixed_panel": true,
+      "panel_index": 7,
+      "yaw_deg": 94.00000033905859,
+      "pitch_deg": 152.99999401232913,
+      "tomo_vss": 331808.89413376484,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 8835.936149756566,
+      "cura_total_volume_mm3": 47428.807231584724,
+      "cura_support_length_mm": 3673.555370000006,
+      "cura_wall_clock_s": 5.166096099999777,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_08",
+      "sources": [
+        "fibonacci_08"
+      ],
+      "fixed_panel": true,
+      "panel_index": 8,
+      "yaw_deg": 100.0000005060238,
+      "pitch_deg": 289.9999966863366,
+      "tomo_vss": 124084.97707902892,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 2198.5857814031915,
+      "cura_total_volume_mm3": 40807.608499395224,
+      "cura_support_length_mm": 914.0657500000007,
+      "cura_wall_clock_s": 3.8254704999999376,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_09",
+      "sources": [
+        "fibonacci_09"
+      ],
+      "fixed_panel": true,
+      "panel_index": 9,
+      "yaw_deg": 117.0000066709162,
+      "pitch_deg": 65.00000067042492,
+      "tomo_vss": 119190.71260562613,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 3311.6470708008515,
+      "cura_total_volume_mm3": 41348.826602539244,
+      "cura_support_length_mm": 1376.8228600000039,
+      "cura_wall_clock_s": 4.074387399999978,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_10",
+      "sources": [
+        "fibonacci_10"
+      ],
+      "fixed_panel": true,
+      "panel_index": 10,
+      "yaw_deg": 250.00000468015406,
+      "pitch_deg": 336.0000093500518,
+      "tomo_vss": 67242.79577081854,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 1726.1585715256501,
+      "cura_total_volume_mm3": 40194.55665304099,
+      "cura_support_length_mm": 717.6533400000058,
+      "cura_wall_clock_s": 4.1485131999997975,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_11",
+      "sources": [
+        "fibonacci_11"
+      ],
+      "fixed_panel": true,
+      "panel_index": 11,
+      "yaw_deg": 297.00001167987256,
+      "pitch_deg": 195.999996347278,
+      "tomo_vss": 74714.95226395031,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 2167.8452688171255,
+      "cura_total_volume_mm3": 41046.549489530946,
+      "cura_support_length_mm": 901.285329999998,
+      "cura_wall_clock_s": 4.330016900000373,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_12",
+      "sources": [
+        "fibonacci_12"
+      ],
+      "fixed_panel": true,
+      "panel_index": 12,
+      "yaw_deg": 36.00000100179127,
+      "pitch_deg": 134.00000600561944,
+      "tomo_vss": 115642.26386960872,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 3895.3448811996104,
+      "cura_total_volume_mm3": 42565.071525893385,
+      "cura_support_length_mm": 1619.4962100000128,
+      "cura_wall_clock_s": 4.758231800000431,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_13",
+      "sources": [
+        "fibonacci_13"
+      ],
+      "fixed_panel": true,
+      "panel_index": 13,
+      "yaw_deg": 192.99999967889,
+      "pitch_deg": 314.99999169020066,
+      "tomo_vss": 22557.960068883975,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 302.42133370911966,
+      "cura_total_volume_mm3": 38951.938703876556,
+      "cura_support_length_mm": 125.73218000000008,
+      "cura_wall_clock_s": 4.013938500000222,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_14",
+      "sources": [
+        "fibonacci_14"
+      ],
+      "fixed_panel": true,
+      "panel_index": 14,
+      "yaw_deg": 329.9999886925191,
+      "pitch_deg": 159.99999534548672,
+      "tomo_vss": 73917.81452273534,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 2018.9828064990727,
+      "cura_total_volume_mm3": 40362.81468302874,
+      "cura_support_length_mm": 839.3955100000002,
+      "cura_wall_clock_s": 4.135783199999423,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "fibonacci_15",
+      "sources": [
+        "fibonacci_15"
+      ],
+      "fixed_panel": true,
+      "panel_index": 15,
+      "yaw_deg": 200.0000010120476,
+      "pitch_deg": 3.0000000834826057,
+      "tomo_vss": 187975.22931059528,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 3579.8178881359395,
+      "cura_total_volume_mm3": 41657.28829656838,
+      "cura_support_length_mm": 1488.3153299999985,
+      "cura_wall_clock_s": 4.033398199999283,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "deployed_pipeline",
+      "sources": [
+        "deployed_pipeline"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 351.0000063523703,
+      "pitch_deg": 313.0000030181942,
+      "tomo_vss": 7574.480919798543,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 771.6550267878627,
+      "cura_total_volume_mm3": 38926.03340917996,
+      "cura_support_length_mm": 320.81687999999286,
+      "cura_wall_clock_s": 4.04256340000029,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C7_liver_19k",
+      "candidate_id": "tomo_global_optimum",
+      "sources": [
+        "tomo_global_optimum"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 3.0000000834826057,
+      "pitch_deg": 312.000008682191,
+      "tomo_vss": 2898.9211586881274,
+      "deployed_route": "uniform",
+      "cura_support_volume_mm3": 371.3592618570064,
+      "cura_total_volume_mm3": 38616.356662957936,
+      "cura_support_length_mm": 154.3932400000003,
+      "cura_wall_clock_s": 4.073123400000441,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_00",
+      "sources": [
+        "fibonacci_00"
+      ],
+      "fixed_panel": true,
+      "panel_index": 0,
+      "yaw_deg": 0.0,
+      "pitch_deg": 339.9999866940647,
+      "tomo_vss": 1550.1611488909762,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 352.4743595819858,
+      "cura_total_volume_mm3": 37648.78777138993,
+      "cura_support_length_mm": 146.54180999999534,
+      "cura_wall_clock_s": 3.1804698000005374,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_01",
+      "sources": [
+        "fibonacci_01"
+      ],
+      "fixed_panel": true,
+      "panel_index": 1,
+      "yaw_deg": 205.99999434882363,
+      "pitch_deg": 154.99999634471394,
+      "tomo_vss": 6812.881339680065,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2676.3004021633483,
+      "cura_total_volume_mm3": 40269.90251668601,
+      "cura_support_length_mm": 1112.6764099999982,
+      "cura_wall_clock_s": 3.691057699999874,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_02",
+      "sources": [
+        "fibonacci_02"
+      ],
+      "fixed_panel": true,
+      "panel_index": 2,
+      "yaw_deg": 313.99999735419743,
+      "pitch_deg": 356.0000053531431,
+      "tomo_vss": 9543.329231009995,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2038.413779918254,
+      "cura_total_volume_mm3": 40675.47376230136,
+      "cura_support_length_mm": 847.47397,
+      "cura_wall_clock_s": 3.482628499999919,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_03",
+      "sources": [
+        "fibonacci_03"
+      ],
+      "fixed_panel": true,
+      "panel_index": 3,
+      "yaw_deg": 48.9999990868195,
+      "pitch_deg": 329.9999886925191,
+      "tomo_vss": 6188.166042989936,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 1123.8824601325666,
+      "cura_total_volume_mm3": 39546.60339698553,
+      "cura_support_length_mm": 467.2560300000078,
+      "cura_wall_clock_s": 3.575735800000075,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_04",
+      "sources": [
+        "fibonacci_04"
+      ],
+      "fixed_panel": true,
+      "panel_index": 4,
+      "yaw_deg": 159.99999534548672,
+      "pitch_deg": 118.00000100691943,
+      "tomo_vss": 21780.61304013591,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 5256.732233872144,
+      "cura_total_volume_mm3": 43685.81612745109,
+      "cura_support_length_mm": 2185.495300000008,
+      "cura_wall_clock_s": 4.001571900000272,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_05",
+      "sources": [
+        "fibonacci_05"
+      ],
+      "fixed_panel": true,
+      "panel_index": 5,
+      "yaw_deg": 122.00000567168901,
+      "pitch_deg": 232.9999916850725,
+      "tomo_vss": 4218.850254027311,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 495.66742820281445,
+      "cura_total_volume_mm3": 38661.214544560826,
+      "cura_support_length_mm": 206.07457000000016,
+      "cura_wall_clock_s": 3.131244300000617,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_06",
+      "sources": [
+        "fibonacci_06"
+      ],
+      "fixed_panel": true,
+      "panel_index": 6,
+      "yaw_deg": 79.00000333674014,
+      "pitch_deg": 15.000000417413029,
+      "tomo_vss": 21120.737406833112,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 6365.8796486021265,
+      "cura_total_volume_mm3": 44794.97321141468,
+      "cura_support_length_mm": 2646.6252100000033,
+      "cura_wall_clock_s": 4.022515999999996,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_07",
+      "sources": [
+        "fibonacci_07"
+      ],
+      "fixed_panel": true,
+      "panel_index": 7,
+      "yaw_deg": 94.00000033905859,
+      "pitch_deg": 152.99999401232913,
+      "tomo_vss": 20072.665096314486,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 4245.72657339152,
+      "cura_total_volume_mm3": 42985.768338478934,
+      "cura_support_length_mm": 1765.1679900000006,
+      "cura_wall_clock_s": 3.33745479999925,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_08",
+      "sources": [
+        "fibonacci_08"
+      ],
+      "fixed_panel": true,
+      "panel_index": 8,
+      "yaw_deg": 100.0000005060238,
+      "pitch_deg": 289.9999966863366,
+      "tomo_vss": 8662.263223947572,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 1285.0407474504923,
+      "cura_total_volume_mm3": 39952.24458819837,
+      "cura_support_length_mm": 534.2578599999994,
+      "cura_wall_clock_s": 3.2071473000005426,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_09",
+      "sources": [
+        "fibonacci_09"
+      ],
+      "fixed_panel": true,
+      "panel_index": 9,
+      "yaw_deg": 117.0000066709162,
+      "pitch_deg": 65.00000067042492,
+      "tomo_vss": 10823.370011384823,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 3393.50292605288,
+      "cura_total_volume_mm3": 41314.10498765689,
+      "cura_support_length_mm": 1410.8545700000038,
+      "cura_wall_clock_s": 3.6860295999995287,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_10",
+      "sources": [
+        "fibonacci_10"
+      ],
+      "fixed_panel": true,
+      "panel_index": 10,
+      "yaw_deg": 250.00000468015406,
+      "pitch_deg": 336.0000093500518,
+      "tomo_vss": 4489.252882555496,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 627.4962374940874,
+      "cura_total_volume_mm3": 39000.15435897628,
+      "cura_support_length_mm": 260.8826199999998,
+      "cura_wall_clock_s": 3.2969339000001128,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_11",
+      "sources": [
+        "fibonacci_11"
+      ],
+      "fixed_panel": true,
+      "panel_index": 11,
+      "yaw_deg": 297.00001167987256,
+      "pitch_deg": 195.999996347278,
+      "tomo_vss": 20379.933443936436,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 3867.135687259197,
+      "cura_total_volume_mm3": 42567.267692563684,
+      "cura_support_length_mm": 1607.7681900000002,
+      "cura_wall_clock_s": 3.438342100000227,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_12",
+      "sources": [
+        "fibonacci_12"
+      ],
+      "fixed_panel": true,
+      "panel_index": 12,
+      "yaw_deg": 36.00000100179127,
+      "pitch_deg": 134.00000600561944,
+      "tomo_vss": 5665.76236535695,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 2535.7342380899436,
+      "cura_total_volume_mm3": 40645.174137883434,
+      "cura_support_length_mm": 1054.2357900000015,
+      "cura_wall_clock_s": 3.8603680000005625,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_13",
+      "sources": [
+        "fibonacci_13"
+      ],
+      "fixed_panel": true,
+      "panel_index": 13,
+      "yaw_deg": 192.99999967889,
+      "pitch_deg": 314.99999169020066,
+      "tomo_vss": 6045.913893329211,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 927.2224528618143,
+      "cura_total_volume_mm3": 38777.7707760563,
+      "cura_support_length_mm": 385.49429999999916,
+      "cura_wall_clock_s": 3.098770699999477,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_14",
+      "sources": [
+        "fibonacci_14"
+      ],
+      "fixed_panel": true,
+      "panel_index": 14,
+      "yaw_deg": 329.9999886925191,
+      "pitch_deg": 159.99999534548672,
+      "tomo_vss": 9612.241067177009,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 3904.367622676229,
+      "cura_total_volume_mm3": 42156.82707405587,
+      "cura_support_length_mm": 1623.2474299999974,
+      "cura_wall_clock_s": 3.9105067999998937,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "fibonacci_15",
+      "sources": [
+        "fibonacci_15"
+      ],
+      "fixed_panel": true,
+      "panel_index": 15,
+      "yaw_deg": 200.0000010120476,
+      "pitch_deg": 3.0000000834826057,
+      "tomo_vss": 1436.8006266838263,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 439.98801507262544,
+      "cura_total_volume_mm3": 37462.604089590444,
+      "cura_support_length_mm": 182.9257599999992,
+      "cura_wall_clock_s": 3.0043084000008093,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "deployed_pipeline",
+      "sources": [
+        "deployed_pipeline"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 30.99999858592387,
+      "pitch_deg": 183.99999601334758,
+      "tomo_vss": 1070.200781191676,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 248.77236332687693,
+      "cura_total_volume_mm3": 37716.789323303696,
+      "cura_support_length_mm": 103.42753000000107,
+      "cura_wall_clock_s": 3.173564100000476,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "mesh": "Group_C8_kidney_12k",
+      "candidate_id": "tomo_global_optimum",
+      "sources": [
+        "tomo_global_optimum"
+      ],
+      "fixed_panel": false,
+      "panel_index": null,
+      "yaw_deg": 33.99999866940647,
+      "pitch_deg": 185.99999834573237,
+      "tomo_vss": 969.2408575499353,
+      "deployed_route": "sftf",
+      "cura_support_volume_mm3": 237.0418276733344,
+      "cura_total_volume_mm3": 37805.52173512056,
+      "cura_support_length_mm": 98.55053999999583,
+      "cura_wall_clock_s": 3.222273600000335,
+      "ok": true,
+      "error": ""
+    }
+  ]
+}

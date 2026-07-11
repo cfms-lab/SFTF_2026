@@ -74,7 +74,8 @@ Important data locations:
 | `Experimental/etc/` | Stored TOMO INT3 grids and paper summary CSV/JSON/HTML outputs |
 | `Experimental/G5Test/` | G5 validation records, cached TOMO grids, SFTF candidate CSV files, and figures |
 | `comparison_outputs/` | Additional comparison artifacts retained for manuscript review |
-| `draft/` | Manuscript source and submission-support files |
+
+The manuscript `draft/` directory is intentionally excluded from this snapshot.
 
 ## Main Reproduction Commands
 

@@ -42,59 +42,59 @@
   "summary": [
     {
       "policy": "SFTF top-20 only",
-      "mesh_count": 24,
-      "mean_ratio": 3.724135147795227,
-      "median_ratio": 1.1996365745956976,
+      "mesh_count": 26,
+      "mean_ratio": 3.5199621193267965,
+      "median_ratio": 1.144779004797014,
       "max_ratio": 34.03656384860017,
-      "count_ratio_le_2_00": 16
+      "count_ratio_le_2_00": 18
     },
     {
       "policy": "Uniform only",
-      "mesh_count": 24,
-      "mean_ratio": 1.3140475666427187,
+      "mesh_count": 26,
+      "mean_ratio": 1.2982207110173383,
       "median_ratio": 1.1254854471216935,
       "max_ratio": 2.6128619942276337,
-      "count_ratio_le_2_00": 21
+      "count_ratio_le_2_00": 23
     },
     {
       "policy": "Routed fixed (nn_frac>=0.8, cv<=2.0)",
-      "mesh_count": 24,
-      "mean_ratio": 1.277356108943573,
+      "mesh_count": 26,
+      "mean_ratio": 1.2613968526945005,
       "median_ratio": 1.0712096728656064,
       "max_ratio": 2.6128619942276337,
-      "count_ratio_le_2_00": 22
+      "count_ratio_le_2_00": 24
     },
     {
       "policy": "Routed LOO (thresholds refit per fold)",
-      "mesh_count": 24,
-      "mean_ratio": 1.3260037518221088,
-      "median_ratio": 1.1010274351384008,
+      "mesh_count": 26,
+      "mean_ratio": 1.3063023691977647,
+      "median_ratio": 1.07927381239763,
       "max_ratio": 2.6128619942276337,
-      "count_ratio_le_2_00": 21
+      "count_ratio_le_2_00": 23
     },
     {
       "policy": "Routed fixed -> hybrid 25:75 branch",
-      "mesh_count": 24,
-      "mean_ratio": 1.2663486830292117,
-      "median_ratio": 1.0916290797470563,
+      "mesh_count": 26,
+      "mean_ratio": 1.2479539670332565,
+      "median_ratio": 1.0721077877835026,
       "max_ratio": 2.6128619942276337,
-      "count_ratio_le_2_00": 22
+      "count_ratio_le_2_00": 24
     },
     {
       "policy": "Routed LOO -> hybrid 25:75 branch",
-      "mesh_count": 24,
-      "mean_ratio": 1.3071425874938392,
-      "median_ratio": 1.0916290797470563,
+      "mesh_count": 26,
+      "mean_ratio": 1.2856098788467585,
+      "median_ratio": 1.0721077877835026,
       "max_ratio": 2.6128619942276337,
-      "count_ratio_le_2_00": 21
+      "count_ratio_le_2_00": 23
     },
     {
       "policy": "Oracle per-mesh winner",
-      "mesh_count": 24,
-      "mean_ratio": 1.2414476243320547,
-      "median_ratio": 1.0639953331834762,
+      "mesh_count": 26,
+      "mean_ratio": 1.2249683743897268,
+      "median_ratio": 1.0553296257126283,
       "max_ratio": 2.6128619942276337,
-      "count_ratio_le_2_00": 22
+      "count_ratio_le_2_00": 24
     }
   ],
   "records": [
@@ -498,6 +498,27 @@
       "loo_h25_ratio": 1.4791667683388925
     },
     {
+      "mesh": "Group_E2_45809",
+      "group": "E",
+      "sftf": 1.0540540456206573,
+      "uniform": 1.2162161824826287,
+      "hybrid25": 1.0540540456206573,
+      "nn_frac": 0.9,
+      "nn_mean_deg": 3.631054505418257,
+      "score_cv": 0.17180012474038733,
+      "top_k_used": 20,
+      "oracle": "SFTF",
+      "fixed_route": "SFTF",
+      "loo_t1": 0.75,
+      "loo_t2": 2.0,
+      "loo_route": "SFTF",
+      "fixed_ratio": 1.0540540456206573,
+      "loo_ratio": 1.0540540456206573,
+      "oracle_ratio": 1.0540540456206573,
+      "fixed_h25_ratio": 1.0540540456206573,
+      "loo_h25_ratio": 1.0540540456206573
+    },
+    {
       "mesh": "Group_E2_790253",
       "group": "E",
       "sftf": 2.7435616673823238,
@@ -538,6 +559,27 @@
       "oracle_ratio": 1.0,
       "fixed_h25_ratio": 1.0,
       "loo_h25_ratio": 1.0
+    },
+    {
+      "mesh": "Group_E4_46012",
+      "group": "E",
+      "sftf": 1.085717509790608,
+      "uniform": 1.0003807045429256,
+      "hybrid25": 1.0003807045429256,
+      "nn_frac": 0.85,
+      "nn_mean_deg": 3.788285972093938,
+      "score_cv": 0.3687572967261509,
+      "top_k_used": 20,
+      "oracle": "uniform",
+      "fixed_route": "SFTF",
+      "loo_t1": 0.75,
+      "loo_t2": 2.0,
+      "loo_route": "SFTF",
+      "fixed_ratio": 1.085717509790608,
+      "loo_ratio": 1.085717509790608,
+      "oracle_ratio": 1.0003807045429256,
+      "fixed_h25_ratio": 1.0003807045429256,
+      "loo_h25_ratio": 1.0003807045429256
     },
     {
       "mesh": "Group_E5_55280",
@@ -607,7 +649,8 @@
     "Group_A5_torus(A:uniform vs SFTF)",
     "Group_C4_happy_50k_0.75x(C:SFTF vs uniform)",
     "Group_C6_nefertiti_100k(C:uniform vs SFTF)",
-    "Group_D10_37416(D:SFTF vs uniform)"
+    "Group_D10_37416(D:SFTF vs uniform)",
+    "Group_E4_46012(E:SFTF vs uniform)"
   ],
   "misroutes_loo": [
     "Group_A5_torus(A:uniform vs SFTF)",
@@ -615,6 +658,7 @@
     "Group_C6_nefertiti_100k(C:uniform vs SFTF)",
     "Group_C8_kidney_12k(C:uniform vs SFTF)",
     "Group_D10_37416(D:SFTF vs uniform)",
+    "Group_E4_46012(E:SFTF vs uniform)",
     "Group_E7_61384(E:uniform vs SFTF)"
   ]
 }

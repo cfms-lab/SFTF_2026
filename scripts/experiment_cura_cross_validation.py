@@ -1,9 +1,7 @@
-"""Real-slicer cross-validation of the TOMO verifier (revision-plan item 2-1).
+"""Two-direction real-slicer cross-check of the TOMO screening proxy.
 
-Reviewer attack this defends against: "your ground truth is itself an
-estimator" -- every accuracy number in the paper is a ratio of TOMO_CPU
-values. This experiment slices, with the *actual* legacy CuraEngine 15.04
-(the engine statically linked into the 3DWOX DP103 slicer; support angle
+This limited experiment does not validate global ranking.  It slices with the
+legacy CuraEngine 15.04.6 with the translated DP103 PLA profile (support angle
 60 degrees, support placement everywhere, lines pattern), two directions per
 organic mesh:
 
@@ -12,11 +10,10 @@ organic mesh:
     for the two held-out meshes it routes to uniform), and
   * the TOMO global-optimum direction from the cached 1 degree / 60 degree grid,
 
-and compares the *measured* support-only extrusion volume ratio against the
-TOMO-predicted v_ss ratio. Agreement validates TOMO as the verification
-backend independently of its own arithmetic. Uses the _Cura_CLI pipeline
-(high-water-mark gcode parser; legacy engine reproduces 3DWOX total mass to
-0.1 g, Spearman 0.99).
+and compares the measured support-only extrusion-volume ratio against the
+TOMO-predicted v_ss ratio.  The multi-direction ranking experiment in
+``experiment_cura_multidirection_validation.py`` is the stronger validation.
+Uses the _Cura_CLI pipeline and its high-water-mark G-code parser.
 
 Every mesh is uniformly pre-scaled to a 140 mm bounding-sphere diameter so
 any orientation fits the DP103 build volume; support-volume ratios between
@@ -67,7 +64,7 @@ CACHE_DIR = G5_ROOT / "tomo_int3_cache"
 CAND_DIR = G5_ROOT / "SFTF_result"
 GRID_SUFFIX = "_tomo_int3_1deg_60deg.npz"
 
-# organic set: five calibration meshes + three held-out; routed branch per the
+# organic set: five calibration meshes + three retrospective test meshes; routed branch per the
 # fixed routing rule of the manuscript (C6/C7 -> uniform, all others -> SFTF)
 MESHES = [
     ("Group_C1_Bunny_69k", "sftf"),

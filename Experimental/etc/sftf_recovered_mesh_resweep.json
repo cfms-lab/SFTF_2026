@@ -1,0 +1,82 @@
+{
+  "status": "complete",
+  "backend": "current TOMO_CPU DLL with int32 accumulator fix",
+  "record_count": 3,
+  "records": [
+    {
+      "mesh": "Group_E2_45809",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_E2_45809.stl",
+      "mesh_sha256": "c1cd31ae30f6292ce884b720ae2bdc4e26a722dba31890f025fe3288372e5bbf",
+      "mesh_size_bytes": 25879534,
+      "face_count": 517589,
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_E2_45809_tomo_int3_1deg_60deg.npz",
+      "old_grid_sha256": "e7269ce6bed0e02a86d45204974143a8f7684c83d2a4c067a4eb2b0d1fe38185",
+      "old_grid_had_int32fix_marker": false,
+      "old_grid_min": 5218.226554965185,
+      "old_grid_max": 9579.111721890033,
+      "new_grid_sha256": "be0e2314ea640a626450ab94b9f249414e31048cac710bd246283ba15486389b",
+      "new_grid_min": 37.00000272432634,
+      "new_grid_max": 2839.6337485510458,
+      "new_grid_negative_count": 0,
+      "new_grid_zero_count": 0,
+      "new_grid_best": {
+        "yaw": 352.0000006883735,
+        "pitch": 334.9999876932919,
+        "vss": 37.00000272432634
+      },
+      "dll_wall_s": 861.2644734000005,
+      "critical_angle_deg": 60.0,
+      "angle_step_deg": 1.0
+    },
+    {
+      "mesh": "Group_E3_45811",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_E3_45811.stl",
+      "mesh_sha256": "fa7c436bfd2b9f5f8d8d767c47e77dc6ea8e920d01e719e4d94e2670e75b468b",
+      "mesh_size_bytes": 51893884,
+      "face_count": 1037876,
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_E3_45811_tomo_int3_1deg_60deg.npz",
+      "old_grid_sha256": "b03d01a395db0f4db1cb3b3a23a21a3243b09d4c8e57ffe03de49fed38db02c3",
+      "old_grid_had_int32fix_marker": false,
+      "old_grid_min": 7187.566481345942,
+      "old_grid_max": 51310.33826465449,
+      "new_grid_sha256": "6a96e6fd608836fb733e6481ae3358434637eb1c23d352d72e1f3ae5b5611e1e",
+      "new_grid_min": 0.0,
+      "new_grid_max": 17631.800706721533,
+      "new_grid_negative_count": 0,
+      "new_grid_zero_count": 3,
+      "new_grid_best": {
+        "yaw": 356.9999996891463,
+        "pitch": 0.9999999922536332,
+        "vss": 0.0
+      },
+      "dll_wall_s": 1536.8261300999984,
+      "critical_angle_deg": 60.0,
+      "angle_step_deg": 1.0
+    },
+    {
+      "mesh": "Group_E4_46012",
+      "mesh_path": "D:\\__SFTF_Projects(2026)\\sftf_Mesh_Data\\g5test\\Group_E4_46012.stl",
+      "mesh_sha256": "2d2b18103285a4722cf313137fa35abae2f796d354056de6e0e27ced5dc3142d",
+      "mesh_size_bytes": 31937784,
+      "face_count": 638754,
+      "grid_path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\Experimental\\G5Test\\tomo_int3_cache\\Group_E4_46012_tomo_int3_1deg_60deg.npz",
+      "old_grid_sha256": "2d1e96b86563ece5605414a9f6df27ca7b62a1a980dca03c7ec3624bbd95e941",
+      "old_grid_had_int32fix_marker": false,
+      "old_grid_min": 18153.478291409076,
+      "old_grid_max": 42313.61515265851,
+      "new_grid_sha256": "b0e3943f4fa538eda840cb223680eaa89dcfcaef7a41e4df753bfc979aec39d0",
+      "new_grid_min": 13244.542208584871,
+      "new_grid_max": 26299.9495198904,
+      "new_grid_negative_count": 0,
+      "new_grid_zero_count": 0,
+      "new_grid_best": {
+        "yaw": 137.99999701001067,
+        "pitch": 1.9999999845072665,
+        "vss": 13244.542208584871
+      },
+      "dll_wall_s": 1027.5679922999989,
+      "critical_angle_deg": 60.0,
+      "angle_step_deg": 1.0
+    }
+  ]
+}

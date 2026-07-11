@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Bash(.venv/Scripts/python.exe *)",
+      "Bash(python *)",
+      "Bash(python3 *)",
+      "Bash(latexmk *)",
+      "Bash(xelatex *)",
+      "Bash(uv sync*)",
+      "Bash(uv run *)"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+row_type,metric,record_count,mean,median,max,mean_ci95_low,mean_ci95_high,optimum_sign_class,difference,ci95_low,ci95_high,resamples,method,contrast
+class_summary,surrogate_excess_vss,26,7114.188425324488,83.14826394900768,163304.1611963267,350.1652974665312,19987.360882711204,positive,,,,,,
+class_summary,surrogate_excess_vss,15,174.23636314863404,0.0,1761.522051716639,0.41216456387927064,464.84469846034847,nonpositive,,,,,,
+class_summary,bbox_normalized_surrogate_excess,26,0.0013911519098484986,0.00022623330639387685,0.016114901289545493,0.0004548647609580441,0.0028104244842891827,positive,,,,,,
+class_summary,bbox_normalized_surrogate_excess,15,0.025643650339408266,0.0,0.22019025646457988,6.888379501607191e-07,0.062249624031082834,nonpositive,,,,,,
+class_summary,grid_range_normalized_regret,26,0.009913935407480926,0.001679130499924067,0.08695930730965205,0.0030391856382602695,0.019210033766954182,positive,,,,,,
+class_summary,grid_range_normalized_regret,15,0.0675356451569176,0.0,0.5695232456104545,6.1431706903208325e-06,0.16461214104846858,nonpositive,,,,,,
+class_summary,selected_grid_strictly_better_fraction,26,0.0020664949801466556,4.604016236830595e-05,0.03350956484373201,0.00019772921655580628,0.005145674320155018,positive,,,,,,
+class_summary,selected_grid_strictly_better_fraction,15,0.0662650941393431,0.0,0.4969882060450733,6.65024567542197e-06,0.1656448308407701,nonpositive,,,,,,
+class_summary,nonnegative_clipped_excess_vss,26,7114.188425324488,83.14826394900768,163304.1611963267,343.9634878152898,19989.96006606493,positive,,,,,,
+class_summary,nonnegative_clipped_excess_vss,15,174.23636314863404,0.0,1761.522051716639,0.3920000295998841,464.95837137780956,nonpositive,,,,,,
+class_difference,surrogate_excess_vss,,,,,,,,-6939.952062175854,-19810.04855341533,-138.7844563982278,20000,independent percentile mesh bootstrap,nonpositive_mean_minus_positive_mean
+class_difference,bbox_normalized_surrogate_excess,,,,,,,,0.024252498429559767,-0.0018483765417467767,0.06325987099004689,20000,independent percentile mesh bootstrap,nonpositive_mean_minus_positive_mean
+class_difference,grid_range_normalized_regret,,,,,,,,0.05762170974943667,-0.013137858681671756,0.15793150379284743,20000,independent percentile mesh bootstrap,nonpositive_mean_minus_positive_mean
+class_difference,selected_grid_strictly_better_fraction,,,,,,,,0.06419859915919644,-0.003032337409855231,0.16383575152399818,20000,independent percentile mesh bootstrap,nonpositive_mean_minus_positive_mean
+class_difference,nonnegative_clipped_excess_vss,,,,,,,,-6939.952062175854,-19838.311655316375,-140.01581654120707,20000,independent percentile mesh bootstrap,nonpositive_mean_minus_positive_mean

@@ -1,0 +1,6 @@
+group,positive_optimum_count,nonpositive_optimum_count,usable_count,nonpositive_exclusion_fraction
+A,2,3,5,0.6
+B,1,4,5,0.8
+C,8,0,8,0.0
+D,6,4,10,0.4
+E,9,4,13,0.3076923076923077
