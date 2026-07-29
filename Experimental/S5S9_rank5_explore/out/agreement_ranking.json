@@ -1,0 +1,226 @@
+[
+  {
+    "mesh": "Group_C1_Bunny_69k",
+    "opt_mean_angle_deg": 36.2,
+    "worst_mean_angle_deg": 87.3,
+    "combined_deg": 61.8,
+    "sftf_rank1_nrr": 0.0588,
+    "group": "C"
+  },
+  {
+    "mesh": "Group_C2_manikin",
+    "opt_mean_angle_deg": 19.1,
+    "worst_mean_angle_deg": 87.0,
+    "combined_deg": 53.1,
+    "sftf_rank1_nrr": 0.0287,
+    "group": "C"
+  },
+  {
+    "mesh": "Group_C3_dragon_100k_1.5x",
+    "opt_mean_angle_deg": 99.5,
+    "worst_mean_angle_deg": 44.0,
+    "combined_deg": 71.8,
+    "sftf_rank1_nrr": 0.0378,
+    "group": "C"
+  },
+  {
+    "mesh": "Group_C4_happy_50k_0.75x",
+    "opt_mean_angle_deg": 69.1,
+    "worst_mean_angle_deg": 113.9,
+    "combined_deg": 91.5,
+    "sftf_rank1_nrr": 0.1516,
+    "group": "C"
+  },
+  {
+    "mesh": "Group_C5_lucy_50k",
+    "opt_mean_angle_deg": 25.8,
+    "worst_mean_angle_deg": 76.2,
+    "combined_deg": 51.0,
+    "sftf_rank1_nrr": 0.0028,
+    "group": "C"
+  },
+  {
+    "mesh": "Group_D10_37416",
+    "opt_mean_angle_deg": 45.7,
+    "worst_mean_angle_deg": 100.8,
+    "combined_deg": 73.2,
+    "sftf_rank1_nrr": 0.0169,
+    "group": "D"
+  },
+  {
+    "mesh": "Group_D1_37009",
+    "opt_mean_angle_deg": 78.0,
+    "worst_mean_angle_deg": 62.7,
+    "combined_deg": 70.3,
+    "sftf_rank1_nrr": 0.4582,
+    "group": "D"
+  },
+  {
+    "mesh": "Group_D2_37010",
+    "opt_mean_angle_deg": 58.4,
+    "worst_mean_angle_deg": 28.7,
+    "combined_deg": 43.5,
+    "sftf_rank1_nrr": 0.3307,
+    "group": "D"
+  },
+  {
+    "mesh": "Group_D3_37011",
+    "opt_mean_angle_deg": 46.8,
+    "worst_mean_angle_deg": 91.1,
+    "combined_deg": 69.0,
+    "sftf_rank1_nrr": 0.3312,
+    "group": "D"
+  },
+  {
+    "mesh": "Group_D4_37091",
+    "opt_mean_angle_deg": 64.6,
+    "worst_mean_angle_deg": 42.5,
+    "combined_deg": 53.5,
+    "sftf_rank1_nrr": 0.4524,
+    "group": "D"
+  },
+  {
+    "mesh": "Group_D5_37095",
+    "opt_mean_angle_deg": 36.3,
+    "worst_mean_angle_deg": 64.1,
+    "combined_deg": 50.2,
+    "sftf_rank1_nrr": 0.1075,
+    "group": "D"
+  },
+  {
+    "mesh": "Group_D6_37111",
+    "opt_mean_angle_deg": 53.3,
+    "worst_mean_angle_deg": 60.0,
+    "combined_deg": 56.7,
+    "sftf_rank1_nrr": 0.3816,
+    "group": "D"
+  },
+  {
+    "mesh": "Group_D7_37137",
+    "opt_mean_angle_deg": 75.6,
+    "worst_mean_angle_deg": 88.2,
+    "combined_deg": 81.9,
+    "sftf_rank1_nrr": 0.192,
+    "group": "D"
+  },
+  {
+    "mesh": "Group_D8_37402",
+    "opt_mean_angle_deg": 51.1,
+    "worst_mean_angle_deg": 94.6,
+    "combined_deg": 72.9,
+    "sftf_rank1_nrr": 0.3269,
+    "group": "D"
+  },
+  {
+    "mesh": "Group_D9_37415",
+    "opt_mean_angle_deg": 58.5,
+    "worst_mean_angle_deg": 108.0,
+    "combined_deg": 83.3,
+    "sftf_rank1_nrr": 0.5269,
+    "group": "D"
+  },
+  {
+    "mesh": "Group_E10_65942",
+    "opt_mean_angle_deg": 45.5,
+    "worst_mean_angle_deg": 91.3,
+    "combined_deg": 68.4,
+    "sftf_rank1_nrr": 0.2886,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E1_39507",
+    "opt_mean_angle_deg": 131.6,
+    "worst_mean_angle_deg": 93.8,
+    "combined_deg": 112.7,
+    "sftf_rank1_nrr": 0.1522,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E2_45809",
+    "opt_mean_angle_deg": 73.9,
+    "worst_mean_angle_deg": 51.3,
+    "combined_deg": 62.6,
+    "sftf_rank1_nrr": 0.2968,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E2_790253",
+    "opt_mean_angle_deg": 74.2,
+    "worst_mean_angle_deg": 27.0,
+    "combined_deg": 50.6,
+    "sftf_rank1_nrr": 0.177,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E3_45811",
+    "opt_mean_angle_deg": 29.9,
+    "worst_mean_angle_deg": 68.7,
+    "combined_deg": 49.3,
+    "sftf_rank1_nrr": 0.3897,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E3_931902",
+    "opt_mean_angle_deg": 67.6,
+    "worst_mean_angle_deg": 36.2,
+    "combined_deg": 51.9,
+    "sftf_rank1_nrr": 0.0569,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E4_439142",
+    "opt_mean_angle_deg": 12.8,
+    "worst_mean_angle_deg": 69.3,
+    "combined_deg": 41.0,
+    "sftf_rank1_nrr": 0.0493,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E4_46012",
+    "opt_mean_angle_deg": 37.6,
+    "worst_mean_angle_deg": 72.3,
+    "combined_deg": 54.9,
+    "sftf_rank1_nrr": 0.2939,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E5_55280",
+    "opt_mean_angle_deg": 72.2,
+    "worst_mean_angle_deg": 92.7,
+    "combined_deg": 82.5,
+    "sftf_rank1_nrr": 0.1201,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E6_59197",
+    "opt_mean_angle_deg": 41.4,
+    "worst_mean_angle_deg": 78.0,
+    "combined_deg": 59.7,
+    "sftf_rank1_nrr": 0.0,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E7_61384",
+    "opt_mean_angle_deg": 43.4,
+    "worst_mean_angle_deg": 59.3,
+    "combined_deg": 51.3,
+    "sftf_rank1_nrr": 0.3001,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E8_64445",
+    "opt_mean_angle_deg": 67.2,
+    "worst_mean_angle_deg": 36.1,
+    "combined_deg": 51.7,
+    "sftf_rank1_nrr": 0.0209,
+    "group": "E"
+  },
+  {
+    "mesh": "Group_E9_82675",
+    "opt_mean_angle_deg": 149.7,
+    "worst_mean_angle_deg": 112.7,
+    "combined_deg": 131.2,
+    "sftf_rank1_nrr": 0.0414,
+    "group": "E"
+  }
+]

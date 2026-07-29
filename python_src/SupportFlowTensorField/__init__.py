@@ -16,6 +16,16 @@ from .support_flow_tensor_field import (
     run_sftf_mesh,
     show_tomo_sftf_plotly_comparison,
 )
+
+from .sftf_v2 import (
+    SFTFV2Config,
+    SFTFV2Evaluation,
+    SurfaceMeasureSamples,
+    assemble_dimensionless_moments,
+    deterministic_surface_samples,
+    evaluate_sftf_v2,
+    rank_sftf_v2_directions,
+)
 from .pareto import (
     OBJECTIVE_NAMES,
     compute_objectives,
@@ -23,6 +33,24 @@ from .pareto import (
     normalize_costs,
     pareto_mask,
     weighted_pick,
+)
+from .face_records import (
+    SupportFlowFaceRecords,
+    extract_support_flow_face_records,
+    normalize_direction,
+)
+from .orientation_policy import (
+    AdaptiveVerificationConfig,
+    AdaptiveVerificationDecision,
+    CandidatePoolSignals,
+    OrientationPolicyResult,
+    RoutingPolicyConfig,
+    adaptive_verification_decision,
+    candidate_pool_signals,
+    fibonacci_directions,
+    orientation_policy_from_pool,
+    progressive_uniform_axis_directions,
+    rank_tuned_candidate_pool,
 )
 
 __all__ = [
@@ -42,10 +70,31 @@ __all__ = [
     "render_sftf_results",
     "run_sftf_mesh",
     "show_tomo_sftf_plotly_comparison",
+    "SFTFV2Config",
+    "SFTFV2Evaluation",
+    "SurfaceMeasureSamples",
+    "assemble_dimensionless_moments",
+    "deterministic_surface_samples",
+    "evaluate_sftf_v2",
+    "rank_sftf_v2_directions",
     "OBJECTIVE_NAMES",
     "compute_objectives",
     "knee_point",
     "normalize_costs",
     "pareto_mask",
     "weighted_pick",
+    "SupportFlowFaceRecords",
+    "extract_support_flow_face_records",
+    "normalize_direction",
+    "AdaptiveVerificationConfig",
+    "AdaptiveVerificationDecision",
+    "CandidatePoolSignals",
+    "OrientationPolicyResult",
+    "RoutingPolicyConfig",
+    "adaptive_verification_decision",
+    "candidate_pool_signals",
+    "fibonacci_directions",
+    "orientation_policy_from_pool",
+    "progressive_uniform_axis_directions",
+    "rank_tuned_candidate_pool",
 ]

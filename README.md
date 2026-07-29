@@ -1,5 +1,9 @@
 # Support Flow Tensor Field (SFTF)
 
+![CFMS interactive support-orientation toy: for each letter, the 2D part view with support flow, the R / B / S support-cost bars, and the argmin S(n) direction-search dial](draft/pics/sftf-cfms-webtoy-screnshot.png)
+
+*Interactive demo — open [`sftf-webtoy.html`](sftf-webtoy.html) (English) or [`sftf-webtoy_kr.html`](sftf-webtoy_kr.html) (Korean) in a browser. Drag each letter to rotate it and watch the overhangs, the support flow, and the dimensionless score **S = R + B** (TDP v2.1) update, with the `argmin S(n)` dial marking the best build direction.*
+
 This repository is the source-code and data snapshot for the manuscript
 submitted to *3D Printing and Additive Manufacturing*. It contains the
 implementation of the Support Flow Tensor Field (SFTF) build-orientation
@@ -74,8 +78,7 @@ Important data locations:
 | `Experimental/etc/` | Stored TOMO INT3 grids and paper summary CSV/JSON/HTML outputs |
 | `Experimental/G5Test/` | G5 validation records, cached TOMO grids, SFTF candidate CSV files, and figures |
 | `comparison_outputs/` | Additional comparison artifacts retained for manuscript review |
-
-The manuscript `draft/` directory is intentionally excluded from this snapshot.
+| `draft/` | Manuscript source and submission-support files |
 
 ## Main Reproduction Commands
 

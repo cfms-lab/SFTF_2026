@@ -97,6 +97,7 @@ def compute_tomo_cpu_vss_grid(
         "yaw_values": yaw_values,
         "pitch_values": pitch_values,
         "vss_grid": vss_grid,
+        "tomo_internal_mesh_scale": float(getattr(tomo, "mesh_scale", 1.0)),
         "tomo_io": tomo_io,
     }
 

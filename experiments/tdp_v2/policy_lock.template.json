@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "protocol_id": "sftf-tdp-v2-2026-07-13",
+  "status": "TEMPLATE_NOT_LOCKED",
+  "lock_timestamp": "PENDING",
+  "git_commit": "PENDING",
+  "holdout_manifest_sha256": "e2671d0a257fd7b9437614ffc4f47df6ecfc79d15e0b7177a7335e8d2e3eb797",
+  "external_outcomes_seen": false,
+  "sftf_v2": {
+    "sample_count": "PENDING_DEVELOPMENT_ONLY_CHOICE",
+    "candidate_pool_size": 2048,
+    "critical_angle_deg": "PENDING_COUPON_CALIBRATION",
+    "distance_weight": 1.0,
+    "candidate_basins": "PENDING",
+    "tie_break": "PENDING"
+  },
+  "matched_verification": {
+    "tomo_cells_per_mesh": 2400,
+    "sftf_expansion_rule": "PENDING",
+    "uniform_cell_rule": "PENDING",
+    "duplicate_cell_rule": "PENDING"
+  },
+  "abstention": {
+    "features": "PENDING_DEVELOPMENT_ONLY_CHOICE",
+    "thresholds": "PENDING_DEVELOPMENT_ONLY_CHOICE",
+    "missing_value_rule": "PENDING",
+    "tie_break": "PENDING"
+  },
+  "statistics": {
+    "primary_metric": "grid_range_normalized_regret",
+    "noninferiority_margin": "PENDING_FINAL_JUSTIFICATION",
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20260713,
+    "permutation_replicates": 10000,
+    "permutation_seed": 20260714,
+    "confidence_level": 0.95
+  },
+  "corrected_tomo": {
+    "dll_path": "PENDING",
+    "dll_sha256": "PENDING",
+    "accumulator_type": "int32",
+    "angle_step_deg": 1.0,
+    "support_angle_deg": "PENDING_COUPON_CALIBRATION"
+  },
+  "cura_5_13": {
+    "executable_sha256": "36E36D4618CD09A0CD8802A565C2CDBE54804EB750AC84303A0C6D6F784AFDE2",
+    "configuration_path": "PENDING",
+    "configuration_sha256": "PENDING",
+    "support_angle_setting": "PENDING_COUPON_CALIBRATION"
+  },
+  "prusa_2_9_6": {
+    "executable_sha256": "7FD50B52D1CC3DA87DBCB71E45E764412DD45688BEA028F351333E86D9769704",
+    "configuration_path": "PENDING",
+    "configuration_sha256": "PENDING",
+    "support_angle_setting": "PENDING_COUPON_CALIBRATION"
+  },
+  "approval": {
+    "all_pending_fields_resolved": false,
+    "protocol_and_manifest_hashes_verified": false,
+    "external_evaluation_authorized": false
+  }
+}

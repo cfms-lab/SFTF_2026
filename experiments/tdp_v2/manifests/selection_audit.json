@@ -1,0 +1,23 @@
+{
+  "candidate_count_by_stratum": {
+    "faces_10k_50k": 720,
+    "faces_150k_250k": 27,
+    "faces_1k_10k": 1828,
+    "faces_50k_150k": 177
+  },
+  "cross_slicer_count": 30,
+  "examined_by_stratum": {
+    "faces_10k_50k": 20,
+    "faces_150k_250k": 10,
+    "faces_1k_10k": 15,
+    "faces_50k_150k": 15
+  },
+  "manifest_sha256": "e2671d0a257fd7b9437614ffc4f47df6ecfc79d15e0b7177a7335e8d2e3eb797",
+  "outcome_seal": "No TOMO or slicer values were read or computed.",
+  "protocol_id": "sftf-tdp-v2-2026-07-13",
+  "rejection_counts": {
+    "outside_face_count_strata": 1065
+  },
+  "selected_count": 60,
+  "source_file_count": 3817
+}

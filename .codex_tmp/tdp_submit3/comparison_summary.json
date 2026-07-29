@@ -1,0 +1,12 @@
+{
+  "tdp_line_count": 126,
+  "rpj_line_count": 129,
+  "diff_line_count": 136,
+  "tdp_media_count": 7,
+  "rpj_media_count": 8,
+  "common_media_count": 7,
+  "tdp_only_media": [],
+  "rpj_only_media": [
+    "word/media/"
+  ]
+}

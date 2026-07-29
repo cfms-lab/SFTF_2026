@@ -1,0 +1,141 @@
+﻿[sftf] Group_C1_Bunny_69k: k8192=3.47s k4096=2.11s gate=True anchors u/s/sel=13656/21171/21171
+[sftf] Group_C2_manikin: k8192=3.57s k4096=2.51s gate=True anchors u/s/sel=1639/2720/2720
+[sftf] Group_C3_dragon_100k_1.5x: k8192=7.02s k4096=4.38s gate=True anchors u/s/sel=102465/92563/92563
+[sftf] Group_C4_happy_50k_0.75x: k8192=6.41s k4096=4.13s gate=True anchors u/s/sel=10813/75979/75979
+[sftf] Group_C5_lucy_50k: k8192=7.19s k4096=4.89s gate=True anchors u/s/sel=1261/539/539
+[panel] Group_C1_Bunny_69k: panel=74 pending=74
+  [Group_C1_Bunny_69k] 1/74 cura=8.1s ok=True prusa=2.1s ok=True
+  [Group_C1_Bunny_69k] 10/74 cura=9.4s ok=True prusa=2.0s ok=True
+  [Group_C1_Bunny_69k] 20/74 cura=8.6s ok=True prusa=1.9s ok=True
+  [Group_C1_Bunny_69k] 30/74 cura=6.4s ok=True prusa=1.7s ok=True
+  [Group_C1_Bunny_69k] 40/74 cura=12.3s ok=True prusa=1.9s ok=True
+  [Group_C1_Bunny_69k] 50/74 cura=7.3s ok=True prusa=1.9s ok=True
+  [Group_C1_Bunny_69k] 60/74 cura=8.3s ok=True prusa=2.2s ok=True
+  [Group_C1_Bunny_69k] 70/74 cura=9.9s ok=True prusa=2.1s ok=True
+  [Group_C1_Bunny_69k] 74/74 cura=11.2s ok=True prusa=2.2s ok=True
+[panel] Group_C2_manikin: panel=74 pending=74
+  [Group_C2_manikin] 1/74 cura=4.7s ok=True prusa=1.0s ok=True
+  [Group_C2_manikin] 10/74 cura=3.4s ok=True prusa=1.2s ok=True
+  [Group_C2_manikin] 20/74 cura=4.6s ok=True prusa=1.0s ok=True
+  [Group_C2_manikin] 30/74 cura=6.4s ok=True prusa=1.2s ok=True
+  [Group_C2_manikin] 40/74 cura=4.5s ok=True prusa=1.1s ok=True
+  [Group_C2_manikin] 50/74 cura=4.1s ok=True prusa=1.1s ok=True
+  [Group_C2_manikin] 60/74 cura=4.5s ok=True prusa=1.1s ok=True
+  [Group_C2_manikin] 70/74 cura=4.8s ok=True prusa=1.2s ok=True
+  [Group_C2_manikin] 74/74 cura=3.5s ok=True prusa=1.2s ok=True
+[panel] Group_C3_dragon_100k_1.5x: panel=74 pending=74
+  [Group_C3_dragon_100k_1.5x] 1/74 cura=16.4s ok=True prusa=3.1s ok=True
+  [Group_C3_dragon_100k_1.5x] 10/74 cura=19.1s ok=True prusa=2.7s ok=True
+  [Group_C3_dragon_100k_1.5x] 20/74 cura=20.8s ok=True prusa=2.9s ok=True
+  [Group_C3_dragon_100k_1.5x] 30/74 cura=16.9s ok=True prusa=2.9s ok=True
+  [Group_C3_dragon_100k_1.5x] 40/74 cura=13.7s ok=True prusa=2.6s ok=True
+  [Group_C3_dragon_100k_1.5x] 50/74 cura=18.0s ok=True prusa=2.7s ok=True
+  [Group_C3_dragon_100k_1.5x] 60/74 cura=16.8s ok=True prusa=2.6s ok=True
+  [Group_C3_dragon_100k_1.5x] 70/74 cura=19.4s ok=True prusa=2.7s ok=True
+  [Group_C3_dragon_100k_1.5x] 74/74 cura=25.7s ok=True prusa=3.0s ok=True
+[panel] Group_C4_happy_50k_0.75x: panel=74 pending=74
+  [Group_C4_happy_50k_0.75x] 1/74 cura=16.0s ok=True prusa=2.3s ok=True
+  [Group_C4_happy_50k_0.75x] 10/74 cura=16.9s ok=True prusa=2.7s ok=True
+  [Group_C4_happy_50k_0.75x] 20/74 cura=18.8s ok=True prusa=2.6s ok=True
+  [Group_C4_happy_50k_0.75x] 30/74 cura=23.5s ok=True prusa=2.5s ok=True
+  [Group_C4_happy_50k_0.75x] 40/74 cura=14.3s ok=True prusa=2.4s ok=True
+  [Group_C4_happy_50k_0.75x] 50/74 cura=14.5s ok=True prusa=2.3s ok=True
+  [Group_C4_happy_50k_0.75x] 60/74 cura=22.8s ok=True prusa=2.7s ok=True
+  [Group_C4_happy_50k_0.75x] 70/74 cura=15.4s ok=True prusa=2.2s ok=True
+  [Group_C4_happy_50k_0.75x] 74/74 cura=21.4s ok=True prusa=2.3s ok=True
+[panel] Group_C5_lucy_50k: panel=74 pending=74
+  [Group_C5_lucy_50k] 1/74 cura=13.5s ok=True prusa=2.0s ok=True
+  [Group_C5_lucy_50k] 10/74 cura=12.2s ok=True prusa=2.3s ok=True
+  [Group_C5_lucy_50k] 20/74 cura=10.1s ok=True prusa=2.0s ok=True
+  [Group_C5_lucy_50k] 30/74 cura=11.6s ok=True prusa=1.8s ok=True
+  [Group_C5_lucy_50k] 40/74 cura=13.8s ok=True prusa=2.0s ok=True
+  [Group_C5_lucy_50k] 50/74 cura=17.3s ok=True prusa=2.1s ok=True
+  [Group_C5_lucy_50k] 60/74 cura=12.1s ok=True prusa=1.9s ok=True
+  [Group_C5_lucy_50k] 70/74 cura=12.1s ok=True prusa=2.0s ok=True
+  [Group_C5_lucy_50k] 74/74 cura=13.7s ok=True prusa=1.9s ok=True
+{
+ "Group_C1_Bunny_69k": {
+  "label": "Bunny",
+  "face_count": 69662,
+  "sftf_k8192_wall_s": 3.471506700007012,
+  "dense_tomo_wall_s": 62.2313165999949,
+  "dense_tomo_source": "Experimental/G5Test retime 2026-07-05 (sequential, exclusive)",
+  "panel_directions_matched": 74,
+  "cura_panel_total_s": 656.2314245998859,
+  "prusa_panel_total_s": 144.38832990001538,
+  "cura_per_direction_mean_s": 8.867992224322784,
+  "prusa_per_direction_mean_s": 1.951193647297505,
+  "cura_failures": 0,
+  "prusa_failures": 0,
+  "gate_accepted": true
+ }
+}
+{
+ "Group_C2_manikin": {
+  "label": "Manikin",
+  "face_count": 13672,
+  "sftf_k8192_wall_s": 3.574113100010436,
+  "dense_tomo_wall_s": 29.344799799961038,
+  "dense_tomo_source": "Experimental/G5Test retime 2026-07-05 (sequential, exclusive)",
+  "panel_directions_matched": 74,
+  "cura_panel_total_s": 401.29329470015364,
+  "prusa_panel_total_s": 83.81500680008321,
+  "cura_per_direction_mean_s": 5.422882360812887,
+  "prusa_per_direction_mean_s": 1.1326352270281514,
+  "cura_failures": 0,
+  "prusa_failures": 0,
+  "gate_accepted": true
+ }
+}
+{
+ "Group_C3_dragon_100k_1.5x": {
+  "label": "Dragon",
+  "face_count": 99999,
+  "sftf_k8192_wall_s": 7.018545800005086,
+  "dense_tomo_wall_s": 108.3248378999997,
+  "dense_tomo_source": "Experimental/G5Test retime 2026-07-05 (sequential, exclusive)",
+  "panel_directions_matched": 74,
+  "cura_panel_total_s": 1251.2881026999676,
+  "prusa_panel_total_s": 201.12517889996525,
+  "cura_per_direction_mean_s": 16.909298685134697,
+  "prusa_per_direction_mean_s": 2.7179078229725033,
+  "cura_failures": 0,
+  "prusa_failures": 0,
+  "gate_accepted": true
+ }
+}
+{
+ "Group_C4_happy_50k_0.75x": {
+  "label": "Happy",
+  "face_count": 49944,
+  "sftf_k8192_wall_s": 6.410682899993844,
+  "dense_tomo_wall_s": 61.46226050000405,
+  "dense_tomo_source": "Experimental/G5Test retime 2026-07-05 (sequential, exclusive)",
+  "panel_directions_matched": 74,
+  "cura_panel_total_s": 1435.866004099982,
+  "prusa_panel_total_s": 181.65573609998683,
+  "cura_per_direction_mean_s": 19.403594649999757,
+  "prusa_per_direction_mean_s": 2.4548072445944165,
+  "cura_failures": 0,
+  "prusa_failures": 0,
+  "gate_accepted": true
+ }
+}
+{
+ "Group_C5_lucy_50k": {
+  "label": "Lucy",
+  "face_count": 49999,
+  "sftf_k8192_wall_s": 7.192047899996396,
+  "dense_tomo_wall_s": 65.44527010002639,
+  "dense_tomo_source": "Experimental/G5Test retime 2026-07-05 (sequential, exclusive)",
+  "panel_directions_matched": 74,
+  "cura_panel_total_s": 991.9937389999104,
+  "prusa_panel_total_s": 149.5361946997291,
+  "cura_per_direction_mean_s": 13.405320797296087,
+  "prusa_per_direction_mean_s": 2.0207593878341767,
+  "cura_failures": 0,
+  "prusa_failures": 0,
+  "gate_accepted": true
+ }
+}
+summary written: D:\__SFTF_Projects(2026)\Tomo_SFTF_dev\Experimental\GroupC_runtime_tdp_submit3\groupc_summary.json

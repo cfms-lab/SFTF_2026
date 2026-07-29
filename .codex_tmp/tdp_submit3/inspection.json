@@ -1,0 +1,1251 @@
+{
+  "template": {
+    "path": "D:\\OneDrive\\Documents\\__PaperWorks\\__InProgress\\__SFTF논문작성(2026)\\SFTF(2026)\\2026-07-28_TDP_submit3\\SFTF_style_template.dotx",
+    "sha256": "f20bf03494c8c2ed6d4e6a195bd911a0b109180b5ad2cd2bdbfe41826426308a",
+    "size": 23147,
+    "part_count": 18
+  },
+  "reference": {
+    "path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\draft\\TDP_v2.1\\_reference_style.docx",
+    "sha256": "4c950a55de7d65f9900c32dc6119d2959ffd98a7788953e93fd8eb8e22c6a232",
+    "size": 23143,
+    "sections": [
+      {
+        "index": 0,
+        "page_width_in": 8.268055555555556,
+        "page_height_in": 11.693055555555556,
+        "top_margin_in": 0.5,
+        "bottom_margin_in": 0.5,
+        "left_margin_in": 0.5,
+        "right_margin_in": 0.5,
+        "header_distance_in": 0.5909722222222222,
+        "footer_distance_in": 0.6888888888888889,
+        "different_first_page": false
+      }
+    ],
+    "paragraph_count": 0,
+    "nonempty_paragraph_count": 0,
+    "paragraphs": [],
+    "table_count": 0,
+    "tables": [],
+    "inline_shape_count": 0,
+    "abstract_words": null,
+    "all_text_words": 0,
+    "core_properties": {
+      "title": "Support Flow Tensor Field for Fast Build-Orientation Candidate Generation in Support-Requiring Additive Manufacturing",
+      "subject": "",
+      "author": "InHwan Sul Department of Materials Design Engineering, Kumoh National Institute of Technology, Gumi 39177, Republic of Korea Email: snowman0@kumoh.ac.kr ORCID: 0000-0003-0105-920X",
+      "keywords": "",
+      "comments": "",
+      "last_modified_by": "inhwan sul"
+    },
+    "styles": [
+      {
+        "name": "Normal",
+        "type": "PARAGRAPH (1)",
+        "base_style": null,
+        "font_name": "Times New Roman",
+        "font_size_pt": 11.0,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": "JUSTIFY (3)",
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": 2.0,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      {
+        "name": "Heading 1",
+        "type": "PARAGRAPH (1)",
+        "base_style": "Normal",
+        "font_name": null,
+        "font_size_pt": 14.0,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      {
+        "name": "Heading 2",
+        "type": "PARAGRAPH (1)",
+        "base_style": "Normal",
+        "font_name": null,
+        "font_size_pt": 12.0,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      {
+        "name": "Heading 3",
+        "type": "PARAGRAPH (1)",
+        "base_style": "Normal",
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      {
+        "name": "Title",
+        "type": "PARAGRAPH (1)",
+        "base_style": "Normal",
+        "font_name": null,
+        "font_size_pt": 16.0,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": "CENTER (1)",
+        "space_before_pt": 12.0,
+        "space_after_pt": 6.0,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      {
+        "name": "Caption",
+        "type": "PARAGRAPH (1)",
+        "base_style": "Normal",
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      {
+        "name": "Abstract",
+        "type": "PARAGRAPH (1)",
+        "base_style": null,
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": 5.0,
+        "space_after_pt": 15.0,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      {
+        "name": "Author",
+        "type": "PARAGRAPH (1)",
+        "base_style": null,
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": "CENTER (1)",
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      {
+        "name": "Image Caption",
+        "type": "PARAGRAPH (1)",
+        "base_style": "표Caption",
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      {
+        "name": "Table Caption",
+        "type": "PARAGRAPH (1)",
+        "base_style": "표Caption",
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      }
+    ]
+  },
+  "manuscript": {
+    "path": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\draft\\TDP_v2.1\\SFTF_TDP_v2.1_draft.docx",
+    "sha256": "b691bb047e7021ff04e65d975e9c58f2db03991fd04bf12da95d588dc313352a",
+    "size": 1692725,
+    "sections": [
+      {
+        "index": 0,
+        "page_width_in": 8.268055555555556,
+        "page_height_in": 11.693055555555556,
+        "top_margin_in": 0.5,
+        "bottom_margin_in": 0.5,
+        "left_margin_in": 0.5,
+        "right_margin_in": 0.5,
+        "header_distance_in": 0.5909722222222222,
+        "footer_distance_in": 0.6888888888888889,
+        "different_first_page": false
+      }
+    ],
+    "paragraph_count": 117,
+    "nonempty_paragraph_count": 101,
+    "paragraphs": [
+      {
+        "index": 0,
+        "style": "Title",
+        "text": "The Support Flow Tensor Field for Build-Orientation Candidate Search: Algorithm, External Audit, and a Budget–Complexity Map"
+      },
+      {
+        "index": 1,
+        "style": "Author",
+        "text": "InHwan Sul\nDepartment of Materials Design Engineering, Kumoh National Institute of Technology,\nGumi 39177, Republic of Korea\nEmail: snowman0@kumoh.ac.kr ORCID: 0000-0003-0105-920X"
+      },
+      {
+        "index": 2,
+        "style": "Abstract Title",
+        "text": "Abstract"
+      },
+      {
+        "index": 3,
+        "style": "Abstract",
+        "text": "Build orientation strongly affects support material in support-requiring additive manufacturing, but evaluating every direction with a slicer or a dense voxel sweep is expensive. The Support Flow Tensor Field (SFTF) is a low-cost candidate generator: for each direction, it estimates internal face-to-face support flow by ray casting, adds the build plate through a virtual ground node, and forwards only promising basins to accurate verification. We first present the algorithm in a dimensionless form and show that the build-plate penalty is exactly the Rayleigh contribution of an augmented flow tensor, so that the whole score is a single tensor contraction. We then audit the method outside its 41-mesh development collection: on 60 independently selected Thingi10K meshes with dense TOMO references, a selective SFTF policy failed to establish noninferiority against a verification-budget-matched uniform search at a 2,400-cell budget (paired normalized-regret difference 0.0214, 95% CI 0.0070 to 0.0406): at generous budgets a uniform spherical design is already near-saturating. A budget sweep, however, maps where candidate search matters. On complex meshes (50k faces) SFTF held the advantage at tight budgets (crossover near 20 cells), and at a 10-cell budget the favorable mean contrast persisted under TOMO, CuraEngine 5.13, and PrusaSlicer 2.9.6, although the bootstrap intervals crossed zero under all three references; this subgroup pattern is exploratory. The audit yields a practical rule of thumb—spend a generous budget uniformly when verification is cheap; consider candidate search only when verification is expensive and the geometry is complex—and a cautionary lesson on reference-model dependence in orientation studies."
+      },
+      {
+        "index": 4,
+        "style": "First Paragraph",
+        "text": "Keywords: additive manufacturing; build orientation; support material; candidate generation; external validation; slicer verification"
+      },
+      {
+        "index": 5,
+        "style": "Heading 1",
+        "text": "Introduction"
+      },
+      {
+        "index": 6,
+        "style": "First Paragraph",
+        "text": "Build orientation controls support material, build time, surface finish, and post-processing effort in support-requiring additive manufacturing, especially extrusion processes in which downward-facing overhangs beyond a critical angle require removable support. Orientation can be optimized by explicit geometric analysis, voxel- or GPU-accelerated support prediction, and multi-objective search, up to simultaneous orientation–topology optimization ; recent routes also cast rays to accumulate area–height support estimates or learn orientation policies directly. Our earlier work accelerated the verification backend itself, first with per-pixel signed shadow casting (support-structure tomography, TOMO)  and then with a GPU implementation ; both follow the exhaustive pattern of Fig. 1(a), rotating and re-evaluating the mesh for every cell of a dense yaw–pitch grid. This paper addresses the complementary question: which directions should be sent to such a backend, or to a production slicer, when the verification budget is fixed (Fig. 1(b))?"
+      },
+      {
+        "index": 7,
+        "style": "Figure캡션",
+        "text": "Figure 1. Two ways to find a build orientation. (a) Exhaustive orientation search in our previous TOMO studies: the mesh is rotated and re-evaluated—sliced or shadow-cast—for every (yaw, pitch) cell of a dense grid, and the resulting support-mass landscape is plotted over the whole grid. (b) The present study: SFTF scores every direction cheaply by ray casting on one reusable surface sample, keeps a few candidate basins, and verifies only a small budget  of directions with TOMO or a slicer, at a budget matched to uniform search; no exhaustive rotate-and-slice loop remains."
+      },
+      {
+        "index": 8,
+        "style": "Body Text",
+        "text": "The Support Flow Tensor Field (SFTF) answers this question with a cheap, interpretable score. Classical orientation tensor summaries of directional data describe how surface normals are distributed; however, a symmetric normal tensor cannot determine whether a face is an overhang for a given build direction, whether another face can catch the falling support, or how far an unsupported face is from the build plate. Therefore, the SFTF evaluates, for each candidate direction, an asymmetric tensor—a field class studied in its own right in visualization and mechanics —built from ray-cast source–receiver pairs, and treats the build plate as one more receiver—a virtual ground node—so that the entire support estimate becomes a single Rayleigh contraction."
+      },
+      {
+        "index": 9,
+        "style": "Body Text",
+        "text": "A candidate generator is only as credible as the audit behind it. We therefore evaluated SFTF on a sealed external collection it had never seen, against the strongest fair baseline—a verification-budget-matched uniform search—and finally against two independently implemented slicer engines. The audit is reported in full, including its negative primary outcome."
+      },
+      {
+        "index": 10,
+        "style": "Body Text",
+        "text": "The contributions are as follows: (i) a didactic, dimensionless formulation of SFTF with a ground-node theorem unifying the build-plate penalty into the tensor contraction; (ii) an external audit on 60 sealed meshes showing that at a generous 2,400-cell budget, budget-matched uniform search is not dominated—and why; (iii) a budget–complexity map locating the regime where candidate search does help (tight budgets, complex geometry), corroborated directionally by CuraEngine and PrusaSlicer; and (iv) a reproducibility lesson on reference-model dependence, from verification budget to slicer choice."
+      },
+      {
+        "index": 11,
+        "style": "Heading 1",
+        "text": "Materials and Methods"
+      },
+      {
+        "index": 12,
+        "style": "Heading 2",
+        "text": "From a symmetric normal tensor to directional support flow"
+      },
+      {
+        "index": 13,
+        "style": "First Paragraph",
+        "text": "As a baseline, the area-weighted second moment of surface normals, , summarizes shape directionality , but it is blind to the three ingredients that determine support: overhang activation, receiver visibility, and distance to the plate. SFTF restores all three while staying far cheaper than a dense verification sweep."
+      },
+      {
+        "index": 14,
+        "style": "Body Text",
+        "text": "For a triangular surface, one deterministic area-uniform sample  of points and outward normals is drawn once and reused for every unit build direction ; reusing one sample removes per-direction sampling noise. Let  be the bounding-box diagonal. The overhang coefficient"
+      },
+      {
+        "index": 15,
+        "style": "First Paragraph",
+        "text": "activates only downward-facing samples. From each active source a ray is cast along ; among its intersections, the source’s own face, non-positive drop heights, and back-facing receivers () are rejected, and the nearest remaining admissible face becomes the receiver, with normal  and drop height  . Nearest-hit ray casting with area–height accumulation is shared with prior support estimators ; what SFTF adds is the receiver normal itself, which turns each hit into a directional flow. This one-hop rule is a model assumption, not a full visibility solution, and it admits a physical paradox worth naming: because nearer intersections failing the admissibility tests are skipped, support can be routed to a farther admissible face even though deposited material would first land on the nearer one. The face-to-face (pair) flow tensor is"
+      },
+      {
+        "index": 16,
+        "style": "First Paragraph",
+        "text": "and its scalar support cost is the Rayleigh contraction . Two design choices distinguish Eq. (2) from our original formulation and matter in practice. First, the sum is an average over a normalized surface measure and every length appears as , so the score is dimensionless and invariant to uniform scaling. Second, receiver triangle area does not enter: the original score multiplied source and receiver areas, which made the pair term scale differently from the plate term and made the score sensitive to how finely the receiving surface happened to be tessellated. The antisymmetric part of  cannot change the scalar, since ; its norm is used only as an uncertainty diagnostic."
+      },
+      {
+        "index": 17,
+        "style": "Heading 2",
+        "text": "The build plate as a virtual ground node"
+      },
+      {
+        "index": 18,
+        "style": "First Paragraph",
+        "text": "If no admissible receiver exists, the overhang is ultimately carried by the build plate at height , giving the scalar plate penalty"
+      },
+      {
+        "index": 19,
+        "style": "First Paragraph",
+        "text": "Note the deliberate sign asymmetry: distant face-to-face support is attenuated in Eq. (2), whereas the tall plate support is amplified in Eq. (3) This matches the intuition that support printed from the plate grows with height, while an internal landing nearby is cheap."
+      },
+      {
+        "index": 20,
+        "style": "Body Text",
+        "text": "The plate term is not an ad-hoc patch. As illustrated in Fig. 2, a virtual receiver whose normal is the build direction itself is appended to the tensor:"
+      },
+      {
+        "index": 21,
+        "style": "First Paragraph",
+        "text": "Because  for active samples, the Rayleigh contraction of the ground term contributes exactly , so"
+      },
+      {
+        "index": 22,
+        "style": "First Paragraph",
+        "text": "Therefore, the entire score is a single tensor contraction, which justifies the name of the method: internal landings and the plate are one support flow, differing only in who receives it. The identity in Eq. (5), the pair contraction, antisymmetric-part cancellation, and uniform-scale invariance were verified symbolically by an independent Mathematica script and numerically in the implementation tests (§3.1)."
+      },
+      {
+        "index": 24,
+        "style": "Figure캡션",
+        "text": "Figure 2. Unified flow interpretation: Face-to-face support uses the receiver normal , while direct build-plate support is represented by a virtual receiver whose normal is the build direction ; the latter contributes exactly the plate penalty  to the Rayleigh contraction in Eq. (5)."
+      },
+      {
+        "index": 26,
+        "style": "Heading 2",
+        "text": "Candidate generation and an abstaining gate"
+      },
+      {
+        "index": 27,
+        "style": "First Paragraph",
+        "text": "is evaluated on 2,048 Fibonacci-sphere directions  with  surface samples. Angular non-maximum suppression keeps the 24 lowest-score basins separated by at least , and grid cells nearest these basins are added until the verification budget is filled. The competing policy—and the honest baseline any candidate generator must beat—is a matched uniform search: a deterministic near-uniform spherical design evaluated on exactly the same number of verification cells."
+      },
+      {
+        "index": 28,
+        "style": "Body Text",
+        "text": "Because a candidate generator should also know when not to trust itself, a diagnostic gate may abstain from the uniform branch. Three inexpensive diagnostics were fixed on development data only: cross- basin stability (mean nearest-basin angle between  and  solutions ), relative score dispersion , and a median skew-to-symmetric norm ratio  over the best basins. Any failed or non-finite diagnostic selects the uniform fallback. Exact definitions, thresholds, and tie-breaking are given in the Electronic Supplementary Material (ESM)."
+      },
+      {
+        "index": 29,
+        "style": "Heading 2",
+        "text": "Reference stack, sealed external set, and slicers"
+      },
+      {
+        "index": 30,
+        "style": "First Paragraph",
+        "text": "All 41 meshes used while developing the score, its weights, or the gate were declared development data. The external set is 60 binary STL files drawn from a strict Thingi10K mirror  by salted-hash order within four face-count strata (1k–10k, 10k–50k, 50k–150k, 150k–250k), subject only to geometry checks (finite, watertight, single component); 30 of the 60 were independently hash-designated for cross-slicer verification. No holdout result was computed before the set was fixed, and no mesh was replaced afterwards; the manifest SHA256 and a full selection audit are in the ESM. Because a finalized pre-outcome policy lock was not archived, we report the study as a retrospective external audit rather than a prospectively locked confirmation."
+      },
+      {
+        "index": 31,
+        "style": "Body Text",
+        "text": "Dense reference grids ( yaw–pitch,  critical angle) was computed for each holdout mesh using the TOMO backend. For the 30-mesh panel, CuraEngine 5.13 and PrusaSlicer 2.9.6 evaluated an identical union of fixed directions, policy anchors, and local offsets (73–74 common directions per mesh after pairwise matching). Because slicers parameterize overhang thresholds differently, cantilever coupons were used to align the physical support onset (Cura  paired with Prusa’s  slope-from-horizontal convention) ; profiles and the coupon table are in the ESM. These checks form a validation ladder—symbolic identities, a dense voxel reference, and two separate slicer engines—rather than interchangeable, ground truths. No printed-part experiment was performed; therefore, all outcomes were solver- or slicer-estimated support demands."
+      },
+      {
+        "index": 32,
+        "style": "Heading 2",
+        "text": "Endpoint"
+      },
+      {
+        "index": 33,
+        "style": "First Paragraph",
+        "text": "For mesh  and policy , the primary metric is the grid-range-normalized regret"
+      },
+      {
+        "index": 34,
+        "style": "First Paragraph",
+        "text": "which is defined for every mesh including zero-support cases (no holdout mesh had a degenerate range). The primary paired contrast is selective SFTF minus matched uniform at a 2,400-cell budget; noninferiority required the upper bound of a 95% paired mesh-bootstrap interval (10,000 replicates) to lie below 0.02. The margin has a direct reading on the NRR scale: accepting the candidate policy could concede at most 2% of a mesh’s full best-to-worst support range on the dense grid—small enough to be practically negligible, yet roughly eight times the residual regret of the saturated uniform branch itself (0.0026) and therefore resolvable at . Secondary analyses include a paired permutation test , per-branch summaries, slicer contrasts analyzed separately per engine, and a post hoc budget sweep re-evaluated on the cached grids."
+      },
+      {
+        "index": 35,
+        "style": "Heading 1",
+        "text": "Results"
+      },
+      {
+        "index": 36,
+        "style": "Heading 2",
+        "text": "Algebraic and numerical invariance"
+      },
+      {
+        "index": 37,
+        "style": "First Paragraph",
+        "text": "Mathematica independently returned True for the antisymmetric Rayleigh identity, pair contraction, virtual-bed identity of Eq. (5), and uniform-scale invariance. Numerically, scaling a 69k-face mesh by 0.1 and 10 changed the score by at most  in relative terms; uniform four-way subdivision (69,662 to 278,648 faces) changed the median score by 0.104% and preserved ranking (Spearman ); and  versus  agreed with median relative difference 2.07% (minimum ). The formulation therefore behaves as a well-posed, tessellation-tolerant score—necessary conditions that say nothing yet about predictive value."
+      },
+      {
+        "index": 38,
+        "style": "Heading 2",
+        "text": "External audit: at a generous budget, uniform search is enough"
+      },
+      {
+        "index": 39,
+        "style": "First Paragraph",
+        "text": "Table 1 and Fig. 3 summarize the TOMO audit at the 2,400-cell budget. The paired selective-minus-uniform NRR had mean 0.0214 (median 0.0000, maximum 0.3804), with 95% CI [0.0070, 0.0406] and permutation ; the 0.02 noninferiority criterion was not met. The mechanism is visible in the uniform branch itself: at 2,400 cells a near-uniform spherical design is spaced roughly  and already sits at mean NRR 0.0026 from the dense optimum, so there is almost no room for intelligent placement to add value, and concentrating the budget in a few basins can only sacrifice coverage. A seeded random design performed equivalently (0.0027), while the legacy dimensional SFTF was clearly worst (0.0722), confirming that the algebraic repair mattered even though it could not overturn the budget effect. The gate accepted 59/60 meshes and screened none of the 28 adverse cases; two of its three diagnostics could not fire at all, their development-tuned thresholds falling outside the range observed on the holdout, so the evaluated selective policy was effectively ungated SFTF (mean NRR 0.0240 versus 0.0237 ungated), and its diagnostics did not track the outcome (per-diagnostic decoupling in the ESM). The gate nonetheless remains in the primary definition because the selective policy was specified, gate included, on development data before the external set was evaluated; replacing it after seeing the outcome would itself be a post hoc choice. We report this plainly: at generous verification budgets, the honest default is uniform search."
+      },
+      {
+        "index": 40,
+        "style": "Body Text",
+        "text": "﻿"
+      },
+      {
+        "index": 42,
+        "style": "Table캡션",
+        "text": "Table 1. Matched-budget TOMO results on the 60-mesh external set. Lower NRR is better."
+      },
+      {
+        "index": 45,
+        "style": "Figure캡션",
+        "text": "Figure 3. External TOMO audit at a 2,400-cell budget. (a) Ordered paired selective-minus-uniform NRR contrasts; positive favors a uniform search. (b) Empirical NRR distributions of all matched-budget branches."
+      },
+      {
+        "index": 47,
+        "style": "Heading 2",
+        "text": "The budget–complexity map: where candidate search matters"
+      },
+      {
+        "index": 48,
+        "style": "First Paragraph",
+        "text": "Re-evaluating every branch on the cached grids across budgets from 5 to 2400 cells (no new reference computation) produces the practical map of Fig. 4 and Table 2. Averaged over all 60 meshes, ungated SFTF never beat uniform. However, the contrast splits sharply by geometric complexity: on the two simplest strata, uniform wins at every tested budget (no crossover within the tested range), whereas on the two complex strata (50k faces) SFTF wins at tight budgets—mean contrast -0.0263 (95% CI -0.0925 to 0.0332) at 10 cells on 50k–150k, -0.0259 (-0.0779 to 0.0281) at 5 cells on 150k–250k, and, pooling all 25 complex meshes, -0.0168 (-0.0610 to 0.0251) at 10 cells—with the crossover near 20 cells, where saturating uniform coverage overtakes basin clustering. These TOMO bootstrap intervals cross zero, like the slicer intervals below: the pattern is directionally consistent but not individually significant, in keeping with its exploratory label. Intuitively, simple shapes have broad, easily hit optima, while complex shapes hide narrow basins that a handful of uniform probes miss but a support-aware score can point to."
+      },
+      {
+        "index": 50,
+        "style": "Table캡션",
+        "text": "Table 2. Post hoc mean paired ungated SFTF-minus-uniform NRR versus verification budget by face-count stratum (negative favors SFTF). Crossover is the smallest budget at which uniform overtakes SFTF; “—” marks strata in which uniform already led at the smallest tested budget, so no crossover exists within the tested range. These exploratory subgroup patterns were not multiplicity-controlled in the original analysis."
+      },
+      {
+        "index": 53,
+        "style": "Figure캡션",
+        "text": "Figure 4. Budget–complexity map from cached-grid reanalysis. (a) Mean NRR of each matched-budget branch versus the verification budget (log scale). (b) Mean ungated SFTF minus uniform NRR by face-count stratum; negative favors SFTF. Subgroup patterns were exploratory and not multiplicity-controlled."
+      },
+      {
+        "index": 55,
+        "style": "Body Text",
+        "text": "Because a pattern found under one reference may not survive another, the 10-cell comparison was repeated with both slicers on the 30-mesh panel (Table 3). On the 12 complex meshes, the favorable mean contrast persisted under all three references (TOMO -0.0329, Cura -0.0362, Prusa -0.0465), with sign agreement on 10/12 (Cura) and 10/12 (Prusa) meshes, and the simplest stratum favored uniform under both engines—a coherent negative control. The intermediate stratum, however, cut against any sharp face-count boundary: under TOMO, the 10k–50k meshes (20 of 60) favored uniform at every budget (+0.0287 at 10 cells), yet on the slicer panel, the same stratum favored SFTF under both engines (Cura -0.0418, Prusa -0.0353). We therefore read complexity as a coarse, reference-dependent moderator rather than a threshold at 50k faces; the placement of the boundary is itself a limitation of the map. Moreover, SFTF was lower on only 7/12 (Cura) and 7/12 (Prusa) meshes, the 95% bootstrap intervals crossed zero in both engines, and Holm-adjusted sign-flip tests were non-significant. The map is therefore a hypothesis-generating result: it locates the regime worth testing prospectively, not a validated routing rule."
+      },
+      {
+        "index": 56,
+        "style": "Table캡션",
+        "text": "﻿Table 3. Small-budget slicer sensitivity for exploratory warm-start pattern. Mean paired selective-minus-uniform NRR at a 10-cell budget (negative favors SFTF) by pre-specified face-count stratum under TOMO and the two separately implemented slicer engines on the 30 cross-slicer meshes. Complex-stratum mean contrasts favor SFTF under all three references, whereas the simplest-stratum means favor uniform; no confirmatory subgroup superiority test was specified."
+      },
+      {
+        "index": 58,
+        "style": "Heading 2",
+        "text": "Cross-slicer comparison at the full budget"
+      },
+      {
+        "index": 59,
+        "style": "First Paragraph",
+        "text": "At the 2,400-cell budget, the two engines did not settle the question either way: mean selective-minus-uniform contrasts were -0.0218 in Cura (95% CI -0.1249 to 0.0740) and 0.0033 in Prusa (95% CI -0.0985 to 0.1075), pointing in opposite directions with intervals spanning zero (Fig. 5). Direction rankings nonetheless agreed substantially—median per-mesh Spearman 0.820 (TOMO–Cura), 0.716 (TOMO–Prusa), and 0.900 (Cura–Prusa), with 66.7% mean top-five overlap—supporting TOMO’s role as an intermediate-fidelity verifier while cautioning that a favorable anchor under one engine need not transfer to another. Per-mesh slicer contrasts are intrinsically noisier than dense-grid contrasts (standard deviation about four times larger), so the slicer panel bounds rather than measures margin-scale effects; the design-sensitivity analysis is in the ESM."
+      },
+      {
+        "index": 61,
+        "style": "Figure캡션",
+        "text": "Figure 5. Separate-engine slicer comparison on a 30-mesh panel. (a) Per-mesh selective-minus-uniform NRR in Cura and Prusa. (b) Distribution of per-mesh direction-rank agreement over each mesh’s common finite panel."
+      },
+      {
+        "index": 62,
+        "style": "Heading 2",
+        "text": "Computational cost"
+      },
+      {
+        "index": 63,
+        "style": "First Paragraph",
+        "text": "SFTF candidate generation (2,048 directions, , gate diagnostics included) averaged 4.57 s per mesh on the stated CPU, versus 131.0 s for a complete 130,321-cell TOMO sweep measured on non-overlapping runs—roughly a  gap that widens further against slicer-based verification, at 12.54 s (Cura) and 2.93 s (Prusa) per oriented mesh (Fig. 6). This asymmetry is what makes the tight-budget regime practically relevant: when each verified direction costs seconds to minutes, a candidate generator that concentrates ten verifications well is worth having—if its advantage survives prospective validation."
+      },
+      {
+        "index": 65,
+        "style": "Figure캡션",
+        "text": "Figure 6. Measured component times: SFTF candidate generation versus dense TOMO sweeps and per-direction slicing in the two engines; raw per-mesh wall times are in the ESM."
+      },
+      {
+        "index": 67,
+        "style": "Heading 1",
+        "text": "Discussion"
+      },
+      {
+        "index": 68,
+        "style": "First Paragraph",
+        "text": "For practitioners, the audit compresses into one rule of thumb. If verification is cheap enough to afford thousands of cells, spend them uniformly: at 2,400 cells, a uniform spherical design sat within 0.0026 NRR of the dense optimum on average, and no tested candidate policy improved on it. If verification is expensive—minutes per direction on large meshes, as in §3.5—and the part is complex, the budget–complexity map suggests SFTF-style candidate search as the promising option, with the favorable 10-cell pattern replicated directionally under three references. That pattern searched budgets and strata post hoc, and its slicer intervals crossed zero, so we present it as the pre-registered hypothesis for a follow-up study, not as an operating rule."
+      },
+      {
+        "index": 69,
+        "style": "Body Text",
+        "text": "The audit also carries two methodological lessons. First, baseline strength: budget-matched uniform search is a far stronger baseline than convenience baselines at generous budgets, and candidate-search papers should always report it. Second, reference-model dependence: the gate thresholds tuned on development data transferred poorly, and slicer-level contrasts disagreed in sign between two engines whose direction rankings correlate at —a reminder that a rule calibrated against one support proxy should be checked against the intended production slicer."
+      },
+      {
+        "index": 70,
+        "style": "Body Text",
+        "text": "One structural observation deserves note for future work. Across diagnostics and ablations, most of the ranking signal resides in the scalar plate accumulation  and in the routing topology that decides who receives each overhang, while the additional directional refinement carried by the tensor contraction contributes little at ranking time; the unified formulation of §2.2 makes this decomposition explicit. Understanding when a cheap accumulation suffices, and when the full tensor is genuinely needed, appears to be a general question about direction-dependent manufacturing costs that we develop separately."
+      },
+      {
+        "index": 71,
+        "style": "Body Text",
+        "text": "Limitations include the one-hop receiver model (in particular, its skip-over of nearer inadmissible faces noted in §2.1), finite surface and orientation sampling, a geometry-only external collection without printed-part measurements, engine-specific support heuristics, and the retrospective (not prospectively locked) character of the audit. The best value within a finite slicer panel is not a proven global slicer optimum."
+      },
+      {
+        "index": 73,
+        "style": "Heading 1",
+        "text": "Conclusions"
+      },
+      {
+        "index": 74,
+        "style": "First Paragraph",
+        "text": "We presented the Support Flow Tensor Field in a dimensionless form, proved that its build-plate penalty is the exact Rayleigh contribution of a virtual ground node, and audited it on 60 sealed external meshes with dense TOMO references and two independent slicers. At a generous 2,400-cell budget, budget-matched uniform search was not dominated, and the diagnostic gate did not rescue the difference: at such budgets, uniform verification is the honest default. At tight budgets on complex meshes, SFTF held a consistent directional advantage under all three references—an exploratory pattern that defines the prospective follow-up. Candidate-search claims in orientation research should state their verification budget, their baseline, and their reference model; on the evidence here, all three changed the answer."
+      },
+      {
+        "index": 75,
+        "style": "Heading 1",
+        "text": "Acknowledgments"
+      },
+      {
+        "index": 76,
+        "style": "Heading 4",
+        "text": "Use of AI-assisted tools"
+      },
+      {
+        "index": 77,
+        "style": "First Paragraph",
+        "text": "AI coding assistants, including OpenAI Codex and Anthropic Claude Code, were used to assist with portions of the research code implementation, figure-generation scripts, manuscript organization, language editing, and manuscript-support automation. All AI-assisted codes and texts were reviewed and validated by the author, who took full responsibility for the methodology, data, results, references, and conclusions. No generative AI was used to generate the research data, figures presented as novel research images, or references."
+      },
+      {
+        "index": 78,
+        "style": "Heading 1",
+        "text": "Author Contributions"
+      },
+      {
+        "index": 79,
+        "style": "First Paragraph",
+        "text": "Conceptualization, Methodology, Software, Validation, Formal analysis, Investigation, Data curation, Writing – original draft, Writing – review & editing, Visualization, Funding acquisition."
+      },
+      {
+        "index": 80,
+        "style": "Heading 1",
+        "text": "Statements and Declarations"
+      },
+      {
+        "index": 81,
+        "style": "Heading 4",
+        "text": "Ethical considerations."
+      },
+      {
+        "index": 82,
+        "style": "First Paragraph",
+        "text": "Not applicable. This computational study used geometrical models and software evaluations and did not involve human participants, human data, human tissue, or animals."
+      },
+      {
+        "index": 83,
+        "style": "Heading 4",
+        "text": "Consent to participate."
+      },
+      {
+        "index": 84,
+        "style": "First Paragraph",
+        "text": "Not applicable."
+      },
+      {
+        "index": 85,
+        "style": "Heading 4",
+        "text": "Consent for publication."
+      },
+      {
+        "index": 86,
+        "style": "First Paragraph",
+        "text": "Not applicable."
+      },
+      {
+        "index": 87,
+        "style": "Heading 4",
+        "text": "Declarations of conflicting interests."
+      },
+      {
+        "index": 88,
+        "style": "First Paragraph",
+        "text": "The authors declare no potential conflicts of interest with respect to the research, authorship, and/or publication of this article."
+      },
+      {
+        "index": 89,
+        "style": "Heading 4",
+        "text": "Funding statement."
+      },
+      {
+        "index": 90,
+        "style": "First Paragraph",
+        "text": "This work was supported by the National Research Foundation of Korea (NRF) grant funded by the Korean government (MSIT) (grant number NRF-2022R1A2C1010072)."
+      },
+      {
+        "index": 91,
+        "style": "Heading 4",
+        "text": "Data availability."
+      },
+      {
+        "index": 92,
+        "style": "First Paragraph",
+        "text": "The geometry-only holdout manifest, selection audit, SFTF implementation, tests, machine-readable TOMO/Cura/Prusa outcomes, and the table and figure generators are maintained in the public repository at https://github.com/cfms-lab/SFTF_2026. Third-party Thingi10K mesh files are not redistributed; the manifest provides model identifiers so eligible users can retrieve source meshes under their original licenses."
+      },
+      {
+        "index": 94,
+        "style": "Body Text",
+        "text": "Gibson I, Rosen D, Stucker B, et al. Additive Manufacturing Technology. 3rd ed. Cham: Springer; 2021."
+      },
+      {
+        "index": 95,
+        "style": "Body Text",
+        "text": "Ezair B, Massarwi F and Elber G. Orientation analysis of 3D objects toward minimal support volume in 3D-printing. Comput Graph 2015;51:117–124. doi:10.1016/j.cag.2015.05.009."
+      },
+      {
+        "index": 96,
+        "style": "Body Text",
+        "text": "Das P, Mhapsekar K, Chowdhury S, et al. Selection of build orientation for optimal support structures and minimum part errors in additive manufacturing. Comput-Aided Des Appl 2017;14(sup1):1–13. doi:10.1080/16864360.2017.1308074."
+      },
+      {
+        "index": 97,
+        "style": "Body Text",
+        "text": "Langelaar M. Combined optimization of part topology, support structure layout and build orientation for additive manufacturing. Struct Multidisc Optim 2018;57(5):1985–2004. doi:10.1007/s00158-017-1877-z."
+      },
+      {
+        "index": 98,
+        "style": "Body Text",
+        "text": "Vaissier B, Pernot J-P, Chougrani L, et al. Genetic-algorithm based framework for lattice support structure optimization in additive manufacturing. Comput-Aided Des 2019;110:11–23. doi:10.1016/j.cad.2018.12.007."
+      },
+      {
+        "index": 99,
+        "style": "Body Text",
+        "text": "Jiang J, Xu X and Stringer J. Support structures for additive manufacturing: a review. J Manuf Mater Process 2018;2:64. doi:10.3390/jmmp2040064."
+      },
+      {
+        "index": 100,
+        "style": "Body Text",
+        "text": "Mezzadri F, Bouriakov V and Qian X. Topology optimization of self-supporting support structures for additive manufacturing. Addit Manuf 2018;21:666–682. doi:10.1016/j.addma.2018.04.016."
+      },
+      {
+        "index": 101,
+        "style": "Body Text",
+        "text": "Wang C and Qian X. Simultaneous optimization of build orientation and topology for additive manufacturing. Addit Manuf 2020;34:101246. doi:10.1016/j.addma.2020.101246."
+      },
+      {
+        "index": 102,
+        "style": "Body Text",
+        "text": "Shi P, Qi Q, Qin Y, et al. Learn to rotate: part orientation for reducing support volume via generalizable reinforcement learning. IEEE Trans Ind Inform 2023;19(12):11687–11700. doi:10.1109/TII.2023.3249751."
+      },
+      {
+        "index": 103,
+        "style": "Body Text",
+        "text": "Bacciaglia A, Liverani A and Ceruti A. Efficient part orientation algorithm for additive manufacturing in industrial applications. Int J Adv Manuf Technol 2024;133:5443–5462. doi:10.1007/s00170-024-14039-z."
+      },
+      {
+        "index": 104,
+        "style": "Body Text",
+        "text": "Jung JY, Chee S and Sul IH. Support structure tomography using per-pixel signed shadow casting in human manikin 3D printing. Fash Text 2022;9(1):1–18. doi:10.1186/s40691-022-00290-z."
+      },
+      {
+        "index": 105,
+        "style": "Body Text",
+        "text": "Kim JR and Sul IH. Fast prediction of 3D printing optimal orientation using general-purpose graphic processor unit calculation. 3D Print Addit Manuf 2026;13(1):50–62. doi:10.1089/3dp.2024.0165."
+      },
+      {
+        "index": 106,
+        "style": "Body Text",
+        "text": "Kanatani K. Distribution of directional data and fabric tensors. Int J Eng Sci 1984;22(2):149–164. doi:10.1016/0020-7225(84)90090-9."
+      },
+      {
+        "index": 107,
+        "style": "Body Text",
+        "text": "Xu J, Sheng H, Zhang S, et al. Surface accuracy optimization of mechanical parts with multiple circular holes for additive manufacturing based on triangular fuzzy number. Front Mech Eng 2021;16:133–150. doi:10.1007/s11465-020-0610-6."
+      },
+      {
+        "index": 108,
+        "style": "Body Text",
+        "text": "Hung S-H, Zhang Y, Yeh H, et al. Feature curves and surfaces of 3D asymmetric tensor fields. IEEE Trans Vis Comput Graph 2022;28(1):33–42. doi:10.1109/TVCG.2021.3114808."
+      },
+      {
+        "index": 109,
+        "style": "Body Text",
+        "text": "Zhou Q and Jacobson A. Thingi10K: a dataset of 10,000 3D-printing models. arXiv preprint arXiv:1605.04797, 2016."
+      },
+      {
+        "index": 110,
+        "style": "Body Text",
+        "text": "Möller T and Trumbore B. Fast, minimum storage ray–triangle intersection. J Graph Tools 1997;2(1):21–28. doi:10.1080/10867651.1997.10487468."
+      },
+      {
+        "index": 111,
+        "style": "Body Text",
+        "text": "Saff EB and Kuijlaars ABJ. Distributing many points on a sphere. Math Intell 1997;19(1):5–11. doi:10.1007/BF03024331."
+      },
+      {
+        "index": 112,
+        "style": "Body Text",
+        "text": "González A. Measurement of areas on a sphere using Fibonacci and latitude–longitude lattices. Math Geosci 2010;42(1):49–64. doi:10.1007/s11004-009-9257-x."
+      },
+      {
+        "index": 113,
+        "style": "Body Text",
+        "text": "Jiang J, Stringer J, Xu X, et al. Investigation of printable threshold overhang angle in extrusion-based additive manufacturing for reducing support waste. Int J Comput Integr Manuf 2018;31(10):961–969. doi:10.1080/0951192X.2018.1466398."
+      },
+      {
+        "index": 114,
+        "style": "Body Text",
+        "text": "Piaggio G, Elbourne DR, Altman DG, et al. Reporting of noninferiority and equivalence randomized trials: an extension of the CONSORT statement. JAMA 2006;295(10):1152–1160. doi:10.1001/jama.295.10.1152."
+      },
+      {
+        "index": 115,
+        "style": "Body Text",
+        "text": "Efron B and Tibshirani RJ. An Introduction to the Bootstrap. New York: Chapman & Hall; 1993."
+      },
+      {
+        "index": 116,
+        "style": "Body Text",
+        "text": "Ernst MD. Permutation methods: a basis for exact inference. Stat Sci 2004;19(4):676–685. doi:10.1214/088342304000000396."
+      }
+    ],
+    "table_count": 10,
+    "tables": [
+      {
+        "index": 0,
+        "style": "Normal Table",
+        "rows": 1,
+        "cols": 1,
+        "first_row": [
+          "(a)\n\n(b)"
+        ]
+      },
+      {
+        "index": 1,
+        "style": "Normal Table",
+        "rows": 1,
+        "cols": 3,
+        "first_row": [
+          "",
+          "",
+          "(1)"
+        ]
+      },
+      {
+        "index": 2,
+        "style": "Normal Table",
+        "rows": 1,
+        "cols": 3,
+        "first_row": [
+          "",
+          "",
+          "(2)"
+        ]
+      },
+      {
+        "index": 3,
+        "style": "Normal Table",
+        "rows": 1,
+        "cols": 3,
+        "first_row": [
+          "",
+          "",
+          "(3)"
+        ]
+      },
+      {
+        "index": 4,
+        "style": "Normal Table",
+        "rows": 1,
+        "cols": 3,
+        "first_row": [
+          "",
+          "",
+          "(4)"
+        ]
+      },
+      {
+        "index": 5,
+        "style": "Normal Table",
+        "rows": 1,
+        "cols": 3,
+        "first_row": [
+          "",
+          "",
+          "(5)"
+        ]
+      },
+      {
+        "index": 6,
+        "style": "Normal Table",
+        "rows": 1,
+        "cols": 3,
+        "first_row": [
+          "",
+          "",
+          "(6)"
+        ]
+      },
+      {
+        "index": 7,
+        "style": "Normal Table",
+        "rows": 6,
+        "cols": 5,
+        "first_row": [
+          "Method",
+          "Mean",
+          "Median",
+          "90th pct.",
+          "Maximum"
+        ]
+      },
+      {
+        "index": 8,
+        "style": "Normal Table",
+        "rows": 6,
+        "cols": 8,
+        "first_row": [
+          "Stratum",
+          "​",
+          "​",
+          "​",
+          "​",
+          "​",
+          "​",
+          "Crossover"
+        ]
+      },
+      {
+        "index": 9,
+        "style": "Normal Table",
+        "rows": 6,
+        "cols": 5,
+        "first_row": [
+          "Stratum",
+          "​",
+          "TOMO",
+          "Cura",
+          "Prusa"
+        ]
+      }
+    ],
+    "inline_shape_count": 7,
+    "abstract_words": 259,
+    "all_text_words": 4481,
+    "core_properties": {
+      "title": "The Support Flow Tensor Field for Build-Orientation Candidate Search: Algorithm, External Audit, and a Budget–Complexity Map",
+      "subject": "",
+      "author": "InHwan Sul Department of Materials Design Engineering, Kumoh National Institute of Technology, Gumi 39177, Republic of Korea Email: snowman0@kumoh.ac.kr ORCID: 0000-0003-0105-920X",
+      "keywords": "",
+      "comments": "",
+      "last_modified_by": "inhwan sul"
+    },
+    "styles": [
+      {
+        "name": "Normal",
+        "type": "PARAGRAPH (1)",
+        "base_style": null,
+        "font_name": "Times New Roman",
+        "font_size_pt": 11.0,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": "JUSTIFY (3)",
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": 2.0,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      {
+        "name": "Heading 1",
+        "type": "PARAGRAPH (1)",
+        "base_style": "Normal",
+        "font_name": null,
+        "font_size_pt": 14.0,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      {
+        "name": "Heading 2",
+        "type": "PARAGRAPH (1)",
+        "base_style": "Normal",
+        "font_name": null,
+        "font_size_pt": 12.0,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      {
+        "name": "Heading 3",
+        "type": "PARAGRAPH (1)",
+        "base_style": "Normal",
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      {
+        "name": "Title",
+        "type": "PARAGRAPH (1)",
+        "base_style": "Normal",
+        "font_name": null,
+        "font_size_pt": 16.0,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": "CENTER (1)",
+        "space_before_pt": 12.0,
+        "space_after_pt": 6.0,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      {
+        "name": "Caption",
+        "type": "PARAGRAPH (1)",
+        "base_style": "Normal",
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": true,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      {
+        "name": "Abstract",
+        "type": "PARAGRAPH (1)",
+        "base_style": null,
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": 5.0,
+        "space_after_pt": 15.0,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      {
+        "name": "Author",
+        "type": "PARAGRAPH (1)",
+        "base_style": null,
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": "CENTER (1)",
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      },
+      {
+        "name": "Image Caption",
+        "type": "PARAGRAPH (1)",
+        "base_style": "표Caption",
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": null,
+        "page_break_before": null
+      },
+      {
+        "name": "Table Caption",
+        "type": "PARAGRAPH (1)",
+        "base_style": "표Caption",
+        "font_name": null,
+        "font_size_pt": null,
+        "bold": null,
+        "italic": null,
+        "color": null,
+        "alignment": null,
+        "space_before_pt": null,
+        "space_after_pt": null,
+        "line_spacing": null,
+        "keep_with_next": true,
+        "page_break_before": null
+      }
+    ]
+  },
+  "part_comparison": {
+    "word/styles.xml": {
+      "template": {
+        "size": 54097,
+        "sha256": "82404cf9a48b9cf955733a64fe2c3a4b6372989b44bbe70d3dbca46feced1319"
+      },
+      "reference": {
+        "size": 54097,
+        "sha256": "82404cf9a48b9cf955733a64fe2c3a4b6372989b44bbe70d3dbca46feced1319"
+      },
+      "manuscript": {
+        "size": 54100,
+        "sha256": "dcc432af99c08d8c086ae100bccbb476b7d36091aa85e5f7a34f0f75c88710ec"
+      }
+    },
+    "word/theme/theme1.xml": {
+      "template": {
+        "size": 6806,
+        "sha256": "a7876cd03e266e40017cedf41ccbefd129ef94355e67e1ab9ce442e09c58450e"
+      },
+      "reference": {
+        "size": 6806,
+        "sha256": "a7876cd03e266e40017cedf41ccbefd129ef94355e67e1ab9ce442e09c58450e"
+      },
+      "manuscript": {
+        "size": 6806,
+        "sha256": "a7876cd03e266e40017cedf41ccbefd129ef94355e67e1ab9ce442e09c58450e"
+      }
+    },
+    "word/fontTable.xml": {
+      "template": {
+        "size": 3045,
+        "sha256": "ae020ff4a410c329dfbbbadd5b178bf4cdcbb9f21b0a692f219a5c8bce83dcf5"
+      },
+      "reference": {
+        "size": 3045,
+        "sha256": "ae020ff4a410c329dfbbbadd5b178bf4cdcbb9f21b0a692f219a5c8bce83dcf5"
+      },
+      "manuscript": {
+        "size": 3310,
+        "sha256": "e8fdb65218e2d15138816293d4ae774b1aa1c2c6535df9d267a9c50fa1a92f6d"
+      }
+    },
+    "word/numbering.xml": {
+      "template": {
+        "size": 77433,
+        "sha256": "8cfb8a1c77819c79c27fdbe5d34423d82aa67fba461e10f94d04ac80059d5564"
+      },
+      "reference": {
+        "size": 77433,
+        "sha256": "8cfb8a1c77819c79c27fdbe5d34423d82aa67fba461e10f94d04ac80059d5564"
+      },
+      "manuscript": {
+        "size": 77489,
+        "sha256": "aedbccdaca5c0f5e096af5d46d0174928345871926925b530abd243facbf1a61"
+      }
+    },
+    "word/settings.xml": {
+      "template": {
+        "size": 5514,
+        "sha256": "f55dcd0b37a9eb441f4ee46c7a6ba1e4839d9068c706a9d52c9eae374be6bed4"
+      },
+      "reference": {
+        "size": 5514,
+        "sha256": "f55dcd0b37a9eb441f4ee46c7a6ba1e4839d9068c706a9d52c9eae374be6bed4"
+      },
+      "manuscript": {
+        "size": 6306,
+        "sha256": "9cce48dba3474f6c7f19e679e7ca8438220e2b56e77517c7ef07044eef428223"
+      }
+    },
+    "word/sectPr.xml": {
+      "template": null,
+      "reference": null,
+      "manuscript": null
+    }
+  },
+  "template_parts": {
+    "[Content_Types].xml": {
+      "size": 2123,
+      "sha256": "a54c0ab04604d0c32a6c9164e4931b44e6d762090a983dc119f6632aaff99e86"
+    },
+    "_rels/.rels": {
+      "size": 888,
+      "sha256": "95eb1cbbc1e5454d46b8fea8935d56ca417da6595dff6dbe12a24df3290ec5ad"
+    },
+    "word/document.xml": {
+      "size": 2577,
+      "sha256": "c43c59f7613101e7c060268a02e8211f51b62da7a642f04410ca3f17f05c078f"
+    },
+    "word/_rels/document.xml.rels": {
+      "size": 4167,
+      "sha256": "a54971411c707c5571c341a2c76a7ae325271d8f85a0aa2aa8ee3b9e4a09ca3d"
+    },
+    "word/footnotes.xml": {
+      "size": 3332,
+      "sha256": "9a9f53c4283b724c07821890055c09dd6b31df26b67edd47bd2f51d1bfb455b8"
+    },
+    "word/endnotes.xml": {
+      "size": 2945,
+      "sha256": "322dd017c9d5761a3f2e19d35f319effad3bc20777ad35c0f7c6c89cbfec8811"
+    },
+    "word/webextensions/taskpanes.xml": {
+      "size": 368,
+      "sha256": "505f402eb5eb44228842d793eb769a16804b26fbfefb187cde1a686d0b4c3422"
+    },
+    "word/webextensions/webextension1.xml": {
+      "size": 664,
+      "sha256": "ae192465f15b37104aea15f14d5cf5dd76c723b79abccb9142131e44bc6056cf"
+    },
+    "word/theme/theme1.xml": {
+      "size": 6806,
+      "sha256": "a7876cd03e266e40017cedf41ccbefd129ef94355e67e1ab9ce442e09c58450e"
+    },
+    "word/webextensions/_rels/taskpanes.xml.rels": {
+      "size": 284,
+      "sha256": "c2d95a9c9ac08613ee7ca29c3dd011b148435586f7b86d43312c57805ffa8706"
+    },
+    "word/settings.xml": {
+      "size": 5514,
+      "sha256": "f55dcd0b37a9eb441f4ee46c7a6ba1e4839d9068c706a9d52c9eae374be6bed4"
+    },
+    "word/numbering.xml": {
+      "size": 77433,
+      "sha256": "8cfb8a1c77819c79c27fdbe5d34423d82aa67fba461e10f94d04ac80059d5564"
+    },
+    "word/styles.xml": {
+      "size": 54097,
+      "sha256": "82404cf9a48b9cf955733a64fe2c3a4b6372989b44bbe70d3dbca46feced1319"
+    },
+    "word/webSettings.xml": {
+      "size": 12910,
+      "sha256": "86d54d4b8d1f93e0a12f3b6bd3bec99572d4e0e082e92f266e2ce51dbf49c6e8"
+    },
+    "word/fontTable.xml": {
+      "size": 3045,
+      "sha256": "ae020ff4a410c329dfbbbadd5b178bf4cdcbb9f21b0a692f219a5c8bce83dcf5"
+    },
+    "docProps/core.xml": {
+      "size": 976,
+      "sha256": "7970de99bb294ed1c8f5db04598c4c32735a92d5f00b23006ae0754ed2a66879"
+    },
+    "docProps/app.xml": {
+      "size": 1371,
+      "sha256": "cfbd19897e48a7357478a5c206de53fb79a8769025b583d7195be5b46b433490"
+    },
+    "docProps/custom.xml": {
+      "size": 2352,
+      "sha256": "e705fd5b39641ee9af3f25370e6ba54035ef2b46139a1e7a804135282af647cf"
+    }
+  },
+  "reference_parts": {
+    "[Content_Types].xml": {
+      "size": 2123,
+      "sha256": "3948e7fc672f819592cc715f302ed622f52e1dbef486ee68557d8872139b6fcc"
+    },
+    "_rels/.rels": {
+      "size": 888,
+      "sha256": "95eb1cbbc1e5454d46b8fea8935d56ca417da6595dff6dbe12a24df3290ec5ad"
+    },
+    "word/document.xml": {
+      "size": 2577,
+      "sha256": "c43c59f7613101e7c060268a02e8211f51b62da7a642f04410ca3f17f05c078f"
+    },
+    "word/_rels/document.xml.rels": {
+      "size": 4167,
+      "sha256": "a54971411c707c5571c341a2c76a7ae325271d8f85a0aa2aa8ee3b9e4a09ca3d"
+    },
+    "word/footnotes.xml": {
+      "size": 3332,
+      "sha256": "9a9f53c4283b724c07821890055c09dd6b31df26b67edd47bd2f51d1bfb455b8"
+    },
+    "word/endnotes.xml": {
+      "size": 2945,
+      "sha256": "322dd017c9d5761a3f2e19d35f319effad3bc20777ad35c0f7c6c89cbfec8811"
+    },
+    "word/webextensions/taskpanes.xml": {
+      "size": 368,
+      "sha256": "505f402eb5eb44228842d793eb769a16804b26fbfefb187cde1a686d0b4c3422"
+    },
+    "word/webextensions/webextension1.xml": {
+      "size": 664,
+      "sha256": "ae192465f15b37104aea15f14d5cf5dd76c723b79abccb9142131e44bc6056cf"
+    },
+    "word/theme/theme1.xml": {
+      "size": 6806,
+      "sha256": "a7876cd03e266e40017cedf41ccbefd129ef94355e67e1ab9ce442e09c58450e"
+    },
+    "word/webextensions/_rels/taskpanes.xml.rels": {
+      "size": 284,
+      "sha256": "c2d95a9c9ac08613ee7ca29c3dd011b148435586f7b86d43312c57805ffa8706"
+    },
+    "word/settings.xml": {
+      "size": 5514,
+      "sha256": "f55dcd0b37a9eb441f4ee46c7a6ba1e4839d9068c706a9d52c9eae374be6bed4"
+    },
+    "word/numbering.xml": {
+      "size": 77433,
+      "sha256": "8cfb8a1c77819c79c27fdbe5d34423d82aa67fba461e10f94d04ac80059d5564"
+    },
+    "word/styles.xml": {
+      "size": 54097,
+      "sha256": "82404cf9a48b9cf955733a64fe2c3a4b6372989b44bbe70d3dbca46feced1319"
+    },
+    "word/webSettings.xml": {
+      "size": 12910,
+      "sha256": "86d54d4b8d1f93e0a12f3b6bd3bec99572d4e0e082e92f266e2ce51dbf49c6e8"
+    },
+    "word/fontTable.xml": {
+      "size": 3045,
+      "sha256": "ae020ff4a410c329dfbbbadd5b178bf4cdcbb9f21b0a692f219a5c8bce83dcf5"
+    },
+    "docProps/core.xml": {
+      "size": 976,
+      "sha256": "7970de99bb294ed1c8f5db04598c4c32735a92d5f00b23006ae0754ed2a66879"
+    },
+    "docProps/app.xml": {
+      "size": 1371,
+      "sha256": "cfbd19897e48a7357478a5c206de53fb79a8769025b583d7195be5b46b433490"
+    },
+    "docProps/custom.xml": {
+      "size": 2352,
+      "sha256": "e705fd5b39641ee9af3f25370e6ba54035ef2b46139a1e7a804135282af647cf"
+    }
+  }
+}

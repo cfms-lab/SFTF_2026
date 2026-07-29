@@ -33,6 +33,21 @@ def main() -> int:
     if tex_path.name.endswith(".docxsrc.tex"):
         return 0
 
+    # The bundled pandoc builder (scripts/build_docx.py) assumes the flat legacy
+    # layout with tex files directly under draft/. Nested subprojects such as
+    # draft/TDP_v2/ ship their own dedicated builder (scripts/build_tdp_v2_docx.py)
+    # and must NOT be rebuilt here: build_docx.py would resolve figures against
+    # draft/pics and drop the .docx into draft/ with broken image links. Skip them.
+    if tex_path.parent.name.lower() != "draft":
+        print(json.dumps({
+            "systemMessage": (
+                f"docx auto-sync skipped for {tex_path.name}: nested draft "
+                "subproject uses its own builder (e.g. scripts/build_tdp_v2_docx.py)."
+            ),
+            "suppressOutput": True,
+        }))
+        return 0
+
     # project root = the parent of the 'draft' directory in the path
     draft_idx = parts.index("draft")
     project_root = Path(*tex_path.parts[:draft_idx])

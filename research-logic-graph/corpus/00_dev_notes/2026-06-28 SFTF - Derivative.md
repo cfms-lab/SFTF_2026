@@ -1,0 +1,59 @@
+# 2026-06-28 SFTF - Derivative
+
+Source: `D:\__SFTF_Projects(2026)\_dev_notes\2026-06-28 SFTF - Derivative.mht`
+
+2026-06-28
+SFTF - Derivative
+
+
+
+
+
+
+
+
+
+2026년 6월 28일
+일요일
+
+
+
+오후 8:22
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+OneNote에서 작성되었습니다.

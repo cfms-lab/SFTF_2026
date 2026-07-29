@@ -1,0 +1,92 @@
+{
+  "created_utc": "2026-07-29T05:00:07.649346+00:00",
+  "meshes": {
+    "Group_C1_Bunny_69k": {
+      "label": "Bunny",
+      "face_count": 69662,
+      "sftf_k8192_wall_s": 3.471506700007012,
+      "dense_tomo_wall_s": 62.2313165999949,
+      "dense_tomo_source": "Experimental/G5Test retime 2026-07-05 (sequential, exclusive)",
+      "panel_directions_matched": 74,
+      "cura_panel_total_s": 656.2314245998859,
+      "prusa_panel_total_s": 144.38832990001538,
+      "cura_per_direction_mean_s": 8.867992224322784,
+      "prusa_per_direction_mean_s": 1.951193647297505,
+      "cura_failures": 0,
+      "prusa_failures": 0,
+      "gate_accepted": true
+    },
+    "Group_C2_manikin": {
+      "label": "Manikin",
+      "face_count": 13672,
+      "sftf_k8192_wall_s": 3.574113100010436,
+      "dense_tomo_wall_s": 29.344799799961038,
+      "dense_tomo_source": "Experimental/G5Test retime 2026-07-05 (sequential, exclusive)",
+      "panel_directions_matched": 74,
+      "cura_panel_total_s": 401.29329470015364,
+      "prusa_panel_total_s": 83.81500680008321,
+      "cura_per_direction_mean_s": 5.422882360812887,
+      "prusa_per_direction_mean_s": 1.1326352270281514,
+      "cura_failures": 0,
+      "prusa_failures": 0,
+      "gate_accepted": true
+    },
+    "Group_C3_dragon_100k_1.5x": {
+      "label": "Dragon",
+      "face_count": 99999,
+      "sftf_k8192_wall_s": 7.018545800005086,
+      "dense_tomo_wall_s": 108.3248378999997,
+      "dense_tomo_source": "Experimental/G5Test retime 2026-07-05 (sequential, exclusive)",
+      "panel_directions_matched": 74,
+      "cura_panel_total_s": 1251.2881026999676,
+      "prusa_panel_total_s": 201.12517889996525,
+      "cura_per_direction_mean_s": 16.909298685134697,
+      "prusa_per_direction_mean_s": 2.7179078229725033,
+      "cura_failures": 0,
+      "prusa_failures": 0,
+      "gate_accepted": true
+    },
+    "Group_C4_happy_50k_0.75x": {
+      "label": "Happy",
+      "face_count": 49944,
+      "sftf_k8192_wall_s": 6.410682899993844,
+      "dense_tomo_wall_s": 61.46226050000405,
+      "dense_tomo_source": "Experimental/G5Test retime 2026-07-05 (sequential, exclusive)",
+      "panel_directions_matched": 74,
+      "cura_panel_total_s": 1435.866004099982,
+      "prusa_panel_total_s": 181.65573609998683,
+      "cura_per_direction_mean_s": 19.403594649999757,
+      "prusa_per_direction_mean_s": 2.4548072445944165,
+      "cura_failures": 0,
+      "prusa_failures": 0,
+      "gate_accepted": true
+    },
+    "Group_C5_lucy_50k": {
+      "label": "Lucy",
+      "face_count": 49999,
+      "sftf_k8192_wall_s": 7.192047899996396,
+      "dense_tomo_wall_s": 65.44527010002639,
+      "dense_tomo_source": "Experimental/G5Test retime 2026-07-05 (sequential, exclusive)",
+      "panel_directions_matched": 74,
+      "cura_panel_total_s": 991.9937389999104,
+      "prusa_panel_total_s": 149.5361946997291,
+      "cura_per_direction_mean_s": 13.405320797296087,
+      "prusa_per_direction_mean_s": 2.0207593878341767,
+      "cura_failures": 0,
+      "prusa_failures": 0,
+      "gate_accepted": true
+    }
+  },
+  "protocol": {
+    "budget_cells": 2400,
+    "candidate_count": 2048,
+    "sample_count": 8192,
+    "fixed_fibonacci_directions": 64,
+    "offset_deg": 5.0,
+    "target_diagonal_mm": 140.0,
+    "cura_angle_deg": 60.0,
+    "prusa_threshold_deg": 30.0,
+    "slicing_concurrency": 1,
+    "prusa_profile": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\draft\\TDP_v2\\profiles\\prusa_support_tdp_v2.ini"
+  }
+}

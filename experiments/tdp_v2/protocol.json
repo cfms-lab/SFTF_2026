@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "protocol_id": "sftf-tdp-v2-2026-07-13",
+  "created_at": "2026-07-13T00:00:00+09:00",
+  "state": "development_open_external_outcomes_sealed",
+  "journal_target": "3D Printing and Additive Manufacturing (SAGE, TDP)",
+  "working_title": "Selective Support-Flow Candidate Generation with Cross-Slicer Verification for Build-Orientation Search",
+  "scientific_question": "Can a dimensionless SFTF candidate generator abstain when its ranking signal is unreliable and remain noninferior to a verification-budget-matched uniform search on untouched meshes?",
+  "integrity_rules": [
+    "All 41 meshes used in the PiAM-era analyses are development data and may not be counted as external validation.",
+    "The external mesh manifest may be inspected for geometry validity only; TOMO and slicer outcomes remain sealed until policy_lock.json is created and hashed.",
+    "No model, threshold, score weight, candidate count, verification budget, or stopping rule may change after the first external outcome is computed.",
+    "Legacy int16 TOMO outputs are provenance records only and may not enter any v2 endpoint.",
+    "Negative and zero reference support values are retained; no ratio-only endpoint may exclude them."
+  ],
+  "development": {
+    "dataset": "Existing G5 groups A-E (41 meshes)",
+    "allowed_uses": [
+      "SFTF v2 implementation checks",
+      "abstention-feature selection",
+      "threshold and noninferiority-margin justification",
+      "sample-count and verification-budget sensitivity",
+      "slicer-angle coupon calibration"
+    ],
+    "forbidden_claim": "Development resampling, leave-one-out, and retrospective group splits are not external validation."
+  },
+  "external_selection": {
+    "source_root_default": "D:/__SFTF_Projects(2026)/sftf_Mesh_Data",
+    "source_subdirectory": "thingi10k_strict",
+    "selection_salt": "sftf-tdp-v2-holdout-v1",
+    "cross_slicer_salt": "sftf-tdp-v2-cross-slicer-v1",
+    "filters": {
+      "extensions": [
+        ".stl"
+      ],
+      "binary_stl_required": true,
+      "finite_geometry_required": true,
+      "positive_area_required": true,
+      "positive_bbox_diagonal_required": true,
+      "watertight_required": true,
+      "single_connected_component_required": true,
+      "deduplicate_by_sha256": true
+    },
+    "strata": [
+      {
+        "name": "faces_1k_10k",
+        "min_faces_inclusive": 1000,
+        "max_faces_exclusive": 10000,
+        "holdout_quota": 15,
+        "cross_slicer_quota": 8
+      },
+      {
+        "name": "faces_10k_50k",
+        "min_faces_inclusive": 10000,
+        "max_faces_exclusive": 50000,
+        "holdout_quota": 20,
+        "cross_slicer_quota": 10
+      },
+      {
+        "name": "faces_50k_150k",
+        "min_faces_inclusive": 50000,
+        "max_faces_exclusive": 150000,
+        "holdout_quota": 15,
+        "cross_slicer_quota": 8
+      },
+      {
+        "name": "faces_150k_250k",
+        "min_faces_inclusive": 150000,
+        "max_faces_exclusive": 250001,
+        "holdout_quota": 10,
+        "cross_slicer_quota": 4
+      }
+    ],
+    "known_development_thingi_ids": [
+      "37009",
+      "37010",
+      "37011",
+      "37091",
+      "37095",
+      "37111",
+      "37137",
+      "37402",
+      "37415",
+      "37416",
+      "39507",
+      "45809",
+      "45811",
+      "46012",
+      "55280",
+      "59197",
+      "61384",
+      "64445",
+      "64446",
+      "65942",
+      "790253",
+      "82675",
+      "931902",
+      "439142"
+    ],
+    "holdout_total": 60,
+    "cross_slicer_total": 30
+  },
+  "method_v2": {
+    "legacy_implementation_policy": "Frozen and retained only for reproduction of earlier results.",
+    "module": "python_src/SupportFlowTensorField/sftf_v2.py",
+    "surface_measure": "Fixed deterministic normalized-area sample reused for every direction",
+    "sample_count_candidates": [
+      2048,
+      4096,
+      8192
+    ],
+    "provisional_sample_count": 4096,
+    "score": "S_v2(n)=max(0,-n^T sym(F_pair(n)) n)+B(n)",
+    "pair_tensor": "F_pair=E_A[I_hit O/(1+lambda h/D) m_source outer m_receiver]",
+    "bed_term": "B=E_A[I_bed O(1+lambda h_bed/D)]",
+    "distance_weight": 1.0,
+    "critical_angle_deg_development_default": 60.0,
+    "properties_to_verify": [
+      "dimensionless score",
+      "uniform-scale invariance",
+      "sampling convergence",
+      "remeshing sensitivity",
+      "Rayleigh dependence on the symmetric tensor part only"
+    ]
+  },
+  "policies_to_lock": {
+    "candidate_pool_size": 2048,
+    "tomo_verification_budget_cells": 2400,
+    "uniform_baseline": "Deterministic near-uniform spherical cells with exactly the same number of unique corrected-TOMO evaluations",
+    "sftf_branch": "Low-score SFTF v2 basins expanded geodesically until exactly the matched budget is reached",
+    "selective_branch": "Use SFTF only when the pre-locked uncertainty rule accepts; otherwise use uniform",
+    "uncertainty_features_allowed": [
+      "top-set stability across 2048 and 4096 surface samples",
+      "angular crowding of top basins",
+      "rank-score dispersion",
+      "skew-to-symmetric tensor norm ratio"
+    ],
+    "status": "Thresholds and tie-breaks must be written to policy_lock.json after development-only analysis and before any external outcome."
+  },
+  "verification": {
+    "intermediate_backend": {
+      "name": "Corrected int32 TOMO / Tomo_Shell2026",
+      "role": "Fast intermediate-fidelity exhaustive reference and matched-budget verifier",
+      "prohibition": "Do not describe this backend as exact Cura."
+    },
+    "independent_slicers": [
+      {
+        "name": "UltiMaker CuraEngine",
+        "version": "5.13.0",
+        "executable": "C:/Program Files/UltiMaker Cura 5.13.0/CuraEngine.exe",
+        "sha256": "36E36D4618CD09A0CD8802A565C2CDBE54804EB750AC84303A0C6D6F784AFDE2",
+        "role": "Primary slicer corroboration"
+      },
+      {
+        "name": "PrusaSlicer console",
+        "version": "2.9.6",
+        "executable": "D:/__PFTF_Projects(2026)/_tools_prusa/extracted/PrusaSlicer-2.9.6/prusa-slicer-console.exe",
+        "sha256": "7FD50B52D1CC3DA87DBCB71E45E764412DD45688BEA028F351333E86D9769704",
+        "role": "Independent primary slicer corroboration"
+      },
+      {
+        "name": "Legacy CuraEngine",
+        "version": "15.04.6",
+        "executable": "C:/Program Files (x86)/Cura_15.04.6/CuraEngine.exe",
+        "sha256": "962E56D2F84F99BE75577490B9B75C5B6D2B2E3928CB77E8469A3F02C612BA18",
+        "role": "Secondary continuity anchor only"
+      }
+    ],
+    "angle_alignment": "Calibrate engine-specific support-angle conventions on synthetic overhang coupons before mesh outcomes; freeze the three configuration files and SHA256 hashes.",
+    "cross_slicer_direction_panel": "For each of the 30 preselected meshes, evaluate the same union of 64 fixed Fibonacci directions, all policy-selected finals, and predeclared local offsets in both modern Cura and Prusa.",
+    "reference_warning": "The best direction in a finite slicer panel is a panel reference, not a proven global optimum."
+  },
+  "endpoints": {
+    "primary_population": "All 60 external meshes, including zero-support reference cases",
+    "primary_metric": "Grid-range-normalized corrected-TOMO regret: (V_policy - V_min)/(V_max - V_min), defined as zero when the range is numerically zero",
+    "primary_contrast": "Selective SFTF minus matched uniform, paired by mesh",
+    "primary_analysis": "Two-sided mesh-level paired bootstrap confidence interval plus paired permutation p-value; report mean, median, 90th percentile, maximum, and empirical CDF",
+    "provisional_noninferiority_margin": 0.02,
+    "margin_lock_rule": "The engineering justification and final margin must be frozen in policy_lock.json before external outcomes.",
+    "key_secondary": [
+      "The same normalized-regret contrast separately in Cura 5.13 and Prusa 2.9.6 on the locked 30-mesh panel",
+      "Accepted-subset contrast and abstention coverage with confidence intervals",
+      "Spearman rank correlation and top-direction overlap between corrected TOMO, Cura, and Prusa",
+      "Wall-clock time including candidate generation, TOMO verification, and slicer verification",
+      "Legacy SFTF v1, SFTF v2 without abstention, and uniform ablations"
+    ],
+    "ratio_metric_policy": "V_policy/V_min is secondary and is reported only where V_min is strictly positive."
+  },
+  "reporting": {
+    "required_failure_disclosures": [
+      "Uniform is already stronger than legacy SFTF on the full development audit.",
+      "The earlier router and three-mesh split were retrospective.",
+      "TOMO is a proxy and previously overflow-affected outputs are invalid.",
+      "Cura and Prusa angle settings are not assumed numerically equivalent."
+    ],
+    "manuscript_rule": "No numerical result may enter the v2 manuscript unless generated by the hashed manifest, policy lock, corrected backend, and frozen slicer configurations."
+  }
+}

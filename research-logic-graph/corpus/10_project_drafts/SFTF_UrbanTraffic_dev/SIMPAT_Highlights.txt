@@ -1,0 +1,5 @@
+- A lane-conserving directed-field model initializes reversible-lane plans.
+- Exact optimization verifies feasibility and quantifies proxy-plan error.
+- Paired tests falsify general downstream-solver acceleration.
+- Flow-coherent coupling transfers; topology-only smoothing fails.
+- Public counts expose demand-vintage and calibration limitations.

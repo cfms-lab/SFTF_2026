@@ -1,0 +1,16 @@
+[dome/proxy/cap35] Spearman : -0.012   Pearson : -0.025 | Baraff shear: mean=2.6 p90=5.6 max=51.0 deg
+[dome/proxy/cap55] Spearman : -0.021   Pearson : 0.004 | Baraff shear: mean=2.3 p90=4.8 max=52.3 deg
+[dome/proxy/cap75] Spearman : -0.028   Pearson : -0.002 | Baraff shear: mean=2.1 p90=5.0 max=42.5 deg
+[dome/proxy/cap90] Spearman : 0.032   Pearson : -0.022 | Baraff shear: mean=1.8 p90=4.1 max=42.8 deg
+[dome/fishnet/cap35] Spearman : 0.044   Pearson : -0.007 | Baraff shear: mean=2.6 p90=5.6 max=51.0 deg
+[dome/fishnet/cap55] Spearman : -0.014   Pearson : -0.018 | Baraff shear: mean=2.3 p90=4.8 max=52.3 deg
+[dome/fishnet/cap75] Spearman : -0.001   Pearson : 0.005 | Baraff shear: mean=2.1 p90=5.0 max=42.5 deg
+[dome/fishnet/cap90] Spearman : 0.024   Pearson : 0.028 | Baraff shear: mean=1.8 p90=4.1 max=42.8 deg
+[bowl/proxy/cap35] Spearman : -0.027   Pearson : -0.013 | Baraff shear: mean=40.1 p90=75.3 max=89.9 deg
+[bowl/proxy/cap55] Spearman : 0.092   Pearson : 0.162 | Baraff shear: mean=37.9 p90=74.2 max=89.8 deg
+[bowl/proxy/cap75] Spearman : 0.305   Pearson : 0.412 | Baraff shear: mean=37.5 p90=71.7 max=89.2 deg
+[bowl/proxy/cap90] Spearman : 0.408   Pearson : 0.425 | Baraff shear: mean=35.2 p90=65.3 max=88.6 deg
+[bowl/fishnet/cap35] Spearman : 0.000   Pearson : 0.014 | Baraff shear: mean=43.8 p90=77.8 max=89.8 deg
+[bowl/fishnet/cap55] Spearman : 0.133   Pearson : 0.143 | Baraff shear: mean=39.1 p90=75.6 max=89.6 deg
+[bowl/fishnet/cap75] Spearman : 0.265   Pearson : 0.266 | Baraff shear: mean=37.3 p90=71.1 max=89.1 deg
+[bowl/fishnet/cap90] Spearman : 0.177   Pearson : 0.181 | Baraff shear: mean=35.3 p90=65.5 max=88.1 deg

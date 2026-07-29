@@ -1,0 +1,16 @@
+{
+ "holdout_id": "H020",
+ "stratum": "faces_10k_50k",
+ "v0_policy_nrr": 0.0,
+ "v21_policy_nrr": 0.0,
+ "uniform_nrr": 0.0,
+ "paper_sftf_v2_nrr": 0.0,
+ "v0_cache_max_abs_diff": 1.1102230246251565e-16,
+ "rho_v0": 0.1414213717951171,
+ "rho_v21": 0.06329646679004235,
+ "top1_v0": 0.05994784301571005,
+ "top1_v21": 0.05994784301571005,
+ "basin24_v0": 0.0,
+ "basin24_v21": 0.0,
+ "elapsed_s": 2.148649500013562
+}

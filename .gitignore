@@ -45,7 +45,6 @@ imgui.ini
 # IDE and editor state
 .vs/
 .vscode/*
-!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
@@ -57,9 +56,16 @@ Thumbs.db
 desktop.ini
 
 # Logs and temporary files
+tmp/
+_to_delete/
 *.log
 *.tmp
 *.bak
 *.swp
 ~$*
 .aider*
+
+# Local shared-core notice acknowledgement.
+.cfms_cores_ack.json
+
+.vscode/settings.json

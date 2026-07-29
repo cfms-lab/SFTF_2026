@@ -1,0 +1,69 @@
+{
+  "input": "D:\\__SFTF_Projects(2026)\\Tomo_SFTF_dev\\.codex_tmp\\tdp_submit3\\SFTF_TDP_Main_Manuscript.docx",
+  "fonts_by_char_count": {
+    "Tahoma": 1
+  },
+  "direct_run_formatting_runs": 9,
+  "direct_paragraph_formatting_paragraphs": 96,
+  "heading_like_paragraphs_not_heading_style": [],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "The Support Flow Tensor Field for Build-Orientation Candidate Search: Algorithm, External Audit, and a Budget\u2013Complexity",
+        "style": "Title"
+      },
+      {
+        "para_index": 5,
+        "text": "Keywords: additive manufacturing; build orientation; support material; candidate generation; external validation; slicer",
+        "style": "First Paragraph"
+      },
+      {
+        "para_index": 7,
+        "text": "Build orientation controls support material, build time, surface finish, and post-processing effort in support-requiring",
+        "style": "First Paragraph"
+      },
+      {
+        "para_index": 9,
+        "text": "The Support Flow Tensor Field (SFTF) answers this question with a cheap, interpretable score. Classical orientation tens",
+        "style": "Body Text"
+      },
+      {
+        "para_index": 11,
+        "text": "The central engineering value of SFTF is not to replace TOMO or a production slicer, but to reduce how often they must b",
+        "style": "Body Text"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 5,
+        "run_text": "Keywords:",
+        "style": "First Paragraph"
+      },
+      {
+        "para_index": 7,
+        "run_text": "which",
+        "style": "First Paragraph"
+      },
+      {
+        "para_index": 9,
+        "run_text": "asymmetric",
+        "style": "Body Text"
+      },
+      {
+        "para_index": 18,
+        "run_text": "dimensionless",
+        "style": "First Paragraph"
+      },
+      {
+        "para_index": 22,
+        "run_text": "attenuated",
+        "style": "First Paragraph"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

@@ -1,0 +1,247 @@
+[
+ {
+  "mesh": "Group_C1_Bunny_69k",
+  "variant": "V0 current (R+Bm+Bv)",
+  "spearman": 0.5478,
+  "top1_nrr": 0.1986,
+  "basin24_best_nrr": 0.0369
+ },
+ {
+  "mesh": "Group_C1_Bunny_69k",
+  "variant": "V1 volume (Hv+Bv)",
+  "spearman": 0.6642,
+  "top1_nrr": 0.1179,
+  "basin24_best_nrr": 0.0221
+ },
+ {
+  "mesh": "Group_C1_Bunny_69k",
+  "variant": "V2 vol+0.25*mass",
+  "spearman": 0.7213,
+  "top1_nrr": 0.0493,
+  "basin24_best_nrr": 0.0116
+ },
+ {
+  "mesh": "Group_C1_Bunny_69k",
+  "variant": "V3 current+5*Hv",
+  "spearman": 0.6027,
+  "top1_nrr": 0.1012,
+  "basin24_best_nrr": 0.0295
+ },
+ {
+  "mesh": "Group_C1_Bunny_69k",
+  "variant": "V3 current+1*Hv",
+  "spearman": 0.5615,
+  "top1_nrr": 0.1986,
+  "basin24_best_nrr": 0.043
+ },
+ {
+  "mesh": "Group_C1_Bunny_69k",
+  "variant": "F_bv only",
+  "spearman": 0.6638,
+  "top1_nrr": 0.196,
+  "basin24_best_nrr": 0.0221
+ },
+ {
+  "mesh": "Group_C1_Bunny_69k",
+  "variant": "F_hv only",
+  "spearman": 0.2275,
+  "top1_nrr": 0.156,
+  "basin24_best_nrr": 0.0116
+ },
+ {
+  "mesh": "Group_C2_manikin",
+  "variant": "V0 current (R+Bm+Bv)",
+  "spearman": 0.7564,
+  "top1_nrr": 0.1496,
+  "basin24_best_nrr": 0.0153
+ },
+ {
+  "mesh": "Group_C2_manikin",
+  "variant": "V1 volume (Hv+Bv)",
+  "spearman": 0.6128,
+  "top1_nrr": 0.1572,
+  "basin24_best_nrr": 0.0153
+ },
+ {
+  "mesh": "Group_C2_manikin",
+  "variant": "V2 vol+0.25*mass",
+  "spearman": 0.8571,
+  "top1_nrr": 0.0153,
+  "basin24_best_nrr": 0.0049
+ },
+ {
+  "mesh": "Group_C2_manikin",
+  "variant": "V3 current+5*Hv",
+  "spearman": 0.8259,
+  "top1_nrr": 0.1029,
+  "basin24_best_nrr": 0.0078
+ },
+ {
+  "mesh": "Group_C2_manikin",
+  "variant": "V3 current+1*Hv",
+  "spearman": 0.7691,
+  "top1_nrr": 0.1496,
+  "basin24_best_nrr": 0.0153
+ },
+ {
+  "mesh": "Group_C2_manikin",
+  "variant": "F_bv only",
+  "spearman": 0.5926,
+  "top1_nrr": 0.1572,
+  "basin24_best_nrr": 0.0049
+ },
+ {
+  "mesh": "Group_C2_manikin",
+  "variant": "F_hv only",
+  "spearman": -0.1022,
+  "top1_nrr": 0.5612,
+  "basin24_best_nrr": 0.1869
+ },
+ {
+  "mesh": "Group_C3_dragon_100k_1.5x",
+  "variant": "V0 current (R+Bm+Bv)",
+  "spearman": 0.7085,
+  "top1_nrr": 0.019,
+  "basin24_best_nrr": 0.0119
+ },
+ {
+  "mesh": "Group_C3_dragon_100k_1.5x",
+  "variant": "V1 volume (Hv+Bv)",
+  "spearman": 0.585,
+  "top1_nrr": 0.1256,
+  "basin24_best_nrr": 0.0162
+ },
+ {
+  "mesh": "Group_C3_dragon_100k_1.5x",
+  "variant": "V2 vol+0.25*mass",
+  "spearman": 0.7466,
+  "top1_nrr": 0.0162,
+  "basin24_best_nrr": 0.0145
+ },
+ {
+  "mesh": "Group_C3_dragon_100k_1.5x",
+  "variant": "V3 current+5*Hv",
+  "spearman": 0.7106,
+  "top1_nrr": 0.0459,
+  "basin24_best_nrr": 0.0145
+ },
+ {
+  "mesh": "Group_C3_dragon_100k_1.5x",
+  "variant": "V3 current+1*Hv",
+  "spearman": 0.7113,
+  "top1_nrr": 0.019,
+  "basin24_best_nrr": 0.0119
+ },
+ {
+  "mesh": "Group_C3_dragon_100k_1.5x",
+  "variant": "F_bv only",
+  "spearman": 0.6359,
+  "top1_nrr": 0.13,
+  "basin24_best_nrr": 0.0162
+ },
+ {
+  "mesh": "Group_C3_dragon_100k_1.5x",
+  "variant": "F_hv only",
+  "spearman": -0.5049,
+  "top1_nrr": 0.669,
+  "basin24_best_nrr": 0.2248
+ },
+ {
+  "mesh": "Group_C4_happy_50k_0.75x",
+  "variant": "V0 current (R+Bm+Bv)",
+  "spearman": 0.2566,
+  "top1_nrr": 0.1765,
+  "basin24_best_nrr": 0.0534
+ },
+ {
+  "mesh": "Group_C4_happy_50k_0.75x",
+  "variant": "V1 volume (Hv+Bv)",
+  "spearman": 0.3719,
+  "top1_nrr": 0.1529,
+  "basin24_best_nrr": 0.0894
+ },
+ {
+  "mesh": "Group_C4_happy_50k_0.75x",
+  "variant": "V2 vol+0.25*mass",
+  "spearman": 0.3616,
+  "top1_nrr": 0.1529,
+  "basin24_best_nrr": 0.0943
+ },
+ {
+  "mesh": "Group_C4_happy_50k_0.75x",
+  "variant": "V3 current+5*Hv",
+  "spearman": 0.3224,
+  "top1_nrr": 0.2122,
+  "basin24_best_nrr": 0.0299
+ },
+ {
+  "mesh": "Group_C4_happy_50k_0.75x",
+  "variant": "V3 current+1*Hv",
+  "spearman": 0.2621,
+  "top1_nrr": 0.1765,
+  "basin24_best_nrr": 0.0534
+ },
+ {
+  "mesh": "Group_C4_happy_50k_0.75x",
+  "variant": "F_bv only",
+  "spearman": 0.3595,
+  "top1_nrr": 0.1529,
+  "basin24_best_nrr": 0.0943
+ },
+ {
+  "mesh": "Group_C4_happy_50k_0.75x",
+  "variant": "F_hv only",
+  "spearman": 0.0272,
+  "top1_nrr": 0.4414,
+  "basin24_best_nrr": 0.1228
+ },
+ {
+  "mesh": "Group_C5_lucy_50k",
+  "variant": "V0 current (R+Bm+Bv)",
+  "spearman": 0.8048,
+  "top1_nrr": 0.001,
+  "basin24_best_nrr": 0.001
+ },
+ {
+  "mesh": "Group_C5_lucy_50k",
+  "variant": "V1 volume (Hv+Bv)",
+  "spearman": 0.6365,
+  "top1_nrr": 0.0684,
+  "basin24_best_nrr": 0.001
+ },
+ {
+  "mesh": "Group_C5_lucy_50k",
+  "variant": "V2 vol+0.25*mass",
+  "spearman": 0.8142,
+  "top1_nrr": 0.0824,
+  "basin24_best_nrr": 0.001
+ },
+ {
+  "mesh": "Group_C5_lucy_50k",
+  "variant": "V3 current+5*Hv",
+  "spearman": 0.7951,
+  "top1_nrr": 0.0144,
+  "basin24_best_nrr": 0.0144
+ },
+ {
+  "mesh": "Group_C5_lucy_50k",
+  "variant": "V3 current+1*Hv",
+  "spearman": 0.8033,
+  "top1_nrr": 0.001,
+  "basin24_best_nrr": 0.001
+ },
+ {
+  "mesh": "Group_C5_lucy_50k",
+  "variant": "F_bv only",
+  "spearman": 0.6501,
+  "top1_nrr": 0.0557,
+  "basin24_best_nrr": 0.001
+ },
+ {
+  "mesh": "Group_C5_lucy_50k",
+  "variant": "F_hv only",
+  "spearman": -0.1356,
+  "top1_nrr": 0.0956,
+  "basin24_best_nrr": 0.0648
+ }
+]

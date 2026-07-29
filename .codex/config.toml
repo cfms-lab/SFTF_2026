@@ -1,0 +1,8 @@
+[mcp_servers.semantic-scholar]
+command = "uvx"
+args = [
+    "--from",
+    "git+https://github.com/akapet00/semantic-scholar-mcp",
+    "semantic-scholar-mcp",
+]
+env_vars = ["SEMANTIC_SCHOLAR_API_KEY"]
