@@ -1,6 +1,6 @@
 # Support Flow Tensor Field (SFTF)
 
-![CFMS interactive support-orientation toy: for each letter, the 2D part view with support flow, the R / B / S support-cost bars, and the argmin S(n) direction-search dial](draft/pics/sftf-cfms-webtoy-screnshot.png)
+![CFMS interactive support-orientation toy: for each letter, the 2D part view with support flow, the R / B / S support-cost bars, and the argmin S(n) direction-search dial](pics/sftf-cfms-webtoy-screnshot.png)
 
 *Interactive demo — open [`sftf-webtoy.html`](sftf-webtoy.html) (English) or [`sftf-webtoy_kr.html`](sftf-webtoy_kr.html) (Korean) in a browser. Drag each letter to rotate it and watch the overhangs, the support flow, and the dimensionless score **S = R + B** (TDP v2.1) update, with the `argmin S(n)` dial marking the best build direction.*
 
