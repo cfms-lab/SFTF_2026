@@ -143,7 +143,7 @@
     </div>
     <div class="cb-btns">
       <button class="primary" id="findAll">네 글자 최적 방향</button>
-      <button id="spinAll">전체 회전 ▶</button>
+      <button id="worstAll">네 글자 최악 방향</button>
     </div>
   </div>
 
@@ -273,17 +273,15 @@
   function setTheta(v){ thetaC=Math.max(20,Math.min(80,Math.round(v))); thresh.value=thetaC; thV.textContent=thetaC; for(const it of insts) it.sweep=null; }
   thresh.addEventListener('input', ()=> setTheta(+thresh.value));
   document.getElementById('findAll').addEventListener('click', ()=>{ for(const it of insts) findOpt(it); });
-  document.getElementById('spinAll').addEventListener('click', (e)=>{
-    const on = !insts[0].spinning; for(const it of insts) it.spinning=on;
-    e.currentTarget.textContent = on ? '전체 정지 ■' : '전체 회전 ▶';
-  });
+  document.getElementById('worstAll').addEventListener('click', ()=>{ for(const it of insts) findWorst(it); });
 
-  function findOpt(it){
+  function animateTo(it, targetAng){
     if (!it.sweep) computeSweep(it);
-    it.spinning=false;
-    const d=((it.sweep.minAng - it.angle + 540)%360)-180;
+    const d=((targetAng - it.angle + 540)%360)-180;
     it.findAnim={ from:it.angle, delta:d, t:0 };
   }
+  function findOpt(it){ if (!it.sweep) computeSweep(it); animateTo(it, it.sweep.minAng); }
+  function findWorst(it){ if (!it.sweep) computeSweep(it); animateTo(it, it.sweep.maxAng); }
 
   // ---- drawing helpers ----
   function arrowOn(ctx,x1,y1,x2,y2,col,w){
@@ -376,13 +374,13 @@
   }
 
   function computeSweep(it){
-    const arr=[]; let mn=1e18, mx=-1e18, mnA=0;
+    const arr=[]; let mn=1e18, mx=-1e18, mnA=0, mxA=0;
     for (let a=0;a<360;a+=3){                          // 3° step (multiples of 90° are sampled, so flat-base optima like C@270° S=0 are caught)
       const s=analyze(it.base, it.modelDiag, a, thetaC, it.scale, it.cx, it.bedY).S;
       arr.push({ang:a, S:s});
-      if (s<mn){ mn=s; mnA=a; } if (s>mx) mx=s;
+      if (s<mn){ mn=s; mnA=a; } if (s>mx){ mx=s; mxA=a; }
     }
-    it.sweep={ arr, min:mn, max:mx, minAng:mnA };
+    it.sweep={ arr, min:mn, max:mx, minAng:mnA, maxAng:mxA };
   }
 
   // ---- build instances ----
@@ -416,7 +414,7 @@
     dial.width=96*dd; dial.height=96*dd; dial.style.width='96px'; dial.style.height='96px'; dctx.scale(dd,dd);
 
     const it = {
-      ch, base, MODEL_H, modelDiag, angle: TILT[ch]||0, spinning:false, findAnim:null, sweep:null, maxS:1, dragging:false,
+      ch, base, MODEL_H, modelDiag, angle: TILT[ch]||0, findAnim:null, sweep:null, maxS:1, dragging:false,
       sim, sctx, dctx, W:0,H:0,scale:1,cx:0,bedY:0,
       fR:host.querySelector('[data-f="R"]'), fB:host.querySelector('[data-f="B"]'),
       fSR:host.querySelector('[data-f="SR"]'), fSB:host.querySelector('[data-f="SB"]'),
@@ -460,8 +458,6 @@
         const e=1-Math.pow(1-it.findAnim.t,3);
         it.angle=(it.findAnim.from+it.findAnim.delta*e+360)%360;
         if (it.findAnim.t>=1) it.findAnim=null;
-      } else if (it.spinning && !it.dragging){
-        it.angle=(it.angle+dt*24)%360;
       }
       if (it.W>0){
         const r=analyze(it.base, it.modelDiag, it.angle, thetaC, it.scale, it.cx, it.bedY);

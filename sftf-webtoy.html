@@ -138,12 +138,12 @@
   <div class="controls-bar">
     <div class="cb-th">
       <label>Overhang critical angle θ<sub>c</sub></label>
-      <input type="range" id="thresh" min="20" max="80" value="50" step="1">
-      <span class="v mono"><span id="thV">50</span>°</span>
+      <input type="range" id="thresh" min="20" max="80" value="60" step="1">
+      <span class="v mono"><span id="thV">60</span>°</span>
     </div>
     <div class="cb-btns">
       <button class="primary" id="findAll">Best orientation (all 4)</button>
-      <button id="spinAll">Spin all ▶</button>
+      <button id="worstAll">Worst orientation (all 4)</button>
     </div>
   </div>
 
@@ -268,22 +268,20 @@
   }
 
   // ---- global controls ----
-  let thetaC = 50;
+  let thetaC = 60;
   const thV = document.getElementById('thV'), thresh = document.getElementById('thresh');
   function setTheta(v){ thetaC=Math.max(20,Math.min(80,Math.round(v))); thresh.value=thetaC; thV.textContent=thetaC; for(const it of insts) it.sweep=null; }
   thresh.addEventListener('input', ()=> setTheta(+thresh.value));
   document.getElementById('findAll').addEventListener('click', ()=>{ for(const it of insts) findOpt(it); });
-  document.getElementById('spinAll').addEventListener('click', (e)=>{
-    const on = !insts[0].spinning; for(const it of insts) it.spinning=on;
-    e.currentTarget.textContent = on ? 'Stop all ■' : 'Spin all ▶';
-  });
+  document.getElementById('worstAll').addEventListener('click', ()=>{ for(const it of insts) findWorst(it); });
 
-  function findOpt(it){
+  function animateTo(it, targetAng){
     if (!it.sweep) computeSweep(it);
-    it.spinning=false;
-    const d=((it.sweep.minAng - it.angle + 540)%360)-180;
+    const d=((targetAng - it.angle + 540)%360)-180;
     it.findAnim={ from:it.angle, delta:d, t:0 };
   }
+  function findOpt(it){ if (!it.sweep) computeSweep(it); animateTo(it, it.sweep.minAng); }
+  function findWorst(it){ if (!it.sweep) computeSweep(it); animateTo(it, it.sweep.maxAng); }
 
   // ---- drawing helpers ----
   function arrowOn(ctx,x1,y1,x2,y2,col,w){
@@ -340,6 +338,23 @@
     }
   }
 
+  // Best/worst markers on the S(n) polar sweep — same convention as ESM
+  // Figures S5-S9: green circle = SFTF best, magenta diamond = SFTF worst.
+  const MARK_BEST='#1a9850', MARK_WORST='#c51b8a';
+  function markBestWorst(ctx, cxx, cyy, R, sweep, sz){
+    const span=Math.max(1e-6, sweep.max-sweep.min);
+    const rOf=S=>R*(0.28+0.72*(S-sweep.min)/span);
+    const ba=sweep.minAng*Math.PI/180-Math.PI/2, br=rOf(sweep.min);
+    const wa=sweep.maxAng*Math.PI/180-Math.PI/2, wr=rOf(sweep.max);
+    const bx=cxx+br*Math.cos(ba), by=cyy+br*Math.sin(ba);
+    const wx=cxx+wr*Math.cos(wa), wy=cyy+wr*Math.sin(wa);
+    ctx.lineWidth=Math.max(1.2, sz*0.32); ctx.strokeStyle='#fff';
+    ctx.fillStyle=MARK_WORST;
+    ctx.beginPath(); ctx.moveTo(wx,wy-sz*1.3); ctx.lineTo(wx+sz*1.3,wy); ctx.lineTo(wx,wy+sz*1.3); ctx.lineTo(wx-sz*1.3,wy); ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.fillStyle=MARK_BEST;
+    ctx.beginPath(); ctx.arc(bx,by,sz,0,7); ctx.fill(); ctx.stroke();
+  }
+
   function drawDial(it){
     const ctx=it.dctx, cxx=48, cyy=48, R=40;
     ctx.clearRect(0,0,96,96);
@@ -356,9 +371,7 @@
       });
       ctx.closePath(); ctx.fillStyle=P.overhang+'22'; ctx.fill();
       ctx.strokeStyle=P.overhang; ctx.lineWidth=1.4; ctx.stroke();
-      const na=it.sweep.minAng*Math.PI/180-Math.PI/2, nr=R*0.28;
-      ctx.fillStyle=P.bed; ctx.font='12px sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
-      ctx.fillText('★', cxx+nr*Math.cos(na), cyy+nr*Math.sin(na));
+      markBestWorst(ctx, cxx, cyy, R, it.sweep, 4.6);
     }
     const ca=it.angle*Math.PI/180-Math.PI/2;
     ctx.strokeStyle=P.sandBright; ctx.lineWidth=2;
@@ -376,13 +389,13 @@
   }
 
   function computeSweep(it){
-    const arr=[]; let mn=1e18, mx=-1e18, mnA=0;
+    const arr=[]; let mn=1e18, mx=-1e18, mnA=0, mxA=0;
     for (let a=0;a<360;a+=3){                          // 3° step (multiples of 90° are sampled, so flat-base optima like C@270° S=0 are caught)
       const s=analyze(it.base, it.modelDiag, a, thetaC, it.scale, it.cx, it.bedY).S;
       arr.push({ang:a, S:s});
-      if (s<mn){ mn=s; mnA=a; } if (s>mx) mx=s;
+      if (s<mn){ mn=s; mnA=a; } if (s>mx){ mx=s; mxA=a; }
     }
-    it.sweep={ arr, min:mn, max:mx, minAng:mnA };
+    it.sweep={ arr, min:mn, max:mx, minAng:mnA, maxAng:mxA };
   }
 
   // ---- build instances ----
@@ -416,7 +429,7 @@
     dial.width=96*dd; dial.height=96*dd; dial.style.width='96px'; dial.style.height='96px'; dctx.scale(dd,dd);
 
     const it = {
-      ch, base, MODEL_H, modelDiag, angle: TILT[ch]||0, spinning:false, findAnim:null, sweep:null, maxS:1, dragging:false,
+      ch, base, MODEL_H, modelDiag, angle: TILT[ch]||0, findAnim:null, sweep:null, maxS:1, dragging:false,
       sim, sctx, dctx, W:0,H:0,scale:1,cx:0,bedY:0,
       fR:host.querySelector('[data-f="R"]'), fB:host.querySelector('[data-f="B"]'),
       fSR:host.querySelector('[data-f="SR"]'), fSB:host.querySelector('[data-f="SB"]'),
@@ -450,6 +463,97 @@
     insts.push(it);
   }
 
+  // ---- publication export mode (?export=1): static 4x3 grid for the paper figure ----
+  function drawExportDial(ctx, size, sweep){
+    const cxx=size/2, cyy=size/2, R=size/2-14;
+    ctx.strokeStyle=P.line; ctx.lineWidth=1;
+    ctx.beginPath(); ctx.arc(cxx,cyy,R,0,7); ctx.stroke();
+    ctx.beginPath(); ctx.arc(cxx,cyy,R*0.5,0,7); ctx.stroke();
+    const span=Math.max(1e-6,sweep.max-sweep.min);
+    ctx.beginPath();
+    sweep.arr.forEach((d,i)=>{
+      const norm=0.28+0.72*(d.S-sweep.min)/span, rr=R*norm, a=d.ang*Math.PI/180-Math.PI/2;
+      const x=cxx+rr*Math.cos(a), y=cyy+rr*Math.sin(a);
+      i?ctx.lineTo(x,y):ctx.moveTo(x,y);
+    });
+    ctx.closePath(); ctx.fillStyle=P.overhang+'22'; ctx.fill();
+    ctx.strokeStyle=P.overhang; ctx.lineWidth=1.6; ctx.stroke();
+    markBestWorst(ctx, cxx, cyy, R, sweep, 8);
+  }
+
+  if (new URLSearchParams(location.search).get('export')){
+    const thq=new URLSearchParams(location.search).get('theta');
+    if (thq) setTheta(+thq);
+    document.querySelector('.wrap').style.display='none';
+    const SIM=336, DIAL=252, DPR=2;
+    const css=document.createElement('style');
+    css.textContent=[
+      'body { background:#fff; margin:0; }',
+      '#exportRoot { width:max-content; padding:14px 16px 8px; background:#fff; }',
+      '#exportRoot .xg { display:grid; grid-template-columns:max-content max-content max-content; gap:10px 16px; align-items:stretch; justify-content:start; }',
+      '#exportRoot .xh { font-size:19px; font-weight:600; color:#211C14; text-align:center; align-self:end; padding-bottom:2px; }',
+      '#exportRoot .xcell { background:#F5F3EF; border:1px solid #DED7C9; border-radius:12px; padding:8px; display:flex; flex-direction:column; gap:5px; width:max-content; }',
+      '#exportRoot .xdial { align-items:center; justify-content:center; }',
+      '#exportRoot .xch { font:700 26px "Cascadia Code","Consolas",monospace; color:#211C14; }',
+      '#exportRoot .cap { font:600 11px "Cascadia Code","Consolas",monospace; letter-spacing:.12em; text-transform:uppercase; color:#5C5240; }',
+      '#exportRoot canvas { display:block; }',
+      '#exportRoot .legend { display:flex; gap:26px; justify-content:center; font:600 13px "Cascadia Code","Consolas",monospace; color:#5C5240; padding:8px 0 6px; }',
+      '#exportRoot .legend .sw { display:inline-block; width:11px; height:11px; margin-right:7px; }',
+      '#exportRoot .legend .cir { border-radius:50%; background:#1a9850; }',
+      '#exportRoot .legend .dia { transform:rotate(45deg); background:#c51b8a; }',
+    ].join('\n');
+    const exp=document.createElement('div'); exp.id='exportRoot';
+    const mk=(cls,html)=>{ const d=document.createElement('div'); d.className=cls; if(html!=null) d.innerHTML=html; return d; };
+    const fmtv=v=>v>=100?Math.round(v):v.toFixed(1);
+    const grid2=mk('xg');
+    grid2.append(mk('xh','S(n) direction sweep'), mk('xh','Best orientation (argmin S)'), mk('xh','Worst orientation (argmax S)'));
+    for (const ch of ['C','F','M','S']){
+      const poly=LETTERS[ch];
+      let mnx=1e9,mny=1e9,mxx=-1e9,mxy=-1e9;
+      for (const [x,y] of poly){ mnx=Math.min(mnx,x);mxx=Math.max(mxx,x);mny=Math.min(mny,y);mxy=Math.max(mxy,y); }
+      const base=poly.map(([x,y])=>[x-(mnx+mxx)/2,y-(mny+mxy)/2]);
+      const MODEL_H=mxy-mny, modelDiag=Math.hypot(mxx-mnx,mxy-mny);
+      // canvas trimmed by 2 grid cells (2x28px) vertically; letter scale is
+      // width-based so the part keeps its size and the empty grid shrinks
+      const W=SIM, H=SIM-56, bedY=H-22, cx=W/2, scale=(W-36)*0.6/MODEL_H;
+      const arr=[]; let mn=1e18,mx=-1e18,mnA=0,mxA=0;
+      for (let a=0;a<360;a+=3){
+        const s=analyze(base,modelDiag,a,thetaC,scale,cx,bedY).S;
+        arr.push({ang:a,S:s});
+        if (s<mn){mn=s;mnA=a;} if (s>mx){mx=s;mxA=a;}
+      }
+      const sweep={arr,min:mn,max:mx,minAng:mnA,maxAng:mxA};
+      const dialCell=mk('xcell xdial');
+      dialCell.append(mk('xch',ch));
+      const dc=document.createElement('canvas');
+      dc.width=DIAL*DPR; dc.height=DIAL*DPR; dc.style.width=DIAL+'px'; dc.style.height=DIAL+'px';
+      const dctx=dc.getContext('2d'); dctx.scale(DPR,DPR);
+      drawExportDial(dctx, DIAL, sweep);
+      dialCell.append(dc, mk('cap','S(n) sweep — 360°'));
+      const mkSim=(ang)=>{
+        const r=analyze(base,modelDiag,ang,thetaC,scale,cx,bedY);
+        const cell=mk('xcell');
+        const holder=mk('lc-sim');
+        const c=document.createElement('canvas');
+        c.width=W*DPR; c.height=H*DPR; c.style.width=W+'px'; c.style.height=H+'px';
+        const cctx=c.getContext('2d'); cctx.scale(DPR,DPR);
+        drawSim({sctx:cctx,W,H,bedY,cx}, r);
+        holder.append(c); cell.append(holder);
+        const pct=v=>Math.min(100, v/Math.max(mx,1e-9)*100);
+        const bars=mk('mbars');
+        bars.innerHTML=
+          '<div class="mb"><span class="k" style="color:var(--rayleigh)">R</span><div class="t"><div class="f" style="background:var(--rayleigh);width:'+pct(r.R)+'%"></div></div><span class="v">'+fmtv(r.R)+'</span></div>'+
+          '<div class="mb"><span class="k" style="color:var(--bed)">B</span><div class="t"><div class="f" style="background:var(--bed);width:'+pct(r.B)+'%"></div></div><span class="v">'+fmtv(r.B)+'</span></div>'+
+          '<div class="mb mb-s"><span class="k">S</span><div class="t"><div class="f" style="background:var(--rayleigh);width:'+pct(r.R)+'%"></div><div class="f" style="background:var(--bed);width:'+pct(r.B)+'%"></div></div><span class="v">'+fmtv(r.S)+'</span></div>';
+        cell.append(bars);
+        return cell;
+      };
+      grid2.append(dialCell, mkSim(sweep.minAng), mkSim(sweep.maxAng));
+    }
+    exp.append(grid2, mk('legend','<span><span class="sw cir"></span>argmin S (best)</span><span><span class="sw dia"></span>argmax S (worst)</span>'));
+    document.body.append(css, exp);
+  }
+
   // ---- main loop ----
   let last=performance.now();
   function loop(now){
@@ -460,8 +564,6 @@
         const e=1-Math.pow(1-it.findAnim.t,3);
         it.angle=(it.findAnim.from+it.findAnim.delta*e+360)%360;
         if (it.findAnim.t>=1) it.findAnim=null;
-      } else if (it.spinning && !it.dragging){
-        it.angle=(it.angle+dt*24)%360;
       }
       if (it.W>0){
         const r=analyze(it.base, it.modelDiag, it.angle, thetaC, it.scale, it.cx, it.bedY);
