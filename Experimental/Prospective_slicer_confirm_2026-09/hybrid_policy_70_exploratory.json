@@ -2019,5 +2019,79 @@
    "tomo_u20": 0.003290606410911366,
    "tomo_mix20": 0.0034834553076067603
   }
- ]
+ ],
+ "post_hoc_sensitivity_2026_09_17": {
+  "note": "Post hoc sensitivity checks requested by the 2026-09-17 internal review; not part of the pre-specified analyses.",
+  "meshes_with_failed_hybrid_cell": {
+   "cura_5_13": [
+    "P012",
+    "P034"
+   ],
+   "prusa_2_9_6": []
+  },
+  "complete_case": {
+   "cura_5_13": {
+    "n": 68,
+    "mean": -0.03866316434140581,
+    "median": -0.02401155708896137,
+    "sd": 0.08607557678576994,
+    "ci": [
+     -0.05909367412133169,
+     -0.018649787602521093
+    ],
+    "p": 0.00026999730002699973,
+    "wtl": [
+     46,
+     0,
+     22
+    ]
+   },
+   "prusa_2_9_6": {
+    "n": 70,
+    "mean": -0.05838347703949835,
+    "median": -0.0331735927295889,
+    "sd": 0.10593757392994185,
+    "ci": [
+     -0.08332452965481955,
+     -0.03454708239810148
+    ],
+    "p": 9.99990000099999e-06,
+    "wtl": [
+     50,
+     0,
+     20
+    ]
+   }
+  },
+  "adverse_tail": {
+   "cura_5_13_70": {
+    "sftf_worse_than_uniform": 29,
+    "hybrid_worse_than_uniform": 22,
+    "max_loss_sftf": 0.43873404850211273,
+    "max_loss_hybrid": 0.13390527918765033,
+    "max_gain_sftf": -0.40111742914437387,
+    "max_gain_hybrid": -0.28880270524479174
+   },
+   "cura_5_13_30": {
+    "sftf_worse_than_uniform": 14,
+    "hybrid_worse_than_uniform": 7,
+    "max_loss_sftf": 0.1597139262099317,
+    "max_loss_hybrid": 0.11440794833792577
+   },
+   "prusa_2_9_6_70": {
+    "sftf_worse_than_uniform": 33,
+    "hybrid_worse_than_uniform": 20,
+    "max_loss_sftf": 0.6387650657908523,
+    "max_loss_hybrid": 0.144052111901446,
+    "max_gain_sftf": -0.5822454333638865,
+    "max_gain_hybrid": -0.3828993829485816
+   },
+   "prusa_2_9_6_30": {
+    "sftf_worse_than_uniform": 14,
+    "hybrid_worse_than_uniform": 9,
+    "max_loss_sftf": 0.30584751814612793,
+    "max_loss_hybrid": 0.11902158532738791
+   }
+  }
+ }
 }

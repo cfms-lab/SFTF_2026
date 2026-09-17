@@ -7,8 +7,12 @@ Tables S14–S15. Two pre-registered tests, both described in
 
 | Part | Question | Sample | Verdict |
 |---|---|---|---|
-| 1 | Does SFTF alone beat budget-matched uniform search at B = 10 under CuraEngine 5.13 and PrusaSlicer 2.9.6? | 70 complex meshes (≥50k faces), never sliced before | **not confirmed** |
-| 2 | Does a hybrid allocation (5 uniform + 5 SFTF cells) beat uniform-10? | 30 sealed holdout meshes of the original slicer panel (never combined before) | **confirmed** (Holm p < 0.001, both engines) |
+| 1 | Does SFTF alone beat budget-matched uniform search at B = 10 under CuraEngine 5.13 and PrusaSlicer 2.9.6? | 70 complex meshes (≥50k faces), never sliced before (prospective) | **not confirmed** |
+| 2 | Does a hybrid allocation (uniform-5 design + first five SFTF cells) beat uniform-10? | the 30-mesh slicer panel of the original study: sealed at selection, but its uniform/SFTF outcomes were already known (Table 3); only their combination was new — a **prespecified reanalysis**, not an untouched prospective validation | prespecified criterion **met** (Holm p < 0.001, both engines); corroborating evidence on a separate sample |
+
+Hybrid values on the shared finite panel obey NRR(hybrid) = min(NRR(uniform-5), NRR(SFTF-5)), so part 2 can be
+reproduced from the original `budget_slicer_results.json` alone; `analyze_part2.py` rebuilds it from the raw rows
+(maximum per-mesh difference 0).
 
 ## Files
 
@@ -25,6 +29,12 @@ Tables S14–S15. Two pre-registered tests, both described in
 | `hybrid_policy_analysis.py`, `hybrid_policy_70_exploratory.json`, `figure8_prospective.png` | exploratory hybrid analysis on the 70 meshes (hypothesis formed after part 1) and Figure 8 |
 | `part2_mixed_policy_holdout30.json` | part-2 pre-registered confirmation on the 30 holdout meshes (per-mesh rows, primary/secondary statistics, Holm) |
 | `inputs_part2/` | inputs of part 2 copied from the development snapshot: the original small-budget slicer rows (`budget_slicer_raw.jsonl`) and the SFTF candidate caches of the 30 cross-slicer meshes; the holdout manifest is in `experiments/tdp_v2/manifests/` |
+| `analyze_part2.py` | self-contained reproduction of part 2 from `inputs_part2/` (seeds, Holm, failure handling included): `python analyze_part2.py --manifest ../../experiments/tdp_v2/manifests/holdout_manifest.csv` |
+| `hybrid_sensitivity.py` | post hoc checks added at internal review (2026-09-17): complete-case Cura contrast excluding P012/P034, adverse-tail counts; results appended to `hybrid_policy_70_exploratory.json` |
+| `GATE_snapshots/` | byte-exact texts of the protocol at each lock (`GATE_frozen_part1_47a30370.md`, `GATE_frozen_part2_6bc4188c.md`) with a verification note; the root GATE file is the same text plus appended results |
+| `measure_tgen.py`, `tgen_measurement.json` | end-to-end candidate-generation timing on the 60 holdout meshes (sampling, K = 8,192 scoring, NMS, cell expansion; the K = 4,096 gate pass separately). The submitted manuscript's 4.57 s was the K = 8,192 scoring loop only |
+
+Lock times are local workstation clocks; no external pre-registration registry was used.
 
 ## Reproducing the statistics without re-slicing
 

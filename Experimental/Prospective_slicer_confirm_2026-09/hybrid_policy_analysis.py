@@ -1,10 +1,12 @@
 """Exploratory hybrid-policy analysis on the 70 prospective meshes + Figure 8 (with panel c).
 
 The hybrid hypothesis (B=10 as uniform-5 + SFTF top-5) was formed after the primary
-analysis; see GATE part 2 for the pre-registered confirmation on the 30 holdout meshes
-(part2_mixed_policy_holdout30.json).
+analysis; see GATE part 2 for the prespecified reanalysis on the 30-mesh holdout panel
+(part2_mixed_policy_holdout30.json). Run hybrid_sensitivity.py afterwards (its block is
+preserved on re-runs).
 """
 import json, shutil
+from pathlib import Path
 import numpy as np
 import matplotlib
 matplotlib.use('Agg')
@@ -64,7 +66,13 @@ for eng, seed in (('cura_5_13', 30), ('prusa_2_9_6', 31)):
     A[f'{eng}_hits_B10'] = {'sftf': int(sum(e[f'{eng}_hit_s10'] for e in per)), 'uniform': int(sum(e[f'{eng}_hit_u10'] for e in per)), 'mixed': int(sum(e[f'{eng}_hit_mix10'] for e in per))}
 A['tomo_mix10_minus_u10'] = stats([e['tomo_mix10'] - e['tomo_u10'] for e in per], 32)
 A['tomo_mix20_minus_u20'] = stats([e['tomo_mix20'] - e['tomo_u20'] for e in per], 33)
-out = {'note': 'Exploratory (post hoc) hybrid-policy analysis on the 70 prospective meshes; hypothesis formed after the primary analysis (2026-09-17). Confirmed separately on the 30 sealed holdout meshes (part2_mixed_policy_holdout30.json, GATE part 2).', 'analyses': A, 'rows': per}
+out = {'note': 'Exploratory (post hoc) hybrid-policy analysis on the 70 prospective meshes; hypothesis formed after the primary analysis (2026-09-17). Re-evaluated under a prespecified plan on the previously analyzed 30-mesh holdout panel (part2_mixed_policy_holdout30.json, GATE part 2).', 'analyses': A, 'rows': per}
+_prev = Path('hybrid_policy_70_exploratory.json')
+if _prev.is_file():
+    _old = json.loads(_prev.read_text(encoding='utf-8'))
+    for k in ('post_hoc_sensitivity_2026_09_17',):
+        if k in _old:
+            out[k] = _old[k]
 json.dump(out, open('hybrid_policy_70_exploratory.json', 'w'), indent=1)
 for k, v in A.items():
     print(k, (f"n={v['n']} mean={v['mean']:+.4f} [{v['ci'][0]:+.4f},{v['ci'][1]:+.4f}] p={v['p']:.4f} w/t/l={v['wtl']}" if 'mean' in v else v))
@@ -116,7 +124,7 @@ for i, key in enumerate(('cura_5_13', 'prusa_2_9_6', 'tomo')):
     m = [a['mean'], hv[key][0]]; lo = [a['mean'] - a['ci'][0], hv[key][0] - hv[key][1]]; hi = [a['ci'][1] - a['mean'], hv[key][2] - hv[key][0]]
     ax.errorbar(xp + (i - 1) * w, m, yerr=[lo, hi], fmt='D', ms=3, capsize=1.5, lw=0.8, color=col[key], label=lab[key])
 ax.axhline(0, color='k', lw=0.5, ls='--'); ax.set_xticks(xp)
-ax.set_xticklabels(['70 prospective\n(exploratory)', '30 holdout\n(pre-registered)'], fontsize=6.5)
+ax.set_xticklabels(['70 prospective meshes\n(exploratory; n = 70)', 'original holdout panel, reanalysis\n(prespecified; slicers n = 30, TOMO n = 60)'], fontsize=5.6)
 ax.set_ylabel('Hybrid(5+5) ' + MINUS + ' uniform NRR, B = 10', fontsize=7); ax.tick_params(labelsize=6)
 ax.legend(fontsize=5.5, frameon=False, loc='lower left'); ax.text(-0.3, 1.03, 'c', transform=ax.transAxes, fontsize=9, fontweight='bold')
 fig.tight_layout(w_pad=1.0)
