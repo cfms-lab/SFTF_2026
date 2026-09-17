@@ -1,0 +1,36 @@
+{
+ "created_utc": "2026-09-16T06:04:44.064949+00:00",
+ "protocol_id": "sftf-tdp-v2-2026-07-13",
+ "selection_salt": "sftf-tdp-v2-holdout-v1",
+ "purpose": "prospective slicer confirmation of the candidate regime (complex geometry, B=10)",
+ "part_a_confirm80_complex": 33,
+ "part_b_new": 37,
+ "part_b_quota": {
+  "faces_150k_250k": 4,
+  "faces_50k_150k": 33
+ },
+ "part_b_examined_by_stratum": {
+  "faces_150k_250k": 4,
+  "faces_50k_150k": 33
+ },
+ "part_b_geometry_rejections": {},
+ "untouched_candidates_by_stratum": {
+  "faces_50k_150k": 142,
+  "faces_150k_250k": 4
+ },
+ "exclusion_counts": {
+  "dev": 0,
+  "holdout": 25,
+  "confirm80": 33,
+  "outside_complex": 3613,
+  "dup": 0,
+  "bad_stl": 0
+ },
+ "by_stratum": {
+  "faces_50k_150k": 53,
+  "faces_150k_250k": 17
+ },
+ "selected_total": 70,
+ "manifest_sha256": "13b35181be709cb2831df9f637cf6897c18c042641b72010295074bc89137b63",
+ "outcome_seal": "No TOMO or slicer values were read or computed during selection. Part A TOMO grids pre-exist (computed 2026-07-29 for the v2.1 study); no slicer outcome exists for any selected mesh."
+}

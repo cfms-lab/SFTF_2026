@@ -1,0 +1,11 @@
+{
+ "locked_utc": "2026-09-17T03:54:12.404492+00:00",
+ "files": {
+  "GATE_2026-09-16_prospective_slicer_confirmation.md": "6bc4188cee4fd9fc214e106a937bab6880b6a725611921ef1e64f47168e6e66c",
+  "budget_slicer_raw.jsonl": "150772ec72657bc94908b57abdcc02f4a01a9c8da4168f3e8eae9da17eee7a23",
+  "holdout_manifest.json": "e2671d0a257fd7b9437614ffc4f47df6ecfc79d15e0b7177a7335e8d2e3eb797",
+  "sftf_candidate_cache(concat sha of files)": "14e982a00b6a4a9e9369c18b4dbfd4c5c553cca2e592beab001cb919e24f5db9",
+  "tomo_grids(concat sha of files)": "90a94a99f719c3ee079ded21b18781574d0a56581e3a0178ea32783e856dcdff"
+ },
+ "statement": "Part-2 lock created before any mixed-policy value was computed on the 30-mesh holdout slicer data."
+}

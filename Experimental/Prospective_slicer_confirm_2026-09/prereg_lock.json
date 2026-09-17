@@ -1,0 +1,20 @@
+{
+ "locked_utc": "2026-09-16T06:10:09.635841+00:00",
+ "files": {
+  "GATE_2026-09-16_prospective_slicer_confirmation.md": "47a30370fffa3c8e15fe9a7c63e7f129d9753819e524a48e17235f1e87c53a64",
+  "Experimental/Prospective_slicer_confirm_2026-09/run_prospective.py": "940c34d000b80703badc8c7fc13461cffcdd88a609fbdcc825872b65bc764e7d",
+  "Experimental/Prospective_slicer_confirm_2026-09/select_prospective70.py": "0c4c992e0933a1792f49ebc85f74afd49f0d2cb905bbda62afab50d28b323fd1",
+  "Experimental/Prospective_slicer_confirm_2026-09/prospective_manifest.csv": "13b35181be709cb2831df9f637cf6897c18c042641b72010295074bc89137b63",
+  "Experimental/Prospective_slicer_confirm_2026-09/prospective_selection_audit.json": "c9f2ed2278fec823a1d45ddf49c42e79a24803c9e66b1040099b2b43db40785d",
+  "Experimental/R_term_recalib/confirm80_rows.json": "d3f6e4ed8a08272bf98419f2cd5cf06eb8bd9707537a126163b6cadf950b690e",
+  "draft/src/legacy/TDP_v2/scripts/analyze_tdp_v2_tomo_external.py": "d67839143ccc2f00b41ac17fadadc2b9090b282b1daff9081d938b0f87b8ac8e",
+  "draft/src/legacy/TDP_v2/profiles/prusa_support_tdp_v2.ini": "d04489a5a2c240949dc15586ac32b159a450cee81cda8a0c6e68a15447fcecf7",
+  "cpp_src/Tomo_GPU2026/Tomo_Shell2026.dll": "d87655963501635e3c676ef09082b85ccaaec05b7cce4a671bb131666209deba",
+  "python_src/SupportFlowTensorField/sftf_v2.py": "34f07fdc62ce06b9d3f94a35ff33e147aba28daf002ba36ec9d77b9b30d91b43"
+ },
+ "external": {
+  "C:\\Program Files\\UltiMaker Cura 5.13.0\\CuraEngine.exe": "36e36d4618cd09a0cd8802a565c2cdbe54804eb750ac84303a0c6d6f784afde2",
+  "D:\\__PFTF_Projects(2026)\\_tools_prusa\\extracted\\PrusaSlicer-2.9.6\\prusa-slicer-console.exe": "7fd50b52d1cc3da87dbcb71e45e764412dd45688bea028f351333e86d9769704"
+ },
+ "statement": "Created before run_prospective.py computed any score, slice or TOMO outcome on the study meshes."
+}

@@ -165,3 +165,11 @@ It is faster and does not depend on GPU or DLL runtime availability.
 - If a script reports a missing large D/E-group mesh, consult
   `DATA_AVAILABILITY.md`, download that file from the manuscript data archive,
   and place it at the same relative path under `sftf_Mesh_Data/`.
+
+## Pre-registered prospective confirmation (2026-09)
+
+The revision of the TDP manuscript adds two pre-registered tests: SFTF alone versus
+budget-matched uniform search on 70 further complex meshes (not confirmed) and a
+hybrid 5 uniform + 5 SFTF allocation on the 30 sealed holdout meshes (confirmed).
+Protocol: `GATE_2026-09-16_prospective_slicer_confirmation.md`; data and per-mesh
+results: `Experimental/Prospective_slicer_confirm_2026-09/` (see its README).
