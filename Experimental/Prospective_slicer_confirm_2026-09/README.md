@@ -32,7 +32,7 @@ reproduced from the original `budget_slicer_results.json` alone; `analyze_part2.
 | `analyze_part2.py` | self-contained reproduction of part 2 from `inputs_part2/` (seeds, Holm, failure handling included): `python analyze_part2.py --manifest ../../experiments/tdp_v2/manifests/holdout_manifest.csv` |
 | `hybrid_sensitivity.py` | post hoc checks added at internal review (2026-09-17): complete-case Cura contrast excluding P012/P034, adverse-tail counts; results appended to `hybrid_policy_70_exploratory.json` |
 | `GATE_snapshots/` | byte-exact texts of the protocol at each lock (`GATE_frozen_part1_47a30370.md`, `GATE_frozen_part2_6bc4188c.md`) with a verification note; the root GATE file is the same text plus appended results |
-| `measure_tgen.py`, `tgen_measurement.json` | end-to-end candidate-generation timing on the 60 holdout meshes (sampling, K = 8,192 scoring, NMS, cell expansion; the K = 4,096 gate pass separately). The submitted manuscript's 4.57 s was the K = 8,192 scoring loop only |
+| `measure_tgen.py`, `tgen_measurement.json` | end-to-end candidate-generation timing on the 60 holdout meshes (run 2): one continuous timer around sampling, K = 8,192 scoring, NMS and cell expansion (the ungated/hybrid path), plus the K = 4,096 sampling, scoring, NMS, cross-K alignment and gate diagnostics of the gated policy. Background CPU load at run time is recorded in `cpu_load_note`. The submitted manuscript's 4.57 s was the K = 8,192 scoring loop only. `tgen_measurement_run1_stagewise.json` is the earlier stage-wise run (stage timers summed, gate pass without diagnostics); the manuscript uses run 2 |
 
 Lock times are local workstation clocks; no external pre-registration registry was used.
 

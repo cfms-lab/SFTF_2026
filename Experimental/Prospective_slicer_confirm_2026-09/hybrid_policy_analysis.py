@@ -124,7 +124,8 @@ for i, key in enumerate(('cura_5_13', 'prusa_2_9_6', 'tomo')):
     m = [a['mean'], hv[key][0]]; lo = [a['mean'] - a['ci'][0], hv[key][0] - hv[key][1]]; hi = [a['ci'][1] - a['mean'], hv[key][2] - hv[key][0]]
     ax.errorbar(xp + (i - 1) * w, m, yerr=[lo, hi], fmt='D', ms=3, capsize=1.5, lw=0.8, color=col[key], label=lab[key])
 ax.axhline(0, color='k', lw=0.5, ls='--'); ax.set_xticks(xp)
-ax.set_xticklabels(['70 prospective meshes\n(exploratory; n = 70)', 'original holdout panel, reanalysis\n(prespecified; slicers n = 30, TOMO n = 60)'], fontsize=5.6)
+ax.set_xticklabels(['70-mesh study\n(exploratory)', 'Original panel\n(reanalysis)'], fontsize=6.5)
+ax.set_xlim(-0.6, 1.6)
 ax.set_ylabel('Hybrid(5+5) ' + MINUS + ' uniform NRR, B = 10', fontsize=7); ax.tick_params(labelsize=6)
 ax.legend(fontsize=5.5, frameon=False, loc='lower left'); ax.text(-0.3, 1.03, 'c', transform=ax.transAxes, fontsize=9, fontweight='bold')
 fig.tight_layout(w_pad=1.0)

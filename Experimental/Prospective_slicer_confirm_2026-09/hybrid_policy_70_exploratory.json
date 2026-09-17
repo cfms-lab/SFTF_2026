@@ -1,5 +1,5 @@
 {
- "note": "Exploratory (post hoc) hybrid-policy analysis on the 70 prospective meshes; hypothesis formed after the primary analysis (2026-09-17). Confirmed separately on the 30 sealed holdout meshes (part2_mixed_policy_holdout30.json, GATE part 2).",
+ "note": "Exploratory (post hoc) hybrid-policy analysis on the 70 prospective meshes; hypothesis formed after the primary analysis (2026-09-17). Re-evaluated under a prespecified plan on the previously analyzed 30-mesh holdout panel (part2_mixed_policy_holdout30.json, GATE part 2).",
  "analyses": {
   "cura_5_13_mix10_minus_u10": {
    "n": 70,
